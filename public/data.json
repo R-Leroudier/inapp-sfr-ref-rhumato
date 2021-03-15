@@ -694,7 +694,7 @@
           "parentId": 2,
           "type": "html",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18303932?via%3Dihub",
-          "slug": "polyarthrite-rhumatoïde",
+          "slug": "polyarthrite-rhumatoide",
           "submenu": false
         },
         {
@@ -845,7 +845,8 @@
       "content": "",
       "slug": "conception-grossesse-allaitement-et-rhumato-pediatrie",
       "submenu": true,
-      "children": [
+      "children": 
+      [
         {
           "id": "",
           "name": "Désir de grossesse",
@@ -1031,7 +1032,7 @@
             },
             {
               "id": "",
-              "name": "Traitements autorisés  ",
+              "name": "Traitements autorisés",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
@@ -1210,331 +1211,808 @@
               "submenu": false
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "Traitements médicamenteux ",
+      "subtitle": "Sous-titre facultatif",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "traitements-medicamenteux ",
+      "submenu": true,
+      "children": [
         {
           "id": "",
-          "name": "Traitements médicamenteux ",
+          "name": "AINS ",
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
           "type": "list",
           "content": "",
-          "slug": "traitements-medicamenteux ",
+          "slug": "ains",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Glucocorticoides ",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "glucocorticoides ",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Corticoïdes",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "corticoides",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "sDMARD",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "sdmard ",
           "submenu": true,
           "children": [
             {
               "id": "",
-              "name": "AINS ",
+              "name": "Methotrexate",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
-              "slug": "ains",
-              "submenu": true,
-              "children": [
-    
-              ]
+              "slug": "methotrexate",
+              "submenu": false
             },
             {
               "id": "",
-              "name": "Glucocorticoides ",
+              "name": "Hydroxychloroquine",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
-              "slug": "glucocorticoides ",
-              "submenu": true,
-              "children": [
-    
-              ]
+              "slug": "hydroxychloroquine",
+              "submenu": false
             },
             {
               "id": "",
-              "name": "Corticoïdes",
+              "name": "Sulfasalazine",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
-              "slug": "corticoides",
-              "submenu": true,
-              "children": [
-    
-              ]
+              "slug": "sulfasalazine",
+              "submenu": false
             },
             {
               "id": "",
-              "name": "sDMARD",
+              "name": "Leflunomide",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
-              "slug": "sdmard ",
-              "submenu": true,
-              "children": [
-    
-              ]
+              "slug": "leflunomide",
+              "submenu": false
             },
             {
               "id": "",
-              "name": "bDMARD",
+              "name": "Apremilast",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
-              "slug": "bdmard",
-              "submenu": true,
-              "children": [
-    
-              ]
+              "slug": "apremilast",
+              "submenu": false
             },
             {
               "id": "",
-              "name": "Colchicine",
+              "name": "anti-JAK (baricitinib, tofacitinib, filgotinib, upadacitinib)",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "anti-jak",
+              "submenu": false
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "bDMARD",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "bdmard",
+          "submenu": true,
+          "children": [
+                          
+            {
+              "id": "",
+              "name": "anti-TNF",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "anti-tnf",
+              "submenu": false
+            },
+                          
+            {
+              "id": "",
+              "name": "anti IL-17",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "anti-il-17",
+              "submenu": false
+            },
+                          
+            {
+              "id": "",
+              "name": "anti IL-12/23",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "anti-il-12/23",
+              "submenu": false
+            },
+                          
+            {
+              "id": "",
+              "name": "anti IL-23",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "anti-il-23",
+              "submenu": false
+            },
+                          
+            {
+              "id": "",
+              "name": "anti IL-6R",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "anti-il-6R",
+              "submenu": false
+            },
+                          
+            {
+              "id": "",
+              "name": "anti IL-1",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "anti-il-1",
+              "submenu": false
+            },
+                          
+            {
+              "id": "",
+              "name": "Bilan Pré-biothérapie ",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
               "type": "list",
               "content": "",
-              "slug": "colchicine",
-              "submenu": true,
-              "children": [
-    
-              ]
+              "slug": "bilan-pre-biotherapie",
+              "submenu": false
             },
             {
               "id": "",
-              "name": "Autres immunosuppresseurs",
+              "name": "anti CD-20",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
               "type": "list",
               "content": "",
-              "slug": "autres-immunosuppresseurs",
-              "submenu": true,
-              "children": [
-    
-              ]
+              "slug": "anti-cd-20",
+              "submenu": false
             },
             {
               "id": "",
-              "name": "Anti-ostéoporotiques",
+              "name": "Abatacept",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
               "type": "list",
               "content": "",
-              "slug": "anti-osteoporotiques",
-              "submenu": true,
-              "children": [
-    
-              ]
+              "slug": "abatacept",
+              "submenu": false
             },
             {
               "id": "",
-              "name": "Antibiotiques en rhumatologie",
+              "name": "anti Baff",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
               "type": "list",
               "content": "",
-              "slug": "antibiotiques-en-rhumatologie",
+              "slug": "anti-baff",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Bilan Pré-biothérapie ",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "list",
+              "content": "",
+              "slug": "bilan-pre-biotherapie ",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Choix de la biotherapie ",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "list",
+              "content": "",
+              "slug": "choix-de-la-biotherapie",
               "submenu": true,
               "children": [
                 {
                   "id": "",
-                  "name": "AMOXICILLINE",
+                  "name": "SPONDYLOARTHRITE",
                   "subtitle": "Sous-titre facultatif",
                   "appId": 1,
                   "parentId": null,
-                  "type": "html",
+                  "type": "list",
                   "content": "",
-                  "slug": "amoxicilline",
+                  "slug": "spondyloarthrite",
                   "submenu": false
                 },
                 {
                   "id": "",
-                  "name": "OXACILLINE - CLOXACILLINE",
+                  "name": "POLYARTHRITE RHUMATOÏDE",
                   "subtitle": "Sous-titre facultatif",
                   "appId": 1,
                   "parentId": null,
-                  "type": "html",
+                  "type": "list",
                   "content": "",
-                  "slug": "oxacilline-cloxacilline",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "CEFAZOLINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "cefazoline",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "CEFTRIAXONE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "ceftriaxone",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "CEFOTAXIME",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "cefotaxime",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "CEFTAZIDIME",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "ceftazidime",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "CEFEPIME",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "cefepime",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "VANCOMYCINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "vancomycine",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "TEICOPLANINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "teicoplanine",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "RIFAMPICINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "rifampicine",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "OFLOXACINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "ofloxacine",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "CIPROFLOXACINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "ciprofloxacine",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "LEVOFLOXACINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "levofloxacine",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "MOXIFLOXACINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "moxifloxacine",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "CLINDAMYCINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "clindamycine",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "GENTAMICINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "gentamicine",
-                  "submenu": false
-                },
-                {
-                  "id": "",
-                  "name": "AMIKACINE",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "amikacine",
+                  "slug": "polyarthrite-rhumatoide",
                   "submenu": false
                 }
+
               ]
             }
           ]
+        },
+        {
+          "id": "",
+          "name": "Colchicine",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "colchicine",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Autres immunosuppresseurs",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "autres-immunosuppresseurs",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Azathioprine (IMUREL)",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "list",
+              "content": "",
+              "slug": "azathioprine",
+              "submenu":false
+            },
+            {
+              "id": "",
+              "name": "MMF (CELLCEPT) ",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "list",
+              "content": "",
+              "slug": "biphosphonates",
+              "submenu":false
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "Anti-ostéoporotiques",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "anti-osteoporotiques",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Biphosphonates (alendronate, risedronate, acide zoledronique)",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "list",
+              "content": "",
+              "slug": "biphosphonates",
+              "submenu":false
+            },
+            {
+              "id": "",
+              "name": "Denosumab",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "list",
+              "content": "",
+              "slug": "denosumab",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Tériparatide",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "list",
+              "content": "",
+              "slug": "teriparatide",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Raloxifène",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "list",
+              "content": "",
+              "slug": "raloxifene",
+              "submenu": false
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "Antibiotiques en rhumatologie",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "antibiotiques-en-rhumatologie",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "AMOXICILLINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "amoxicilline",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "OXACILLINE - CLOXACILLINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "oxacilline-cloxacilline",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "CEFAZOLINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "cefazoline",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "CEFTRIAXONE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "ceftriaxone",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "CEFOTAXIME",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "cefotaxime",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "CEFTAZIDIME",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "ceftazidime",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "CEFEPIME",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "cefepime",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "VANCOMYCINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "vancomycine",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "TEICOPLANINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "teicoplanine",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "RIFAMPICINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "rifampicine",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "OFLOXACINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "ofloxacine",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "CIPROFLOXACINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "ciprofloxacine",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "LEVOFLOXACINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "levofloxacine",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "MOXIFLOXACINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "moxifloxacine",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "CLINDAMYCINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "clindamycine",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "GENTAMICINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "gentamicine",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "AMIKACINE",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "amikacine",
+              "submenu": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "Ponctions/Infiltrations",
+      "subtitle": "Sous-titre facultatif",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "ponctions-infiltrations",
+      "submenu": true,
+      "children": [
+        {
+          "id": "",
+          "name": "Gérer le TAC/TAG",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "gerer-le-tac-tag",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Généralités",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "generalites",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Tableau récapitulatifs",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "tableau-recapitulatifs",
+              "submenu": false
+            }
+            ]
+        },
+        {
+          "id": "",
+          "name": "Réalisation pratique",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "realisation-pratique",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Membre supérieur",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "membre-superieur",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Membre inférieur",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "membre-inferieur",
+              "submenu": false
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "Contre indications",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "contre-indications",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Complications",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "complications",
+          "submenu": false
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "Urgences en Rhumatologie",
+      "subtitle": "Sous-titre facultatif",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "urgences-en-rhumatologie",
+      "submenu": true,
+      "children": [
+        {
+          "id": "",
+          "name": "Arthrite septique",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "arthrite-septique",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Troubles phospho calciques",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "troubles-phospho-calciques",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Hypercalcémie",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "hypercalcemie",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Radiculalgie compliquée",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "radiculalgie-compliquee",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Réaction allergique lors de l'administration d'un biomédicament",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "reaction-allergique-lors-de-l-administration-d-un-biomedicament",
+          "submenu": false
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "Ordonnances et comptes-rendus type d'examens",
+      "subtitle": "Sous-titre facultatif",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "ordonnances-et-comptes-rendus-type-d-examens",
+      "submenu": true,
+      "children": [
+        {
+          "id": "",
+          "name": "cf dossier ordonnance",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "cf-dossier-ordonnance",
+          "submenu": false
         }
       ]
     }
