@@ -1,82 +1,117 @@
 {
   "appData": {
     "id": 1,
-    "name": "Application d'exemple"
+    "name": "SFR REF"
   },
   "tree": [
     {
       "id": 1,
-      "name": "Première section",
+      "name": "Critères et scores",
       "subtitle": "Sous-titre facultatif",
       "appId": 1,
       "parentId": null,
       "type": "list",
       "content": "",
-      "slug": "premiere-section-1",
+      "slug": "criteres-et-scores",
+      "submenu": false,
+      "children": []
+    },
+    {
+      "id": 2,
+      "name": "Recommandations",
+      "subtitle": "",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "recommandation",
       "submenu": false,
       "children": [
         {
-          "id": 2,
-          "name": "Titre",
-          "subtitle": "Sous-titre",
+          "id": 1,
+          "name": "Polyarthrite Rhumatoïde",
+          "subtitle": "",
           "appId": 1,
-          "parentId": 1,
+          "parentId": 2,
           "type": "html",
-          "content": "Contenu à afficher",
-          "slug": "titre-2",
+          "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18303932?via%3Dihub",
+          "slug": "polyarthrite-rhumatoïde",
+          "submenu": false,
+          "children": []
+        },
+        {
+          "id": 2,
+          "name": "Spondyloarthrite",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18300083?via%3Dihub",
+          "slug": "Spondyloarthrite",
           "submenu": false,
           "children": []
         },
         {
           "id": 3,
-          "name": "Titre",
+          "name": "Ostéoporose",
           "subtitle": "",
           "appId": 1,
-          "parentId": 1,
+          "parentId": 2,
           "type": "html",
-          "content": "<h1>The standard Lorem Ipsum</h1>",
-          "slug": "titre-3",
+          "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18300629?via%3Dihub",
+          "slug": "Ostéoporose",
+          "submenu": false,
+          "children": []
+        },
+        {
+          "id": 4,
+          "name": "Goutte",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20300853?via%3Dihub",
+          "slug": "Goutte",
+          "submenu": false,
+          "children": []
+        },
+        {
+          "id": 5,
+          "name": "Gonarthrose",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20301573?via%3Dihub",
+          "slug": "Gonarthrose",
+          "submenu": false,
+          "children": []
+        },
+        {
+          "id": 6,
+          "name": "Arthrite septique",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20301482?via%3Dihub",
+          "slug": "Arthrite septique",
           "submenu": false,
           "children": []
         }
       ]
     },
     {
-      "id": 4,
-      "name": "Deuxième section",
-      "subtitle": "",
-      "appId": 1,
-      "parentId": null,
-      "type": "list",
-      "content": "",
-      "slug": "deuxieme-section-4",
-      "submenu": false,
-      "children": [
-        {
-          "id": 5,
-          "name": "Titre",
-          "subtitle": "",
-          "appId": 1,
-          "parentId": 4,
-          "type": "html",
-          "content": "Contenu à afficher",
-          "slug": "titre-5",
-          "submenu": false,
-          "children": []
-        },
-        {
-          "id": 6,
-          "name": "Titre",
-          "subtitle": "",
-          "appId": 1,
-          "parentId": 4,
-          "type": "html",
-          "content": "<h1>The standard Lorem Ipsum</h1>",
-          "slug": "titre-6",
-          "submenu": false,
-          "children": []
-        }
-      ]
-    }
+    "id": 3,
+    "name": "Bilans diagnostic/suivi",
+    "subtitle": "Sous-titre facultatif",
+    "appId": 1,
+    "parentId": null,
+    "type": "list",
+    "content": "",
+    "slug": "bilan-diagnostic-suivi",
+    "submenu": false,
+    "children": []
+  }
   ]
 }
