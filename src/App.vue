@@ -1,22 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/other-page">Other page</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+        <Header></Header>
+        <router-view></router-view>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
-import Auth from "./service/Auth"
+import Header from "@/components/Header.vue"
+import DataService from "@/service/DataService"
 
 export default Vue.extend({
+    components: { Header },
+    data() {
+        return {
+           
+        }
+    },
+    methods: {
+
+    },
     mounted()
     {
-        const apiKey = Auth.getApiKeyFromUrl()
+        DataService.load()
+            .then(() => {
+                this.name = DataService.$data.appData.name
+                this.categories = DataService.$data.tree
+            }).catch(e => {
+                console.log(e)
+            })
     },
 })
 </script>
@@ -28,6 +40,10 @@ export default Vue.extend({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
+position: fixed;
+  width: 100%;
+  height: 100%
 }
 
 #nav {
