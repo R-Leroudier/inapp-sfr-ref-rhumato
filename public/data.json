@@ -5,41 +5,65 @@
   },
   "tree": [
     {
-      "id": 1,
-      "name": "Leucémie Lymphoïde chronique",
-      "subtitle": "",
+      "id": "",
+      "name": "Critères et scores",
+      "subtitle": "Sous-titre facultatif",
       "appId": 1,
       "parentId": null,
       "type": "list",
       "content": "",
-      "slug": "leucemie-lymphoide-chronique-1",
-      "submenu": false,
+      "slug": "criteres-et-scores",
+      "submenu": true,
       "children": [
         {
-          "id": 2,
-          "name": "Binet",
-          "component": "BinetScore",
+          "id": "",
+          "name": "RIC",
           "subtitle": "",
           "appId": 1,
-          "parentId": 1,
-          "type": "html",
+          "parentId": 2,
+          "type": "list",
           "content": "",
-          "slug": "binet-2",
-          "submenu": false,
-          "children": []
-        },
-        {
-          "id": 3,
-          "name": "CLL-BAL",
-          "component": "CllBallScore",
-          "subtitle": "",
-          "appId": 1,
-          "parentId": 1,
-          "type": "",
-          "content": "",
-          "slug": "cll-ball-3",
-          "submenu": false,
-          "children": []
+          "slug": "ric",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Polyarthrite rhumatoide",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "polyarthrite-rhumatoide",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "Classification",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "list",
+                  "content": "",
+                  "slug": "classification",
+                  "submenu": true,
+                  "children": [
+                    {
+                      "id": "",
+                      "name": "ACR/EULAR 2010 ",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://medicalcul.free.fr/pr_acreular.html",
+                      "slug": "acr-eular-2010",
+                      "submenu": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -63,18 +87,6 @@
           "type": "html",
           "content": "Contenu à afficher",
           "slug": "titre-5",
-          "submenu": false,
-          "children": []
-        },
-        {
-          "id": 6,
-          "name": "Titre",
-          "subtitle": "",
-          "appId": 1,
-          "parentId": 4,
-          "type": "html",
-          "content": "<h1>The standard Lorem Ipsum</h1>",
-          "slug": "titre-6",
           "submenu": false,
           "children": []
         }
