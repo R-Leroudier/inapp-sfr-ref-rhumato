@@ -5,7 +5,7 @@
   },
   "tree": [
     {
-      "id": 1,
+      "id": "",
       "name": "Critères et scores",
       "subtitle": "Sous-titre facultatif",
       "appId": 1,
@@ -13,11 +13,647 @@
       "type": "list",
       "content": "",
       "slug": "criteres-et-scores",
-      "submenu": false,
-      "children": []
+      "submenu": true,
+      "children": [
+        {
+          "id": "",
+          "name": "RIC",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "list",
+          "content": "",
+          "slug": "ric",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Polyarthrite rhumatoide",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "polyarthrite-rhumatoide",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "Classification",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "list",
+                  "content": "",
+                  "slug": "classification",
+                  "submenu": true,
+                  "children": [
+                    {
+                      "id": "",
+                      "name": "ACR/EULAR 2010 ",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://medicalcul.free.fr/pr_acreular.html",
+                      "slug": "acr-eular-2010",
+                      "submenu": false
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "Activité",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "list",
+                  "content": "",
+                  "slug": "activite",
+                  "submenu": true,
+                  "children": [
+                    {
+                      "id": "",
+                      "name": "DAS28 ",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://medicalcul.free.fr/das28.html",
+                      "slug": "DAS28",
+                      "submenu": false
+                    },
+                    {
+                      "id": "",
+                      "name": "CDAI ",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "voir application rheumatools : scores => polyarthrite rhumatoide => CDAI/SDAI",
+                      "slug": "cdai",
+                      "submenu": false
+                    },
+                    {
+                      "id": "",
+                      "name": "SDAI ",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "voir application rheumatools : scores => polyarthrite rhumatoide => CDAI/SDAI",
+                      "slug": "sdai",
+                      "submenu": false
+                    },
+                    {
+                      "id": "",
+                      "name": "HAQ ",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "voir application rheumatools : scores => polyarthrite rhumatoide => HAQ",
+                      "slug": "haq",
+                      "submenu": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "Spondyloarthrite ",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "spondyloarthrite",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "classification ",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "list",
+                  "content": "",
+                  "slug": "classification",
+                  "submenu": true,
+                  "children": [
+                    {
+                      "id": "",
+                      "name": "AMOR ",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://www.rhumato.info/fiches-pratiques2/166-spondylarthrite-ankylosante/1747-criteres-damor-des-spondylarthropathies",
+                      "slug": "amor",
+                      "submenu": false
+                    },
+                    {
+                      "id": "",
+                      "name": "Classificaton de de New-York (cf tableau)",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "",
+                      "content": "",
+                      "slug": "classificaton-de-de-new-york",
+                      "submenu": false
+                    },
+                    {
+                      "id": "",
+                      "name": "Critères de New York modifiés (cf tableau de droite)",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "",
+                      "content": "",
+                      "slug": "criteres-de-new-york-modifies",
+                      "submenu": false
+                    },
+                    {
+                      "id": "",
+                      "name": "ASAS",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://medicalcul.free.fr/spondylo_asas.html",
+                      "slug": "asas",
+                      "submenu": false
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "Activité ",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "list",
+                  "content": "",
+                  "slug": "activite",
+                  "submenu": true,
+                  "children": [
+                    {
+                      "id": "",
+                      "name": "BASDAI",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://medicalcul.free.fr/basdai.html",
+                      "slug": "basdai",
+                      "submenu": false
+                    },
+                    {
+                      "id": "",
+                      "name": "BASFI",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://medicalcul.free.fr/basfi.html",
+                      "slug": "basfi",
+                      "submenu": false
+                    },
+                    {
+                      "id": "",
+                      "name": "ASDAS",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://medicalcul.free.fr/asdas.html",
+                      "slug": "asdas",
+                      "submenu": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "Rhumatisme psoriasique",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "rhumatisme-psoriasique",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "classification ",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "list",
+                  "content": "",
+                  "slug": "classification",
+                  "submenu": true,
+                  "children": [
+                    {
+                      "id": "",
+                      "name": "CASPAR",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://www.rhumato.info/fiches-pratiques2/174-rhumatisme-psoriasique/1882-criteteres-diagnostiques-de-caspar-pour-le-rhumatisme-psoriasiques",
+                      "slug": "caspar",
+                      "submenu": false
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "Activité ",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "list",
+                  "content": "",
+                  "slug": "activite",
+                  "submenu": true,
+                  "children": [
+                    {
+                      "id": "",
+                      "name": "DAPSA",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "https://rheuma.charite.de/fileadmin/user_upload/microsites/ohne_AZ/m_cc13/rheuma/Templates/DAPSA_ENG.pdf",
+                      "slug": "dapsa",
+                      "submenu": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "Pseudo-polyarthrite rhizomélique",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "pseudo-polyarthrite-rhizomélique",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "classification",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012",
+                  "slug": "classification",
+                  "submenu": false
+                },
+                {
+                  "id": "",
+                  "name": "Activité ",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "http://actualites-therapeutiques.com/diapo/2013/Matin/3%20-%20Berthelot%20JM.pdf",
+                  "slug": "activite",
+                  "submenu": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "Rhumatismes microcristallins",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "list",
+          "content": "",
+          "slug": "rhumatismes-microcristallins",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Goutte",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "content": "https://www.revmed.ch/Scores/SCORES-DIAGNOSTIQUES/RHUMATOLOGIE/Score-diagnostique-pour-la-goutte-ACR-et-EULAR",
+              "slug": "goutte",
+              "submenu": false
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "Maladies systémiques",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "list",
+          "content": "",
+          "slug": "maladies-systémiques",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Lupus érythémateux systémique",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "lupus-erythémateux-systémique",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Syndrome de Gougerot Sjögren",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "syndrome-de-gougerot-sjögren",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "ESSDAI",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "list",
+                  "content": "",
+                  "slug": "essdai",
+                  "submenu": false
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "Syndrome de Sharp",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "content": "https://maladie-autoimmune.fr/connectivite-mixte-sharp-mctd/",
+              "slug": "syndrome-de-sharp",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Maladie de Behcet",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "content": "https://www.fai2r.org/les-pathologies-rares/behcet/criteres",
+              "slug": "maladie-de-behcet",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Vascularites",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "maladies-systémiques",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Maladie de Still",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-still-de-ladulte/criteres/criteres-de-classification-proposes-fautrel",
+              "slug": "maladie-de-still",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Maladie de Horton",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990",
+              "slug": "maladie-de-horton",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "SAPL",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "content": "https://www.fai2r.org/les-pathologies-rares/syndrome-des-antiphospholipides/criteres/criteres-de-classification-sapl",
+              "slug": "sapl",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Sclérodermie",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "Sclérodermie",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "Classification",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres",
+                  "slug": "classificaion",
+                  "submenu": false
+                },
+                {
+                  "id": "",
+                  "name": "Activité",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "https://sclerodermie.net/2015/01/score-de-rodnan-calculateur/",
+                  "slug": "activite",
+                  "submenu": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "Pathologie osseuse",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "list",
+          "content": "",
+          "slug": "pathologie-osseuse",
+          "submenu": true,
+          "children": []
+        },
+        {
+          "id": "",
+          "name": "Pathologies mécaniques",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "list",
+          "content": "",
+          "slug": "pathologies-mécaniques",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Coxarthrose ",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "coxarthrose",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "Indice fonctionnel de Lequesnes",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf",
+                  "slug": "indice-fonctionnel-de-lequesnes",
+                  "submenu": false
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "Gonarthrose",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "gonarthrose",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "Indice fonctionnel de Lequesnes",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf",
+                  "slug": "indice-fonctionnel-de-lequesnes",
+                  "submenu": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "Syndromes douloureux",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "list",
+          "content": "",
+          "slug": "syndromes-douloureux",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Fibromyalgie ",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "list",
+              "content": "",
+              "slug": "fibromyalgie ",
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "Fist",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "http://medicalcul.free.fr/firstquest.html",
+                  "slug": "first",
+                  "submenu": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "IMC",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.imc.fr/",
+          "slug": "IMC",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Risques cardio-vasculaires",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.agla.ch/fr/calculateurs-outils/calculateur-de-risque-du-gsla",
+          "slug": "risques-cardio-vasculaires",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "LDL-cible",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.ldlcible.com/",
+          "slug": "ldl-cible",
+          "submenu": false
+        }
+      ]
     },
     {
-      "id": 2,
+      "id": "",
       "name": "Recommandations",
       "subtitle": "",
       "appId": 1,
@@ -25,10 +661,10 @@
       "type": "list",
       "content": "",
       "slug": "recommandation",
-      "submenu": false,
+      "submenu": true,
       "children": [
         {
-          "id": 1,
+          "id": "",
           "name": "Polyarthrite Rhumatoïde",
           "subtitle": "",
           "appId": 1,
@@ -36,82 +672,76 @@
           "type": "html",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18303932?via%3Dihub",
           "slug": "polyarthrite-rhumatoïde",
-          "submenu": false,
-          "children": []
+          "submenu": false
         },
         {
-          "id": 2,
+          "id": "",
           "name": "Spondyloarthrite",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
           "type": "html",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18300083?via%3Dihub",
-          "slug": "Spondyloarthrite",
-          "submenu": false,
-          "children": []
+          "slug": "spondyloarthrite",
+          "submenu": false
         },
         {
-          "id": 3,
+          "id": "",
           "name": "Ostéoporose",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
           "type": "html",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18300629?via%3Dihub",
-          "slug": "Ostéoporose",
-          "submenu": false,
-          "children": []
+          "slug": "ostéoporose",
+          "submenu": false
         },
         {
-          "id": 4,
+          "id": "",
           "name": "Goutte",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
           "type": "html",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20300853?via%3Dihub",
-          "slug": "Goutte",
-          "submenu": false,
-          "children": []
+          "slug": "goutte",
+          "submenu": false
         },
         {
-          "id": 5,
+          "id": "",
           "name": "Gonarthrose",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
           "type": "html",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20301573?via%3Dihub",
-          "slug": "Gonarthrose",
-          "submenu": false,
-          "children": []
+          "slug": "gonarthrose",
+          "submenu": false
         },
         {
-          "id": 6,
+          "id": "",
           "name": "Arthrite septique",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
           "type": "html",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20301482?via%3Dihub",
-          "slug": "Arthrite septique",
-          "submenu": false,
-          "children": []
+          "slug": "arthrite septique",
+          "submenu": false
         }
       ]
     },
     {
-    "id": 3,
-    "name": "Bilans diagnostic/suivi",
-    "subtitle": "Sous-titre facultatif",
-    "appId": 1,
-    "parentId": null,
-    "type": "list",
-    "content": "",
-    "slug": "bilan-diagnostic-suivi",
-    "submenu": false,
-    "children": []
-  }
+      "id": "",
+      "name": "Bilans diagnostic/suivi",
+      "subtitle": "Sous-titre facultatif",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "bilan-diagnostic-suivi",
+      "submenu": true,
+      "children": []
+    }
   ]
 }
