@@ -1,20 +1,26 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '@/views/Home.vue'
 import ListPage from '@/views/ListPage.vue'
+import SubListPage from '@/views/SubListPage.vue'
+import ContentPage from '@/views/ContentPage.vue'
 
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
     {
         path: '/',
-        name: 'Home',
-        component: Home
-    },
-    {
-        path: '/list/:slug',
         name: 'ListPage',
         component: ListPage
+    },
+    {
+        path: '/sublist/:slug',
+        name: 'SubListPage',
+        component: SubListPage
+    },
+    {
+        path: '/score/:slug',
+        name: 'ContentPage',
+        component: ContentPage
     },
 ]
 

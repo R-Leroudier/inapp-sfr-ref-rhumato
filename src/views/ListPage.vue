@@ -1,6 +1,10 @@
 <template>
-  <div class="list-page">
-      Hello list page
+  <div class="ListPage">
+     <div class="main-categories">
+        <div v-for="cat in categories" :key="cat.id">
+            <router-link :to="'/sublist/'+cat.slug">{{cat.name}}</router-link>
+        </div>
+    </div>
   </div>
 </template>
 
@@ -9,21 +13,21 @@ import Vue from "vue"
 import DataService from "@/service/DataService"
 
 export default Vue.extend({
-  name: "ListPage",
-  data()
-  {
-    return {
-        list: [],
-    }
-  },
-  mounted()
-  {
-      DataService.load()
+    name: "ListPage",
+    data()
+    {
+        return {
+            categories: []
+        }
+    },
+    mounted()
+    {
+        DataService.load()
             .then(() => {
-                console.log(DataService.$data)
+                this.categories = DataService.$data.tree
             }).catch(e => {
                 console.log(e)
             })
-  },
+    },
 })
 </script>
