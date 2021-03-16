@@ -1,5 +1,5 @@
 <template>
-  <h3>http://medicalcul.free.fr/pr_acreular.html</h3>
+  <h3>http://medicalcul.free.fr/basdai.html</h3>
 </template>
 
 <script lang="ts">
