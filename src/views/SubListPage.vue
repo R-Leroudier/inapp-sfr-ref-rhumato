@@ -1,13 +1,18 @@
 <template>
   <div class="SubListPage">
     <div class="sub-categories">
-      <div v-for="subCategorie in subCategories" :key="subCategorie.id">
-        <div>{{ subCategories.name }}</div>
-        
-        <div v-for="dropdown in subCategorie.children" :key="dropdown.id">
-          <router-link :to="'/score/' + dropdown.slug">{{
-            dropdown.name
-          }}</router-link>
+      <div v-for="node in selectedNode" :key="node.id">
+        <div v-if="node.type === 'list'">
+          <div>{{ node.name }}</div>
+
+          <div v-for="nodeChildren0 in node.children" :key="nodeChildren0.id">
+            <router-link :to="'/score/' + nodeChildren0.slug">{{
+              nodeChildren0.name
+            }}</router-link>
+          </div>
+        </div>
+        <div v-else>
+          <router-link :to="'/score/' + node.slug">{{ node.name }}</router-link>
         </div>
       </div>
     </div>
@@ -22,13 +27,22 @@ export default Vue.extend({
   name: "SubListPage",
   data() {
     return {
-      subCategories: [],
+      selectedNode: [],
     };
   },
   mounted() {
     DataService.load()
       .then(() => {
-        this.subCategories = DataService.$data.tree;
+        const slug = this.$route.params.slug;
+        const dataTree = DataService.$data.tree;
+
+        // Retrive component name from slug.
+        for (let node0 of dataTree) {
+          if (node0.slug === slug) {
+            this.selectedNode = node0.children;
+            return 1;
+          }
+        }
       })
       .catch((e) => {
         console.log(e);

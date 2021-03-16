@@ -12,7 +12,7 @@
       "parentId": null,
       "type": "list",
       "content": "",
-      "slug": "criteres-et-scores",
+      "slug": "criteres-et-scores-1",
       "submenu": true,
       "children": [
         {
@@ -64,6 +64,17 @@
               ]
             }
           ]
+        },
+        {
+          "id": "",
+          "name": "Test",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "http://medicalcul.free.fr/pr_acreular.html",
+          "slug": "acr-eular-2010",
+          "submenu": false
         }
       ]
     },
