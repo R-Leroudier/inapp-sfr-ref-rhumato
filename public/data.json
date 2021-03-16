@@ -155,7 +155,7 @@
                     },
                     {
                       "id": "",
-                      "name": "Classificaton de de New-York (cf tableau)",
+                      "name": "Classificaton de de New-York",
                       "subtitle": "",
                       "appId": 1,
                       "parentId": 2,
@@ -166,7 +166,7 @@
                     },
                     {
                       "id": "",
-                      "name": "Critères de New York modifiés (cf tableau de droite)",
+                      "name": "Critères de New York modifiés",
                       "subtitle": "",
                       "appId": 1,
                       "parentId": 2,
@@ -366,7 +366,7 @@
           "parentId": 2,
           "type": "list",
           "content": "",
-          "slug": "maladies-systémiques",
+          "slug": "maladies-systemiques",
           "submenu": true,
           "children": [
             {
@@ -377,7 +377,7 @@
               "parentId": 2,
               "type": "list",
               "content": "",
-              "slug": "lupus-erythémateux-systémique",
+              "slug": "lupus-erythemateux-systemique",
               "submenu": false
             },
             {
@@ -388,7 +388,7 @@
               "parentId": 2,
               "type": "list",
               "content": "",
-              "slug": "syndrome-de-gougerot-sjögren",
+              "slug": "syndrome-de-gougerot-sjogren",
               "submenu": true,
               "children": [
                 {
@@ -550,7 +550,7 @@
           "parentId": 2,
           "type": "list",
           "content": "",
-          "slug": "pathologies-mécaniques",
+          "slug": "pathologies-mecaniques",
           "submenu": true,
           "children": [
             {
@@ -716,7 +716,7 @@
           "parentId": 2,
           "type": "html",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18300629?via%3Dihub",
-          "slug": "ostéoporose",
+          "slug": "osteoporose",
           "submenu": false
         },
         {
@@ -867,10 +867,7 @@
               "type": "list",
               "content": "",
               "slug": "generalites",
-              "submenu": true,
-              "children": [
-                
-              ]
+              "submenu": false
             },
             {
               "id": "",
@@ -907,7 +904,7 @@
                 },
                 {
                   "id": "",
-                  "name": "Mycophénolate Mofetil (CELLCEPT)",
+                  "name": "Mycophénolate Mofetil",
                   "subtitle": "Sous-titre facultatif",
                   "appId": 1,
                   "parentId": null,
@@ -1065,7 +1062,7 @@
                 },
                 {
                   "id": "",
-                  "name": "Azathioprine (IMUREL)",
+                  "name": "Azathioprine",
                   "subtitle": "Sous-titre facultatif",
                   "appId": 1,
                   "parentId": null,
@@ -1231,7 +1228,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "list",
+          "type": "html",
           "content": "",
           "slug": "ains",
           "submenu": false
@@ -1242,7 +1239,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "list",
+          "type": "html",
           "content": "",
           "slug": "glucocorticoides ",
           "submenu": false
@@ -1253,7 +1250,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "list",
+          "type": "html",
           "content": "",
           "slug": "corticoides",
           "submenu": false
@@ -1326,7 +1323,7 @@
             },
             {
               "id": "",
-              "name": "anti-JAK (baricitinib, tofacitinib, filgotinib, upadacitinib)",
+              "name": "anti-JAK",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
@@ -1420,25 +1417,13 @@
               "slug": "anti-il-1",
               "submenu": false
             },
-                          
-            {
-              "id": "",
-              "name": "Bilan Pré-biothérapie ",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "list",
-              "content": "",
-              "slug": "bilan-pre-biotherapie",
-              "submenu": false
-            },
             {
               "id": "",
               "name": "anti CD-20",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "anti-cd-20",
               "submenu": false
@@ -1449,7 +1434,7 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "abatacept",
               "submenu": false
@@ -1460,7 +1445,7 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "anti-baff",
               "submenu": false
@@ -1471,7 +1456,7 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "bilan-pre-biotherapie ",
               "submenu": false
@@ -1493,7 +1478,7 @@
                   "subtitle": "Sous-titre facultatif",
                   "appId": 1,
                   "parentId": null,
-                  "type": "list",
+                  "type": "html",
                   "content": "",
                   "slug": "spondyloarthrite",
                   "submenu": false
@@ -1504,7 +1489,7 @@
                   "subtitle": "Sous-titre facultatif",
                   "appId": 1,
                   "parentId": null,
-                  "type": "list",
+                  "type": "html",
                   "content": "",
                   "slug": "polyarthrite-rhumatoide",
                   "submenu": false
@@ -1538,7 +1523,7 @@
           "children": [
             {
               "id": "",
-              "name": "Azathioprine (IMUREL)",
+              "name": "Azathioprine",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
@@ -1549,13 +1534,13 @@
             },
             {
               "id": "",
-              "name": "MMF (CELLCEPT) ",
+              "name": "MMF",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
               "type": "list",
               "content": "",
-              "slug": "biphosphonates",
+              "slug": "mmf",
               "submenu":false
             }
           ]
@@ -1573,11 +1558,11 @@
           "children": [
             {
               "id": "",
-              "name": "Biphosphonates (alendronate, risedronate, acide zoledronique)",
+              "name": "Biphosphonates",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "biphosphonates",
               "submenu":false
@@ -1588,7 +1573,7 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "denosumab",
               "submenu": false
@@ -1599,7 +1584,7 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "teriparatide",
               "submenu": false
@@ -1610,7 +1595,7 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "raloxifene",
               "submenu": false
@@ -2112,7 +2097,7 @@
           "parentId": null,
           "type": "html",
           "content": "http://www.cri-net.com/recherche/fiches-pratiques-et-recommandations/dernieres-mises-a-jour",
-          "slug": "sides-ng",
+          "slug": "fiches-du-cri",
           "submenu": false
         },
         {
@@ -2134,7 +2119,7 @@
           "parentId": null,
           "type": "html",
           "content": "http://www.lecofer.org/semiologie.php",
-          "slug": "Examen clinique en vidéo",
+          "slug": "Examen clinique en video",
           "submenu": false
         }
       ]
