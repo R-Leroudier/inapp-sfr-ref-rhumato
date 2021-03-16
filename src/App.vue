@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <router-view></router-view>
+    <!-- <Header></Header> -->
+    <Amor></Amor>
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -9,9 +10,10 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Header from "@/components/Header.vue";
+import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
 
 export default Vue.extend({
-  components: { Header },
+  components: { Header, Amor },
   data() {
     return {};
   },
