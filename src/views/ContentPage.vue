@@ -31,17 +31,29 @@ export default Vue.extend({
         for (let node0 of dataTree) {
           if (node0.slug === slug) {
             this.componentName = node0.component;
-            return 1;
+            break;
           }
           for (let node1 of node0.children) {
             if (node1.slug === slug) {
               this.componentName = node1.component;
-              return 1;
+              break;
             }
             for (let node2 of node1.children) {
               if (node2.slug === slug) {
                 this.componentName = node2.component;
-                return 1;
+                break;
+              }
+              for (let node3 of node2.children) {
+                if (node3.slug === slug) {
+                  this.componentName = node3.component;
+                  break;
+                }
+                for (let node4 of node3.children) {
+                  if (node4.slug === slug) {
+                    this.componentName = node4.component;
+                    break;
+                  }
+                }
               }
             }
           }

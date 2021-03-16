@@ -62,6 +62,17 @@
                   ]
                 }
               ]
+            },
+            {
+              "id": "",
+              "name": "test-239",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "content": "http://medicalcul.free.fr/pr_acreular.html",
+              "slug": "test-34",
+              "submenu": false
             }
           ]
         },
@@ -73,7 +84,18 @@
           "parentId": 2,
           "type": "html",
           "content": "http://medicalcul.free.fr/pr_acreular.html",
-          "slug": "acr-eular-2010",
+          "slug": "test-4",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Test2",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "http://medicalcul.free.fr/pr_acreular.html",
+          "slug": "test-5",
           "submenu": false
         }
       ]

@@ -1,9 +1,9 @@
 <template>
   <div class="ListPage">
     <div class="main-categories">
-      <div v-for="categorie in categories" :key="categorie.id">
-        <router-link :to="'/sublist/' + categorie.slug">{{
-          categorie.name
+      <div v-for="node0 in nodes0" :key="node0.id">
+        <router-link :to="'/sublist/' + node0.slug">{{
+          node0.name
         }}</router-link>
       </div>
     </div>
@@ -18,13 +18,13 @@ export default Vue.extend({
   name: "ListPage",
   data() {
     return {
-      categories: [],
+      nodes0: [],
     };
   },
   mounted() {
     DataService.load()
       .then(() => {
-        this.categories = DataService.$data.tree;
+        this.nodes0 = DataService.$data.tree;
       })
       .catch((e) => {
         console.log(e);
