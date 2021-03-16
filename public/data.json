@@ -450,12 +450,12 @@
                 },
                 {
                   "id": "",
-                  "name": "",
+                  "name": "BVAS",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
-                  "content": "BVAS ",
+                  "content": "",
                   "slug": "bvas",
                   "submenu": false
                 }
