@@ -2015,6 +2015,243 @@
           "submenu": false
         }
       ]
+    },
+    {
+      "id": "",
+      "name": "Aide au codage",
+      "subtitle": "Sous-titre facultatif",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "aide-au-codage",
+      "submenu": false
+    },
+    {
+      "id": "",
+      "name": "Ressources formations",
+      "subtitle": "Sous-titre facultatif",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "ressources-formations",
+      "submenu": true,
+      "children": [
+        {
+          "id": "",
+          "name": "Médiathèque de la SFR",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "https://mediatheque.larhumatologie.fr/",
+          "slug": "mediatheque-de-la-sfr",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "COFER",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "http://www.lecofer.org/",
+          "slug": "cofer",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Les mercredis du COFER",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "https://www.youtube.com/channel/UC8WqhM9HWQ5QzUzmveH8wiQ",
+          "slug": "les-mercredis-du-cofer",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "SIDES NG",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "https://www.uness.fr/plateformes-sides/sides-ng",
+          "slug": "sides-ng",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "GRIO",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "http://www.grio.org/",
+          "slug": "grio",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "PNDS",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "https://www.has-sante.fr/jcms/c_1340879/fr/protocoles-nationaux-de-diagnostic-et-de-soins-pnds",
+          "slug": "pnds",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "FICHES DU CRI",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "http://www.cri-net.com/recherche/fiches-pratiques-et-recommandations/dernieres-mises-a-jour",
+          "slug": "sides-ng",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "FAI2R",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "https://www.fai2r.org/",
+          "slug": "fai2r",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Examen clinique en vidéo",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "http://www.lecofer.org/semiologie.php",
+          "slug": "Examen clinique en vidéo",
+          "submenu": false
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "Actualités",
+      "subtitle": "Sous-titre facultatif",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "actualites",
+      "submenu": true,
+      "children": [
+        {
+          "id": "",
+          "name": "Agenda",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "https://sfr.larhumatologie.fr/agenda",
+          "slug": "agenda",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Congrès",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "https://congres.la-rhumatologie.com/",
+          "slug": "congres",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Evènements REF",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "evenement-ref",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Veille bibliographique de la REF",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "veille-bibliographique-de-la-ref",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Appel à observations",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "https://sfr.larhumatologie.fr/presentation/recherche-innovation",
+          "slug": "appel-a-observations",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Annonces",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "https://sfr.larhumatologie.fr/annonces",
+          "slug": "annonces",
+          "submenu": false
+        },
+        {
+          "id": "",
+          "name": "conctacts",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "sectionref@gmail.com",
+          "slug": "contacts",
+          "submenu": false
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "Fonctions recherches",
+      "subtitle": "Sous-titre facultatif",
+      "appId": 1,
+      "parentId": null,
+      "type": "list",
+      "content": "",
+      "slug": "fonctions-recherche",
+      "submenu": true,
+      "children": [
+        {
+          "id": "",
+          "name": "Sous sections dans l'arborescence",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "sous-sections-dans-l-arborescence",
+          "submenu": false
+        }
+      ]
     }
   ]
 }
