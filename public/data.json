@@ -57,6 +57,7 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/pr_acreular.html",
                       "slug": "acr-eular-2010",
+                      "component": "AcrEular2010",
                       "submenu": false
                     }
                   ]
@@ -184,6 +185,7 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/spondylo_asas.html",
                       "slug": "asas",
+                      "component": "Asas",
                       "submenu": false
                     }
                   ]
@@ -436,7 +438,7 @@
               "content": "",
               "slug": "maladies-systémiques",
               "submenu": true,
-              "children" : [
+              "children": [
                 {
                   "id": "",
                   "name": "FFS",
@@ -845,8 +847,7 @@
       "content": "",
       "slug": "conception-grossesse-allaitement-et-rhumato-pediatrie",
       "submenu": true,
-      "children": 
-      [
+      "children": [
         {
           "id": "",
           "name": "Désir de grossesse",
@@ -1345,7 +1346,6 @@
           "slug": "bdmard",
           "submenu": true,
           "children": [
-                          
             {
               "id": "",
               "name": "anti-TNF",
@@ -1357,7 +1357,6 @@
               "slug": "anti-tnf",
               "submenu": false
             },
-                          
             {
               "id": "",
               "name": "anti IL-17",
@@ -1369,7 +1368,6 @@
               "slug": "anti-il-17",
               "submenu": false
             },
-                          
             {
               "id": "",
               "name": "anti IL-12/23",
@@ -1381,7 +1379,6 @@
               "slug": "anti-il-12/23",
               "submenu": false
             },
-                          
             {
               "id": "",
               "name": "anti IL-23",
@@ -1393,7 +1390,6 @@
               "slug": "anti-il-23",
               "submenu": false
             },
-                          
             {
               "id": "",
               "name": "anti IL-6R",
@@ -1405,7 +1401,6 @@
               "slug": "anti-il-6R",
               "submenu": false
             },
-                          
             {
               "id": "",
               "name": "anti IL-1",
@@ -1494,7 +1489,6 @@
                   "slug": "polyarthrite-rhumatoide",
                   "submenu": false
                 }
-
               ]
             }
           ]
@@ -1530,7 +1524,7 @@
               "type": "list",
               "content": "",
               "slug": "azathioprine",
-              "submenu":false
+              "submenu": false
             },
             {
               "id": "",
@@ -1541,7 +1535,7 @@
               "type": "list",
               "content": "",
               "slug": "mmf",
-              "submenu":false
+              "submenu": false
             }
           ]
         },
@@ -1565,7 +1559,7 @@
               "type": "html",
               "content": "",
               "slug": "biphosphonates",
-              "submenu":false
+              "submenu": false
             },
             {
               "id": "",
@@ -1848,7 +1842,7 @@
               "slug": "tableau-recapitulatifs",
               "submenu": false
             }
-            ]
+          ]
         },
         {
           "id": "",
