@@ -20,8 +20,8 @@ export default Vue.extend({
   components: {
     Score1,
     AcrEular2010,
-    Asas
-    NewYorkClassification
+    Asas,
+    NewYorkClassification,
     Amor,
   },
   data() {
