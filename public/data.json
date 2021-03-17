@@ -155,14 +155,15 @@
                     },
                     {
                       "id": "",
-                      "name": "Classificaton de de New-York",
+                      "name": "Classificaton de New-York",
                       "subtitle": "",
                       "appId": 1,
                       "parentId": 2,
                       "type": "",
                       "content": "",
-                      "slug": "classificaton-de-de-new-york",
-                      "submenu": false
+                      "slug": "classificaton-de-new-york",
+                      "submenu": false,
+                      "component":"NewYorkClassification"
                     },
                     {
                       "id": "",
