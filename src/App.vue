@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Header></Header>
-    <Das28></Das28>
     <router-view></router-view>
   </div>
 </template>
@@ -10,10 +9,9 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Header from "@/components/Header.vue";
-import Das28 from "@/components/scores/RIC/Polyarthrite rhumatoide/Das28.vue"
 
 export default Vue.extend({
-  components: { Header, Das28 },
+  components: { Header },
   data() {
     return {};
   },

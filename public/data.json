@@ -81,7 +81,8 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/das28.html",
                       "slug": "DAS28",
-                      "submenu": false
+                      "submenu": false,
+                      "component":"Das28"
                     },
                     {
                       "id": "",

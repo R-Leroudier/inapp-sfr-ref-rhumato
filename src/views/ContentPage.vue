@@ -10,11 +10,13 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
+import Das28 from "@/components/scores/RIC/Polyarthrite rhumatoide/Das28.vue"
 
 export default Vue.extend({
   name: "Home",
   components: {
     Score1,
+    Das28,
   },
   data() {
     return {
