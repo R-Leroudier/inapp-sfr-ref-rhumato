@@ -12,7 +12,6 @@
         class="visually-hidden"
         value="1"
         v-model="questions"
-        @change="total()"
       />
       <div class="control-me"></div>
     </div>
@@ -24,7 +23,6 @@
         class="visually-hidden"
         value="2"
         v-model="questions"
-        @change="total()"
       />
       <div class="control-me"></div>
     </div>
@@ -39,7 +37,6 @@
         class="visually-hidden"
         value="3"
         v-model="questions"
-        @change="total()"
       />
       <div class="control-me"></div>
     </div>
@@ -51,7 +48,6 @@
         class="visually-hidden"
         value="4"
         v-model="questions"
-        @change="total()"
       />
       <div class="control-me"></div>
     </div>
@@ -67,14 +63,13 @@
         class="visually-hidden"
         value="5"
         v-model="questions"
-        @change="total()"
       />
       <div class="control-me"></div>
     </div>
     <div>
-      <p>{{ total() }} Points</p>
+      <p>{{ this.questions.length }} Points</p>
       <p>0 Critère d'exclusion</p>
-      <p v-if="total() >= 3">Positif</p>
+      <p v-if="this.questions.length >= 3">Positif</p>
       <p v-else>Négatif</p>
       <p>Si 3 critères sont présents, la sensibilité est de 93,5% et la spécificité est de 91,2%</p>
     </div>
@@ -92,11 +87,6 @@ export default Vue.extend({
     };
   },
   mounted() {},
-  methods: {
-    total() {
-      return this.questions.length;
-    },
-  },
 });
 </script>
 
