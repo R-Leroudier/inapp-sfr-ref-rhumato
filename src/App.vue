@@ -9,11 +9,11 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 
-import Template from "@/components/Template/template.vue";
 import Header from "@/components/Header.vue";
 
+
 export default Vue.extend({
-  components: { Template , Header },
+  components: { Header},
   data() {
     return {};
   },
