@@ -1,10 +1,9 @@
 <template>
-<div>
+<div >
 
 <h2 class="title">Score DAS 28</h2>
 <p class="description"></p>
 <span class="line">------</span>
-<br>
 <card class="introduction">
     <h5>Interprétation:</h5>
      <p>Le nombre d'articulations douloureuses (de 0 à 28) est indiqué par le patient lors de la consultation. Le nombre d'articulations gonflées est constaté par le médecin lors de la consultation. Attention, les articulations des pieds et des chevilles ne sont pas prises en compte.</p>
@@ -12,25 +11,34 @@
      <p>Lors de l'utilisation de la VS, le nombre à indiquer est le nombre de mm à la première heure.</p>
 
 </card>
-<form class="form">
+<form class="form" style="display:flex; flex-direction:column">
+    <section>
 <label class="categorie">Articulations Douloureuses</label> 
-<input type="number" required v-model="valuePainfullJoint" >
+<input type="number" required v-model="valuePainfullJoint" class="inputNumber">
+    </section>
 
+<section>
 <label class="categorie">Articulations Gonflées</label>
-<input type="number" required v-model="valueSwollenJoint">
+<input type="number" required v-model="valueSwollenJoint" class="inputNumber">
+</section>
 
+<section>
 <label class="categorie">Evaluation de la maladie</label>
-<input type="number" required v-model="valueDiseaseAssesment">
+<input type="number" required v-model="valueDiseaseAssesment" class="inputNumber">
+</section>
 
+<section>
 <label class="categorie">V.S. ou C.R.P. (mm.h1 ou mg/l)</label>
-<input type="number" required v-model="valueVsCrp">
+<input type="number" required v-model="valueVsCrp" class="inputNumber">
+</section>
 
+<section>
 <input type="radio" class="btn" value="Vs" v-model="picked"><label for="one">Utiliser V.S.</label>
+
 <input type="radio" class="btn validate" value="Crp" v-model="picked"><label for="one">Utiliser C.R.P.</label>
+</section>
 
-<button type="button" class="btn validate" v-on:click="calcScore"> calculer</button>
-<button type="button" class="btn validate">annuler</button>
-
+<button type="button" class="btn validate" v-on:click="calcScore" > Voir résultat</button>
 </form>
 
 <card class="result">
@@ -110,6 +118,15 @@ export default Vue.extend({
 
 
 
-<style></style>
+<style>
+.inputNumber{
+    width:60px;
+}
+
+button{
+    width:150px;
+    align-items: center;
+}
+</style>
 
 
