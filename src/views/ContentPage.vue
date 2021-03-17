@@ -10,7 +10,7 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
-import Behcet from '@/components/scores/MaladiesSystemiques/BechetClassification.vue';
+import Behcet from '@/components/scores/MaladiesSystemiques/Behcet.vue';
 
 export default Vue.extend({
   name: "Home",
@@ -36,11 +36,11 @@ export default Vue.extend({
             break;
           }
           for (let node1 of node0.children) {
-            if (node1.slug === slug) {
+            if (node1.slug === slug) {              
               this.componentName = node1.component;
               break;
             }
-            for (let node2 of node1.children) {
+            for (let node2 of node1.children) {              
               if (node2.slug === slug) {
                 this.componentName = node2.component;
                 break;
@@ -51,7 +51,7 @@ export default Vue.extend({
                   break;
                 }
                 for (let node4 of node3.children) {
-                  if (node4.slug === slug) {
+                  if (node4.slug === slug) {                    
                     this.componentName = node4.component;
                     break;
                   }

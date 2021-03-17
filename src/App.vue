@@ -1,6 +1,7 @@
 <template>
   <div id="app">     
       <Header></Header>
+      <Behcet></Behcet>
     <router-view></router-view>
   </div>
 </template>
@@ -9,9 +10,10 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Header from "@/components/Header.vue";
+import Behcet from '@/components/scores/MaladiesSystemiques/Behcet.vue'
 
 export default Vue.extend({
-  components: { Header },
+  components: { Header,Behcet },
   data() {
     return {};
   },
