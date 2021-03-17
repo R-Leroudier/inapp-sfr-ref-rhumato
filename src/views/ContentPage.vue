@@ -10,21 +10,33 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
+import PathologieOsseuse from "@/components/scores/PathologieOsseuse.vue";
+import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
+import SystemicSclerodermaAcrEular from "@/components/scores/MaladiesSystemiques/SystemicSclerodermaAcrEular.vue";
+import Das28 from "@/components/scores/RIC/Polyarthrite rhumatoide/Das28.vue"
 import AcrEular2010 from "@/components/scores/RIC/Polyarthrite rhumatoide/AcrEular2010.vue";
 import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
 import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
 import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
 import IMC from "@/components/scores/Imc.vue";
+import Cdai from "@/components/scores/RIC/Polyarthrite rhumatoide/Cdai.vue";
+import Gsla from "@/components/scores/Gsla.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
     Score1,
+    PathologieOsseuse,
+    Sharp,
+    SystemicSclerodermaAcrEular,
+    Das28,
     AcrEular2010,
     Asas,
     NewYorkClassification,
     Amor,
-    IMC
+    IMC,
+    Cdai,
+    Gsla,
   },
   methods: {
     searchComponentName(nodes, slug) {

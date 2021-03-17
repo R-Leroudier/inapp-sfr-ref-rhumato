@@ -82,7 +82,8 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/das28.html",
                       "slug": "DAS28",
-                      "submenu": false
+                      "submenu": false,
+                      "component":"Das28"
                     },
                     {
                       "id": "",
@@ -93,6 +94,7 @@
                       "type": "html",
                       "content": "voir application rheumatools : scores => polyarthrite rhumatoide => CDAI/SDAI",
                       "slug": "cdai",
+                      "component": "Cdai",
                       "submenu": false
                     },
                     {
@@ -415,6 +417,7 @@
               "appId": 1,
               "parentId": 2,
               "type": "html",
+              "component": "Sharp",
               "content": "https://maladie-autoimmune.fr/connectivite-mixte-sharp-mctd/",
               "slug": "syndrome-de-sharp",
               "submenu": false
@@ -505,6 +508,7 @@
               "appId": 1,
               "parentId": 2,
               "type": "list",
+              "component": "SystemiSclerodermaAcrEular",
               "content": "",
               "slug": "Sclérodermie",
               "submenu": true,
@@ -516,6 +520,7 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
+                  "component": "SystemiSclerodermaAcrEular",
                   "content": "https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres",
                   "slug": "classificaion",
                   "submenu": false
@@ -541,7 +546,8 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "list",
+          "type": "html",
+          "component":"PathologieOsseuse",
           "content": "",
           "slug": "pathologie-osseuse",
           "submenu": false
@@ -663,6 +669,7 @@
           "appId": 1,
           "parentId": 2,
           "type": "html",
+          "component" : "Gsla",
           "content": "https://www.agla.ch/fr/calculateurs-outils/calculateur-de-risque-du-gsla",
           "slug": "risques-cardio-vasculaires",
           "submenu": false
