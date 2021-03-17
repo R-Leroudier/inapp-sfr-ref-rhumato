@@ -53,7 +53,5 @@ export default Vue.extend({
 </script>
 <style lang="scss">
 .sub-categories {
-  text-align: left;
-  margin-left: 100px;
 }
 </style>

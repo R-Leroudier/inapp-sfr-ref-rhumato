@@ -50,11 +50,21 @@ export default {
 <style lang="scss">
 .tree-menu {
   .label-wrapper {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-    .has-children {
-      cursor: pointer;
+    color: red;
+    width: 100%;
+    height: 20px;
+    background: aqua;
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    a {
+      display: block;
     }
   }
 }
