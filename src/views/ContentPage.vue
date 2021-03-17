@@ -10,6 +10,7 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
+import Basdai from "@/components/scores/RIC/Spondyloarthrite/Basdai.vue"
 import Behcet from '@/components/scores/MaladiesSystemiques/Behcet.vue';
 import PathologieOsseuse from "@/components/scores/PathologieOsseuse.vue";
 import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
@@ -28,6 +29,7 @@ export default Vue.extend({
   name: "Home",
   components: {
     Score1,
+    Basdai,
     Behcet,
     PathologieOsseuse,
     Sharp,

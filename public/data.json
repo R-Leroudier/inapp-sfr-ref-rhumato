@@ -215,7 +215,8 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/basdai.html",
                       "slug": "basdai",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "basdai"
                     },
                     {
                       "id": "",
