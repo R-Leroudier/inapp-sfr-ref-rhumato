@@ -63,7 +63,9 @@
       <button type="button" @click="choice4(1)" class="btn">
         VS et CRP anormales.
       </button>
-      <card class="result">score {{ calcTotal() }} </card>
+      <button @click="calcTotal()">Calcul</button>
+      <button @click="reset()">Annule</button>
+      <card class="result">score : {{ this.result }} </card>
     </form>
     <span class="line">------</span>
     <span>
@@ -91,6 +93,7 @@ export default Vue.extend({
       score2: 0,
       score3: 0,
       score4: 0,
+      result: 0,
     };
   },
   methods: {
@@ -107,7 +110,14 @@ export default Vue.extend({
       this.score4 = number;
     },
     calcTotal() {
-      return this.score1 + this.score2 + this.score3 + this.score4;
+      this.result = this.score1 + this.score2 + this.score3 + this.score4;
+    },
+    reset() {
+      this.score1 = 0;
+      this.score2 = 0;
+      this.score3 = 0;
+      this.score4 = 0;
+      this.result = 0;
     },
   },
 });
