@@ -10,11 +10,13 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
+import Behcet from '@/components/scores/MaladiesSystemiques/BechetClassification.vue';
 
 export default Vue.extend({
   name: "Home",
   components: {
     Score1,
+    Behcet,
   },
   data() {
     return {

@@ -424,7 +424,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/behcet/criteres",
               "slug": "maladie-de-behcet",
-              "submenu": false
+              "submenu": false,
+              "component":"Behcet"
             },
             {
               "id": "",
