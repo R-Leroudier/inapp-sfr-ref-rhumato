@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Sharp></Sharp>
     <router-view></router-view>
   </div>
 </template>
@@ -9,10 +8,9 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 
-import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
 
 export default Vue.extend({
-  components: { Sharp },
+  components: {  },
   data() {
     return {};
   },

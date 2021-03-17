@@ -411,6 +411,7 @@
               "appId": 1,
               "parentId": 2,
               "type": "html",
+              "component": "Sharp",
               "content": "https://maladie-autoimmune.fr/connectivite-mixte-sharp-mctd/",
               "slug": "syndrome-de-sharp",
               "submenu": false
@@ -501,6 +502,7 @@
               "appId": 1,
               "parentId": 2,
               "type": "list",
+              "component": "SystemiSclerodermaAcrEular",
               "content": "",
               "slug": "Sclérodermie",
               "submenu": true,
