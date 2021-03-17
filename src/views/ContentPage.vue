@@ -10,11 +10,19 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
+import AcrEular2010 from "@/components/scores/RIC/Polyarthrite rhumatoide/AcrEular2010.vue";
+import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
+import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
+import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
     Score1,
+    AcrEular2010,
+    Asas,
+    NewYorkClassification,
+    Amor,
   },
   data() {
     return {
