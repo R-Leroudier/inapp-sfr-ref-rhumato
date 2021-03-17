@@ -10,6 +10,9 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
+import PathologieOsseuse from "@/components/scores/PathologieOsseuse.vue";
+import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
+import SystemicSclerodermaAcrEular from "@/components/scores/MaladiesSystemiques/SystemicSclerodermaAcrEular.vue";
 import Das28 from "@/components/scores/RIC/Polyarthrite rhumatoide/Das28.vue"
 import AcrEular2010 from "@/components/scores/RIC/Polyarthrite rhumatoide/AcrEular2010.vue";
 import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
@@ -21,6 +24,9 @@ export default Vue.extend({
   name: "Home",
   components: {
     Score1,
+    PathologieOsseuse,
+    Sharp,
+    SystemicSclerodermaAcrEular,
     Das28,
     AcrEular2010,
     Asas,

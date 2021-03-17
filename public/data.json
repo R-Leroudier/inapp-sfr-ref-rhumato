@@ -519,6 +519,7 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
+                  "component": "SystemiSclerodermaAcrEular",
                   "content": "https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres",
                   "slug": "classificaion",
                   "submenu": false
@@ -545,6 +546,7 @@
           "appId": 1,
           "parentId": 2,
           "type": "html",
+          "component":"PathologieOsseuse",
           "content": "",
           "slug": "pathologie-osseuse",
           "submenu": false
