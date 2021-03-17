@@ -37,10 +37,9 @@ critères ACR/EULAR</h2>
 <br>
 <button type="button" class="btn validate"> calcul</button>
 <button type="button" class="btn validate"> annule</button>
-<br><card class="result">score
-
-</card>
 </form>
+<card class="result">score
+</card>
 <span class="line"></span>
 
 </div>

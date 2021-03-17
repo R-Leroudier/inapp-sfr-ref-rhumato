@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Template></Template>
     <Header></Header>
     <router-view></router-view>
   </div>
@@ -8,10 +9,12 @@
 <script lang="ts">
 import Vue from "vue";
 import DataService from "@/service/DataService";
+
+import Template from "@/components/Template/template.vue";
 import Header from "@/components/Header.vue";
 
 export default Vue.extend({
-  components: { Header },
+  components: { Template , Header },
   data() {
     return {};
   },
@@ -55,3 +58,4 @@ export default Vue.extend({
   color: #42b983;
 }
 </style>
+
