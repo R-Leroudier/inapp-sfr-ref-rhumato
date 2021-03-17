@@ -415,6 +415,7 @@
               "appId": 1,
               "parentId": 2,
               "type": "html",
+              "component" : "Sharp",
               "content": "https://maladie-autoimmune.fr/connectivite-mixte-sharp-mctd/",
               "slug": "syndrome-de-sharp",
               "submenu": false
@@ -472,6 +473,7 @@
               "appId": 1,
               "parentId": 2,
               "type": "html",
+              "component": "FautrelClassification",
               "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-still-de-ladulte/criteres/criteres-de-classification-proposes-fautrel",
               "slug": "maladie-de-still",
               "submenu": false

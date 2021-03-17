@@ -15,6 +15,7 @@ import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
 import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
 import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
 import Gsla from "@/components/scores/Gsla.vue";
+import FautrelClassification from "@/components/scores/MaladiesSystemiques/FautrelClassification.vue";
 
 export default Vue.extend({
   name: "Home",
@@ -25,6 +26,7 @@ export default Vue.extend({
     NewYorkClassification,
     Amor,
     Gsla,
+    FautrelClassification,
   },
   data() {
     return {
