@@ -36,6 +36,7 @@ export default Vue.extend({
     Amor,
     Cdai,
     Gsla,
+    Sdai,
   },
   methods: {
     searchComponentName(nodes, slug) {
@@ -50,7 +51,6 @@ export default Vue.extend({
         }
       }
     },
-    Sdai,
   },
   data() {
     return {
