@@ -106,6 +106,7 @@
                       "type": "html",
                       "content": "voir application rheumatools : scores => polyarthrite rhumatoide => CDAI/SDAI",
                       "slug": "sdai",
+                      "component": "Sdai",
                       "submenu": false
                     },
                     {
