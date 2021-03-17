@@ -10,11 +10,17 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
+import PathologieOsseuse from "@/components/scores/PathologieOsseuse.vue";
+import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
+import SystemicSclerodermaAcrEular from "@/components/scores/MaladiesSystemiques/SystemicSclerodermaAcrEular.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
     Score1,
+    PathologieOsseuse,
+    Sharp,
+    SystemicSclerodermaAcrEular,
   },
   data() {
     return {
