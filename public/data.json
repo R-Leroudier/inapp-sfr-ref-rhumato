@@ -151,7 +151,8 @@
                       "type": "html",
                       "content": "http://www.rhumato.info/fiches-pratiques2/166-spondylarthrite-ankylosante/1747-criteres-damor-des-spondylarthropathies",
                       "slug": "amor",
-                      "submenu": false
+                      "submenu": false,
+                      "component":"amor" 
                     },
                     {
                       "id": "",
