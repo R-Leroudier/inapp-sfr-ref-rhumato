@@ -2,34 +2,71 @@
   <!-- <h3> https://www.fai2r.org/les-pathologies-rares/behcet/criteres </h3> -->
   <div id="containeer">
     <p>Critères</p>
-    <div id="list-container">
+    <!-- first choice -->
       <label> Aphtose orale </label>
-      <button type="button" class="btn" @click="choice1(1)">
-        <span v-if="this.score1 !== 0"> oui </span>
-        <span v-else> non </span>
-      </button>
+      <span v-if="this.score1 == 0">
+      <button type="button" class="btn-1" @click="choice1(1);">oui</button>
+      </span>
+      <span v-else>
+      <button type="button" class="btn-1" @click="choice1(0)">non</button>
+      </span>
+    <!-- second choice -->
       <br>
       <label>Aphtose génitale </label>
-      <!-- <input type="checkbox" v-model="toggle[2]" @click="toggle[2] == false ? calcPlus(1) : calcLess(1)"><br> -->
-
-      <label> Lésions cutanées  </label>
-
+      <span v-if="this.score2 == 0">
+      <button type="button" @click="choice2(2);">oui</button>
+      </span>
+      <span v-else>
+      <button type="button" @click="choice2(0)">non</button>
+      </span>
+      <br>
+      <!-- third choice -->
+      <label> Lésions cutanées </label>
+      <span v-if="this.score3 == 0">
+      <button type="button" @click="choice3(1);">oui</button>
+      </span>
+      <span v-else>
+      <button type="button" @click="choice3(0)">non</button>
+      </span>
+      <br>
+      <!-- fourth choice -->
       <label> Atteinte oculaire </label>
-
+      <span v-if="this.score4 == 0">
+      <button type="button" @click="choice4(2);">oui</button>
+      </span>
+      <span v-else>
+      <button type="button" @click="choice4(0)">non</button>
+      </span>
+      <br>
+      <!-- fifth choice -->
       <label> Test pathergique positif  </label>
-
+      <span v-if="this.score5 == 0">
+      <button type="button" @click="choice5(1);">oui</button>
+      </span>
+      <span v-else>
+      <button type="button" @click="choice5(0)">non</button>
+      </span>
+      <br>
+      <!-- sixth choice -->
       <label> Lésion vasculaire (thrombose artérielle, veineuse, anévrysme) </label>
-    </div>
+      <span v-if="this.score6 == 0">
+      <button type="button" @click="choice6(1);">oui</button>
+      </span>
+      <span v-else>
+      <button type="button" @click="choice6(0)">non</button>
+      </span>
+      <br>
+
     <br>
-    <div id="example">
-      <span>{{ calcTotal() }} Points</span> <br>
-      <span>{{ }} Critère d'exclusion</span>
-    </div>
+      <span>{{ total() }} Points</span> <br>
+      <span>{{ 0 }} Critère d'exclusion</span> <br>
+      <span v-if="total() >= 3"> POSITIF</span> <span v-else>NEGATIF</span>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+
 export default Vue.extend({
   name: "Behcet",
   mounted() {},
@@ -44,25 +81,25 @@ export default Vue.extend({
     };
   },
   methods: {
-    choice1(number) {
-      this.score1 = number;
+    choice1(x) {
+      this.score1 = x;
     },
-    choice2(number) {
-      this.score2 = number;
+    choice2(x) {
+      this.score2 = x;
     },
-    choice3(number) {
-      this.score3 = number;
+    choice3(x) {
+      this.score3 = x;
     },
-    choice4(number) {
-      this.score4 = number;
+    choice4(x) {
+      this.score4 = x;
     },
-    choice5(number) {
-      this.score5 = number;
+    choice5(x) {
+      this.score5 = x;
     },
-    choice6(number) {
-      this.score6 = number;
+    choice6(x) {
+      this.score6 = x;
     },
-    calcTotal() {
+    total() {
       return this.score1 + this.score2 + this.score3 + this.score4 + this.score5 + this.score6;
     },
   },
