@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <Template></Template>
-    <Header></Header>
+    <Sharp></Sharp>
     <router-view></router-view>
   </div>
 </template>
@@ -10,11 +9,10 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 
-import Template from "@/components/Template/template.vue";
-import Header from "@/components/Header.vue";
+import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
 
 export default Vue.extend({
-  components: { Template , Header },
+  components: { Sharp },
   data() {
     return {};
   },
