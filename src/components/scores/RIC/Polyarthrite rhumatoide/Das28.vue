@@ -125,7 +125,6 @@ export default Vue.extend({
 
 button{
     width:150px;
-    align-items: center;
 }
 </style>
 
