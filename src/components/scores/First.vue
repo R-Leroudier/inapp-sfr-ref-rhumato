@@ -101,7 +101,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Score1",
+  name: "First",
   data() {
     return {
       quest: [],
