@@ -10,13 +10,11 @@
     </card>
 
     <form class="form">
-      <label for="weight"> poid</label>
-      <input id="weight" type="text" />
-      <label for="size">taille</label>
-      <input id="size" type="text" />
-      <label for="size">Date</label>
-      <input id="size" type="date" />
-      <input type="submit" value="Ajouter" />
+      <label for="weight"> Poid : </label>
+      <input v-model="weight" id="weight" type="text" />
+      <label for="size">Taille : </label>
+      <input v-model="size" id="size" type="text" />
+      <input type="submit" @click="getResult()" value="Valider" />
     </form>
     <card class="result">
       <p>{{ this.result }}</p>
@@ -39,24 +37,50 @@ export default Vue.extend({
   mounted() {},
   data() {
     return {
-      point: {
-        weight: null,
-        size: null,
-        date: null,
-        imc: null,
-        detail: null,
-      },
-      points: [],
+      weight: null,
+      size: null,
+      imc: null,
+      detail: null,
+      result: null,
     };
   },
   methods: {
-    getDetail() {},
-    addPoint() {},
-    getImc(weight, size) {
-      return weight / (size * size);
+    getDetail(imc) {
+      if (imc < 16.5) {
+        return "Famine";
+      }
+      if (imc >= 16.5 && imc < 18.5) {
+        return "maigreur";
+      }
+      if (imc >= 18.5 && imc <= 25) {
+        return "corpulence normale";
+      }
+      if (imc > 25 && imc <= 30) {
+        return "surpoids";
+      }
+      if (imc > 30 && imc <= 35) {
+        return "Obésité modérée";
+      }
+      if (imc > 35 && imc <= 40) {
+        return "Obésité sévère";
+      }
+      if (imc > 40) {
+        return "Obésité morbide";
+      }
     },
-    deletePoint() {},
-    getPoints() {},
+    getImc(weight, size) {
+      return this.arround(weight / (size * size));
+    },
+    arround(nombre) {
+      return Math.round(100 * nombre) / 100;
+    },
+    getResult() {
+      this.result =
+        "IMC : " +
+        this.getImc(this.weight, this.size) +
+        " Détails : " +
+        this.getDetail(this.getImc(this.weight, this.size));
+    },
   },
 });
 </script>
