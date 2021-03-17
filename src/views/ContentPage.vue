@@ -15,6 +15,7 @@ import AcrEular2010 from "@/components/scores/RIC/Polyarthrite rhumatoide/AcrEul
 import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
 import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
 import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
+import Gsla from "@/components/scores/Gsla.vue";
 
 export default Vue.extend({
   name: "Home",
@@ -25,6 +26,7 @@ export default Vue.extend({
     Asas,
     NewYorkClassification,
     Amor,
+    Gsla,
   },
   methods: {
     searchComponentName(nodes, slug) {

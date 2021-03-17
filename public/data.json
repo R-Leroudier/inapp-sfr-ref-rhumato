@@ -663,6 +663,7 @@
           "appId": 1,
           "parentId": 2,
           "type": "html",
+          "component" : "Gsla",
           "content": "https://www.agla.ch/fr/calculateurs-outils/calculateur-de-risque-du-gsla",
           "slug": "risques-cardio-vasculaires",
           "submenu": false
