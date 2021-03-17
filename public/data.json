@@ -502,7 +502,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/syndrome-des-antiphospholipides/criteres/criteres-de-classification-sapl",
               "slug": "sapl",
-              "submenu": false
+              "submenu": false,
+              "component": "Sapl"
             },
             {
               "id": "",
