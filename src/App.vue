@@ -9,10 +9,11 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 
-import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
+import Header from "@/components/Header.vue";
+
 
 export default Vue.extend({
-  components: { Sharp },
+  components: { Header},
   data() {
     return {};
   },
