@@ -9,12 +9,11 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 
-import Header from "@/components/Header.vue";
-import FautrelClassification from "./components/scores/MaladiesSystemiques/FautrelClassification.vue";
 
+import FautrelClassification from "@/components/scores/MaladiesSystemiques/FautrelClassification.vue";
 
 export default Vue.extend({
-  components: { Header, FautrelClassification},
+  components: { FautrelClassification },
   data() {
     return {};
   },

@@ -10,10 +10,16 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
+import PathologieOsseuse from "@/components/scores/PathologieOsseuse.vue";
+import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
+import SystemicSclerodermaAcrEular from "@/components/scores/MaladiesSystemiques/SystemicSclerodermaAcrEular.vue";
+import Das28 from "@/components/scores/RIC/Polyarthrite rhumatoide/Das28.vue"
 import AcrEular2010 from "@/components/scores/RIC/Polyarthrite rhumatoide/AcrEular2010.vue";
 import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
 import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
 import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
+import IMC from "@/components/scores/Imc.vue";
+import Cdai from "@/components/scores/RIC/Polyarthrite rhumatoide/Cdai.vue";
 import Gsla from "@/components/scores/Gsla.vue";
 import FautrelClassification from "@/components/scores/MaladiesSystemiques/FautrelClassification.vue";
 
@@ -21,12 +27,32 @@ export default Vue.extend({
   name: "Home",
   components: {
     Score1,
+    PathologieOsseuse,
+    Sharp,
+    SystemicSclerodermaAcrEular,
+    Das28,
     AcrEular2010,
     Asas,
     NewYorkClassification,
     Amor,
+    IMC,
+    Cdai,
     Gsla,
     FautrelClassification,
+  },
+  methods: {
+    searchComponentName(nodes, slug) {
+      for (let node of nodes) {
+        if (node.slug === slug) {
+          this.componentName = node.component;
+          break;
+        }
+        if(node.children)
+        {
+          this.searchComponentName(node.children, slug);
+        }
+      }
+    },
   },
   data() {
     return {
@@ -38,38 +64,7 @@ export default Vue.extend({
       .then(() => {
         const slug = this.$route.params.slug;
         const dataTree = DataService.$data.tree;
-
-        // Retrive component name from slug.
-        for (let node0 of dataTree) {
-          if (node0.slug === slug) {
-            this.componentName = node0.component;
-            break;
-          }
-          for (let node1 of node0.children) {
-            if (node1.slug === slug) {
-              this.componentName = node1.component;
-              break;
-            }
-            for (let node2 of node1.children) {
-              if (node2.slug === slug) {
-                this.componentName = node2.component;
-                break;
-              }
-              for (let node3 of node2.children) {
-                if (node3.slug === slug) {
-                  this.componentName = node3.component;
-                  break;
-                }
-                for (let node4 of node3.children) {
-                  if (node4.slug === slug) {
-                    this.componentName = node4.component;
-                    break;
-                  }
-                }
-              }
-            }
-          }
-        }
+        this.searchComponentName(dataTree,slug)
       })
       .catch((e) => {
         console.log(e);
