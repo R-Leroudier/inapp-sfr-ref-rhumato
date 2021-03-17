@@ -161,6 +161,7 @@
                       "parentId": 2,
                       "type": "",
                       "content": "",
+                      "component": "NewYorkClassification",
                       "slug": "classificaton-de-de-new-york",
                       "submenu": false
                     },
