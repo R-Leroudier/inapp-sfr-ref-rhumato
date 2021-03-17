@@ -653,6 +653,7 @@
           "type": "html",
           "content": "https://www.imc.fr/",
           "slug": "IMC",
+          "component":"IMC",
           "submenu": false
         },
         {
