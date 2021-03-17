@@ -10,6 +10,7 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
+import Das28 from "@/components/scores/RIC/Polyarthrite rhumatoide/Das28.vue"
 import AcrEular2010 from "@/components/scores/RIC/Polyarthrite rhumatoide/AcrEular2010.vue";
 import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
 import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
@@ -19,6 +20,7 @@ export default Vue.extend({
   name: "Home",
   components: {
     Score1,
+    Das28,
     AcrEular2010,
     Asas,
     NewYorkClassification,
