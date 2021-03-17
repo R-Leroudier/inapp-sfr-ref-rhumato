@@ -114,6 +114,7 @@
                       "type": "html",
                       "content": "voir application rheumatools : scores => polyarthrite rhumatoide => HAQ",
                       "slug": "haq",
+                      "component": "Haq",
                       "submenu": false
                     }
                   ]
