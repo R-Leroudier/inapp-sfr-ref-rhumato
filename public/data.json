@@ -543,7 +543,7 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "list",
+          "type": "html",
           "content": "",
           "slug": "pathologie-osseuse",
           "submenu": false
