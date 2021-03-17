@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Sharp></Sharp>
     <Header></Header>
     <router-view></router-view>
   </div>
