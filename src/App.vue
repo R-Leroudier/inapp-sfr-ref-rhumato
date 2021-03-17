@@ -8,6 +8,8 @@
 <script lang="ts">
 import Vue from "vue";
 import DataService from "@/service/DataService";
+
+
 import Header from "@/components/Header.vue";
 
 export default Vue.extend({
@@ -55,3 +57,4 @@ export default Vue.extend({
   color: #42b983;
 }
 </style>
+
