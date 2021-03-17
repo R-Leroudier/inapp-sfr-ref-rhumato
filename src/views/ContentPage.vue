@@ -20,6 +20,7 @@ import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewY
 import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
 import Cdai from "@/components/scores/RIC/Polyarthrite rhumatoide/Cdai.vue";
 import Gsla from "@/components/scores/Gsla.vue";
+import Sdai from "@/components/scores/RIC/Polyarthrite rhumatoide/Sdai.vue";
 
 export default Vue.extend({
   name: "Home",
@@ -49,6 +50,7 @@ export default Vue.extend({
         }
       }
     },
+    Sdai,
   },
   data() {
     return {
