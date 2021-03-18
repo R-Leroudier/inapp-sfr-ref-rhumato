@@ -1,6 +1,11 @@
 <template>
+<<<<<<< HEAD
   <div id="app">
     <FautrelClassification></FautrelClassification>
+=======
+  <div id="app">     
+      <Header></Header>
+>>>>>>> 9d45c49ff136d83ce6f7a1ca8c32c60481080e53
     <router-view></router-view>
   </div>
 </template>
@@ -38,8 +43,7 @@ export default Vue.extend({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 100%;
 }

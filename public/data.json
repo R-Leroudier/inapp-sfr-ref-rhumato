@@ -83,7 +83,7 @@
                       "content": "http://medicalcul.free.fr/das28.html",
                       "slug": "DAS28",
                       "submenu": false,
-                      "component":"Das28"
+                      "component": "Das28"
                     },
                     {
                       "id": "",
@@ -106,6 +106,7 @@
                       "type": "html",
                       "content": "voir application rheumatools : scores => polyarthrite rhumatoide => CDAI/SDAI",
                       "slug": "sdai",
+                      "component": "Sdai",
                       "submenu": false
                     },
                     {
@@ -117,6 +118,7 @@
                       "type": "html",
                       "content": "voir application rheumatools : scores => polyarthrite rhumatoide => HAQ",
                       "slug": "haq",
+                      "component": "Haq",
                       "submenu": false
                     }
                   ]
@@ -155,7 +157,7 @@
                       "content": "http://www.rhumato.info/fiches-pratiques2/166-spondylarthrite-ankylosante/1747-criteres-damor-des-spondylarthropathies",
                       "slug": "amor",
                       "submenu": false,
-                      "component":"amor" 
+                      "component": "amor"
                     },
                     {
                       "id": "",
@@ -167,7 +169,7 @@
                       "content": "",
                       "slug": "classificaton-de-new-york",
                       "submenu": false,
-                      "component":"NewYorkClassification"
+                      "component": "NewYorkClassification"
                     },
                     {
                       "id": "",
@@ -214,7 +216,8 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/basdai.html",
                       "slug": "basdai",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "basdai"
                     },
                     {
                       "id": "",
@@ -236,7 +239,8 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/asdas.html",
                       "slug": "asdas",
-                      "submenu": false
+                      "submenu": false,
+                      "component" : "Asdas"
                     }
                   ]
                 }
@@ -323,7 +327,8 @@
                   "type": "html",
                   "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012",
                   "slug": "classification",
-                  "submenu": false
+                  "submenu": false,
+                  "component":"ArthritisAcr1990"
                 },
                 {
                   "id": "",
@@ -331,10 +336,24 @@
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
-                  "type": "html",
+                  "type": "list",
                   "content": "http://actualites-therapeutiques.com/diapo/2013/Matin/3%20-%20Berthelot%20JM.pdf",
                   "slug": "activite",
-                  "submenu": false
+                  "submenu": true,
+                  "children": [
+                    {
+                      "id": "",
+                      "name": "DAS-PPR",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://actualites-therapeutiques.com/diapo/2013/Matin/3%20-%20Berthelot%20JM.pdf",
+                      "slug": "dasppr",
+                      "submenu": false,
+                      "component": "DasPpr"
+                    }
+                  ]
                 }
               ]
             }
@@ -431,7 +450,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/behcet/criteres",
               "slug": "maladie-de-behcet",
-              "submenu": false
+              "submenu": false,
+              "component":"Behcet"
             },
             {
               "id": "",
@@ -499,7 +519,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/syndrome-des-antiphospholipides/criteres/criteres-de-classification-sapl",
               "slug": "sapl",
-              "submenu": false
+              "submenu": false,
+              "component": "Sapl"
             },
             {
               "id": "",
@@ -547,7 +568,7 @@
           "appId": 1,
           "parentId": 2,
           "type": "html",
-          "component":"PathologieOsseuse",
+          "component": "PathologieOsseuse",
           "content": "",
           "slug": "pathologie-osseuse",
           "submenu": false
@@ -644,7 +665,8 @@
                   "type": "html",
                   "content": "http://medicalcul.free.fr/firstquest.html",
                   "slug": "first",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "First"
                 }
               ]
             }
@@ -659,7 +681,7 @@
           "type": "html",
           "content": "https://www.imc.fr/",
           "slug": "IMC",
-          "component":"IMC",
+          "component": "IMC",
           "submenu": false
         },
         {
@@ -669,7 +691,7 @@
           "appId": 1,
           "parentId": 2,
           "type": "html",
-          "component" : "Gsla",
+          "component": "Gsla",
           "content": "https://www.agla.ch/fr/calculateurs-outils/calculateur-de-risque-du-gsla",
           "slug": "risques-cardio-vasculaires",
           "submenu": false
