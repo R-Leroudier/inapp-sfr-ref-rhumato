@@ -325,7 +325,8 @@
                   "type": "html",
                   "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012",
                   "slug": "classification",
-                  "submenu": false
+                  "submenu": false,
+                  "component":"ArthritisAcr1990"
                 },
                 {
                   "id": "",
@@ -502,7 +503,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/syndrome-des-antiphospholipides/criteres/criteres-de-classification-sapl",
               "slug": "sapl",
-              "submenu": false
+              "submenu": false,
+              "component": "Sapl"
             },
             {
               "id": "",
