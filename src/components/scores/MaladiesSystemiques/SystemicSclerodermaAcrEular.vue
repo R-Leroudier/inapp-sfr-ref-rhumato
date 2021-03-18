@@ -12,13 +12,14 @@
       articulations MCP
     </p>
     <p class="description">9 points</p>
-
     <input
       type="radio"
       class="btn-check"
       name="btnradio1"
       id="btnradio1"
       autocomplete="off"
+      v-model="questions.q1"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio1">NON</label>
 
@@ -28,6 +29,8 @@
       name="btnradio1"
       id="btnradio2"
       autocomplete="off"
+      v-model="questions.q1"
+      value=9
     />
     <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
 
@@ -39,6 +42,8 @@
       name="btnradio2"
       id="btnradio3"
       autocomplete="off"
+      v-model="questions.q2"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio3">NON</label>
 
@@ -48,6 +53,8 @@
       name="btnradio2"
       id="btnradio4"
       autocomplete="off"
+      v-model="questions.q2"
+      value=2
     />
     <label class="btn btn-outline-primary" for="btnradio4">OUI</label>
 
@@ -60,7 +67,9 @@
       class="btn-check"
       name="btnradio3"
       id="btnradio5"
-      autocomplete="off"
+      autocomplete="off"      
+      v-model="questions.q3"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio5">NON</label>
 
@@ -70,6 +79,8 @@
       name="btnradio3"
       id="btnradio6"
       autocomplete="off"
+      v-model="questions.q3"
+      value=4
     />
     <label class="btn btn-outline-primary" for="btnradio6">OUI</label>
 
@@ -85,6 +96,8 @@
       name="btnradio4"
       id="btnradio7"
       autocomplete="off"
+      v-model="questions.q4"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio7">NON</label>
 
@@ -94,6 +107,8 @@
       name="btnradio4"
       id="btnradio8"
       autocomplete="off"
+      v-model="questions.q4"
+      value=2
     />
     <label class="btn btn-outline-primary" for="btnradio8">OUI</label>
 
@@ -105,6 +120,8 @@
       name="btnradio5"
       id="btnradio9"
       autocomplete="off"
+      v-model="questions.q5"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio9">NON</label>
 
@@ -114,6 +131,8 @@
       name="btnradio5"
       id="btnradio10"
       autocomplete="off"
+      v-model="questions.q5"
+      value=3
     />
     <label class="btn btn-outline-primary" for="btnradio10">OUI</label>
 
@@ -126,6 +145,8 @@
       name="btnradio6"
       id="btnradio11"
       autocomplete="off"
+      v-model="questions.q6"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio11">NON</label>
 
@@ -135,6 +156,8 @@
       name="btnradio6"
       id="btnradio12"
       autocomplete="off"
+      v-model="questions.q6"
+      value=2
     />
     <label class="btn btn-outline-primary" for="btnradio12">OUI</label>
 
@@ -147,6 +170,8 @@
       name="btnradio7"
       id="btnradio13"
       autocomplete="off"
+      v-model="questions.q7"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio13">NON</label>
 
@@ -156,6 +181,8 @@
       name="btnradio7"
       id="btnradio14"
       autocomplete="off"
+      v-model="questions.q7"
+      value=2
     />
     <label class="btn btn-outline-primary" for="btnradio14">OUI</label>
 
@@ -168,6 +195,8 @@
       name="btnradio8"
       id="btnradio15"
       autocomplete="off"
+      v-model="questions.q8"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio15">NON</label>
 
@@ -177,6 +206,8 @@
       name="btnradio8"
       id="btnradio16"
       autocomplete="off"
+      v-model="questions.q8"
+      value=2
     />
     <label class="btn btn-outline-primary" for="btnradio16">OUI</label>
 
@@ -189,6 +220,8 @@
       name="btnradio9"
       id="btnradio17"
       autocomplete="off"
+      v-model="questions.q9"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio17">NON</label>
 
@@ -198,6 +231,8 @@
       name="btnradio9"
       id="btnradio18"
       autocomplete="off"
+      v-model="questions.q9"
+      value=3
     />
     <label class="btn btn-outline-primary" for="btnradio18">OUI</label>
 
@@ -213,6 +248,8 @@
       name="btnradio10"
       id="btnradio19"
       autocomplete="off"
+      v-model="questions.q10"
+      value=0
     />
     <label class="btn btn-outline-primary" for="btnradio19">NON</label>
 
@@ -222,24 +259,26 @@
       name="btnradio10"
       id="btnradio20"
       autocomplete="off"
+      v-model="questions.q10"
+      value=3
     />
     <label class="btn btn-outline-primary" for="btnradio19">OUI</label>
 
-    <card class="result">
-      <p class="description">{{total}}Points</p>
+    <div class="result">
+      <p class="description">{{ total }} Points</p>
 
       <p class="description">0 Critère d'exclusion</p>
 
-      <p class="description">Negatif</p>
+      <p v-if="total < 9" class="description">Negatif</p>
 
-      <p class="description">Positif</p>
+      <p v-else class="description">Positif</p>
 
       <p class="description">
         Le critère peut être retenu s'il est présent à un moment au moins de
         l'histoire clinique. Un score ≥ 9 permet de classer les patients comme
         atteints de sclérodermie systémique.
       </p>
-    </card>
+    </div>
   </div>
 </template>
 
@@ -250,17 +289,34 @@ export default Vue.extend({
   name: "SystemicSclerodermaAcrEular",
   data(){
     return{
-      total:0
+      questions:{
+        q1:0,
+        q2:0,
+        q3:0,
+        q4:0,
+        q5:0,
+        q6:0,
+        q7:0,
+        q8:0,
+        q9:0,
+        q10:0,
+      },
+      total:0,
     }
   },
-  methods:{
-    totalMore(num){
-      this.total+=num
-    },
-    totalLess(num){
-      this.total-=num
+  watch:{
+    questions: {
+      handler: function(){
+        this.total = 0
+        for(let item in this.questions){
+        this.total+=Number(this.questions[item])
+      }
+      },
+      deep:true,
     }
+    
   },
+  methods:{},
   mounted() {},
 });
 </script>
