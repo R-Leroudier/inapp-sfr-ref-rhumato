@@ -182,16 +182,10 @@
 import Vue from "vue"
 export default Vue.extend({
  
-name:"HipLequesnes",
+name:"KneeLequesnes",
  mounted()
     {}
 })
-</script>
-
-<style></style>
-</template>
-
-<script lang="ts">
 </script>
 
 <style></style>
