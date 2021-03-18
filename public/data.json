@@ -473,7 +473,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "ffs",
-                  "submenu": false
+                  "submenu": false,
+                  "component":"Ffs"
                 },
                 {
                   "id": "",

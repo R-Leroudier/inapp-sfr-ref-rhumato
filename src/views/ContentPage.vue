@@ -32,7 +32,7 @@ import First from "@/components/scores/First.vue";
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
 import SelenaSledai from "@/components/scores/MaladiesSystemiques/SelenaSledai.vue";
-
+import Ffs from  "@/components/scores/MaladiesSystemiques/Ffs.vue";
 
 export default Vue.extend({
   name: "ContentPage",
@@ -59,7 +59,8 @@ export default Vue.extend({
     First,
     Sapl,
     ArthritisAcr1990,
-    SelenaSledai
+    SelenaSledai,
+    Ffs
   },
   methods: {
     searchComponentName(nodes, slug) {

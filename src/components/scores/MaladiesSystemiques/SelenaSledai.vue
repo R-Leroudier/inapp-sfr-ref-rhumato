@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import SelenaSledaiCheckBox from "./SelenaSledaiCheckBox.vue";
+import SelenaSledaiCheckBox from "./HelperCheckBox.vue";
 
 export default Vue.extend({
   components: { SelenaSledaiCheckBox },
