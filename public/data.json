@@ -417,11 +417,7 @@
               "appId": 1,
               "parentId": 2,
               "type": "html",
-<<<<<<< HEAD
-              "component" : "Sharp",
-=======
               "component": "Sharp",
->>>>>>> main
               "content": "https://maladie-autoimmune.fr/connectivite-mixte-sharp-mctd/",
               "slug": "syndrome-de-sharp",
               "submenu": false
@@ -513,7 +509,6 @@
               "appId": 1,
               "parentId": 2,
               "type": "list",
-              "component": "SystemiSclerodermaAcrEular",
               "content": "",
               "slug": "Sclérodermie",
               "submenu": true,
@@ -537,6 +532,7 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
+                  "component" : "Rodnan",
                   "content": "https://sclerodermie.net/2015/01/score-de-rodnan-calculateur/",
                   "slug": "activite",
                   "submenu": false
@@ -586,6 +582,7 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
+                  "component" : "HipLequesnes",
                   "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf",
                   "slug": "indice-fonctionnel-de-lequesnes",
                   "submenu": false

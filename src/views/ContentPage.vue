@@ -22,6 +22,7 @@ import IMC from "@/components/scores/Imc.vue";
 import Cdai from "@/components/scores/RIC/Polyarthrite rhumatoide/Cdai.vue";
 import Gsla from "@/components/scores/Gsla.vue";
 import FautrelClassification from "@/components/scores/MaladiesSystemiques/FautrelClassification.vue";
+import Rodnan from "@/components/scores/MaladiesSystemiques/Rodnan.vue";
 
 export default Vue.extend({
   name: "Home",
@@ -39,6 +40,7 @@ export default Vue.extend({
     Cdai,
     Gsla,
     FautrelClassification,
+    Rodnan,
   },
   methods: {
     searchComponentName(nodes, slug) {

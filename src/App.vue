@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <FautrelClassification></FautrelClassification>
+    <Header></Header>
     <router-view></router-view>
   </div>
 </template>
@@ -9,11 +9,10 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 
-
-import FautrelClassification from "@/components/scores/MaladiesSystemiques/FautrelClassification.vue";
+import Header from "@/components/Header.vue";
 
 export default Vue.extend({
-  components: { FautrelClassification },
+  components: { Header },
   data() {
     return {};
   },
