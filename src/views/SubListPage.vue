@@ -1,7 +1,7 @@
 <template>
   <div class="SubListPage">
     <div class="sub-categories">
-      <div v-for="node1 in nodes1" :key="node1.id">
+      <div v-for="(node1, index) in nodes1" :key="node1.name + index">
         <tree-menu
           :name="node1.name"
           :type="node1.type"
@@ -35,7 +35,6 @@ export default Vue.extend({
         const slug = this.$route.params.slug;
         const dataTree = DataService.$data.tree;
 
-
         // Retrive component name from slug.
         for (let nodes0 of dataTree) {
           if (nodes0.slug === slug) {
@@ -43,7 +42,6 @@ export default Vue.extend({
             break;
           }
         }
-
       })
       .catch((e) => {
         console.log(e);
