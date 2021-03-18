@@ -2,22 +2,18 @@
   <div class="score">
     <h2 class="title">xxx</h2>
     <span class="line">------</span>
-    <h3 class="title">xxxxx</h3>
-    <h4 class="title">xxx</h4>
-    <section>
-      <p class="details">
-        xxxx
-      </p>
-      <div>
 
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
+    <div v-for="(question, i) in questions" :key="i">
+      <!-- <HAQQuestion
+        :index="i"
+        :question="question"
+        @questionChanged="qChanged($event)"
+      ></HAQQuestion> -->
 
+      <SelenaSledaiCheckBox></SelenaSledaiCheckBox>
 
-      </div>
-    </section>
+      <br />
+    </div>
 
     <span class="line">------</span>
     <h3 class="title">
@@ -29,15 +25,19 @@
 
 <script lang="ts">
 import Vue from "vue";
+import SelenaSledaiCheckBox from "./SelenaSledaiCheckBox.vue";
 
 export default Vue.extend({
+  components: { SelenaSledaiCheckBox },
   name: "SelenaSledai",
   data() {
     return {
       finalScore: 0,
-      choise: {
-        n0: "a,0",
-      },
+      answers: [],
+      questions: [
+        { question: "Ouvrir une porte de voiture ?", malusScore: 0, answer: 0 },
+        { question: "Dévisser le couvercle d'un pot déjà ouvert une fois ?", malusScore: 0, answer: 0 },
+      ],
     };
   },
   methods: {
@@ -56,68 +56,4 @@ export default Vue.extend({
   mounted() {},
 });
 </script>
-<style lang="scss">
-
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 25px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 19px;
-  width: 19px;
-  left: 4px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(22px);
-  -ms-transform: translateX(22px);
-  transform: translateX(22px);
-}
-
-.slider.round {
-  border-radius: 25px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-</style>
+<style lang="scss"></style>
