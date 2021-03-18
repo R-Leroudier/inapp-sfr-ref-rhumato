@@ -44,17 +44,44 @@ critères ACR/EULAR</h2>
 
 </div>
 
+      <h5 class="categorie">Sérologie</h5>
+      <p class="details">
+        Notes : - FR = Facteur rhumatoïde. - ACPA = Anticorps
+        anti-peptides/protéines citrulliné(e)s.
+      </p>
+      <button type="button" class="btn">FR et ACPA négatifs.</button>
+      <button type="button" class="btn validate">
+        FR ou ACPA faiblement positif
+      </button>
+      <button type="button" class="btn cancel">
+        FR ou ACPA fortement positif
+      </button>
+      <button type="button" class="btn exit">Primary</button>
+
+      <h6 class="categorie">Durée de la synovite</h6>
+
+      <button type="button" class="btn">Durée < 6 semaines.</button>
+      <button type="button" class="btn validate">Durée ≥ 6 semaines.</button>
+
+      <h7 class="categorie">Marqueurs de l'inflammation</h7>
+
+      <button type="button" class="btn">VS et CRP normales.</button>
+      <button type="button" class="btn validate">VS et CRP anormales.</button>
+      <br />
+      <button type="button" class="btn validate">calcul</button>
+      <button type="button" class="btn validate">annule</button>
+      <br /><card class="result">score </card>
+    </form>
+    <span class="line"></span>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import Vue from "vue";
 
 export default Vue.extend({
- mounted()
-    {}
-})
+  mounted() {},
+});
 </script>
-
-
 
 <style></style>
