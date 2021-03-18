@@ -25,6 +25,7 @@ import Asdas from "@/components/scores/RIC/Spondyloarthrite/Asdas.vue";
 import IMC from "@/components/scores/Imc.vue";
 import Cdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Cdai.vue";
 import Gsla from "@/components/scores/Gsla.vue";
+import FautrelClassification from "@/components/scores/MaladiesSystemiques/FautrelClassification.vue";
 import DasPpr from "@/components/scores/RIC/DasPpr.vue";
 import Sdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Sdai.vue";
 import First from "@/components/scores/First.vue";
@@ -51,6 +52,7 @@ export default Vue.extend({
     IMC,
     Cdai,
     Gsla,
+    FautrelClassification,
     DasPpr,
     Sdai,
     First,

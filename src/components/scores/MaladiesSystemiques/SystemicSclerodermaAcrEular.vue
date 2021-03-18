@@ -1,114 +1,114 @@
 <template>
-<div>
-<h2 class="title">Critères de classification ACR-EULAR de la sclérodermie systémique</h2>
+  <div>
+    <h2 class="title">Critères de classification ACR-EULAR de la sclérodermie systémique</h2>
 
-<h4 class="categorie">Epaississement cutané (ne tenir compte que du score le plus élevé) :</h4>
-<p>Epaississement cutané des doigts des mains s'étendant au-delà des articulations MCP</p>
-<p>9 points</p>
+    <h4 class="categorie">Epaississement cutané (ne tenir compte que du score le plus élevé) :</h4>
+      <p class="description">Epaississement cutané des doigts des mains s'étendant au-delà des articulations MCP</p>
+      <p class="description">9 points</p>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio1" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio1">NON</label>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
 
-<p>Doigts boudinés</p>
-<p> 2 points</p>
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+      <p class="description">Doigts boudinés</p>
+      <p class="description"> 2 points</p>
+        <input type="radio" class="btn-check" name="btnradio2" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio3">NON</label>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+        <input type="radio" class="btn-check" name="btnradio2" id="btnradio4" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio4">OUI</label>
 
-<p>Atteinte des doigts ne dépassant pas les articulations MCP</p> 
-<p>4 points </p>
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+      <p class="description">Atteinte des doigts ne dépassant pas les articulations MCP</p> 
+      <p class="description">4 points </p>
+        <input type="radio" class="btn-check" name="btnradio3" id="btnradio5" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio5">NON</label>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+        <input type="radio" class="btn-check" name="btnradio3" id="btnradio6" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio6">OUI</label>
 
-<h4 class="categorie">Lésions pulpaires (ne tenir compte que du score le plus élevé) :</h4>
-<p>Ulcères pulpaires digitaux</p>
-<p>2 points</p>
+    <h4 class="categorie">Lésions pulpaires (ne tenir compte que du score le plus élevé) :</h4>
+      <p class="description">Ulcères pulpaires digitaux</p>
+      <p class="description">2 points</p>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+        <input type="radio" class="btn-check" name="btnradio4" id="btnradio7" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio7">NON</label>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+        <input type="radio" class="btn-check" name="btnradio4" id="btnradio8" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio8">OUI</label>
 
-<p>Cicatrices déprimées </p>
-<p>3 points</p>
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+      <p class="description">Cicatrices déprimées </p>
+      <p class="description">3 points</p>
+        <input type="radio" class="btn-check" name="btnradio5" id="btnradio9" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio9">NON</label>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
-
-
-<p>Télangiectasies</p>
-<p>2 points</p>
-
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
-
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+        <input type="radio" class="btn-check" name="btnradio5" id="btnradio10" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio10">OUI</label>
 
 
-<p>Anomalies capillaroscopiques</p>
-<p>2 points</p>
+      <p class="description">Télangiectasies</p>
+      <p class="description">2 points</p>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+        <input type="radio" class="btn-check" name="btnradio6" id="btnradio11" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio11">NON</label>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+        <input type="radio" class="btn-check" name="btnradio6" id="btnradio12" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio12">OUI</label>
 
 
-<p>HTAP et/ou fibrose pulmonaire</p>
-<p>2 points</p>
+      <p class="description">Anomalies capillaroscopiques</p>
+      <p class="description">2 points</p>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+        <input type="radio" class="btn-check" name="btnradio7" id="btnradio13" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio13">NON</label>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+        <input type="radio" class="btn-check" name="btnradio7" id="btnradio14" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio14">OUI</label>
 
-<p>Phénomène de Raynaud</p>
-<p>3 points</p>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+      <p class="description">HTAP et/ou fibrose pulmonaire</p>
+      <p class="description">2 points</p>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+        <input type="radio" class="btn-check" name="btnradio8" id="btnradio15" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio15">NON</label>
 
-<p>Anticorps spécifiques: anti-topoisomérase I ou anti-centromères ou anti-ARN polymérase de type III</p>
-<p>3 points</p>
+        <input type="radio" class="btn-check" name="btnradio8" id="btnradio16" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio16">OUI</label>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+      <p class="description">Phénomène de Raynaud</p>
+      <p class="description">3 points</p>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+        <input type="radio" class="btn-check" name="btnradio9" id="btnradio17" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio17">NON</label>
 
-<card class="result">
+        <input type="radio" class="btn-check" name="btnradio9" id="btnradio18" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio18">OUI</label>
 
-<p>Points</p>
+      <p class="description">Anticorps spécifiques: anti-topoisomérase I ou anti-centromères ou anti-ARN polymérase de type III</p>
+      <p class="description">3 points</p>
 
-<p>0 Critère d'exclusion</p>
+        <input type="radio" class="btn-check" name="btnradio10" id="btnradio19" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio19">NON</label>
 
-  <p>Negatif</p>
+        <input type="radio" class="btn-check" name="btnradio10" id="btnradio20" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio19">OUI</label>
 
-  <p>Positif</p>
+    <card class="result">
 
-<p>Le critère peut être retenu s'il est présent à un moment au moins de l'histoire clinique. Un score ≥ 9 permet de classer les patients comme atteints de sclérodermie systémique.</p>
+      <p class="description">Points</p>
 
-</card>
+      <p class="description">0 Critère d'exclusion</p>
 
-</div>
+      <p class="description">Negatif</p>
+
+      <p class="description">Positif</p>
+
+      <p class="description">Le critère peut être retenu s'il est présent à un moment au moins de l'histoire clinique. Un score ≥ 9 permet de classer les patients comme atteints de sclérodermie systémique.</p>
+
+    </card>
+
+  </div>
 </template>
 
 <script lang="ts">
