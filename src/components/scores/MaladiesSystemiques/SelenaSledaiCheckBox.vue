@@ -1,47 +1,33 @@
 <template>
   <div>
-    <!-- <div>{{ question.question }} <b>{{index}}</b></div>
-      <div v-for="(value,i) in question.values" :key="i">
-          <input :name="'x'+index" type="radio" v-bind:value="value" @click="change($event)"> {{labels[i]}}
-      </div> -->
-
     <section>
       <div class="question">
-        <h2>1</h2>
-        <label class="text" for="checkbox1">{{question}}</label>
+        <h2>{{ index+1 }}</h2>
+        <label class="text" :for="`checkbox`+index">{{ question }}</label>
         <label class="switch">
-          <input id="checkbox1" type="checkbox" @click="change($event)" />
+          <input
+            :id="`checkbox`+index"
+            type="checkbox"
+            @click="checkboxChange($event)"
+          />
           <span class="slider round"></span>
         </label>
       </div>
     </section>
   </div>
 </template>
-
 <script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
   name: "SelenaSledaiCheckBox",
-  props: ["index", "question", "malusScore", "answer"],
-  data() {
-    return {
-      // answerValue: null,
-      // labels: [
-      //   "Sans aucune difficulté",
-      //   "Avec quelques difficultés" ,
-      //   "Avec x difficultés" ,
-      //   "Avec x3 difficultés !!" ,
-      // ]
-    };
-  },
+  props: ["index", "question", "malusScore"],
   methods: {
-    change(e: any) {
-      //  console.log(e.target.value)
-      console.log("fff")
-      console.log(e.target.value);
-      this.answer = e.target.value
-      //this.$emit('questionChanged', { index: this.index, answerValue: this.answerValue })
+    checkboxChange(e: any) {
+      this.$emit("upwardChange", {
+        index: this.index,
+        userScore: e.target.checked ? this.malusScore : 0,
+      });
     },
   },
   mounted() {},

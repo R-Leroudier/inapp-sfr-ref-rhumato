@@ -4,18 +4,16 @@
     <span class="line">------</span>
 
     <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
-      <!-- <HAQQuestion
+      <SelenaSledaiCheckBox
         :index="i"
-        :question="question"
-        @questionChanged="qChanged($event)"
-      ></HAQQuestion> -->
-
-      <SelenaSledaiCheckBox :index=i :question="dataQuestion.question"></SelenaSledaiCheckBox>
-
+        :question="dataQuestion.question"
+        :malusScore="dataQuestion.malusScore"
+        @upwardChange="upwardChange"
+      ></SelenaSledaiCheckBox>
       <br />
     </div>
 
-    <span class="line">------</span>
+    <span class="line"></span>
     <h3 class="title">
       Score final <em>{{ finalScore }}</em
       >.
@@ -33,16 +31,21 @@ export default Vue.extend({
   data() {
     return {
       finalScore: 0,
-      answers: [],
-      datasQuestion: [
-        { question: "Ouvrir une porte de voiture ?", malusScore: 0, answer: 0 },
-        { question: "Dévisser le couvercle d'un pot déjà ouvert une fois ?", malusScore: 0, answer: 0 },
+      scores: [],
+      datasQuestion: 
+      [
+        { question: "Ouvrir une porte de voiture ?", malusScore: 3, userScore: 0,},
+        { question: "Dévisser le couvercle d'un pot déjà ouvert une fois ?", malusScore: 6, userScore: 0,},
       ],
     };
   },
   methods: {
     calcResult() {
-      this.finalScore = 0;
+    this.finalScore = this.scores.reduce((x1, x2) => x1 + x2);
+    },
+    upwardChange(e: any) {
+      this.scores[e.index] = e.userScore;
+      this.calcResult()
     },
   },
   watch: {
