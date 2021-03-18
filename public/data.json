@@ -296,6 +296,7 @@
                       "type": "html",
                       "content": "https://rheuma.charite.de/fileadmin/user_upload/microsites/ohne_AZ/m_cc13/rheuma/Templates/DAPSA_ENG.pdf",
                       "slug": "dapsa",
+                      "component": "dapsa",
                       "submenu": false
                     }
                   ]

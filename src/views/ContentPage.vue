@@ -19,6 +19,7 @@ import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
 import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
 import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
 import Gsla from "@/components/scores/Gsla.vue";
+import Dapsa from "@/components/scores/RIC/Dapsa.vue";
 
 export default Vue.extend({
   name: "Home",
@@ -33,7 +34,9 @@ export default Vue.extend({
     NewYorkClassification,
     Amor,
     Gsla,
+    Dapsa
   },
+
   methods: {
     searchComponentName(nodes, slug) {
       for (let node of nodes) {
