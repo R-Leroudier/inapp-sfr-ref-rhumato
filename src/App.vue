@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <Header></Header>
+  <div id="app">     
+      <Header></Header>
     <router-view></router-view>
   </div>
 </template>
@@ -37,8 +37,7 @@ export default Vue.extend({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 100%;
 }
