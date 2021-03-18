@@ -21,6 +21,7 @@ import AcrEular2010 from "@/components/scores/RIC/Polyarthrite rhumatoide/AcrEul
 import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
 import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
 import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
+import Asdas from "@/components/scores/RIC/Spondyloarthrite/Asdas.vue";
 import IMC from "@/components/scores/Imc.vue";
 import Cdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Cdai.vue";
 import Gsla from "@/components/scores/Gsla.vue";
@@ -45,6 +46,7 @@ export default Vue.extend({
     Asas,
     NewYorkClassification,
     Amor,
+    Asdas
     IMC,
     Cdai,
     Gsla,
