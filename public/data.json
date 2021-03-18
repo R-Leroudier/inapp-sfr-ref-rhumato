@@ -234,7 +234,8 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/asdas.html",
                       "slug": "asdas",
-                      "submenu": false
+                      "submenu": false,
+                      "component" : "Asdas"
                     }
                   ]
                 }
