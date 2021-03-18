@@ -34,6 +34,7 @@ import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisA
 import GoutteAcrEular from "@/components/scores/RhumatismesChristallins/GoutteAcrEular.vue";
 import SelenaSledai from "@/components/scores/MaladiesSystemiques/SelenaSledai.vue";
 import Ffs from  "@/components/scores/MaladiesSystemiques/Ffs.vue";
+import Bvas from "@/components/scores/MaladiesSystemiques/Bvas.vue";
 
 export default Vue.extend({
   name: "ContentPage",
@@ -63,6 +64,7 @@ export default Vue.extend({
     SelenaSledai,
     Ffs,
     GoutteAcrEular,
+    Bvas,
   },
   methods: {
     searchComponentName(nodes, slug) {
