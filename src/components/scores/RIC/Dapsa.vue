@@ -11,7 +11,7 @@
         v-model="tender"
         type="number"
         min="0"
-        max="66"
+        max="68"
         @change="valueInputNumber('tender', 'input-')"
       />
 
@@ -23,7 +23,7 @@
         v-model="swollen"
         type="number"
         min="0"
-        max="68"
+        max="66"
         @change="valueInputNumber('swollen', 'input-')"
       />
       <h4 class="categorie">3. CRP (mg/dl):</h4>
