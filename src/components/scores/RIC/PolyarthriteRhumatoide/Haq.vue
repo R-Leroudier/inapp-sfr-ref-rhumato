@@ -10,25 +10,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise0" />
+          <input type="radio" value="a,0" v-model="choise.n0" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.1" v-model="choise0" />
+          <input type="radio" value="b,1" v-model="choise.n0" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.3" v-model="choise0" />
+          <input type="radio" value="c,2" v-model="choise.n0" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.4" v-model="choise0" />
+          <input type="radio" value="d,3" v-model="choise.n0" />
           Incapable de le faire
         </label>
       </div>
@@ -39,25 +39,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise1" />
+          <input type="radio" value="a,0" v-model="choise.n1" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.1" v-model="choise1" />
+          <input type="radio" value="b,0.5" v-model="choise.n1" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.3" v-model="choise1" />
+          <input type="radio" value="c,1" v-model="choise.n1" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.4" v-model="choise1" />
+          <input type="radio" value="d,1.5" v-model="choise.n1" />
           Incapable de le faire
         </label>
       </div>
@@ -71,25 +71,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise2" />
+          <input type="radio" value="a,0" v-model="choise.n2" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.1" v-model="choise2" />
+          <input type="radio" value="b,0.3" v-model="choise.n2" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.3" v-model="choise2" />
+          <input type="radio" value="c,0.7" v-model="choise.n2" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.4" v-model="choise2" />
+          <input type="radio" value="d,1" v-model="choise.n2" />
           Incapable de le faire
         </label>
       </div>
@@ -100,25 +100,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise3" />
+          <input type="radio" value="a,0" v-model="choise.n3" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.1" v-model="choise3" />
+          <input type="radio" value="b,0.3" v-model="choise.n3" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.3" v-model="choise3" />
+          <input type="radio" value="c,0.5" v-model="choise.n3" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.4" v-model="choise3" />
+          <input type="radio" value="d,0.8" v-model="choise.n3" />
           Incapable de le faire
         </label>
       </div>
@@ -133,25 +133,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise4" />
+          <input type="radio" value="a,0" v-model="choise.n4" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.1" v-model="choise4" />
+          <input type="radio" value="b,0.2" v-model="choise.n4" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.3" v-model="choise4" />
+          <input type="radio" value="c,0.4" v-model="choise.n4" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="0.4" v-model="choise4" />
+          <input type="radio" value="d,0.6" v-model="choise.n4" />
           Incapable de le faire
         </label>
       </div>
@@ -163,25 +163,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise5" />
+          <input type="radio" value="a,0" v-model="choise.n5" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise5" />
+          <input type="radio" value="b,0.2" v-model="choise.n5" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise5" />
+          <input type="radio" value="c,0.3" v-model="choise.n5" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise5" />
+          <input type="radio" value="d,0.5" v-model="choise.n5" />
           Incapable de le faire
         </label>
       </div>
@@ -193,25 +193,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise6" />
+          <input type="radio" value="a,0" v-model="choise.n6" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise6" />
+          <input type="radio" value="b,0.1" v-model="choise.n6" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise6" />
+          <input type="radio" value="c,0.3" v-model="choise.n6" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise6" />
+          <input type="radio" value="d,0.4" v-model="choise.n6" />
           Incapable de le faire
         </label>
       </div>
@@ -226,25 +226,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise7" />
+          <input type="radio" value="a,0" v-model="choise.n7" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise7" />
+          <input type="radio" value="b,0.1" v-model="choise.n7" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise7" />
+          <input type="radio" value="c,0.3" v-model="choise.n7" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise7" />
+          <input type="radio" value="d,0.4" v-model="choise.n7" />
           Incapable de le faire
         </label>
       </div>
@@ -256,25 +256,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise8" />
+          <input type="radio" value="a,0" v-model="choise.n8" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise8" />
+          <input type="radio" value="b,0.1" v-model="choise.n8" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise8" />
+          <input type="radio" value="c,0.2" v-model="choise.n8" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise8" />
+          <input type="radio" value="d,0.3" v-model="choise.n8" />
           Incapable de le faire
         </label>
       </div>
@@ -289,25 +289,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise9" />
+          <input type="radio" value="a,0" v-model="choise.n9" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise9" />
+          <input type="radio" value="b,0.1" v-model="choise.n9" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise9" />
+          <input type="radio" value="c,0.2" v-model="choise.n9" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise9" />
+          <input type="radio" value="d,0.3" v-model="choise.n9" />
           Incapable de le faire
         </label>
       </div>
@@ -319,25 +319,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise10" />
+          <input type="radio" value="a,0" v-model="choise.n10" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise10" />
+          <input type="radio" value="b,0.1" v-model="choise.n10" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise10" />
+          <input type="radio" value="c,0.2" v-model="choise.n10" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise10" />
+          <input type="radio" value="d,0.3" v-model="choise.n10" />
           Incapable de le faire
         </label>
       </div>
@@ -349,25 +349,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise11" />
+          <input type="radio" value="a,0" v-model="choise.n11" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise11" />
+          <input type="radio" value="b,0.1" v-model="choise.n11" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise11" />
+          <input type="radio" value="c,0.2" v-model="choise.n11" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise11" />
+          <input type="radio" value="d,0.3" v-model="choise.n11" />
           Incapable de le faire
         </label>
       </div>
@@ -382,25 +382,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise12" />
+          <input type="radio" value="a,0" v-model="choise.n12" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise12" />
+          <input type="radio" value="b,0.1" v-model="choise.n12" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise12" />
+          <input type="radio" value="c,0.2" v-model="choise.n12" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise12" />
+          <input type="radio" value="d,0.2" v-model="choise.n12" />
           Incapable de le faire
         </label>
       </div>
@@ -412,25 +412,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise13" />
+          <input type="radio" value="a,0" v-model="choise.n13" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise13" />
+          <input type="radio" value="b,0.1" v-model="choise.n13" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise13" />
+          <input type="radio" value="c,0.1" v-model="choise.n13" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise13" />
+          <input type="radio" value="d,0.2" v-model="choise.n13" />
           Incapable de le faire
         </label>
       </div>
@@ -445,25 +445,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise14" />
+          <input type="radio" value="a,0" v-model="choise.n14" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise14" />
+          <input type="radio" value="b,0.1" v-model="choise.n14" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise14" />
+          <input type="radio" value="c,0.1" v-model="choise.n14" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise14" />
+          <input type="radio" value="d,0.2" v-model="choise.n14" />
           Incapable de le faire
         </label>
       </div>
@@ -475,25 +475,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise15" />
+          <input type="radio" value="a,0" v-model="choise.n15" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise15" />
+          <input type="radio" value="b,0.1" v-model="choise.n15" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise15" />
+          <input type="radio" value="c,0.1" v-model="choise.n15" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise15" />
+          <input type="radio" value="d,0.2" v-model="choise.n15" />
           Incapable de le faire
         </label>
       </div>
@@ -505,25 +505,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise16" />
+          <input type="radio" value="a,0" v-model="choise.n16" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise16" />
+          <input type="radio" value="b,0.1" v-model="choise.n16" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise16" />
+          <input type="radio" value="c,0.1" v-model="choise.n16" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise16" />
+          <input type="radio" value="d,0.2" v-model="choise.n16" />
           Incapable de le faire
         </label>
       </div>
@@ -538,25 +538,25 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise17" />
+          <input type="radio" value="a,0" v-model="choise.n17" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise17" />
+          <input type="radio" value="b,0.1" v-model="choise.n17" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise17" />
+          <input type="radio" value="c,0.1" v-model="choise.n17" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise17" />
+          <input type="radio" value="d,0.2" v-model="choise.n17" />
           Incapable de le faire
         </label>
       </div>
@@ -568,30 +568,29 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise18" />
+          <input type="radio" value="a,0" v-model="choise.n18" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise18" />
+          <input type="radio" value="b,0.1" v-model="choise.n18" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise18" />
+          <input type="radio" value="c,0.1" v-model="choise.n18" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise18" />
+          <input type="radio" value="d,0.2" v-model="choise.n18" />
           Incapable de le faire
         </label>
       </div>
     </section>
-
     <section>
       <p class="details">
         Faire des travaux ménagers tels que passer l'aspirateur ou faire du
@@ -599,34 +598,34 @@
       </p>
       <div>
         <label>
-          <input type="radio" value="0" v-model="choise19" />
+          <input type="radio" value="a,0" v-model="choise.n19" />
           Sans aucune difficulté
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="1" v-model="choise19" />
+          <input type="radio" value="b,0.1" v-model="choise.n19" />
           Avec quelques difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="2" v-model="choise19" />
+          <input type="radio" value="c,0.1" v-model="choise.n19" />
           Avec beaucoup de difficultés
         </label>
       </div>
       <div>
         <label>
-          <input type="radio" value="3" v-model="choise19" />
+          <input type="radio" value="d,0.2" v-model="choise.n19" />
           Incapable de le faire
         </label>
       </div>
     </section>
-
-    <p>
-      Score final <em>{{ score }}</em
+    <span class="line">------</span>
+    <h3 class="title">
+      Score final <em>{{ finalScore }}</em
       >.
-    </p>
+    </h3>
   </div>
 </template>
 
@@ -634,41 +633,52 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Score1",
+  name: "HAQ",
   data() {
     return {
-      score: 0,
-      choise0: 0,
-      choise1: 0,
-      choise2: 0,
-      choise3: 0,
-      choise4: 0,
-      choise5: 0,
-      choise6: 0,
-      choise7: 0,
-      choise8: 0,
-      choise9: 0,
-      choise10: 0,
-      choise11: 0,
-      choise12: 0,
-      choise13: 0,
-      choise14: 0,
-      choise15: 0,
-      choise16: 0,
-      choise17: 0,
-      choise18: 0,
-      choise19: 0,
-      result: null,
+      finalScore: 0,
+      choise: {
+        n0: "a,0",
+        n1: "a,0",
+        n2: "a,0",
+        n3: "a,0",
+        n4: "a,0",
+        n5: "a,0",
+        n6: "a,0",
+        n7: "a,0",
+        n8: "a,0",
+        n9: "a,0",
+        n10: "a,0",
+        n11: "a,0",
+        n12: "a,0",
+        n13: "a,0",
+        n14: "a,0",
+        n15: "a,0",
+        n16: "a,0",
+        n17: "a,0",
+        n18: "a,0",
+        n19: "a,0",
+      },
     };
   },
   methods: {
     calcResult() {
-      this.score = this.choise0;
+      this.finalScore = 0;
+      let i;
+      for (i = 0; i < Object.keys(this.choise).length; i++) {
+        const nb = parseFloat(this.choise[`n` + i].toString().split(",")[1]);
+        if (nb >= 0) {
+          this.finalScore += nb;
+        }
+      }
     },
   },
   watch: {
-    choise0: function() {
-      this.calcResult();
+    choise: {
+      handler: function() {
+        this.calcResult();
+      },
+      deep: true,
     },
   },
   mounted() {},
