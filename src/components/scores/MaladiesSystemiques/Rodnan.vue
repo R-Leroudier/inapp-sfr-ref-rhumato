@@ -246,12 +246,9 @@
           <label class="btn btn-outline-primary"> Sclérose adhérente au plan profond</label>
 
         <button type="button" class="btn validate" v-on:click="calcScore"> calculez</button>
+        <p class="details">Résultat: {{result}}</p>
 </form>
-        <p class="details">Results based in the data entered above:</p>
-        <p class="details">Résultat: score de Rodnan</p>
-        <input type="text">
-        <button type="button" class="btn validate" v-on:click="reset">Reset</button>
-        <p class="details">A description of the section goes here.</p>
+        
   
   </div>
 </template>
@@ -264,45 +261,31 @@ export default Vue.extend({
  mounted(){},
     data(){
       return {
-      face:0,
-      thorax:0,
-      abdomen:0,
-      armLeft:0,
-      foreArmLeft:0,
-      handLeft:0,
-      fingerLeft:0,
-      armRight:0,
-      forArmRight:0,
-      handRight:0,
-      fingerRight:0,
-      thighLeft:0,
-      legLeft:0,
-      feetLeft:0,
-      thigRight:0,
-      legRight:0,
-      feetRight:0,
+      face:null,
+      thorax:null,
+      abdomen:null,
+      armLeft:null,
+      foreArmLeft:null,
+      handLeft:null,
+      fingerLeft:null,
+      armRight:null,
+      forArmRight:null,
+      handRight:null,
+      fingerRight:null,
+      thighLeft:null,
+      legLeft:null,
+      feetLeft:null,
+      thigRight:null,
+      legRight:null,
+      feetRight:null,
+      result:null
       };
     },
     methods:{
       calcScore()
       {
-        console.log(this.face)
-        console.log(this.thorax)
-        console.log(this.abdomen)
-        console.log(this.armLeft)
-        console.log(this.foreArmLeft)
-        console.log(this.handLeft)
-        console.log(this.fingerLeft)
-        console.log(this.armRight)
-        console.log(this.forArmRight)
-        console.log(this.handRight)
-        console.log(this.fingerRight)
-        console.log(this.thighLeft)
-        console.log(this.legLeft)
-        console.log(this.feetLeft)
-        console.log(this.thigRight)
-        console.log(this.legRight)
-        console.log(this.feetRight)
+        this.result = Number(this.face) + Number(this.thorax) + Number(this.abdomen) + Number(this.armLeft) + Number(this.foreArmLeft) + Number(this.handLeft) + Number(this.fingerLeft) + Number(this.armRight) 
+        + Number(this.forArmRight) + Number(this.handRight) + Number(this.fingerRight) + Number(this.thighLeft) + Number(this.legLeft) + Number(this.feetLeft) + Number(this.thigRight) + Number(this.legRight) + Number(this.feetRight);
       }
     }
 })
