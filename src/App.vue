@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <Header></Header>
+  <div id="app">     
+      <Header></Header>
     <router-view></router-view>
   </div>
 </template>
@@ -9,11 +9,11 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 
+
 import Header from "@/components/Header.vue";
 
-
 export default Vue.extend({
-  components: { Header},
+  components: { Header },
   data() {
     return {};
   },
@@ -38,8 +38,7 @@ export default Vue.extend({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 100%;
 }
