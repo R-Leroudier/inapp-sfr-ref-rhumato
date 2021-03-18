@@ -1,6 +1,6 @@
 <template>
   <div class="score">
-    <h2 class="title">xxx</h2>
+    <h2 class="title">SCORE SELENA-SLEDAI</h2>
     <span class="line">------</span>
 
     <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
@@ -34,8 +34,30 @@ export default Vue.extend({
       scores: [],
       datasQuestion: 
       [
-        { question: "Ouvrir une porte de voiture ?", malusScore: 3, userScore: 0,},
-        { question: "Dévisser le couvercle d'un pot déjà ouvert une fois ?", malusScore: 6, userScore: 0,},
+        { question: "Convulsion", malusScore: 8, userScore: 0,},
+        { question: "Psychose", malusScore: 8, userScore: 0,},
+        { question: "Atteinte cérébrale", malusScore: 8, userScore: 0,},
+        { question: "Troubles visuels", malusScore: 8, userScore: 0,},
+        { question: "Nerfs crâniens", malusScore: 8, userScore: 0,},
+        { question: "Céphalées", malusScore: 8, userScore: 0,},
+        { question: "AVC", malusScore: 8, userScore: 0,},
+        { question: "Vascularite", malusScore: 8, userScore: 0,},
+        { question: "Arthrites", malusScore: 4, userScore: 0,},
+        { question: "Myosite", malusScore: 4, userScore: 0,},
+        { question: "Cylindres urinaires", malusScore: 4, userScore: 0,},
+        { question: "Hématurie", malusScore: 4, userScore: 0,},
+        { question: "Protéinurie", malusScore: 4, userScore: 0,},
+        { question: "Pyurie", malusScore: 4, userScore: 0,},
+        { question: "Nouvelle éruption cutanée", malusScore: 2, userScore: 0,},
+        { question: "Alopécie", malusScore: 2, userScore: 0,},
+        { question: "Ulcères muqueux", malusScore: 2, userScore: 0,},
+        { question: "Pleurésie", malusScore: 2, userScore: 0,},
+        { question: "Péricardite", malusScore: 2, userScore: 0,},
+        { question: "Complément", malusScore: 2, userScore: 0,},
+        { question: "Anti-ADN", malusScore: 2, userScore: 0,},
+        { question: "Fièvre", malusScore: 1, userScore: 0,},
+        { question: "Thrombopénie", malusScore: 1, userScore: 0,},
+        { question: "Leucopénie", malusScore: 1, userScore: 0,}
       ],
     };
   },
