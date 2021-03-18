@@ -25,15 +25,17 @@ import Asdas from "@/components/scores/RIC/Spondyloarthrite/Asdas.vue";
 import IMC from "@/components/scores/Imc.vue";
 import Cdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Cdai.vue";
 import Gsla from "@/components/scores/Gsla.vue";
+import FautrelClassification from "@/components/scores/MaladiesSystemiques/FautrelClassification.vue";
 import DasPpr from "@/components/scores/RIC/DasPpr.vue";
 import Sdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Sdai.vue";
 import First from "@/components/scores/First.vue";
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
+import SelenaSledai from "@/components/scores/MaladiesSystemiques/SelenaSledai.vue";
 
 
 export default Vue.extend({
-  name: "Home",
+  name: "ContentPage",
   components: {
     Score1,
     Haq,
@@ -51,11 +53,13 @@ export default Vue.extend({
     IMC,
     Cdai,
     Gsla,
+    FautrelClassification,
     DasPpr,
     Sdai,
     First,
     Sapl,
     ArthritisAcr1990,
+    SelenaSledai
   },
   methods: {
     searchComponentName(nodes, slug) {

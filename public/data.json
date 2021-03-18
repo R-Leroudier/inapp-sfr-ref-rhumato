@@ -327,8 +327,7 @@
                   "type": "html",
                   "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012",
                   "slug": "classification",
-                  "submenu": false,
-                  "component":"ArthritisAcr1990"
+                  "submenu": false
                 },
                 {
                   "id": "",
@@ -400,9 +399,10 @@
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "lupus-erythemateux-systemique",
+              "component":"SelenaSledai",
               "submenu": false
             },
             {
@@ -495,6 +495,7 @@
               "appId": 1,
               "parentId": 2,
               "type": "html",
+              "component": "FautrelClassification",
               "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-still-de-ladulte/criteres/criteres-de-classification-proposes-fautrel",
               "slug": "maladie-de-still",
               "submenu": false
@@ -508,7 +509,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990",
               "slug": "maladie-de-horton",
-              "submenu": false
+              "submenu": false,
+              "component":"ArthritisAcr1990"
             },
             {
               "id": "",
@@ -529,7 +531,6 @@
               "appId": 1,
               "parentId": 2,
               "type": "list",
-              "component": "SystemiSclerodermaAcrEular",
               "content": "",
               "slug": "Sclérodermie",
               "submenu": true,
@@ -541,9 +542,9 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
-                  "component": "SystemiSclerodermaAcrEular",
+                  "component": "SystemicSclerodermaAcrEular",
                   "content": "https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres",
-                  "slug": "classificaion",
+                  "slug": "classification",
                   "submenu": false
                 },
                 {
