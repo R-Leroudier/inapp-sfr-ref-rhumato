@@ -106,6 +106,7 @@
                       "type": "html",
                       "content": "voir application rheumatools : scores => polyarthrite rhumatoide => CDAI/SDAI",
                       "slug": "sdai",
+                      "component": "Sdai",
                       "submenu": false
                     },
                     {
@@ -117,6 +118,7 @@
                       "type": "html",
                       "content": "voir application rheumatools : scores => polyarthrite rhumatoide => HAQ",
                       "slug": "haq",
+                      "component": "Haq",
                       "submenu": false
                     }
                   ]
@@ -214,7 +216,8 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/basdai.html",
                       "slug": "basdai",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "basdai"
                     },
                     {
                       "id": "",
@@ -323,7 +326,8 @@
                   "type": "html",
                   "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012",
                   "slug": "classification",
-                  "submenu": false
+                  "submenu": false,
+                  "component":"ArthritisAcr1990"
                 },
                 {
                   "id": "",
@@ -431,7 +435,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/behcet/criteres",
               "slug": "maladie-de-behcet",
-              "submenu": false
+              "submenu": false,
+              "component":"Behcet"
             },
             {
               "id": "",
@@ -499,7 +504,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/syndrome-des-antiphospholipides/criteres/criteres-de-classification-sapl",
               "slug": "sapl",
-              "submenu": false
+              "submenu": false,
+              "component": "Sapl"
             },
             {
               "id": "",
@@ -644,7 +650,8 @@
                   "type": "html",
                   "content": "http://medicalcul.free.fr/firstquest.html",
                   "slug": "first",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "First"
                 }
               ]
             }
