@@ -6,7 +6,7 @@
     </h3>
     <h5>Critères cliniques :</h5>
     <div>
-      <label for="toggle"
+      <label for="toggle1"
         >Thrombose vasculaire: au moins un épisode thrombotique artériel,
         veineux ou des petits vaisseaux, touchant tout tissu ou organe. La
         thrombose doit être confirmée par un critère objectif et validé (aspect
@@ -16,7 +16,7 @@
       >
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle1"
         class="visually-hidden"
         value="1"
         v-model="questions1"
@@ -24,7 +24,7 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle"
+      <label for="toggle2"
         >Morbidité obstétricale: Survenue d’au moins une mort fœtale
         inexpliquée, après la 10e semaine d'aménorrhée, avec morphologie foetale
         normale documentée par une échographie ou par examen macroscopique OU
@@ -39,7 +39,7 @@
       >
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle2"
         class="visually-hidden"
         value="2"
         v-model="questions1"
@@ -48,7 +48,7 @@
     </div>
     <h5>Critères biologiques :</h5>
     <div>
-      <label for="toggle"
+      <label for="toggle3"
         >Anticorps anticardiolipines (IgG et/ou IgM) présents à au moins 2
         reprises, à au moins 12 semaines d'intervalle, à un titre intermédiaire
         ou élevé (> 40 UGPL ou MPL ou > 99e percentile) mesuré par une technique
@@ -56,7 +56,7 @@
       >
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle3"
         class="visually-hidden"
         value="3"
         v-model="questions2"
@@ -64,14 +64,14 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle"
+      <label for="toggle4"
         >Lupus anticoagulant présent à au moins 2 reprises, à 12 semaines
         d’intervalle, détection selon les recommandations de l’International
         Society of Thrombosis and Hemostasis</label
       >
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle4"
         class="visually-hidden"
         value="4"
         v-model="questions2"
@@ -79,14 +79,14 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle"
+      <label for="toggle5"
         >Anticorps anti-beta2GPI (IgG ou IgM) présents à un titre > au 99e
         percentile, à au moins 2 reprises, à 12 semaines d’intervalle selon une
         technique ELISA standardisée</label
       >
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle5"
         class="visually-hidden"
         value="5"
         v-model="questions2"
