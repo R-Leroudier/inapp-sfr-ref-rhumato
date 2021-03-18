@@ -27,7 +27,7 @@ import Cdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Cdai.vue";
 import Gsla from "@/components/scores/Gsla.vue";
 import DasPpr from "@/components/scores/RIC/DasPpr.vue";
 import Sdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Sdai.vue";
-import First from "@/components/scores/First.vue"
+import First from "@/components/scores/First.vue";
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
 
@@ -46,7 +46,7 @@ export default Vue.extend({
     Asas,
     NewYorkClassification,
     Amor,
-    Asdas
+    Asdas,
     IMC,
     Cdai,
     Gsla,
