@@ -29,6 +29,7 @@ import First from "@/components/scores/First.vue"
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
 
+
 export default Vue.extend({
   name: "Home",
   components: {
