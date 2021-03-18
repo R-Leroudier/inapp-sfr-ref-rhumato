@@ -649,7 +649,8 @@
                   "type": "html",
                   "content": "http://medicalcul.free.fr/firstquest.html",
                   "slug": "first",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "First"
                 }
               ]
             }
