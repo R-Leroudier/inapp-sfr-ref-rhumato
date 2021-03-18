@@ -35,7 +35,6 @@ import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisA
 import HipLequesnes from "@/components/scores/HipLequesnes.vue";
 import KneeLequesnes from "@/components/scores/KneeLequesnes.vue";
 
-
 export default Vue.extend({
   name: "Home",
   components: {
