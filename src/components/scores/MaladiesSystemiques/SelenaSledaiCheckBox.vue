@@ -8,9 +8,9 @@
     <section>
       <div class="question">
         <h2>1</h2>
-        <label class="text" for="checkbox1">Scales</label>
+        <label class="text" for="checkbox1">{{question}}</label>
         <label class="switch">
-          <input id="checkbox1" type="checkbox" />
+          <input id="checkbox1" type="checkbox" @click="change($event)" />
           <span class="slider round"></span>
         </label>
       </div>
@@ -23,7 +23,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "SelenaSledaiCheckBox",
-  props: ["question", "malusScore", "answer"],
+  props: ["index", "question", "malusScore", "answer"],
   data() {
     return {
       // answerValue: null,
@@ -38,7 +38,9 @@ export default Vue.extend({
   methods: {
     change(e: any) {
       //  console.log(e.target.value)
-      //this.answerValue = e.target.value
+      console.log("fff")
+      console.log(e.target.value);
+      this.answer = e.target.value
       //this.$emit('questionChanged', { index: this.index, answerValue: this.answerValue })
     },
   },

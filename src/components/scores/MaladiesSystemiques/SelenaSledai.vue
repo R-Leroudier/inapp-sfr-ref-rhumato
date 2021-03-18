@@ -3,14 +3,14 @@
     <h2 class="title">xxx</h2>
     <span class="line">------</span>
 
-    <div v-for="(question, i) in questions" :key="i">
+    <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
       <!-- <HAQQuestion
         :index="i"
         :question="question"
         @questionChanged="qChanged($event)"
       ></HAQQuestion> -->
 
-      <SelenaSledaiCheckBox></SelenaSledaiCheckBox>
+      <SelenaSledaiCheckBox :index=i :question="dataQuestion.question"></SelenaSledaiCheckBox>
 
       <br />
     </div>
@@ -34,7 +34,7 @@ export default Vue.extend({
     return {
       finalScore: 0,
       answers: [],
-      questions: [
+      datasQuestion: [
         { question: "Ouvrir une porte de voiture ?", malusScore: 0, answer: 0 },
         { question: "Dévisser le couvercle d'un pot déjà ouvert une fois ?", malusScore: 0, answer: 0 },
       ],
