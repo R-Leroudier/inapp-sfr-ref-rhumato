@@ -1,4 +1,4 @@
-²<template>
+<template>
   <div>
     <h2 class="title">Indice de Lequesne</h2>
       <p class="details">(Hanche)</p>
@@ -171,17 +171,15 @@
           <p class="details">- ≥ 14 : Handicap extrême, insupportable.</p>
           <p class="details">Un indice supérieur ou égal à 10 peut être une indication à une prothèse.</p>
           <p class="details">Références:</p>
-          <p class="details">     Lequesne M, Mery C, Samson M, Gérard P. Indexes of severity for osteoarthritis of the hip and knee. Scand J Rheumatol, 1987, 65 : 85-89.</p>
-          
-          
-        
+          <p class="details">Lequesne M, Mery C, Samson M, Gérard P. Indexes of severity for osteoarthritis of the hip and knee. Scand J Rheumatol, 1987, 65 : 85-89.</p>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
-
 export default Vue.extend({
+ 
+name:"HipLequesnes",
  mounted()
     {}
 })

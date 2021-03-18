@@ -1,6 +1,6 @@
 <template>
-<div>
-   <h2 class="title">Calcul du score de RODNAN</h2>
+  <div>
+    <h2 class="title">Calcul du score de RODNAN</h2>
 
       <h4 class="categorie">Body</h4>
         <p class="description">Visage</p>
