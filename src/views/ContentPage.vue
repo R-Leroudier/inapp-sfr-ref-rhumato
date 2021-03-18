@@ -16,8 +16,8 @@ import Behcet from '@/components/scores/MaladiesSystemiques/Behcet.vue';
 import PathologieOsseuse from "@/components/scores/PathologieOsseuse.vue";
 import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
 import SystemicSclerodermaAcrEular from "@/components/scores/MaladiesSystemiques/SystemicSclerodermaAcrEular.vue";
-import Das28 from "@/components/scores/RIC/Polyarthrite rhumatoide/Das28.vue";
-import AcrEular2010 from "@/components/scores/RIC/Polyarthrite rhumatoide/AcrEular2010.vue";
+import Das28 from "@/components/scores/RIC/PolyarthriteRhumatoide/Das28.vue";
+import AcrEular2010 from "@/components/scores/RIC/PolyarthriteRhumatoide/AcrEular2010.vue";
 import Asas from "@/components/scores/RIC/Spondyloarthrite/Asas.vue";
 import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
 import Amor from "@/components/scores/RIC/Spondyloarthrite/Amor.vue";
@@ -27,9 +27,10 @@ import Cdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Cdai.vue";
 import Gsla from "@/components/scores/Gsla.vue";
 import DasPpr from "@/components/scores/RIC/DasPpr.vue";
 import Sdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Sdai.vue";
-import First from "@/components/scores/First.vue"
+import First from "@/components/scores/First.vue";
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
+
 
 export default Vue.extend({
   name: "Home",
@@ -46,7 +47,7 @@ export default Vue.extend({
     Asas,
     NewYorkClassification,
     Amor,
-    Asdas
+    Asdas,
     IMC,
     Cdai,
     Gsla,
