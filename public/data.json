@@ -83,7 +83,7 @@
                       "content": "http://medicalcul.free.fr/das28.html",
                       "slug": "DAS28",
                       "submenu": false,
-                      "component":"Das28"
+                      "component": "Das28"
                     },
                     {
                       "id": "",
@@ -157,7 +157,7 @@
                       "content": "http://www.rhumato.info/fiches-pratiques2/166-spondylarthrite-ankylosante/1747-criteres-damor-des-spondylarthropathies",
                       "slug": "amor",
                       "submenu": false,
-                      "component":"amor" 
+                      "component": "amor"
                     },
                     {
                       "id": "",
@@ -169,7 +169,7 @@
                       "content": "",
                       "slug": "classificaton-de-new-york",
                       "submenu": false,
-                      "component":"NewYorkClassification"
+                      "component": "NewYorkClassification"
                     },
                     {
                       "id": "",
@@ -239,7 +239,8 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/asdas.html",
                       "slug": "asdas",
-                      "submenu": false
+                      "submenu": false,
+                      "component" : "Asdas"
                     }
                   ]
                 }
@@ -326,8 +327,7 @@
                   "type": "html",
                   "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012",
                   "slug": "classification",
-                  "submenu": false,
-                  "component":"ArthritisAcr1990"
+                  "submenu": false
                 },
                 {
                   "id": "",
@@ -335,10 +335,24 @@
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
-                  "type": "html",
+                  "type": "list",
                   "content": "http://actualites-therapeutiques.com/diapo/2013/Matin/3%20-%20Berthelot%20JM.pdf",
                   "slug": "activite",
-                  "submenu": false
+                  "submenu": true,
+                  "children": [
+                    {
+                      "id": "",
+                      "name": "DAS-PPR",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "http://actualites-therapeutiques.com/diapo/2013/Matin/3%20-%20Berthelot%20JM.pdf",
+                      "slug": "dasppr",
+                      "submenu": false,
+                      "component": "DasPpr"
+                    }
+                  ]
                 }
               ]
             }
@@ -481,6 +495,7 @@
               "appId": 1,
               "parentId": 2,
               "type": "html",
+              "component": "FautrelClassification",
               "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-still-de-ladulte/criteres/criteres-de-classification-proposes-fautrel",
               "slug": "maladie-de-still",
               "submenu": false
@@ -494,7 +509,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990",
               "slug": "maladie-de-horton",
-              "submenu": false
+              "submenu": false,
+              "component":"ArthritisAcr1990"
             },
             {
               "id": "",
@@ -515,7 +531,6 @@
               "appId": 1,
               "parentId": 2,
               "type": "list",
-              "component": "SystemiSclerodermaAcrEular",
               "content": "",
               "slug": "Sclérodermie",
               "submenu": true,
@@ -527,9 +542,9 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
-                  "component": "SystemiSclerodermaAcrEular",
+                  "component": "SystemicSclerodermaAcrEular",
                   "content": "https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres",
-                  "slug": "classificaion",
+                  "slug": "classification",
                   "submenu": false
                 },
                 {
@@ -554,7 +569,7 @@
           "appId": 1,
           "parentId": 2,
           "type": "html",
-          "component":"PathologieOsseuse",
+          "component": "PathologieOsseuse",
           "content": "",
           "slug": "pathologie-osseuse",
           "submenu": false
@@ -667,7 +682,7 @@
           "type": "html",
           "content": "https://www.imc.fr/",
           "slug": "IMC",
-          "component":"IMC",
+          "component": "IMC",
           "submenu": false
         },
         {
@@ -677,7 +692,7 @@
           "appId": 1,
           "parentId": 2,
           "type": "html",
-          "component" : "Gsla",
+          "component": "Gsla",
           "content": "https://www.agla.ch/fr/calculateurs-outils/calculateur-de-risque-du-gsla",
           "slug": "risques-cardio-vasculaires",
           "submenu": false

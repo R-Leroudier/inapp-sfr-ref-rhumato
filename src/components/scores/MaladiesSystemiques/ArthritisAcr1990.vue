@@ -5,10 +5,10 @@
       Critères de classification de l’Artérite à Cellules Géantes de l’ACR 1990
     </h3>
     <div>
-      <label for="toggle">Age au diagnostic ≥ 50 ans</label>
+      <label for="toggle1">Age au diagnostic ≥ 50 ans</label>
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle1"
         class="visually-hidden"
         value="1"
         v-model="questions"
@@ -16,10 +16,10 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle">Céphalées inhabituelles</label>
+      <label for="toggle2">Céphalées inhabituelles</label>
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle2"
         class="visually-hidden"
         value="2"
         v-model="questions"
@@ -27,13 +27,13 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle"
+      <label for="toggle3"
         >Artère temporale anormale: douleur à la palpation ou diminution de la
         pulsatilité, non due à de l'athérosclérose</label
       >
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle3"
         class="visually-hidden"
         value="3"
         v-model="questions"
@@ -41,10 +41,10 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle">VS ≥ 50 mm / 1ere heure</label>
+      <label for="toggle4">VS ≥ 50 mm / 1ere heure</label>
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle4"
         class="visually-hidden"
         value="4"
         v-model="questions"
@@ -52,14 +52,14 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle"
+      <label for="toggle5"
         >Anomalies de la biopsie d'artère temporale: vascularite; infiltration à
         prédominance de cellules mononucléées ou granulomateuse, habituellement
         avec des cellules géantes multinucléées</label
       >
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle5"
         class="visually-hidden"
         value="5"
         v-model="questions"

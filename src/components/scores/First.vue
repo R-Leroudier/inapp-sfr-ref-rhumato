@@ -6,12 +6,12 @@
     <div>
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle1"
         class="visually-hidden"
         v-model="quest"
         value="1"
       />
-      <label for="toggle"
+      <label for="toggle1"
         >Mes douleurs sont localisées partout dans tout mon corps.</label
       >
       <div class="control-me"></div>
@@ -19,12 +19,12 @@
     <div>
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle2"
         class="visually-hidden"
         v-model="quest"
         value="2"
       />
-      <label for="toggle"
+      <label for="toggle2"
         >Mes douleurs s'accompagnent d'une fatigue générale permanente.</label
       >
       <div class="control-me"></div>
@@ -32,12 +32,12 @@
     <div>
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle3"
         class="visually-hidden"
         v-model="quest"
         value="3"
       />
-      <label for="toggle"
+      <label for="toggle3"
         >Mes douleurs sont comme des brûlures, des décharges électriques ou des
         crampes.</label
       >
@@ -46,12 +46,12 @@
     <div>
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle4"
         class="visually-hidden"
         v-model="quest"
         value="4"
       />
-      <label for="toggle"
+      <label for="toggle4"
         >Mes douleurs s'accompagnent d'autres sensations anormales comme des
         fourmillements, des picotements ou des sensations d'engourdissement,
         dans tout mon corps</label
@@ -61,12 +61,12 @@
     <div>
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle5"
         class="visually-hidden"
         v-model="quest"
         value="5"
       />
-      <label for="toggle"
+      <label for="toggle5"
         >Mes douleurs s'accompagnent d'autres problèmes de santé comme des
         problèmes digestifs, des problèmes urinaires, des maux de tête, ou des
         impatiences dans les jambes.</label
@@ -76,12 +76,12 @@
     <div>
       <input
         type="checkbox"
-        id="toggle"
+        id="toggle6"
         class="visually-hidden"
         v-model="quest"
         value="6"
       />
-      <label for="toggle"
+      <label for="toggle6"
         >Mes douleurs ont un retentissement important dans ma vie : en
         particulier, sur mon sommeil, ma capacité à me concentrer avec une
         impression de fonctionner au ralenti.</label
