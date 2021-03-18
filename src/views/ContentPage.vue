@@ -24,6 +24,7 @@ import IMC from "@/components/scores/Imc.vue";
 import Cdai from "@/components/scores/RIC/Polyarthrite rhumatoide/Cdai.vue";
 import Gsla from "@/components/scores/Gsla.vue";
 import Sdai from "@/components/scores/RIC/Polyarthrite rhumatoide/Sdai.vue";
+import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
 
 export default Vue.extend({
   name: "Home",
@@ -43,6 +44,7 @@ export default Vue.extend({
     Cdai,
     Gsla,
     Sdai,
+    ArthritisAcr1990,
   },
   methods: {
     searchComponentName(nodes, slug) {
