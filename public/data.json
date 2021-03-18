@@ -173,6 +173,7 @@
                       "parentId": 2,
                       "type": "",
                       "content": "",
+                      "component": "NewYorkCriteria",
                       "slug": "criteres-de-new-york-modifies",
                       "submenu": false
                     },

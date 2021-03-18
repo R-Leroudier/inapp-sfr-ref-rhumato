@@ -10,13 +10,13 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
-import NewYorkClassification from "@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue";
+import NewYorkCriteria from "@/components/scores/RIC/Spondyloarthrite/NewYorkCriteria.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
     Score1,
-    NewYorkClassification
+    NewYorkCriteria
   },
   data() {
     return {
