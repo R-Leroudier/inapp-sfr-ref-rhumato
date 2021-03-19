@@ -31,9 +31,12 @@ import Sdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Sdai.vue";
 import First from "@/components/scores/First.vue";
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
+import Caspar from "@/components/scores/RIC/Caspar.vue";
 import GoutteAcrEular from "@/components/scores/RhumatismesChristallins/GoutteAcrEular.vue";
 import SelenaSledai from "@/components/scores/MaladiesSystemiques/SelenaSledai.vue";
 import Ffs from  "@/components/scores/MaladiesSystemiques/Ffs.vue";
+import Rodnan from "@/components/scores/MaladiesSystemiques/Rodnan.vue";
+import Bvas from "@/components/scores/MaladiesSystemiques/Bvas.vue";
 
 export default Vue.extend({
   name: "ContentPage",
@@ -60,9 +63,12 @@ export default Vue.extend({
     First,
     Sapl,
     ArthritisAcr1990,
+    Caspar,
     SelenaSledai,
     Ffs,
     GoutteAcrEular,
+    Rodnan,
+    Bvas,
   },
   methods: {
     searchComponentName(nodes, slug) {

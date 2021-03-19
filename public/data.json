@@ -277,7 +277,8 @@
                       "type": "html",
                       "content": "http://www.rhumato.info/fiches-pratiques2/174-rhumatisme-psoriasique/1882-criteteres-diagnostiques-de-caspar-pour-le-rhumatisme-psoriasiques",
                       "slug": "caspar",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "Caspar"
                     }
                   ]
                 },
@@ -487,6 +488,7 @@
                   "type": "html",
                   "content": "",
                   "slug": "bvas",
+                  "component": "Bvas",
                   "submenu": false
                 }
               ]
@@ -557,6 +559,7 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
+                  "component": "Rodnan",
                   "content": "https://sclerodermie.net/2015/01/score-de-rodnan-calculateur/",
                   "slug": "activite",
                   "submenu": false
