@@ -93,12 +93,32 @@ export default Vue.extend({
 }
 
 .question {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: center;
+  text-align: left;
+
   h2 {
     display: contents;
+    display: flex;
+    margin: auto;
+    padding-left: 10px;
   }
+
+  label {
+    display: flex;
+    margin: auto;
+  }
+
   .text {
     padding-left: 10px;
     padding-right: 15px;
+    display: flex;
+    align-items: center;
+    width: 71%;
+    cursor: pointer;
   }
 }
 </style>
