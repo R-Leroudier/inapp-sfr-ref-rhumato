@@ -6,7 +6,7 @@
       radiographies normales et en l'absence d'un diagnostic d'une autre
       maladie.
     </p>
-    <span class="line">------</span>
+    <span class="line"></span>
     <form class="form">
       <h4 class="categorie">Atteintes articulaires</h4>
       <ul class="details">
@@ -39,10 +39,10 @@
       <button type="button" @click="choice2(0)" class="btn">
         FR et ACPA négatifs.
       </button>
-      <button type="button" @click="choice2(2)" class="btn validate">
+      <button type="button" @click="choice2(2)" class="btn">
         FR ou ACPA faiblement positif <span>(> normale et ≤ 3 x normale).</span>
       </button>
-      <button type="button" @click="choice2(3)" class="btn cancel">
+      <button type="button" @click="choice2(3)" class="btn">
         FR ou ACPA fortement positif <span>(> 3 x normale).</span>
       </button>
 
@@ -63,9 +63,11 @@
       <button type="button" @click="choice4(1)" class="btn">
         VS et CRP anormales.
       </button>
-      <card class="result">score {{ calcTotal() }} </card>
+      <div class="result">
+      <card >score {{ calcTotal() }} </card>
+      </div>
     </form>
-    <span class="line">------</span>
+    <span class="line"></span>
     <span>
       Interprétation : Les critères ACR/EULAR donnent la possibilité de
       diagnostiquer précocement une polyarthrite rhumatoïde. Un score à 6 ou
@@ -113,4 +115,146 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style>.btn {
+  background-color: rgb(199, 197, 197); 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+}
+.btn:focus{
+  background-color: rgb(63, 160, 177); 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color:white;
+  
+}
+.title{color:rgb(143, 58, 177);
+ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.introduction{
+    background-color: rgb(224, 222, 222);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin: 35px;
+    
+
+}
+.result{
+    background-color: #47cec1; 
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin: 35px;
+    color: white;
+    
+
+}
+
+.validate{
+  background-color: rgb(72, 179, 86); 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+}
+
+.validate:focus{ 
+  background-color: rgb(72, 179, 86); 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color:white;
+  
+}
+.cancel{
+     background-color: rgb(179, 72, 72); 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+}
+.cancel:focus{ 
+ background-color: rgb(179, 72, 72);  
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color:white;
+  
+}
+.line{
+   display:block;
+   width:100% /*or whatever width you want the effect of <hr>*/;
+   border-top: 2px solid #ccc;
+}</style>

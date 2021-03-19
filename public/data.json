@@ -240,7 +240,7 @@
                       "content": "http://medicalcul.free.fr/asdas.html",
                       "slug": "asdas",
                       "submenu": false,
-                      "component" : "Asdas"
+                      "component": "Asdas"
                     }
                   ]
                 }
@@ -327,7 +327,8 @@
                   "type": "html",
                   "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012",
                   "slug": "classification",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "ArthritisAcr1990"
                 },
                 {
                   "id": "",
@@ -377,8 +378,9 @@
               "parentId": 2,
               "type": "html",
               "content": "https://www.revmed.ch/Scores/SCORES-DIAGNOSTIQUES/RHUMATOLOGIE/Score-diagnostique-pour-la-goutte-ACR-et-EULAR",
-              "slug": "goutte",
-              "submenu": false
+              "slug": "goutte-acr-eular",
+              "submenu": false,
+              "component": "GoutteAcrEular"
             }
           ]
         },
@@ -451,7 +453,7 @@
               "content": "https://www.fai2r.org/les-pathologies-rares/behcet/criteres",
               "slug": "maladie-de-behcet",
               "submenu": false,
-              "component":"Behcet"
+              "component": "Behcet"
             },
             {
               "id": "",
@@ -473,7 +475,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "ffs",
-                  "submenu": false
+                  "submenu": false,
+                  "component":"Ffs"
                 },
                 {
                   "id": "",

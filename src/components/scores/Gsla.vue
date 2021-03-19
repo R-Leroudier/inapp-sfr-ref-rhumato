@@ -75,7 +75,7 @@
 
     <p class="description">Maladie coronarienne/athérosclérose connues1</p>
     <p class="description">Diabète de type 2 ; diabète de type 1 avec atteinte des organes cibles telle que microalbuminurie</p>
-    <p class="description">DFG < 30 ml/min/1.73 m2</p>
+    <p class="description">DFG  30 ml/min/1.73 m2</p>
 
     <p class="description">CATÉGORIE « RISQUE ÉLEVÉ »</p>
     
