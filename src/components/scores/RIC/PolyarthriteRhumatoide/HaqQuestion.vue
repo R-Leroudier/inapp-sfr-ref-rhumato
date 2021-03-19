@@ -8,7 +8,7 @@
       <p class="details">
         {{ question }}
       </p>
-      <div>
+      <div class="radio-choise">
         <label :for="`radio` + index + `x0`">
           <input
             type="radio"
@@ -21,7 +21,7 @@
           Sans aucune difficulté
         </label>
       </div>
-      <div>
+      <div class="radio-choise">
         <label :for="`radio` + index + `x1`">
           <input
             type="radio"
@@ -33,7 +33,7 @@
           Avec quelques difficultés
         </label>
       </div>
-      <div>
+      <div class="radio-choise">
         <label :for="`radio` + index + `x2`">
           <input
             type="radio"
@@ -45,7 +45,7 @@
           Avec beaucoup de difficultés
         </label>
       </div>
-      <div>
+      <div class="radio-choise">
         <label :for="`radio` + index + `x3`">
           <input
             type="radio"
@@ -81,3 +81,32 @@ export default Vue.extend({
   mounted() {},
 });
 </script>
+<style scoped lang="scss">
+.radio-choise {
+  border-color: #8f3ab138;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 5px;
+  max-width: 250px;
+  margin: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+
+  label {
+    width: 100%;
+    background-color: #e0b5f10a;
+    display: block;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    input:checked + :parent {
+      background-color: red !important;
+    }
+
+
+  }
+
+}
+</style>
