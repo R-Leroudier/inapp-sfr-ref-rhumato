@@ -11,8 +11,8 @@ import Vue from "vue";
 import DataService from "@/service/DataService";
 import Score1 from "@/components/scores/Score1.vue";
 import Haq from "@/components/scores/RIC/PolyarthriteRhumatoide/Haq.vue";
-import Basdai from "@/components/scores/RIC/Spondyloarthrite/Basdai.vue"
-import Behcet from '@/components/scores/MaladiesSystemiques/Behcet.vue';
+import Basdai from "@/components/scores/RIC/Spondyloarthrite/Basdai.vue";
+import Behcet from "@/components/scores/MaladiesSystemiques/Behcet.vue";
 import PathologieOsseuse from "@/components/scores/PathologieOsseuse.vue";
 import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
 import SystemicSclerodermaAcrEular from "@/components/scores/MaladiesSystemiques/SystemicSclerodermaAcrEular.vue";
@@ -31,6 +31,7 @@ import Sdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Sdai.vue";
 import First from "@/components/scores/First.vue";
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
+import GoutteAcrEular from "@/components/scores/RhumatismesChristallins/GoutteAcrEular.vue";
 import SelenaSledai from "@/components/scores/MaladiesSystemiques/SelenaSledai.vue";
 import Ffs from  "@/components/scores/MaladiesSystemiques/Ffs.vue";
 
@@ -60,7 +61,8 @@ export default Vue.extend({
     Sapl,
     ArthritisAcr1990,
     SelenaSledai,
-    Ffs
+    Ffs,
+    GoutteAcrEular,
   },
   methods: {
     searchComponentName(nodes, slug) {
