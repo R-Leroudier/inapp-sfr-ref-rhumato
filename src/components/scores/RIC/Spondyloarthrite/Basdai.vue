@@ -79,8 +79,7 @@
               value="0"
               v-model="picked"
               checked="checked"
-              class="radio"
-            /><label for="vDuree1">Aucune</label><br />
+            /><label class="btn" for="vDuree1">Aucune</label><br />
           </div>
             <div class="radio">
             <input
@@ -89,8 +88,7 @@
               type="radio"
               v-model="picked"
               value="1.25"
-              class="radio"
-            /><label for="vDuree2">15 minutes</label><br />
+            /><label class="btn" for="vDuree2">15 minutes</label><br />
             </div>
             <div class="radio">
             <input
@@ -99,8 +97,7 @@
               type="radio"
               v-model="picked"
               value="2.5"
-              class="radio"
-            /><label for="vDuree3">30 minutes</label><br />
+            /><label class="btn" for="vDuree3">30 minutes</label><br />
             </div>
             <div class="radio">
             <input
@@ -109,7 +106,7 @@
               type="radio"
               v-model="picked"
               value="3.75"
-            /><label for="vDuree4">45 minutes</label><br />
+            /><label class="btn" for="vDuree4">45 minutes</label><br />
             </div>
             <div class="radio">
             <input
@@ -118,8 +115,7 @@
               type="radio"
               v-model="picked"
               value="5"
-              class="radio"
-            /><label for="vDuree5">1 heure</label><br />
+            /><label class="btn" for="vDuree5">1 heure</label><br />
             </div>
             <div class="radio">
             <input
@@ -128,7 +124,7 @@
               type="radio"
               value="6.25"
               v-model="picked"
-            /><label for="vDuree6">1 h 15</label><br />
+            /><label class="btn" for="vDuree6">1 h 15</label><br />
             </div>
             <div class="radio">
             <input
@@ -137,7 +133,7 @@
               type="radio"
               value="7.5"
               v-model="picked"
-            /><label for="vDuree7">1 h 30</label><br />
+            /><label class="btn" for="vDuree7">1 h 30</label><br />
             </div>
             <div class="radio">
             <input
@@ -146,7 +142,7 @@
               type="radio"
               value="8.75"
               v-model="picked"
-            /><label for="vDuree8">1 h 45</label><br />
+            /><label class="btn" for="vDuree8">1 h 45</label><br />
             </div>
             <div class="radio">
             <input
@@ -155,7 +151,7 @@
               type="radio"
               value="10"
               v-model="picked"
-            /><label for="vDuree9">2 h ou plus</label><br/>
+            /><label class="btn" for="vDuree9">2 h ou plus</label><br/>
             </div>
       <br />
       <div>
@@ -223,50 +219,34 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss">
+<style scoped>
 
-.radio > input {
-  visibility: hidden;
+ input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-.radio{
-  background-color: rgb(199, 197, 197); 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items:flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color: rgb(49, 49, 49);
+
+.label:hover,
+.label:focus {
+  color: grey;
 }
-.radio:focus{
-    background-color: rgb(63, 160, 177); 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color:white;
+
+.label:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
 }
+
+[type="radio"]:checked + label {
+  background-color:violet;
+  }
 .score_note {
   font-size: smaller;
   font-style: italic;
 }
 .inputNumber {
+  border-radius: 30px;
   padding: 8px;
   font-size: 15px;
   width: 90%;
