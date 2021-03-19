@@ -1,7 +1,7 @@
 <template>
   <div class="score">
     <h2 class="title">Score HAQ</h2>
-    <span class="line">------</span>
+    <span class="line"></span>
 
     <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
       <HaqQuestion
@@ -9,11 +9,12 @@
         :title="dataQuestion.title"
         :question="dataQuestion.question"
         :malusScore="dataQuestion.malusScore"
+        @upwardChange="upwardChange"
       ></HaqQuestion>
       <br/>
     </div>
 
-    <span class="line">------</span>
+    <span class="line"></span>
     <h3 class="title">
       Score final <em>{{ finalScore }}</em
       >.
@@ -54,29 +55,15 @@ export default Vue.extend({
         { question: "Monter et descendre de voiture ?", malusScore: [0,0.1,0.1,0.2], userScore: 0},
         { question: "Faire des travaux ménagers tels que passer l'aspirateur ou faire du petit jardinage ?", malusScore: [0,0.1,0.1,0.2], userScore: 0},
       ],
-      choise: {
-        n0: "a,0",
-      },
     };
   },
   methods: {
     calcResult() {
-      this.finalScore = 0;
-      let i;
-      for (i = 0; i < Object.keys(this.choise).length; i++) {
-        const nb = parseFloat(this.choise[`n` + i].toString().split(",")[1]);
-        if (nb >= 0) {
-          this.finalScore += nb;
-        }
-      }
+      this.finalScore = this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1));
     },
-  },
-  watch: {
-    choise: {
-      handler: function() {
-        this.calcResult();
-      },
-      deep: true,
+      upwardChange(e: any) {
+      this.scores[e.index] = e.userScore;
+      this.calcResult()
     },
   },
   mounted() {},
