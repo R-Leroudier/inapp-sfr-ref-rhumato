@@ -35,6 +35,7 @@ import Caspar from "@/components/scores/RIC/Caspar.vue";
 import GoutteAcrEular from "@/components/scores/RhumatismesChristallins/GoutteAcrEular.vue";
 import SelenaSledai from "@/components/scores/MaladiesSystemiques/SelenaSledai.vue";
 import Ffs from  "@/components/scores/MaladiesSystemiques/Ffs.vue";
+import Rodnan from "@/components/scores/MaladiesSystemiques/Rodnan.vue";
 import Bvas from "@/components/scores/MaladiesSystemiques/Bvas.vue";
 
 export default Vue.extend({
@@ -66,6 +67,7 @@ export default Vue.extend({
     SelenaSledai,
     Ffs,
     GoutteAcrEular,
+    Rodnan,
     Bvas,
   },
   methods: {
