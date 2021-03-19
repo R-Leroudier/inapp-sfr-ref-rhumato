@@ -117,7 +117,7 @@ export default Vue.extend({
     padding-right: 15px;
     display: flex;
     align-items: center;
-    width: 71%;
+    width: 66%;
     cursor: pointer;
   }
 }

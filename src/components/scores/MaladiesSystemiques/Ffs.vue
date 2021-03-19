@@ -95,6 +95,8 @@ export default Vue.extend({
     margin-top: 10px;
     margin-bottom: 17px;
     background-color: #87c343;
+    width: 100%;
+    display: flex !important;
 
     div:nth-child(1) {
       display: flex;
