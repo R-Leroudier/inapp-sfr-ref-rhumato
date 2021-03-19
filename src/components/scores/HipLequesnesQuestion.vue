@@ -14,7 +14,7 @@
                 <label :for="`radio` + index + `x`[i] "> {{ item }}</label>
                 <input
                     type="radio"
-                    :value="malusScore[index]"
+                    :value="malusScore[i]"
                     :name="`radio` + index"
                     :id="`radio` + index + `x`[i]"
                     @click="radioChange($event)"

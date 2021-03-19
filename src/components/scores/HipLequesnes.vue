@@ -53,9 +53,11 @@ export default Vue.extend({
     calcResult() {
       this.finalScore = this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1));
     },
-      upwardChange(e: any) {
+    upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
-      this.calcResult()
+      this.calcResult();
+      console.log(this.finalScore);
+      
     },
   },
   mounted() {},
