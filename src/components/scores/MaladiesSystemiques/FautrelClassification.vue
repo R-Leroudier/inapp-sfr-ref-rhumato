@@ -161,7 +161,7 @@ export default Vue.extend({
 h2{
   font-size: 40px;
 } 
-.resulta{
+.result{
   background-color: rgb(224, 222, 222);
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   justify-content: center;
@@ -211,6 +211,6 @@ label:active {
 
 [type="radio"]:checked + label {
   background-color:violet;
-  }
+}
 </style>
 

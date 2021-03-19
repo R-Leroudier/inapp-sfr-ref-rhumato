@@ -609,8 +609,9 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
+                  "component" : "HipLequesnes",
                   "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf",
-                  "slug": "indice-fonctionnel-de-lequesnes",
+                  "slug": "indice-fonctionnel-de-lequesnes-hanche",
                   "submenu": false
                 }
               ]
@@ -633,8 +634,9 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
+                  "component": "KneeLequesnes",
                   "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf",
-                  "slug": "indice-fonctionnel-de-lequesnes",
+                  "slug": "indice-fonctionnel-de-lequesnes-genou",
                   "submenu": false
                 }
               ]

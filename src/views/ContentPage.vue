@@ -31,6 +31,8 @@ import Sdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Sdai.vue";
 import First from "@/components/scores/First.vue";
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
+import HipLequesnes from "@/components/scores/HipLequesnes.vue";
+import KneeLequesnes from "@/components/scores/KneeLequesnes.vue";
 import Caspar from "@/components/scores/RIC/Caspar.vue";
 import GoutteAcrEular from "@/components/scores/RhumatismesChristallins/GoutteAcrEular.vue";
 import SelenaSledai from "@/components/scores/MaladiesSystemiques/SelenaSledai.vue";
@@ -58,16 +60,18 @@ export default Vue.extend({
     Cdai,
     Gsla,
     FautrelClassification,
+    Rodnan,
     DasPpr,
     Sdai,
     First,
     Sapl,
     ArthritisAcr1990,
+    HipLequesnes,
+    KneeLequesnes,
     Caspar,
     SelenaSledai,
     Ffs,
     GoutteAcrEular,
-    Rodnan,
     Bvas,
   },
   methods: {
