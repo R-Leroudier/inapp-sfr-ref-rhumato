@@ -30,6 +30,7 @@ import Sdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Sdai.vue";
 import First from "@/components/scores/First.vue";
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
+import Caspar from "@/components/scores/RIC/Caspar.vue";
 
 
 export default Vue.extend({
@@ -56,6 +57,7 @@ export default Vue.extend({
     First,
     Sapl,
     ArthritisAcr1990,
+    Caspar
   },
   methods: {
     searchComponentName(nodes, slug) {
