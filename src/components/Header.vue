@@ -18,4 +18,5 @@ export default Vue.extend({
     height: 60px;
     background-color: rgba(198, 240, 255, 0.242);
 }
+
 </style>
