@@ -2,87 +2,88 @@
   <div>
       <h2 class="title">Critères de classification proposés par Fautrel (2002)</h2>
       <p class="description">Calcul des critères de classification ou de diagnostic</p>
-      
-        <h4 class="categorie">Critères majeurs :</h4>
+
+      <h4 class="categorie">Critères majeurs :</h4>
 
           <p class="description">Fièvre hectique ≥ 39°C</p>
           <!-- first choice -->
-            <input type="radio"  name="btnradio1" @click="choice1(0)">
-            <label class="btn">NON</label>
+            <input type="radio"  name="btnradio1" id="btnradio1" @click="choice1(0)">
+            <label class="btn " for="btnradio1">NON</label>
 
-            <input type="radio"  name="btnradio1" @click="choice1(1)">
-            <label class="btn">OUI</label>
+            <input type="radio"  name="btnradio1" id="btnradio2" @click="choice1(1)">
+            <label class="btn" for="btnradio2">OUI</label>
 
           <!-- second choice -->
           <p class="description"> Arthralgies ou arthrites </p> 
-            <input type="radio"  name="btnradio3" @click="choice2(0)">
-            <label class="btn">NON</label>
+            <input type="radio"  name="btnradio3" id="btnradio3" @click="choice2(0)">
+            <label class="btn" for="btnradio3">NON</label>
 
-            <input type="radio"  name="btnradio3" @click="choice2(1)">
-            <label class="btn">OUI</label>
+            <input type="radio"  name="btnradio3" id="btnradio4" @click="choice2(1)">
+            <label class="btn" for="btnradio4">OUI</label>
 
           <!-- third choice -->
           <p class="description">Erythème fugace</p> 
-            <input type="radio"  name="btnradio4" @click="choice3(0)">
-            <label class="btn">NON</label>
+            <input type="radio"  name="btnradio4" id="btnradio5" @click="choice3(0)">
+            <label class="btn" for="btnradio5">NON</label>
 
-            <input type="radio"  name="btnradio4" @click="choice3(1)">
-            <label class="btn">OUI</label>
+            <input type="radio"  name="btnradio4" id="btnradio6" @click="choice3(1)">
+            <label class="btn" for="btnradio6">OUI</label>
 
           <!-- fourth choice -->
           <p class="description">Pharyngite</p>
-            <input type="radio"  name="btnradio5" @click="choice4(0)">
-            <label class="btn">NON</label>
+            <input type="radio"  name="btnradio5" id="btnradio7" @click="choice4(0)">
+            <label class="btn" for="btnradio7">NON</label>
 
-            <input type="radio"  name="btnradio5" @click="choice4(1)">
-            <label class="btn ">OUI</label>
+            <input type="radio"  name="btnradio5" id="btnradio8" @click="choice4(1)">
+            <label class="btn" for="btnradio8">OUI</label>
 
           <!-- fifth choice -->
           <p class="description">Polynucléaires neutrophiles ≥ 80%</p>
-            <input type="radio"  name="btnradio6" @click="choice5(0)">
-            <label class="btn ">NON</label>
+            <input type="radio"  name="btnradio6" id="btnradio9" @click="choice5(0)">
+            <label class="btn" for="btnradio9">NON</label>
 
-            <input type="radio"  name="btnradio6" @click="choice5(1)">
-            <label class="btn">OUI</label>
+            <input type="radio"  name="btnradio6" id="btnradio10" @click="choice5(1)">
+            <label class="btn" for="btnradio10">OUI</label>
 
           <!-- sixth choice -->
           <p class="description">Ferritine glycosylée ≤ 20%</p> 
-            <input type="radio"  name="btnradio7" @click="choice6(0)">
-            <label class="btn">NON</label>
+            <input type="radio"  name="btnradio7" id="btnradio11"  @click="choice6(0)">
+            <label class="btn" for="btnradio11">NON</label>
 
-            <input type="radio"  name="btnradio7" @click="choice6(1)">
-            <label class="btn">OUI</label>
+            <input type="radio"  name="btnradio7" id="btnradio12" @click="choice6(1)">
+            <label class="btn" for="btnradio12">OUI</label>
 
         <h4 class="categorie">Critères mineurs :</h4>
 
           <!-- seventh choice -->
           <p class="description">Rash maculo-papuleux</p>
 
-            <input type="radio"  name="btnradio8" @click="choice7(0)">
-            <label class="btn">NON</label>
+            <input type="radio"  name="btnradio8" id="btnradio13" @click="choice7(0)">
+            <label class="btn" for="btnradio13">NON</label>
 
-            <input type="radio"  name="btnradio8" @click="choice7(1)">
-            <label class="btn">OUI</label>
+            <input type="radio"  name="btnradio8" id="btnradio14" @click="choice7(1)">
+            <label class="btn" for="btnradio14">OUI</label>
 
           <!-- eighth choice -->
           <p class="description">Leucocytes ≥ 10 000 mm3 </p>
 
-            <input type="radio"  name="btnradio9" @click="choice8(0)">
-            <label class="btn">NON</label>
+            <input type="radio"  name="btnradio9" id="btnradio15"  @click="choice8(0)">
+            <label class="btn" for="btnradio15">NON</label>
 
-            <input type="radio" name="btnradio9" @click="choice8(1)">
-            <label class="btn">OUI</label>
-          <br>
-    <card class="result">
+            <input type="radio" name="btnradio9" id="btnradio16"  @click="choice8(1)">
+            <label class="btn" for="btnradio16">OUI</label>
+      <br>
+      <card class="result">
 
-          <span v-if="majorCriterias() <= 1">{{ majorCriterias() }} critère majeur</span>
-          <span v-else>{{ majorCriterias() }} critères majeurs</span> <br>
+        <span v-if="majorCriterias() <= 1">{{ majorCriterias() }} critère majeur</span>
+        <span v-else>{{ majorCriterias() }} critères majeurs</span> <br>
 
-          <span  v-if="minorCriterias() <= 1"> {{ minorCriterias() }} critère mineur</span>
-          <span v-else>{{ minorCriterias() }} critères mineurs</span> <br>
+        <span  v-if="minorCriterias() <= 1"> {{ minorCriterias() }} critère mineur</span>
+        <span v-else>{{ minorCriterias() }} critères mineurs</span> <br>
 
-          <p class="description">Nombre de critères nécessaires: 4 critères majeurs ou 3 critères majeurs + 2 critères mineurs</p>
-    </card>
+        <p class="description">Nombre de critères nécessaires: 4 critères majeurs ou 3 critères majeurs + 2 critères mineurs</p>
+
+      </card>
 
   </div>
 </template>
@@ -207,4 +208,9 @@ label:active {
   color: black;
   outline: 1px solid black;
 }
+
+[type="radio"]:checked + label {
+  background-color:violet;
+  }
 </style>
+
