@@ -1,6 +1,6 @@
 <template>
   <div id="app">     
-      <Rodnan></Rodnan>
+      <Header></Header>
     <router-view></router-view>
   </div>
 </template>
@@ -11,10 +11,9 @@ import DataService from "@/service/DataService";
 
 
 import Header from "@/components/Header.vue";
-import Rodnan from "@/components/scores/MaladiesSystemiques/Rodnan.vue";
 
 export default Vue.extend({
-  components: { Rodnan },
+  components: { Header },
   data() {
     return {};
   },

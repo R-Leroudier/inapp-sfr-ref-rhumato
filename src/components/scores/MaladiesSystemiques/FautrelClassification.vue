@@ -1,10 +1,9 @@
 <template>
   <div>
-      <h2 class="title">Critères de classification proposés par Fautrel</h2>
+      <h2 class="title">Critères de classification proposés par Fautrel (2002)</h2>
       <p class="description">Calcul des critères de classification ou de diagnostic</p>
-
-      <h4 class="categorie">Critères de classification proposés par Fautrel (2002)</h4>
-        <p class="description">Critères majeurs :</p>
+      
+        <h4 class="categorie">Critères majeurs :</h4>
 
           <p class="description">Fièvre hectique ≥ 39°C</p>
           <!-- first choice -->
@@ -73,17 +72,16 @@
 
             <input type="radio" name="btnradio9" @click="choice8(1)">
             <label class="btn">OUI</label>
-      <br>
-      <card class="result">
+          <br>
+    <card class="result">
 
-        <span v-if="majorCriterias() <= 1">{{ majorCriterias() }} critère majeur</span>
-        <span v-else>{{ majorCriterias() }} critères majeurs</span> <br>
+          <span v-if="majorCriterias() <= 1">{{ majorCriterias() }} critère majeur</span>
+          <span v-else>{{ majorCriterias() }} critères majeurs</span> <br>
 
-        <span  v-if="minorCriterias() <= 1"> {{ minorCriterias() }} critère mineur</span>
-        <span v-else>{{ minorCriterias() }} critères mineurs</span> <br>
+          <span  v-if="minorCriterias() <= 1"> {{ minorCriterias() }} critère mineur</span>
+          <span v-else>{{ minorCriterias() }} critères mineurs</span> <br>
 
-        <p class="description">Nombre de critères nécessaires: 4 critères majeurs ou 3 critères majeurs + 2 critères mineurs</p>
-
+          <p class="description">Nombre de critères nécessaires: 4 critères majeurs ou 3 critères majeurs + 2 critères mineurs</p>
     </card>
 
   </div>
@@ -162,4 +160,51 @@ export default Vue.extend({
 h2{
   font-size: 40px;
 } 
+.resulta{
+  background-color: rgb(224, 222, 222);
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  margin: 35px;
+  font-size: 30px;
+}
+
+.validate{
+  background-color: rgb(72, 179, 86); 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+}
+
+input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+label:hover,
+label:focus {
+  color: grey;
+}
+
+label:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
 </style>
