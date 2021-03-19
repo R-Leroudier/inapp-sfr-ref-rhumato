@@ -1,7 +1,7 @@
 <template>
   <div class="ListPage">
     <div class="main-categories">
-      <div class="list" v-for="node0 in nodes0" :key="node0.id">
+      <div class="list" v-for="node0 in nodes0" :key="node0.name + index">
         <router-link :to="'/sublist/' + node0.slug">{{
           node0.name
         }}</router-link>

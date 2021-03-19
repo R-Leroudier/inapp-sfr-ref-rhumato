@@ -240,7 +240,7 @@
                       "content": "http://medicalcul.free.fr/asdas.html",
                       "slug": "asdas",
                       "submenu": false,
-                      "component" : "Asdas"
+                      "component": "Asdas"
                     }
                   ]
                 }
@@ -277,7 +277,8 @@
                       "type": "html",
                       "content": "http://www.rhumato.info/fiches-pratiques2/174-rhumatisme-psoriasique/1882-criteteres-diagnostiques-de-caspar-pour-le-rhumatisme-psoriasiques",
                       "slug": "caspar",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "Caspar"
                     }
                   ]
                 },
@@ -328,7 +329,7 @@
                   "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012",
                   "slug": "classification",
                   "submenu": false,
-                  "component":"ArthritisAcr1990"
+                  "component": "ArthritisAcr1990"
                 },
                 {
                   "id": "",
@@ -378,8 +379,9 @@
               "parentId": 2,
               "type": "html",
               "content": "https://www.revmed.ch/Scores/SCORES-DIAGNOSTIQUES/RHUMATOLOGIE/Score-diagnostique-pour-la-goutte-ACR-et-EULAR",
-              "slug": "goutte",
-              "submenu": false
+              "slug": "goutte-acr-eular",
+              "submenu": false,
+              "component": "GoutteAcrEular"
             }
           ]
         },
@@ -400,9 +402,10 @@
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "lupus-erythemateux-systemique",
+              "component":"SelenaSledai",
               "submenu": false
             },
             {
@@ -451,7 +454,7 @@
               "content": "https://www.fai2r.org/les-pathologies-rares/behcet/criteres",
               "slug": "maladie-de-behcet",
               "submenu": false,
-              "component":"Behcet"
+              "component": "Behcet"
             },
             {
               "id": "",
@@ -473,7 +476,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "ffs",
-                  "submenu": false
+                  "submenu": false,
+                  "component":"Ffs"
                 },
                 {
                   "id": "",
@@ -484,6 +488,7 @@
                   "type": "html",
                   "content": "",
                   "slug": "bvas",
+                  "component": "Bvas",
                   "submenu": false
                 }
               ]
@@ -509,7 +514,8 @@
               "type": "html",
               "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990",
               "slug": "maladie-de-horton",
-              "submenu": false
+              "submenu": false,
+              "component":"ArthritisAcr1990"
             },
             {
               "id": "",
@@ -541,9 +547,9 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
-                  "component": "SystemiSclerodermaAcrEular",
+                  "component": "SystemicSclerodermaAcrEular",
                   "content": "https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres",
-                  "slug": "classificaion",
+                  "slug": "classification",
                   "submenu": false
                 },
                 {
@@ -553,7 +559,7 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
-                  "component" : "Rodnan",
+                  "component": "Rodnan",
                   "content": "https://sclerodermie.net/2015/01/score-de-rodnan-calculateur/",
                   "slug": "activite",
                   "submenu": false
