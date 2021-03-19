@@ -1,231 +1,187 @@
 <template>
   <div style="display: flex; flex-direction: column; margin-top: 10px">
-    <h3>Score Basdai</h3>
-    <span
+    <h3 class="title">Score Basdai</h3>
+    <span align="center" class="score_note"
       >Pour chaque item, indiquez une valeur de 0 (absent) à 10 (extrême)
       concernant votre ressenti.</span
     >
     <form name="Form" id="Form">
-      <table class="score_table">
-        <tr>
-          <td align="left" colspan="2">
-            <br />1. Où situez-vous votre degré global de fatigue&nbsp;?
-          </td>
-        </tr>
-        <tr>
-          <td align="right"><label for="vItem1">Réponse :&nbsp;</label></td>
-          <td align="left">
+          <p> 1. Où situez-vous votre degré global de fatigue&nbsp;?</p>
             <input
               name="vItem1"
               id="vItem1"
               type="number"
-              @change="f_Calculer()"
-              style="width: 2.3em"
+              class="inputNumber"
               v-model="vItem1"
               min="0"
               max="10"
             /><span class="score_note"> (0=absent, 10=extrême)</span>
-          </td>
-        </tr>
-
-        <tr>
-          <td align="left" colspan="2">
-            <br />2. Où situez-vous votre degré global de douleur au niveau du
+            <p>2. Où situez-vous votre degré global de douleur au niveau du
             cou, du dos et des hanches dans le cadre de votre spondylarthrite
             ankylosante&nbsp;?
-          </td>
-        </tr>
-        <tr>
-          <td align="right"><label for="vItem2">Réponse :&nbsp;</label></td>
-          <td align="left">
+          </p>
             <input
               name="vItem2"
               id="vItem2"
               type="number"
-              @change="f_Calculer()"
-              style="width: 2.3em"
+              class="inputNumber"
               v-model="vItem2"
               min="0"
               max="10"
             /><span class="score_note"> (0=absent, 10=extrême)</span>
-          </td>
-        </tr>
-
-        <tr>
-          <td align="left" colspan="2">
-            <br />3. Où situez-vous votre degré de gonflement articulaire en
+          <p align="left" colspan="2">
+            3. Où situez-vous votre degré de gonflement articulaire en
             dehors du cou, du dos et des hanches&nbsp;?
-          </td>
-        </tr>
-        <tr>
-          <td align="right"><label for="vItem3">Réponse :&nbsp;</label></td>
-          <td align="left">
-            <input
+          </p>
+          <input
               name="vItem3"
               id="vItem3"
               type="number"
-              @change="f_Calculer()"
-              style="width: 2.3em"
+              class="inputNumber"
               v-model="vItem3"
               min="0"
               max="10"
             /><span class="score_note"> (0=absent, 10=extrême)</span>
-          </td>
-        </tr>
-
-        <tr>
-          <td align="left" colspan="2">
-            <br />4. Où situez-vous votre degré de gêne pour les zones sensibles
+          <p>
+            4. Où situez-vous votre degré de gêne pour les zones sensibles
             au toucher ou à la pression&nbsp;?
-          </td>
-        </tr>
-        <tr>
-          <td align="right"><label for="vItem4">Réponse :&nbsp;</label></td>
-          <td align="left">
+          </p>
             <input
+              class="inputNumber"
               name="vItem4"
               id="vItem4"
               type="number"
-              @change="f_Calculer()"
-              style="width: 2.3em"
               v-model="vItem4"
               min="0"
               max="10"
             /><span class="score_note"> (0=absent, 10=extrême)</span>
-          </td>
-        </tr>
-
-        <tr>
-          <td align="left" colspan="2">
-            <br />5. Où situez-vous votre degré de raideur matinale depuis votre
+          <p>
+            5. Où situez-vous votre degré de raideur matinale depuis votre
             réveil&nbsp;?
-          </td>
-        </tr>
-        <tr>
-          <td align="right"><label for="vItem5">Réponse :&nbsp;</label></td>
-          <td align="left">
+          </p>
             <input
+              class="inputNumber"
               name="vItem5"
               id="vItem5"
               type="number"
-              @change="f_Calculer()"
-              style="width: 2.3em"
               v-model="vItem5"
               min="0"
               max="10"
             /><span class="score_note"> (0=absent, 10=extrême)</span>
-          </td>
-        </tr>
-
-        <tr>
-          <td align="left" colspan="2">
-            <br />6. Quelle est la durée de votre raideur matinale à partir de
+            <p>6. Quelle est la durée de votre raideur matinale à partir de
             votre réveil&nbsp;?
-          </td>
-        </tr>
-        <tr>
-          <td align="right">Réponse :&nbsp;</td>
-          <td align="left">
+          </p>
+          <div class="radio">
             <input
               name="vDuree"
               id="vDuree1"
               type="radio"
-              @change="f_Calculer()"
               value="0"
               v-model="picked"
               checked="checked"
+              class="radio"
             /><label for="vDuree1">Aucune</label><br />
+          </div>
+            <div class="radio">
             <input
               name="vDuree"
               id="vDuree2"
               type="radio"
-              @change="f_Calculer()"
               v-model="picked"
               value="1.25"
+              class="radio"
             /><label for="vDuree2">15 minutes</label><br />
+            </div>
+            <div class="radio">
             <input
               name="vDuree"
               id="vDuree3"
               type="radio"
-              @change="f_Calculer()"
               v-model="picked"
               value="2.5"
+              class="radio"
             /><label for="vDuree3">30 minutes</label><br />
+            </div>
+            <div class="radio">
             <input
               name="vDuree"
               id="vDuree4"
               type="radio"
-              @change="f_Calculer()"
               v-model="picked"
               value="3.75"
             /><label for="vDuree4">45 minutes</label><br />
+            </div>
+            <div class="radio">
             <input
               name="vDuree"
               id="vDuree5"
               type="radio"
-              @change="f_Calculer()"
               v-model="picked"
               value="5"
+              class="radio"
             /><label for="vDuree5">1 heure</label><br />
+            </div>
+            <div class="radio">
             <input
               name="vDuree"
               id="vDuree6"
               type="radio"
-              @change="f_Calculer()"
               value="6.25"
               v-model="picked"
             /><label for="vDuree6">1 h 15</label><br />
+            </div>
+            <div class="radio">
             <input
               name="vDuree"
               id="vDuree7"
               type="radio"
-              @change="f_Calculer()"
               value="7.5"
               v-model="picked"
             /><label for="vDuree7">1 h 30</label><br />
+            </div>
+            <div class="radio">
             <input
               name="vDuree"
               id="vDuree8"
               type="radio"
-              @change="f_Calculer()"
               value="8.75"
               v-model="picked"
             /><label for="vDuree8">1 h 45</label><br />
+            </div>
+            <div class="radio">
             <input
               name="vDuree"
               id="vDuree9"
               type="radio"
-              @change="f_Calculer() "
               value="10"
               v-model="picked"
-            /><label for="vDuree9">2 h ou plus</label><br />
-          </td>
-        </tr>
-      </table>
-
+            /><label for="vDuree9">2 h ou plus</label><br/>
+            </div>
       <br />
-      <hr width="80%" />
-      <p align="center">
-        <input
-          name="Submit"
-          type="button"
-          @change="f_Calculer()"
-          value="Calculer"
-        />
-      </p>
-      <hr width="80%" />
-
-      <p class="score_result">
-        Score :
-        <input
-          name="Resultat"
-          type="text"
-          id="Resultat"
-          style="width: 3em"
-          readonly="readonly"
-          v-model="result"
-        />
-      </p>
+      <div>
+        <hr width="80%" class="line" />
+        <p align="center">
+          <input
+            class="btn"
+            name="Submit"
+            type="button"
+            @click="f_Calculer()"
+            value="Calculer"
+          />
+        </p>
+        <hr width="80%" class="line" />
+        <p class="result">
+          Score :
+          <input
+            name="Resultat"
+            type="text"
+            id="Resultat"
+            style="width: 3em"
+            readonly="readonly"
+            v-model="result"
+          />
+        </p>
+      </div>
     </form>
   </div>
 </template>
@@ -247,24 +203,82 @@ export default Vue.extend({
       picked: 0,
     };
   },
-  methods:{
-    f_Calculer()
-{
-	// calcul du résultat
-  console.log(this.vItem1)
-	var Dummy = (this.vItem5*1 + this.picked*1) / 2;
-	var Res = (this.vItem1*1 + this.vItem2*1 + this.vItem3*1 + this.vItem4*1 + Dummy) / 5;
+  methods: {
+    f_Calculer() {
+      // calcul du résultat
+      var Dummy = (this.vItem5 * 1 + this.picked * 1) / 2;
+      var Res =
+        (this.vItem1 * 1 +
+          this.vItem2 * 1 +
+          this.vItem3 * 1 +
+          this.vItem4 * 1 +
+          Dummy) /
+        5;
 
-	// Affichage du résultat
-	return this.result = Res;
-}
+      // Affichage du résultat
+      return (this.result = Res);
+    },
   },
   mounted() {},
 });
 </script>
 
 <style lang="scss">
+
+.radio > input {
+  visibility: hidden;
+}
+.radio{
+  background-color: rgb(199, 197, 197); 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items:flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+}
+.radio:focus{
+    background-color: rgb(63, 160, 177); 
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color:white;
+}
+.score_note {
+  font-size: smaller;
+  font-style: italic;
+}
 .inputNumber {
-  width: 30px;
+  padding: 8px;
+  font-size: 15px;
+  width: 90%;
+}
+.form {
+  align-self: center;
+}
+.score_table {
+  border-width: 0;
+  border-collapse: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2;
 }
 </style>
