@@ -277,7 +277,8 @@
                       "type": "html",
                       "content": "http://www.rhumato.info/fiches-pratiques2/174-rhumatisme-psoriasique/1882-criteteres-diagnostiques-de-caspar-pour-le-rhumatisme-psoriasiques",
                       "slug": "caspar",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "Caspar"
                     }
                   ]
                 },
@@ -487,6 +488,7 @@
                   "type": "html",
                   "content": "",
                   "slug": "bvas",
+                  "component": "Bvas",
                   "submenu": false
                 }
               ]
