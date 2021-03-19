@@ -10,10 +10,13 @@
           enthésitique)
         </p>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(0)" v-model="isFirstCriteriaChecked"/>
-            Oui
-          </label>
+          <label class="btn" for="checkbox1">Oui</label>
+            <input
+              type="checkbox"
+              v-on:change="update(0)"
+              v-model="isFirstCriteriaChecked"
+              id="checkbox1"
+            />
         </div>
       </section>
 
@@ -23,11 +26,9 @@
           :
         </p>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(1)" />
-            lésion psoriasique cutanée ou du scalp diagnostiquée par un médecin
-            à l’examen physique
-          </label>
+          <label class="btn" for="checkbox2">Lésion psoriasique cutanée ou du scalp diagnostiquée par un médecin
+            à l’examen physique</label>
+            <input type="checkbox" v-on:change="update(1)" id="checkbox2"/>
         </div>
         <div>
           <label class="btn">
@@ -68,8 +69,8 @@
         <p>5. Présence ou antécédent de dactylite</p>
         <div>
           <label class="btn">
-            <input type="checkbox" v-on:change="update(6)" /> Dactylite
-            actuelle diagnostiquée par un médecin
+            <input type="checkbox" v-on:change="update(6)" /> Dactylite actuelle
+            diagnostiquée par un médecin
           </label>
         </div>
         <div>
@@ -93,14 +94,17 @@
       <button type="button" class="btn validate" v-on:click="calcScore">
         calculer
       </button>
+      <button type="button" class="btn cancel" v-on:click="cancel">
+        annuler
+      </button>
     </form>
-    <p>
-      Pour retenir le diagnostic: Il faut le critère 1 + au moins 3 points
-      (Se:91.4%, Sp: 98.7%).
-    </p>
     <div class="result">
-      <p>{{ score }}</p>
-      <p>{{ interpretation }}</p>
+      <p>
+        Pour retenir le diagnostic: Il faut le critère 1 + au moins 3 points
+        (Se:91.4%, Sp: 98.7%).
+      </p>
+      <p class="score">{{ score }}</p>
+      <p class="interpretation">{{ interpretation }}</p>
     </div>
   </div>
 </template>
@@ -142,8 +146,94 @@ export default Vue.extend({
         this.interpretation = "rhumatisme psoriasique NEGATIF";
       }
     },
+    cancel(){
+      this.isFirstCriteriaChecked = false;
+      this.check = [false, false, false, false, false, false, false, false, false];
+      this.values = [0, 2, 1, 1, 1, 1, 1, 1, 1];
+      this.interpretation = "";
+      this.score = 0;
+    }
   },
 });
 </script>
 
-<style></style>
+<style scoped>
+
+
+input[type=checkbox]:checked + label {
+  background-color: violet;
+}
+
+.score{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.interpretation{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.btn {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: #eceaf0;
+  border: none;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1em;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  width: 80%;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  color: rgb(49, 49, 49);
+}
+
+.result {
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #4c2b62;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  justify-content: center;
+  display: block !important;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  /* align-content: space-around; */
+  /* align-items: flex-start; */
+  text-align: center;
+  color: white;
+}
+
+.validate {
+  background-color: rgb(72, 179, 86);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+}
+
+.cancel{
+  background-color: lightgrey;
+  margin-top: 5%;
+}
+</style>
