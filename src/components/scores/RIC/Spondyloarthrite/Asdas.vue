@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3>Score ASDAS</h3>
-    <span class="line">------</span>
+    <h3 class="title">Score ASDAS</h3>
+    <span class="line"></span>
     <p class="introduction">
       Renseignez chaque item. Indiquez une valeur de 0 (absent) à 10 (extrême)
       pour les questions concernant votre ressenti.
@@ -9,71 +9,102 @@
 
     <form>
       <section>
-        <h5>
+        <h5 class="categorie">
           1. Où situez-vous votre degré global de douleur au niveau du cou, du
           dos et des hanches dans le cadre de votre spondylarthrite ankylosante
           ?
         </h5>
-        <input type="number" v-model="painScale" max="10" />
-        <p>(0=absent, 10=extrême)</p>
+        <div>
+          <input type="number" v-model="painScale" max="10" />
+          <p>(0=absent, 10=extrême)</p>
+        </div>
       </section>
 
       <section>
-        <h5>
+        <h5 class="categorie">
           2. Quelle est la durée de votre raideur matinale à partir de votre
           réveil ?
         </h5>
         <div>
-          <input type="radio" value="none" v-model="durationMorningStiffness" />
-          <label>Aucune</label>
+          <input
+            type="radio"
+            value="none"
+            v-model="durationMorningStiffness"
+            id="btnradio1"
+          />
+          <label class="btn" for="btnradio1">Aucune</label>
         </div>
         <div>
           <input
             type="radio"
             value="15min"
             v-model="durationMorningStiffness"
+            id="btnradio2"
           />
-          <label>15 min</label>
+          <label class="btn" for="btnradio2">15 min</label>
         </div>
         <div>
           <input
             type="radio"
             value="30min"
             v-model="durationMorningStiffness"
+            id="btnradio3"
           />
-          <label>30 min</label>
+          <label class="btn" for="btnradio3">30 min</label>
         </div>
         <div>
           <input
             type="radio"
             value="45min"
             v-model="durationMorningStiffness"
+            id="btnradio4"
           />
-          <label>45 min</label>
+          <label class="btn" for="btnradio4">45 min</label>
         </div>
         <div>
-          <input type="radio" value="1h" v-model="durationMorningStiffness" />
-          <label>1 heure</label>
+          <input
+            type="radio"
+            value="1h"
+            v-model="durationMorningStiffness"
+            id="btnradio5"
+          />
+          <label class="btn" for="btnradio5">1 heure</label>
         </div>
         <div>
-          <input type="radio" value="1h15" v-model="durationMorningStiffness" />
-          <label>1h15</label>
+          <input
+            type="radio"
+            value="1h15"
+            v-model="durationMorningStiffness"
+            id="btnradio6"
+          />
+          <label class="btn" for="btnradio6">1h15</label>
         </div>
         <div>
-          <input type="radio" value="1h30" v-model="durationMorningStiffness" />
-          <label>1h30</label>
+          <input
+            type="radio"
+            alue="1h30"
+            v-model="durationMorningStiffness"
+            id="btnradio7"
+          />
+          <label class="btn" for="btnradio7">1h30</label>
         </div>
         <div>
-          <input type="radio" value="1h45" v-model="durationMorningStiffness" />
-          <label>1h45</label>
+          <input
+            type="radio"
+            value="1h45"
+            v-model="durationMorningStiffness"
+            id="btnradio8"
+          />
+          <label class="btn" for="btnradio8">1h45</label>
         </div>
         <div>
           <input
             type="radio"
             value="2hOrMore"
             v-model="durationMorningStiffness"
+            id="btnradio9"
           />
-          <label>2h ou plus</label>
+          <label class="btn" for="btnradio9">2h ou plus</label>
         </div>
       </section>
       <section>
@@ -83,7 +114,7 @@
       </section>
 
       <section>
-        <h5>
+        <h5 class="categorie">
           4. Où situez-vous votre degré de gonflement ou de douleur articulaire
           en dehors du cou, du dos et des hanches ?
         </h5>
@@ -91,24 +122,24 @@
         <p>(0=absent, 10=extrême)</p>
       </section>
 
-      <section>
-        <input type="radio" value="cpr" v-model="picked" />
-        <label>Utiliser CPR</label>
-        <input type="radio" value="vs" v-model="picked" />
-        <label>Utiliser VS.</label>
+      <section id="cpr-vs">
+        <input type="radio" value="cpr" v-model="picked" id="btnradio10"/>
+        <label class="btn" for="btnradio10">Utiliser CPR</label>
+        <input type="radio" value="vs" v-model="picked" id="btnradio11"/>
+        <label class="btn" for="btnradio11">Utiliser VS.</label>
       </section>
 
-      <section>
+      <section class="input-cpr-vs">
         <div v-if="picked === 'cpr'">
-          <label>CPR :</label>
+          <label>CPR : </label>
           <input type="number" v-model="cprValue" />
-          <p>mg/l</p>
+          <label>mg/l</label>
         </div>
 
         <div v-if="picked === 'vs'">
-          <label>VS :</label>
+          <label>VS : </label>
           <input type="number" v-model="vsValue" />
-          <p>s</p>
+          <label>s</label>
         </div>
       </section>
 
@@ -116,13 +147,13 @@
         calculer
       </button>
     </form>
-    <section class="score">
+    <section class="result">
       <p>
         Le score ASDAS (Ankylosing Spondylitis Disease Activity Score) permet de
         quantifier l'activité d'une spondylarthrite ankylosante
       </p>
-      <p>Score : {{ score }}</p>
-      <p>Seuil d'activité : {{ interpretation }}</p>
+      <p class="score">Score : {{ score }}</p>
+      <p class="score">Seuil d'activité : {{ interpretation }}</p>
     </section>
   </div>
 </template>
@@ -213,12 +244,10 @@ export default Vue.extend({
       if (score >= 1.3 && score < 2.1) {
         this.interpretation = "Modéré";
       }
-      if(score >= 2.1 && score < 3.5)
-      {
+      if (score >= 2.1 && score < 3.5) {
         this.interpretation = "Actif";
       }
-      if(score >= 3.5)
-      {
+      if (score >= 3.5) {
         this.interpretation = "Très actif";
       }
     },
@@ -226,4 +255,39 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style scoped>
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+label:hover,
+label:focus {
+  color: grey;
+}
+
+label:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+
+[type="radio"]:checked + label {
+  background-color: violet;
+}
+
+.input-cpr-vs{
+  margin-bottom: 5%;
+}
+
+.btn{
+  width:40%
+}
+
+.score{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+</style>
