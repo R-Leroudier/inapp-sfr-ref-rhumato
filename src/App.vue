@@ -1,6 +1,6 @@
 <template>
   <div id="app">     
-      <Header></Header>
+      <Rodnan></Rodnan>
     <router-view></router-view>
   </div>
 </template>
@@ -10,10 +10,11 @@ import Vue from "vue";
 import DataService from "@/service/DataService";
 
 
-import FautrelClassification from "@/components/scores/MaladiesSystemiques/FautrelClassification.vue";
+import Header from "@/components/Header.vue";
+import Rodnan from "@/components/scores/MaladiesSystemiques/Rodnan.vue";
 
 export default Vue.extend({
-  components: { FautrelClassification },
+  components: { Rodnan },
   data() {
     return {};
   },
