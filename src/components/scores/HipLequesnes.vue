@@ -55,9 +55,7 @@ export default Vue.extend({
     },
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
-      this.calcResult();
-      console.log(this.finalScore);
-      
+      this.calcResult();      
     },
   },
   mounted() {},

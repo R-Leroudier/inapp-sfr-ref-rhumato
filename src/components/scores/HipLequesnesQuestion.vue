@@ -7,20 +7,16 @@
         <p class="details">
         {{ question }}
         </p>
-        <!-- <p>
-            {{ response }} <br>
-        </p> -->
-            <div v-for="(item, i) in response" :key="item.value">
-                <label :for="`radio` + index + `x`[i] "> {{ item }}</label>
-                <input
-                    type="radio"
-                    :value="malusScore[i]"
-                    :name="`radio` + index"
-                    :id="`radio` + index + `x`[i]"
-                    @click="radioChange($event)"
-                />
-                
-            </div>
+          <div v-for="(item, i) in response" :key="item.value">
+            <label :for="`radio` + index + `x`[i] "> {{ item }}</label>
+            <input
+                type="radio"
+                :value="malusScore[i]"
+                :name="`radio` + index"
+                :id="`radio` + index + `x`[i]"
+                @click="radioChange($event)"
+            />
+          </div>
     </section>
   </div>
 </template>
