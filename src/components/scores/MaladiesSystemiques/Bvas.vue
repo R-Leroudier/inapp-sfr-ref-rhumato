@@ -1,10 +1,13 @@
 <template>
-    <div>
+    <div class="bvas">
         <h2 class="title">Vascularite - BVAS</h2>
-        <p class="line">------</p>
+        <span class="line"></span>
 
         <form class="form">
-            <p class ="details">Ne cocher que les manifestations témoignant d’une maladie active (les séquelles présentes depuis plus de 3 mois sont appréciées par le VDI). Si toutes les manifestations représentent une maladie chronique active, mais faiblement (smoldering/grumbling disease) et qu’il n’y aucune manifestation nouvelle récente ou d’aggravation franche, ne cocher pas de cases. Le score indiqué est celui pour une maladie active récemment.</p>
+            <div class="details">
+                <h3 class="title">Instructions</h3>
+                <p>Ne cocher que les manifestations témoignant d’une maladie active (les séquelles présentes depuis plus de 3 mois sont appréciées par le VDI). Si toutes les manifestations représentent une maladie chronique active, mais faiblement (smoldering/grumbling disease) et qu’il n’y aucune manifestation nouvelle récente ou d’aggravation franche, ne cocher pas de cases. Le score indiqué est celui pour une maladie active récemment.</p>
+            </div>
 
             <div>
                 <h3 class="title">Signes généraux</h3>
@@ -21,8 +24,8 @@
                 <input type="checkbox" name="general4" id="general4" v-on:change="toggleAndUpdate(general, 3)">
                 <label for="general4">Amaigrissement  ≥ 2kg</label>
                 
-                <p v-if="stable">Sous total {{ general.subTotal }} (max : {{ general.stableMax }})</p>
-                <p v-if="!stable">Sous total {{ general.subTotal }} (max : {{ general.unstableMax }})</p>
+                <p class="total" v-if="stable">Sous total {{ general.subTotal }} (max : {{ general.stableMax }})</p>
+                <p class="total" v-if="!stable">Sous total {{ general.subTotal }} (max : {{ general.unstableMax }})</p>
             </div>
 
             <div>
@@ -43,8 +46,8 @@
                 <input type="checkbox" name="skin5" id="skin5" v-on:change="toggleAndUpdate(skin, 4)">
                 <label for="skin5">Autre(s) lésion(s) liée(s) à la vasculatite</label>
 
-                <p v-if="stable">Sous total {{ skin.subTotal }} (max : {{ skin.stableMax }})</p>
-                <p v-if="!stable">Sous total {{ skin.subTotal }} (max : {{ skin.unstableMax }})</p>
+                <p class="total" v-if="stable">Sous total {{ skin.subTotal }} (max : {{ skin.stableMax }})</p>
+                <p class="total" v-if="!stable">Sous total {{ skin.subTotal }} (max : {{ skin.unstableMax }})</p>
                 </div>
 
             <div>
@@ -81,8 +84,8 @@
                 <input type="checkbox" name="mucousAndEyes10" id="mucousAndEyes10" v-on:change="toggleAndUpdate(mucousAndEyes, 9)">
                 <label for="mucousAndEyes10">Vascularite rétinienne /  thrombose / hemorragie / exsudats rétiniens</label>
                 
-                <p v-if="stable">Sous total {{ mucousAndEyes.subTotal }} (max : {{ mucousAndEyes.stableMax }})</p>
-                <p v-if="!stable">Sous total {{ mucousAndEyes.subTotal }} (max : {{ mucousAndEyes.unstableMax }})</p>                
+                <p class="total" v-if="stable">Sous total {{ mucousAndEyes.subTotal }} (max : {{ mucousAndEyes.stableMax }})</p>
+                <p class="total" v-if="!stable">Sous total {{ mucousAndEyes.subTotal }} (max : {{ mucousAndEyes.unstableMax }})</p>                
             </div>
 
             <div>
@@ -104,8 +107,8 @@
                 <input type="checkbox" name="orl5" id="orl5" v-on:change="toggleAndUpdate(orl, 4 )">
                 <label for="orl5">Baisse d'audition de perception (sensorielle)</label>
                 
-                <p v-if="stable">Sous total {{ orl.subTotal }} (max : {{ orl.stableMax }}</p>
-                <p v-if="!stable">Sous total {{ orl.subTotal }} (max : {{ orl.unstableMax }}</p>                
+                <p class="total" v-if="stable">Sous total {{ orl.subTotal }} (max : {{ orl.stableMax }}</p>
+                <p class="total" v-if="!stable">Sous total {{ orl.subTotal }} (max : {{ orl.unstableMax }}</p>                
             </div>
 
             <div>
@@ -133,8 +136,8 @@
                 <input type="checkbox" name="pulmonary7" id="pulmonary7" v-on:change="toggleAndUpdate(pulmonary, 6)">
                 <label for="pulmonary7">Détresse respiratoire</label>
                 
-                <p v-if="stable">Sous total {{ pulmonary.subTotal }} (max : {{ pulmonary.stableMax }})</p>
-                <p v-if="!stable">Sous total {{ pulmonary.subTotal }} (max : {{ pulmonary.unstableMax }})</p>                
+                <p class="total" v-if="stable">Sous total {{ pulmonary.subTotal }} (max : {{ pulmonary.stableMax }})</p>
+                <p class="total" v-if="!stable">Sous total {{ pulmonary.subTotal }} (max : {{ pulmonary.unstableMax }})</p>                
             </div>
 
             <div>
@@ -159,8 +162,8 @@
                 <input type="checkbox" name="cardiac6" id="cardiac6" v-on:change="toggleAndUpdate(cardiac, 5)">
                 <label for="cardiac6">Insufisance cardiaque congestive</label>
                 
-                <p v-if="stable">Sous total {{ cardiac.subTotal }} (max : {{ cardiac.stableMax }})</p>
-                <p v-if="!stable">Sous total {{ cardiac.subTotal }} (max : {{ cardiac.unstableMax }})</p>
+                <p class="total" v-if="stable">Sous total {{ cardiac.subTotal }} (max : {{ cardiac.stableMax }})</p>
+                <p class="total" v-if="!stable">Sous total {{ cardiac.subTotal }} (max : {{ cardiac.unstableMax }})</p>
                 </div>
 
             <div>
@@ -176,8 +179,8 @@
                 <input type="checkbox" name="digestive3" id="digestive3" v-on:change="toggleAndUpdate(digestive, 2)">
                 <label for="digestive3">Douleur abdominale (angor digestif)</label>
                 
-                <p v-if="stable">Sous total {{ digestive.subTotal }} (max : {{ digestive.stableMax }})</p>
-                <p v-if="!stable">Sous total {{ digestive.subTotal }} (max : {{ digestive.unstableMax }})</p>                
+                <p class="total" v-if="stable">Sous total {{ digestive.subTotal }} (max : {{ digestive.stableMax }})</p>
+                <p class="total" v-if="!stable">Sous total {{ digestive.subTotal }} (max : {{ digestive.unstableMax }})</p>                
             </div>
 
             <div>
@@ -205,8 +208,8 @@
                 <input type="checkbox" name="renal7" id="renal7" v-on:change="toggleAndUpdate(renal, 6)">
                 <label for="renal7">Augmentation de la créatininémie > 30% ou diminution de la clairance de la créatine > 25%</label>
                 
-                <p v-if="stable">Sous total {{ renal.subTotal }} (max : {{ renal.stableMax }})</p>
-                <p v-if="!stable">Sous total {{ renal.subTotal }} (max : {{ renal.unstableMax }})</p> 
+                <p class="total" v-if="stable">Sous total {{ renal.subTotal }} (max : {{ renal.stableMax }})</p>
+                <p class="total" v-if="!stable">Sous total {{ renal.subTotal }} (max : {{ renal.unstableMax }})</p> 
             </div>
 
             <div>
@@ -240,20 +243,18 @@
                 <input type="checkbox" name="neurologic9" id="neurologic9" v-on:change="toggleAndUpdate(neurologic, 8)">
                 <label for="neurologic9">Neuropathie périphérique motrice</label>
                 
-                <p v-if="stable">Sous total {{ neurologic.subTotal }} (max : {{ neurologic.stableMax }})</p>
-                <p v-if="!stable">Sous total {{ neurologic.subTotal }} (max : {{ neurologic.unstableMax }})</p>                
+                <p class="total" v-if="stable">Sous total {{ neurologic.subTotal }} (max : {{ neurologic.stableMax }})</p>
+                <p class="total" v-if="!stable">Sous total {{ neurologic.subTotal }} (max : {{ neurologic.unstableMax }})</p>                
             </div>
-
             
                 <input type="checkbox" name="stable" id="stable" v-on:change="toggleStable">
                 <label for="stable">Toutes les atteintes notées sont anciennes et persistantes</label>
         </form>
 
-        <card class="result" v-if="total < 11">Total {{ total }} </card>
-        <card class="result" v-if="11 <= total && total < 30">{{ total }} </card>
-        <card class="result" v-if="30 <= total && total < 50">{{ total }} </card>
-        <card class="result" v-if="50 <= total">{{ total }} </card>
-        <p>{{ total }}</p>
+        <p class="total success" v-if="total < 11">Total {{ total }} </p>
+        <p class="total info" v-if="11 <= total && total < 30">{{ total }} </p>
+        <p class="total warning" v-if="30 <= total && total < 50">{{ total }} </p>
+        <p class="total alert" v-if="50 <= total">{{ total }} </p>
 
         <h3 class="title">Interprétation: </h3>
         <p>The Birmingham Vasculitis Activity Score (BVAS) is a method for assessing the activity of vasculitis. Note that scoring ranges are higher when any of the features are new or worse. Creatinine levels can be scored at patient’s first assessment only.</p>
@@ -422,4 +423,82 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+
+.bvas{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    
+
+
+    .line{
+        display:block;
+        width:100%;
+        border-top: 2px solid #ccc;
+        margin-bottom: 15px;
+    }
+
+    .details{
+        .title{
+            color: rgb(143, 58, 177);
+        }
+        background-color:rgb(235, 232, 236);
+        color: black;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+
+    [type=checkbox]:checked + label, 
+    [type=radio]:checked + label {
+        background-color:lightseagreen;
+        color: white;
+    }
+
+    [type=checkbox]:not(:checked) + label, 
+    [type=radio]:not(:checked) + label {
+        background-color: rgb(199, 197, 197); 
+        color: rgb(49, 49, 49);
+    }
+
+    [type=checkbox] + label, 
+    [type=radio] + label {
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 5px;
+        width:80%;
+        border-radius: 8px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+    }
+
+
+    .total{
+        background-color:grey;
+        color: white;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        &.success{
+            background-color: yellowgreen;
+            color: black;
+        }
+        &.info{
+            background-color: yellow;
+            color: black;
+        }
+        &.warning{
+            background-color: orange;
+            color: black;
+        }
+        &.alert{
+            background-color: red;
+            color: black;
+        }
+    }
+}
+
+</style>

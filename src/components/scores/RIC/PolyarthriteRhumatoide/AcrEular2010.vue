@@ -330,4 +330,15 @@ ul {
   width: 100% /*or whatever width you want the effect of <hr>*/;
   border-top: 2px solid #ccc;
 }
+.line{
+   display:block;
+   width:100% /*or whatever width you want the effect of <hr>*/;
+   border-top: 2px solid #ccc;
+}
+
+[type=checkbox]:checked + label {
+    background-color:rgb(143, 58, 177);
+    
+}
+
 </style>
