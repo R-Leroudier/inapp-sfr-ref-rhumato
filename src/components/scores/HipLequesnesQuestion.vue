@@ -47,12 +47,5 @@ export default Vue.extend({
 </script>
 
 <style>
-.line{
-   display:block;
-   width:100% /*or whatever width you want the effect of <hr>*/;
-   border-top: 2px solid black;
-}
-p {
-  line-height: 9px;
-}
+
 </style>
