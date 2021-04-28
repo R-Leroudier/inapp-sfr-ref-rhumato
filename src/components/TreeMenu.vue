@@ -3,6 +3,8 @@
     <div v-if="this.type === 'list'">
       <div class="label-wrapper" @click="toggleChildren">
         {{ name }}
+        <i v-if="!this.showChildren" class="fas fa-chevron-right"></i>
+        <i v-else class="fas fa-chevron-down"></i>
       </div>
       <tree-menu
         v-if="showChildren"
@@ -16,11 +18,12 @@
       >
       </tree-menu>
     </div>
-    <div class="label-wrapper" v-else>
-      <router-link :to="'/score/' + this.slug">
+    <router-link :to="'/score/' + this.slug" v-else>
+      <div class="label-wrapper">
         {{ name }}
-      </router-link>
-    </div>
+      </div>
+    </router-link>
+
   </div>
 </template>
 <script>
@@ -53,6 +56,12 @@ export default {
   text-align: left;
   font-weight: bold;
   color: #472e5a;
+
+  .label-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   a {
     all: unset;
