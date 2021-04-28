@@ -23,7 +23,6 @@
         {{ name }}
       </div>
     </router-link>
-
   </div>
 </template>
 <script>

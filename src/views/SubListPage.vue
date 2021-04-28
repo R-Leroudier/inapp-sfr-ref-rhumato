@@ -1,12 +1,13 @@
 <template>
   <div class="SubListPage">
+    <h1>{{ list.name }}</h1>
     <div class="sub-categories">
-      <div v-for="(node1, index) in nodes1" :key="node1.name + index">
+      <div v-for="(subChildren, index) in list.children" :key="list.name + index">
         <tree-menu
-          :name="node1.name"
-          :type="node1.type"
-          :slug="node1.slug"
-          :children="node1.children"
+          :name="subChildren.name"
+          :type="subChildren.type"
+          :slug="subChildren.slug"
+          :children="subChildren.children"
           :depth="0"
         ></tree-menu>
       </div>
@@ -23,7 +24,7 @@ export default Vue.extend({
   name: "SubListPage",
   data() {
     return {
-      nodes1: [],
+      list: [],
     };
   },
   components: {
@@ -36,9 +37,9 @@ export default Vue.extend({
         const dataTree = DataService.$data.tree;
 
         // Retrive component name from slug.
-        for (let nodes0 of dataTree) {
-          if (nodes0.slug === slug) {
-            this.nodes1 = nodes0.children;
+        for (let list of dataTree) {
+          if (list.slug === slug) {
+            this.list = list;
             break;
           }
         }
@@ -52,6 +53,13 @@ export default Vue.extend({
 <style lang="scss">
 .SubListPage {
   padding: 24px;
+
+  h1 {
+    margin: 0 0 10px;
+    text-align: left;
+    font-size: 24px;
+    color: #4c2b62;
+  }
 }
 
 .sub-categories {
