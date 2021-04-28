@@ -1,7 +1,7 @@
 <template>
   <div class="ListPage">
     <div class="main-categories">
-      <div class="list" v-for="node0 in nodes0" :key="node0.name + index">
+      <div class="list" v-for="node0 in nodes0" :key="node0.name">
         <router-link :to="'/sublist/' + node0.slug">{{
           node0.name
         }}</router-link>
@@ -33,19 +33,23 @@ export default Vue.extend({
 });
 </script>
 <style lang="scss">
+.ListPage {
+    padding: 24px;
+}
+
 .list {
   a {
-    color: red;
-    width: 100%;
-    height: 20px;
-    background: aqua;
-    border-color: red;
-    border-width: 1px;
-    border-style: solid;
-    display: block;
-    margin-bottom: 5px;
-    padding: 8px;
+    all: unset;
+    background: #ecf1f5;
     border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    display: block;
+    margin-bottom: 8px;
+    padding: 16px;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    color: #472e5a;
   }
 }
 </style>

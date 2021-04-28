@@ -50,6 +50,10 @@ export default Vue.extend({
 });
 </script>
 <style lang="scss">
+.SubListPage {
+  padding: 24px;
+}
+
 .sub-categories {
 }
 </style>

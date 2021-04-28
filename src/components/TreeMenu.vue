@@ -1,8 +1,8 @@
 <template>
-  <div class="tree-menu">
+  <div class="tree-menu" :class="{ children: depth % 2  === 1, grandChildren: depth !== 0 && depth % 2 === 0 }">
     <div v-if="this.type === 'list'">
-      <div class="label-wrapper" :style="indent" @click="toggleChildren">
-        {{ treeIndication }} {{ name }}
+      <div class="label-wrapper" @click="toggleChildren">
+        {{ name }}
       </div>
       <tree-menu
         v-if="showChildren"
@@ -12,12 +12,13 @@
         :slug="subChildren.slug"
         :children="subChildren.children"
         :depth="depth + 1"
+        :key="subChildren.name"
       >
       </tree-menu>
     </div>
     <div class="label-wrapper" v-else>
-      <router-link :style="indent" :to="'/score/' + this.slug">
-        {{ treeIndication }} {{ name }}
+      <router-link :to="'/score/' + this.slug">
+        {{ name }}
       </router-link>
     </div>
   </div>
@@ -29,43 +30,42 @@ export default {
     return { showChildren: false };
   },
   name: "tree-menu",
-  computed: {
-    treeIndication() {
-      return `${"-".repeat(this.depth * 1)}`;
-    },
-    indent() {
-      return { transform: `translate (${this.depth * 50} px)` };
-    },
-  },
+  computed: {},
   methods: {
     toggleChildren() {
       this.showChildren = !this.showChildren;
     },
   },
   mounted() {
-    console.log(this.type);
   },
 };
 </script>
 <style lang="scss">
 .tree-menu {
-  .label-wrapper {
-    color: red;
-    width: 100%;
-    height: 20px;
-    background: aqua;
-    border-color: red;
-    border-width: 1px;
-    border-style: solid;
-    display: block;
-    margin-bottom: 5px;
-    padding: 8px;
-    border-radius: 5px;
-    cursor: pointer;
+  all: unset;
+  background: #ecf1f5;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px lightgray;
+  display: block;
+  margin-bottom: 8px;
+  padding: 16px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+  color: #472e5a;
 
-    a {
-      display: block;
-    }
+  a {
+    all: unset;
+  }
+
+  &.children {
+    background-color: #4c2b62;
+    color: #fff;
+  }
+
+  &.grandChildren {
+    background-color: #fff;
+    color: #4c2b62;
   }
 }
 </style>
