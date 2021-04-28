@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <Header></Header>
+    <Header :headerQuitApp="this.$router.currentRoute.fullPath === '/'"></Header>
     <router-view></router-view>
   </div>
 </template>

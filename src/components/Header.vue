@@ -1,26 +1,36 @@
 <template>
   <div class="header">
-    <div v-if="false">X</div>
-    <div v-else @click="goBack(this,2)"><</div>
-   Haut de page
+    <div v-if="headerQuitApp" class="quit">
+      <a v-if="isMobile()" href="cmd://webview-close" >
+        <i class="fal fa-times-circle"></i>
+      </a>
+    </div>
+    <div v-else @click="goBack(this,2)" class="back">
+      <i class="fal fa-chevron-circle-left"></i>
+    </div>
+
+    <div>
+      <img class="test" :src="require('@/assets/logo-sfr.png')" alt="Logo sfr">
+      <img :src="require('@/assets/logo-ref.png')" alt="Logo ref">
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
-import { goBack } from "@/global";
+import { goBack, isMobile } from "@/global";
 
 export default Vue.extend({
-  mounted() {
-    console.log(this.$router.currentRoute.fullPath);
-  },
+  props: [ "headerQuitApp" ],
+  mounted() {},
   methods: {
-    goBack
+    goBack,
+    isMobile
   }
 })
 </script>
 
-<style>
+<style lang="scss">
 .header {
   height: 40px;
   top: -20px;
@@ -33,6 +43,20 @@ export default Vue.extend({
   flex-direction: row;
   justify-content: space-between;
   line-height: 40px;
-}
 
+  img {
+    height: 40px;
+  }
+
+
+  .quit a {
+    font-size: 24px;
+    color: #cb2080;
+  }
+
+  .back {
+    font-size: 24px;
+    color: #58b4d9;
+  }
+}
 </style>
