@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="SystemicSclerodermaAcrEular">
     <h2 class="title">
       Critères de classification ACR-EULAR de la sclérodermie systémique
     </h2>
@@ -67,7 +67,7 @@
       class="btn-check"
       name="btnradio3"
       id="btnradio5"
-      autocomplete="off"      
+      autocomplete="off"
       v-model="questions.q3"
       value=0
     />
@@ -314,11 +314,20 @@ export default Vue.extend({
       },
       deep:true,
     }
-    
+
   },
   methods:{},
   mounted() {},
 });
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.SystemicSclerodermaAcrEular {
+  .result {
+    background: lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+  }
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="Gsla">
 
-<h2 class="title">Calculateur de risque du GSLA</h2> 
+<h2 class="title">Calculateur de risque du GSLA</h2>
 <p class="description">En utilisant le calculateur de risque du GSLA, vous confirmez que vous avez lu et accepté les Conditions d’utilisation.</p>
 
 <p class="description">Données d’ordre général</p>
@@ -63,12 +63,12 @@
   <input class="btn btn-primary" type="reset" value="Effacer les données">
 
 <p class="description">Explications sur le calculateur de risque du GSLA</p>
-<p class="description">Pour les personnes qui n’entrent pas d’office dans la catégorie « Risque très élevé » ou « Risque élevé » 
-    (voir ci-dessous),le calculateur permet de calculer le risque absolu (en %) de survenue d’un événement 
-    coronarien mortel ou un infarctus du myocarde non mortel sur 10 ans. Pour pouvoir calculer le risque, 
+<p class="description">Pour les personnes qui n’entrent pas d’office dans la catégorie « Risque très élevé » ou « Risque élevé »
+    (voir ci-dessous),le calculateur permet de calculer le risque absolu (en %) de survenue d’un événement
+    coronarien mortel ou un infarctus du myocarde non mortel sur 10 ans. Pour pouvoir calculer le risque,
     toutes les informations sont exigées. Veuillez donc remplir tous les champs.
-    Les taux de LDL, HDL et triglycérides doivent être exprimés en mmol/l. Notez que les valeurs chiffrées saisies ne sont acceptées que 
-    dans la mesure où elles se situent dans les fourchettes indiquées ; les valeurs chiffrées trop élevées ou trop faibles 
+    Les taux de LDL, HDL et triglycérides doivent être exprimés en mmol/l. Notez que les valeurs chiffrées saisies ne sont acceptées que
+    dans la mesure où elles se situent dans les fourchettes indiquées ; les valeurs chiffrées trop élevées ou trop faibles
     seront automatiquement assimilées à la valeur maximale ou minimale du paramètre en question.</p>
 
     <p class="description">CATÉGORIE « RISQUE TRÈS ÉLEVÉ »</p>
@@ -78,9 +78,9 @@
     <p class="description">DFG  30 ml/min/1.73 m2</p>
 
     <p class="description">CATÉGORIE « RISQUE ÉLEVÉ »</p>
-    
+
     <p class="description">Forte augmentation de certains facteurs de risque :
-        LDL-C > 4.9 mmol/l 
+        LDL-C > 4.9 mmol/l
         PA > 180/110 mmHg</p>
 
     <p class="description">DFG 30-59 ml/min/1.73 m2</p>
@@ -105,4 +105,6 @@ name:"Gsla",
 })
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.Gsla {}
+</style>

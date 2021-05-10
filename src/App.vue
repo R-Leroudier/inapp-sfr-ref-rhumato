@@ -30,10 +30,10 @@ export default Vue.extend({
 });
 </script>
 
-<style>
+<style scoped lang="scss">
 html, body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #app {

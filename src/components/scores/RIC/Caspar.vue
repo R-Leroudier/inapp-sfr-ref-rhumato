@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Caspar">
     <h2 class="title">
       Critères de classification de CASPAR pour le rhumatisme psoriasique
     </h2>
@@ -146,4 +146,12 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style scoped lang="scss">
+@import "src/sass/global";
+
+.Caspar {
+  .btn {
+    height: unset;
+  }
+}
+</style>

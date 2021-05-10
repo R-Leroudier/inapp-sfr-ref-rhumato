@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="NewYorkClassification">
     <h3>Classification de New York</h3><br />
     <table>
       <tr>
@@ -41,4 +41,6 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.NewYorkClassification {}
+</style>

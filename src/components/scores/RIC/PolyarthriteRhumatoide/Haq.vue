@@ -1,5 +1,5 @@
 <template>
-  <div class="score">
+  <div class="Haq">
     <h2 class="title">Score HAQ</h2>
     <span class="line"></span>
 
@@ -61,7 +61,7 @@ export default Vue.extend({
     calcResult() {
       this.finalScore = this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1));
     },
-      upwardChange(e: any) {
+    upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
       this.calcResult()
     },
@@ -69,3 +69,10 @@ export default Vue.extend({
   mounted() {},
 });
 </script>
+
+<style scoped lang="scss">
+@import "src/sass/global";
+
+.Haq {
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex; flex-direction: column; margin-top: 10px">
+  <div class="Basdai">
     <h3 class="title">Score Basdai</h3>
     <span align="center" class="score_note"
       >Pour chaque item, indiquez une valeur de 0 (absent) à 10 (extrême)
@@ -219,46 +219,61 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "src/sass/global";
 
- input{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+.Basdai {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 
-.label:hover,
-.label:focus {
-  color: grey;
-}
-
-.label:active {
-  background-color: white;
-  color: black;
-  outline: 1px solid black;
-}
-
-[type="radio"]:checked + label {
-  background-color:violet;
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
-.score_note {
-  font-size: smaller;
-  font-style: italic;
-}
-.inputNumber {
-  border-radius: 30px;
-  padding: 8px;
-  font-size: 15px;
-  width: 90%;
-}
-.form {
-  align-self: center;
-}
-.score_table {
-  border-width: 0;
-  border-collapse: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2;
+
+  label {
+
+  }
+
+  .label:hover,
+  .label:focus {
+    color: grey;
+  }
+
+  .label:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+  }
+
+  [type="radio"]:checked + label {
+    background-color: violet;
+  }
+
+  .score_note {
+    font-size: smaller;
+    font-style: italic;
+  }
+
+  .inputNumber {
+    border-radius: 30px;
+    padding: 8px;
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .form {
+    align-self: center;
+  }
+
+  .score_table {
+    border-width: 0;
+    border-collapse: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2;
+  }
 }
 </style>

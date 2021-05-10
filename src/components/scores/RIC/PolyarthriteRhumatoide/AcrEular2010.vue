@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="AcrEular2010">
     <div>
       <h2 class="title">Polyarthrite rhumatoïde, critères ACR/EULAR</h2>
       <span class="description">
@@ -29,29 +29,29 @@
           </ul>
         </div>
         <div>
-          <button type="button" @click="choice1(0)" class="btn">
+          <p @click="choice1(0)" class="btn" :class="{ selected: score1 === 0 }">
             1 grosse articulation.
-          </button>
+          </p>
         </div>
         <div>
-          <button type="button" @click="choice1(1)" class="btn">
+          <p @click="choice1(1)" class="btn" :class="{ selected: score1 === 1 }">
             2 à 10 grosses articulations.
-          </button>
+          </p>
         </div>
         <div>
-          <button type="button" @click="choice1(2)" class="btn">
+          <p @click="choice1(2)" class="btn" :class="{ selected: score1 === 2 }">
             1 à 3 petites articulations (grosses articulations non comptées).
-          </button>
+          </p>
         </div>
         <div>
-          <button type="button" @click="choice1(3)" class="btn">
+          <p @click="choice1(3)" class="btn" :class="{ selected: score1 === 3 }">
             4 à 10 petites articulations (grosses articulations non comptées).
-          </button>
+          </p>
         </div>
         <div>
-          <button type="button" @click="choice1(4)" class="btn">
+          <p @click="choice1(4)" class="btn" :class="{ selected: score1 === 4 }">
             Plus de 10 articulations (dont au moins une petite articulation).
-          </button>
+          </p>
         </div>
 
         <h4 class="categorie">Sérologie</h4>
@@ -63,47 +63,47 @@
           </ul>
         </div>
         <div>
-          <button type="button" @click="choice2(0)" class="btn">
+          <p @click="choice2(0)" class="btn" :class="{ selected: score2 === 0 }">
             FR et ACPA négatifs.
-          </button>
+          </p>
         </div>
         <div>
-          <button type="button" @click="choice2(2)" class="btn">
+          <p @click="choice2(2)" class="btn" :class="{ selected: score2 === 2 }">
             FR ou ACPA faiblement positif
             <span>(> normale et ≤ 3 x normale).</span>
-          </button>
+          </p>
         </div>
         <div>
-          <button type="button" @click="choice2(3)" class="btn">
+          <p @click="choice2(3)" class="btn" :class="{ selected: score2 === 3 }">
             FR ou ACPA fortement positif <span>(> 3 x normale).</span>
-          </button>
+          </p>
         </div>
         <h4 class="categorie">Durée de la synovite</h4>
         <div>
-          <button type="button" @click="choice3(0)" class="btn">
+          <p @click="choice3(0)" class="btn" :class="{ selected: score3 === 0 }">
             Durée &#8249; 6 semaines.
-          </button>
+          </p>
         </div>
         <div>
-          <button type="button" @click="choice3(1)" class="btn">
+          <p @click="choice3(1)" class="btn" :class="{ selected: score3 === 1 }">
             Durée ≥ 6 semaines.
-          </button>
+          </p>
         </div>
 
         <h4 class="categorie">Marqueurs de l'inflammation</h4>
         <div>
-          <button type="button" @click="choice4(0)" class="btn">
+          <p @click="choice4(0)" class="btn" :class="{ selected: score4 === 0 }">
             VS et CRP normales.
-          </button>
+          </p>
         </div>
         <div>
-          <button type="button" @click="choice4(1)" class="btn">
+          <p @click="choice4(1)" class="btn" :class="{ selected: score4 === 1 }">
             VS et CRP anormales.
-          </button>
+          </p>
         </div>
 
         <div class="result">
-          <h4>Score :{{ calcTotal() }}</h4>
+          <h4>Score : {{ calcTotal() }}</h4>
         </div>
       </form>
     </div>
@@ -115,6 +115,7 @@
         diagnostiquer précocement une polyarthrite rhumatoïde. Un score à 6 ou
         plus pose le diagnostic de polyarthrite rhumatoïde.
       </span>
+      <br>
       <span>
         Références : Funovits J, Aletaha D, Bykerk V, Combe B, Dougados M, Emery
         P, et al. The American College of Rheumatology/European League Against
@@ -158,176 +159,80 @@ export default Vue.extend({
 });
 </script>
 
-<style>
-ul {
-  list-style: none;
-  padding: 0;
-}
-.detail{
-  text-align: initial;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.btn {
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-  background-color: #eceaf0;
+<style scoped lang="scss">
+.AcrEular2010 {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 
-  border: none;
-  padding: 5px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 1em;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 100%;
-  width: 80%;
-  border-radius: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  color: rgb(49, 49, 49);
-}
-.info {
-  font-style: italic;
-  font-size: x-small;
-}
-.btn:focus {
-  background-color: #3abaea;
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  color: white;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.title {
-  color: rgb(143, 58, 177);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+  .btn {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #eceaf0;
+    cursor: pointer;
 
-.introduction {
-  background-color: rgb(224, 222, 222);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    border: none;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0 1em;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    width: 80%;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  text-align: center;
-  padding-bottom: 3px;
-  padding-top: 3px;
-  margin: 35px;
-}
+    font-size: 1rem;
+    color: rgb(49, 49, 49);
+  }
 
-.result {
-  width: 80%;
-  margin: auto;
-  border-radius: 10px;
-  background-color: #4c2b62;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  justify-content: center;
-  display: block !important;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  .info {
+    font-style: italic;
+    font-size: x-small;
+  }
 
-  /* align-content: space-around; */
-  /* align-items: flex-start; */
-  text-align: center;
-  color: white;
-}
+  .btn.selected {
+    background-color: #3abaea;
+    color: white;
+  }
 
-.validate {
-  background-color: rgb(72, 179, 86);
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  .title {
+    color: rgb(143, 58, 177);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  color: rgb(49, 49, 49);
-}
+  }
 
-.validate:focus {
-  background-color: rgb(72, 179, 86);
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  .result {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #4c2b62;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  color: white;
-}
-.cancel {
-  background-color: rgb(179, 72, 72);
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  color: rgb(49, 49, 49);
-}
-.cancel:focus {
-  background-color: rgb(179, 72, 72);
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  color: white;
-}
-.line {
-  display: block;
-  width: 100% /*or whatever width you want the effect of <hr>*/;
-  border-top: 2px solid #ccc;
+    justify-content: center;
+    display: block !important;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    /* align-content: space-around; */
+    /* align-items: flex-start; */
+    text-align: center;
+    color: white;
+  }
+
+  .line {
+    display: block;
+    width: 100%;
+    border-top: 2px solid #ccc;
+  }
 }
 </style>

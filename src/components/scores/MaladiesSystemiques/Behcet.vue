@@ -1,7 +1,8 @@
 <template>
   <!-- <h3> https://www.fai2r.org/les-pathologies-rares/behcet/criteres </h3> -->
-  <div id="container">
-    <h4 class="title">Critères</h4>
+  <div class="Behcet" id="container">
+    <h2 class="title">Critères de classification pour la maladie de Behçet</h2>
+    <span class="line"></span>
     <!-- first choice -->
       <label> Aphtose orale </label>
       <span v-if="this.score1 == 0">
@@ -112,49 +113,53 @@ export default Vue.extend({
 });
 </script>
 
-<style>
-.btn {
-  background-color: rgb(199, 197, 197); 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color: rgb(49, 49, 49);
-}
-.btn:focus{
-  background-color: rgb(63, 160, 177); 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color:white;
-  
-}
-.title{color:rgb(143, 58, 177);
- font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+<style scoped lang="scss">
+.Behcet {
+  .btn {
+    background-color: rgb(199, 197, 197);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+  }
 
-.introduction{
+  .btn:focus {
+    background-color: rgb(63, 160, 177);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+
+  }
+
+  .title {
+    color: rgb(143, 58, 177);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .introduction {
     background-color: rgb(224, 222, 222);
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: center;
     align-content: space-around;
     align-items: flex-start;
@@ -162,12 +167,13 @@ export default Vue.extend({
     padding-bottom: 3px;
     padding-top: 3px;
     margin: 35px;
-    
 
-}
-.result{
-    background-color: #47cec1; 
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+  .result {
+    background-color: #47cec1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: center;
     align-content: space-around;
     align-items: flex-start;
@@ -176,84 +182,89 @@ export default Vue.extend({
     padding-top: 3px;
     margin: 35px;
     color: white;
-    
 
-}
 
-.validate{
-  background-color: rgb(72, 179, 86); 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color: rgb(49, 49, 49);
-}
+  }
 
-.validate:focus{ 
-  background-color: rgb(72, 179, 86); 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color:white;
-  
-}
-.cancel{
-     background-color: rgb(179, 72, 72); 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color: rgb(49, 49, 49);
-}
-.cancel:focus{ 
- background-color: rgb(179, 72, 72);  
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color:white;
-  
-}
-.line{
-   display:block;
-   width:100% /*or whatever width you want the effect of <hr>*/;
-   border-top: 2px solid #ccc;
+  .validate {
+    background-color: rgb(72, 179, 86);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+  }
+
+  .validate:focus {
+    background-color: rgb(72, 179, 86);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+
+  }
+
+  .cancel {
+    background-color: rgb(179, 72, 72);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+  }
+
+  .cancel:focus {
+    background-color: rgb(179, 72, 72);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+
+  }
+
+  .line {
+    display: block;
+    width: 100% /*or whatever width you want the effect of <hr>*/
+  ;
+    border-top: 2px solid #ccc;
+  }
 }
 </style>

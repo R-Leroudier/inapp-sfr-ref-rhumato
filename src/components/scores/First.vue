@@ -1,6 +1,6 @@
 <template>
   <!-- http://medicalcul.free.fr/firstquest.html -->
-  <div>
+  <div class="First">
     <h3>Questionnaire FiRST</h3>
     <h5>Cocher les items présents</h5>
     <div>
@@ -111,4 +111,6 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.First {}
+</style>

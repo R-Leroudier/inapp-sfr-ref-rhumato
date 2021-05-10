@@ -1,7 +1,7 @@
 <template>
   <div class="score">
     <h2 class="title">SCORE SELENA-SLEDAI</h2>
-    <span class="line">------</span>
+    <span class="line"></span>
 
     <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
       <SelenaSledaiCheckBox
@@ -32,7 +32,7 @@ export default Vue.extend({
     return {
       finalScore: 0,
       scores: [],
-      datasQuestion: 
+      datasQuestion:
       [
         { question: "Convulsion", malusScore: 8, userScore: 0,},
         { question: "Psychose", malusScore: 8, userScore: 0,},
@@ -81,4 +81,6 @@ export default Vue.extend({
   mounted() {},
 });
 </script>
-<style lang="scss"></style>
+<style scoped lang="scss">
+@import "src/sass/global";
+</style>

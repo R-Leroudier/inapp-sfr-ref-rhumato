@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="DasPpr">
     <h2 class="title">Calcul du score ‘DAS-PPR’</h2>
     <p class="description"></p>
-    <span class="line">------</span>
+    <span class="line"></span>
 
     <form class="form">
       <div>
         <label for="crp_id"> CRP : </label>
-        <input v-model="crp" id="crp_id" type="text" /> ml/l
+        <input v-model="crp" id="crp_id" type="number" /> ml/l
       </div>
       <div>
         <label for="duration_stiffness_id"
@@ -16,7 +16,7 @@
         <input
           v-model="duration_stiffness"
           id="duration_stiffness_id"
-          type="text"
+          type="number"
         />
         minutes
       </div>
@@ -89,7 +89,7 @@
     <card class="result">
       <p>{{ this.result }}</p>
     </card>
-    <span class="line">------</span>
+    <span class="line"></span>
   </div>
 </template>
 
@@ -133,4 +133,18 @@ export default Vue.extend({
 
 
 
-<style></style>
+<style scoped lang="scss">
+@import "src/sass/global";
+
+.DasPpr {
+  [type="number"] {
+    width: 60px;
+  }
+
+  form {
+    div {
+      margin: 10px 0;
+    }
+  }
+}
+</style>

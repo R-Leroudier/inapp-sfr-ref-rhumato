@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class=""HaqQuestion>
     <div v-if="title">
       <h3 class="title">{{ title }}</h3>
     </div>
@@ -82,31 +82,33 @@ export default Vue.extend({
 });
 </script>
 <style scoped lang="scss">
-.radio-choise {
-  border-color: #8f3ab138;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 5px;
-  max-width: 250px;
-  margin: auto;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  cursor: pointer;
-
-  label {
-    width: 100%;
-    background-color: #e0b5f10a;
-    display: block;
+.HaqQuestion {
+  .radio-choise {
+    border-color: #8f3ab138;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    max-width: 250px;
+    margin: auto;
+    margin-top: 6px;
+    margin-bottom: 6px;
     cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
 
-    input:checked + :parent {
-      background-color: red !important;
+    label {
+      width: 100%;
+      background-color: #e0b5f10a;
+      display: block;
+      cursor: pointer;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      input:checked + :parent {
+        background-color: red !important;
+      }
+
+
     }
 
-
   }
-
 }
 </style>

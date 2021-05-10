@@ -9,11 +9,11 @@
 <script lang="ts">
 import Vue from "vue";
 import DataService from "@/service/DataService";
-import Score1 from "@/components/scores/Score1.vue";
 import Haq from "@/components/scores/RIC/PolyarthriteRhumatoide/Haq.vue";
 import Basdai from "@/components/scores/RIC/Spondyloarthrite/Basdai.vue";
+import Basfi from "@/components/scores/RIC/Spondyloarthrite/Basfi.vue";
 import Behcet from "@/components/scores/MaladiesSystemiques/Behcet.vue";
-import PathologieOsseuse from "@/components/scores/PathologieOsseuse.vue";
+import ClairanceCreatinine from "@/components/scores/PathologieOsseuse/ClairanceCreatinine.vue";
 import Sharp from "@/components/scores/MaladiesSystemiques/Sharp.vue";
 import SystemicSclerodermaAcrEular from "@/components/scores/MaladiesSystemiques/SystemicSclerodermaAcrEular.vue";
 import Das28 from "@/components/scores/RIC/PolyarthriteRhumatoide/Das28.vue";
@@ -31,23 +31,29 @@ import Sdai from "@/components/scores/RIC/PolyarthriteRhumatoide/Sdai.vue";
 import First from "@/components/scores/First.vue";
 import Sapl from "@/components/scores/MaladiesSystemiques/SAPL.vue";
 import ArthritisAcr1990 from "@/components/scores/MaladiesSystemiques/ArthritisAcr1990.vue";
-import HipLequesnes from "@/components/scores/HipLequesnes.vue";
-import KneeLequesnes from "@/components/scores/KneeLequesnes.vue";
+import HipLequesnes from "@/components/scores/PathologieMecanique/HipLequesnes.vue";
+import KneeLequesnes from "@/components/scores/PathologieMecanique/KneeLequesnes.vue";
 import Caspar from "@/components/scores/RIC/Caspar.vue";
 import GoutteAcrEular from "@/components/scores/RhumatismesChristallins/GoutteAcrEular.vue";
 import SelenaSledai from "@/components/scores/MaladiesSystemiques/SelenaSledai.vue";
 import Ffs from  "@/components/scores/MaladiesSystemiques/Ffs.vue";
 import Rodnan from "@/components/scores/MaladiesSystemiques/Rodnan.vue";
 import Bvas from "@/components/scores/MaladiesSystemiques/Bvas.vue";
+import Dapsa from "@/components/scores/RIC/Dapsa.vue";
+import PprEularAcr2012 from "@/components/scores/RIC/PprEularAcr2012.vue";
+import Essdai from "@/components/scores/MaladiesSystemiques/Essdai.vue";
+import FRAX from "@/components/scores/PathologieOsseuse/FRAX.vue";
+import CalculCalcemie from "@/components/scores/PathologieOsseuse/CalculCalcemie.vue";
+import Ldl from "@/components/scores/Ldl.vue";
 
 export default Vue.extend({
   name: "ContentPage",
   components: {
-    Score1,
     Haq,
     Basdai,
+    Basfi,
     Behcet,
-    PathologieOsseuse,
+    ClairanceCreatinine,
     Sharp,
     SystemicSclerodermaAcrEular,
     Das28,
@@ -73,6 +79,12 @@ export default Vue.extend({
     Ffs,
     GoutteAcrEular,
     Bvas,
+    Dapsa,
+    PprEularAcr2012,
+    Essdai,
+    FRAX,
+    CalculCalcemie,
+    Ldl
   },
   methods: {
     searchComponentName(nodes, slug) {

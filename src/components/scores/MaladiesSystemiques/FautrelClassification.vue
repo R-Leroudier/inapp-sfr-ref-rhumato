@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="FautrelClassification">
       <h2 class="title">Critères de classification proposés par Fautrel (2002)</h2>
       <p class="description">Calcul des critères de classification ou de diagnostic</p>
+      <span class="line"></span>
 
       <h4 class="categorie">Critères majeurs :</h4>
 
@@ -14,7 +15,7 @@
             <label class="btn" for="btnradio2">OUI</label>
 
           <!-- second choice -->
-          <p class="description"> Arthralgies ou arthrites </p> 
+          <p class="description"> Arthralgies ou arthrites </p>
             <input type="radio"  name="btnradio3" id="btnradio3" @click="choice2(0)">
             <label class="btn" for="btnradio3">NON</label>
 
@@ -22,7 +23,7 @@
             <label class="btn" for="btnradio4">OUI</label>
 
           <!-- third choice -->
-          <p class="description">Erythème fugace</p> 
+          <p class="description">Erythème fugace</p>
             <input type="radio"  name="btnradio4" id="btnradio5" @click="choice3(0)">
             <label class="btn" for="btnradio5">NON</label>
 
@@ -46,7 +47,7 @@
             <label class="btn" for="btnradio10">OUI</label>
 
           <!-- sixth choice -->
-          <p class="description">Ferritine glycosylée ≤ 20%</p> 
+          <p class="description">Ferritine glycosylée ≤ 20%</p>
             <input type="radio"  name="btnradio7" id="btnradio11"  @click="choice6(0)">
             <label class="btn" for="btnradio11">NON</label>
 
@@ -136,7 +137,7 @@ export default Vue.extend({
       this.minorCriteria += this.number7;
     },
     choice8(x) {
-      this.number8 = x; 
+      this.number8 = x;
       this.minorCriteria += this.number8;
     },
     majorCriterias() {
@@ -150,67 +151,65 @@ export default Vue.extend({
 
 </script>
 
-<style>
-.description{
-  font-size: 25px;
-}
-.categorie{
-  font-size: 30px;
-}
+<style scoped lang="scss">
+.FautrelClassification {
+  .description {
+    font-size: 25px;
+  }
 
-h2{
-  font-size: 40px;
-} 
-.result{
-  background-color: rgb(224, 222, 222);
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  text-align: center;
-  padding-bottom: 3px;
-  padding-top: 3px;
-  margin: 35px;
-  font-size: 30px;
-}
+  .categorie {
+    font-size: 30px;
+  }
 
-.validate{
-  background-color: rgb(72, 179, 86); 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color: rgb(49, 49, 49);
-}
+  h2 {
+    font-size: 40px;
+  }
 
-input{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+  .result {
+    background-color: rgb(224, 222, 222);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin: auto;
+    font-size: 30px;
+  }
 
-label:hover,
-label:focus {
-  color: grey;
-}
+  .validate {
+    background-color: rgb(72, 179, 86);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+  }
 
-label:active {
-  background-color: white;
-  color: black;
-  outline: 1px solid black;
-}
+  label:hover,
+  label:focus {
+    color: grey;
+  }
 
-[type="radio"]:checked + label {
-  background-color:violet;
+  label:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+  }
+
+  [type="radio"]:checked + label {
+    background-color: violet;
+  }
 }
 </style>
 

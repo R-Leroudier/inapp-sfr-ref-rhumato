@@ -1,6 +1,6 @@
 <template>
   <!-- fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990 -->
-  <div>
+  <div class="ArthritisAcr1990">
     <h3>
       Critères de classification de l’Artérite à Cellules Géantes de l’ACR 1990
     </h3>
@@ -55,7 +55,7 @@
       <label for="toggle5"
         >Anomalies de la biopsie d'artère temporale: vascularite; infiltration à
         prédominance de cellules mononucléées ou granulomateuse, habituellement
-        avec des cellules géantes multinucléées</label
+        avec des cellules géantes multinuclées</label
       >
       <input
         type="checkbox"
@@ -66,7 +66,7 @@
       />
       <div class="control-me"></div>
     </div>
-    <div>
+    <div class="result">
       <p>{{ this.questions.length }} Points</p>
       <p>0 Critère d'exclusion</p>
       <p v-if="this.questions.length >= 3">Positif</p>
@@ -90,4 +90,17 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.ArthritisAcr1990 {
+  div {
+    margin: 10px 0;
+  }
+
+  .result {
+    background: lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+  }
+}
+</style>

@@ -228,7 +228,8 @@
                       "type": "html",
                       "content": "http://medicalcul.free.fr/basfi.html",
                       "slug": "basfi",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "Basfi"
                     },
                     {
                       "id": "",
@@ -302,7 +303,8 @@
                       "type": "html",
                       "content": "https://rheuma.charite.de/fileadmin/user_upload/microsites/ohne_AZ/m_cc13/rheuma/Templates/DAPSA_ENG.pdf",
                       "slug": "dapsa",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "Dapsa"
                     }
                   ]
                 }
@@ -327,9 +329,9 @@
                   "parentId": 2,
                   "type": "html",
                   "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012",
-                  "slug": "classification",
+                  "slug": "PprEularAcr2012",
                   "submenu": false,
-                  "component": "ArthritisAcr1990"
+                  "component": "PprEularAcr2012"
                 },
                 {
                   "id": "",
@@ -417,7 +419,7 @@
               "type": "list",
               "content": "",
               "slug": "syndrome-de-gougerot-sjogren",
-              "submenu": true,
+              "submenu": false,
               "children": [
                 {
                   "id": "",
@@ -425,10 +427,11 @@
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
-                  "type": "list",
+                  "type": "html",
                   "content": "",
                   "slug": "essdai",
-                  "submenu": false
+                  "submenu": false,
+                  "component":"Essdai"
                 }
               ]
             },
@@ -574,11 +577,48 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "html",
-          "component": "PathologieOsseuse",
+          "type": "list",
           "content": "",
-          "slug": "pathologie-osseuse",
-          "submenu": false
+          "slug": "",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "FRAX ",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "component": "FRAX",
+              "content": "",
+              "slug": "FRAX",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Calcul calcémie ",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "component": "CalculCalcemie",
+              "content": "",
+              "slug": "calcul-calcemie",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "Clairance créatinine ",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "component": "ClairanceCreatinine",
+              "content": "https://360medics.com/fr/calculators/tools/clairance-de-la-creatinine",
+              "slug": "clairance-creatinine",
+              "submenu": false
+            }
+          ]
         },
         {
           "id": "",
@@ -695,23 +735,12 @@
         },
         {
           "id": "",
-          "name": "Risques cardio-vasculaires",
-          "subtitle": "",
-          "appId": 1,
-          "parentId": 2,
-          "type": "html",
-          "component": "Gsla",
-          "content": "https://www.agla.ch/fr/calculateurs-outils/calculateur-de-risque-du-gsla",
-          "slug": "risques-cardio-vasculaires",
-          "submenu": false
-        },
-        {
-          "id": "",
           "name": "LDL-cible",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
           "type": "html",
+          "component": "Ldl",
           "content": "https://www.ldlcible.com/",
           "slug": "ldl-cible",
           "submenu": false

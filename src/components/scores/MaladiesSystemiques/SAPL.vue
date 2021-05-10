@@ -1,6 +1,6 @@
 <template>
   <!-- https://www.fai2r.org/les-pathologies-rares/syndrome-des-antiphospholipides/criteres/criteres-de-classification-sapl -->
-  <div>
+  <div class="SAPL">
     <h3>
       Critères de classification du SAPL, dits “critères de Sydney” (2006)
     </h3>
@@ -93,7 +93,7 @@
       />
       <div class="control-me"></div>
     </div>
-    <div>
+    <div class="result">
       <p>{{ questions1.length }} critère clinique</p>
       <p>{{ questions2.length }} critères biologiques</p>
       <p>
@@ -118,4 +118,18 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style scoped lang="scss">
+
+.SAPL {
+  div {
+    margin: 16px 0;
+  }
+
+  .result {
+    background: lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+  }
+}
+</style>

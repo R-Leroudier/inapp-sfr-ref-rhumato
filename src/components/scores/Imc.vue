@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Imc">
     <h2 class="title">Calcul de l'IMC femme et homme</h2>
     <p class="description"></p>
     <span class="line"></span>
@@ -10,14 +10,19 @@
     </card>
 
     <form class="form">
-      <label for="weight"> Poid : </label>
-      <input v-model="weight" id="weight" type="text" />
-      <label for="size">Taille : </label>
-      <input v-model="size" id="size" type="text" />
+      <div>
+        <label for="weight"> Poids (kg) : </label>
+        <input v-model="weight" id="weight" type="number" />
+      </div>
+
+      <div>
+        <label for="size">Taille (cm) : </label>
+        <input v-model="size" id="size" type="number" />
+      </div>
       <input type="submit" @click="getResult()" class="btn" value="Valider" />
     </form>
     <card class="result">
-      <p>{{ this.result }}</p>
+      <h4>{{ this.result }}</h4>
     </card>
     <span class="line"></span>
     <span>
@@ -37,11 +42,11 @@ export default Vue.extend({
   mounted() {},
   data() {
     return {
-      weight: null,
-      size: null,
-      imc: null,
-      detail: null,
-      result: null,
+      weight: 0,
+      size: 0,
+      imc: 0,
+      detail: "",
+      result: "",
     };
   },
   methods: {
@@ -69,7 +74,8 @@ export default Vue.extend({
       }
     },
     getImc(weight, size) {
-      return this.arround(weight / (size * size));
+      let sizeMeter = parseInt(size) / 100;
+      return this.arround(parseInt(weight) / (sizeMeter * sizeMeter));
     },
     arround(nombre) {
       return Math.round(100 * nombre) / 100;
@@ -87,4 +93,13 @@ export default Vue.extend({
 
 
 
-<style></style>
+<style scoped lang="scss">
+.Imc {
+  div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    line-height: 40px;
+  }
+}
+</style>

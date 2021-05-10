@@ -1,5 +1,5 @@
 <template>
-  <div class="score">
+  <div class="Ffs">
     <h2 class="title">SCORE FFS</h2>
     <span class="line"></span>
 
@@ -35,10 +35,10 @@ export default Vue.extend({
   data() {
     return {
       percentageSurvivalAtFiveYears: 88.1,
-      riskOfDeath: 0.62, 
+      riskOfDeath: 0.62,
       finalScore: 0,
       scores: [],
-      datasQuestion: 
+      datasQuestion:
       [
         { question: "Âge du patient supérieur à 65 ans", malusScore: 1, userScore: 0},
         { question: "Créatininémie supérieure à 150 μmol/l", malusScore: 1, userScore: 0},
@@ -64,7 +64,7 @@ export default Vue.extend({
       default:
         this.percentageSurvivalAtFiveYears = 54.1;
         this.riskOfDeath = 2.40;
-    } 
+    }
     },
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
@@ -83,7 +83,7 @@ export default Vue.extend({
 });
 </script>
 <style scoped lang="scss">
-
+.Ffs {
   .result {
     display: flex;
     flex-direction: row;
@@ -128,4 +128,5 @@ export default Vue.extend({
   .hight-risk {
     background-color: #d22207;
   }
+}
 </style>

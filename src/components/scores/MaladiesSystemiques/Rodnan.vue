@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Rodnan">
     <h2 class="title">Calcul du score de RODNAN</h2>
       <form>
         <h4 class="categorie">Corps</h4>
@@ -119,7 +119,7 @@
         </section>
 
       <h4 class="categorie">Haut droit</h4>
-        
+
         <section>
           <p class="description">Bras droit</p>
 
@@ -201,7 +201,7 @@
             <input type="radio" id="input48" v-model="thighLeft" value="3">
             <label class="btn" for="input48"> Sclérose adhérente au plan profond</label>
         </section>
-        
+
         <section>
           <p class="description">Jambe gauche</p>
 
@@ -233,7 +233,7 @@
             <input type="radio" id="input55" v-model="feetLeft" value="3">
             <label class="btn" for="input55">Sclérose adhérente au plan profond</label>
         </section>
-      
+
         <h4 class="categorie">Bas droit</h4>
           <section>
           <p class="description">Cuisse droite</p>
@@ -266,7 +266,7 @@
             <input type="radio" id="input63" v-model="legRight" value="3">
             <label class="btn" for="input63"> Sclérose adhérente au plan profond</label>
         </section>
-        
+
         <section>
           <p class="description">pied droit</p>
 
@@ -287,8 +287,8 @@
         <button type="button" class="validate" v-on:click="calcScore"> calculer</button>
         <input class="resulta" v-model="result">
       </form>
-        
-  
+
+
   </div>
 </template>
 
@@ -323,69 +323,68 @@ export default Vue.extend({
     methods:{
       calcScore()
       {
-        this.result = Number(this.face) + Number(this.thorax) + Number(this.abdomen) + Number(this.armLeft) + Number(this.foreArmLeft) + Number(this.handLeft) + Number(this.fingerLeft) + Number(this.armRight) 
+        this.result = Number(this.face) + Number(this.thorax) + Number(this.abdomen) + Number(this.armLeft) + Number(this.foreArmLeft) + Number(this.handLeft) + Number(this.fingerLeft) + Number(this.armRight)
         + Number(this.forArmRight) + Number(this.handRight) + Number(this.fingerRight) + Number(this.thighLeft) + Number(this.legLeft) + Number(this.feetLeft) + Number(this.thigRight) + Number(this.legRight) + Number(this.feetRight);
       }
     }
 })
 </script>
 
-<style>
-.description{
-  font-size: 25px;
-}
-.categorie{
-  font-size: 30px;
-}
+<style scoped lang="scss">
+.Rodnan {
+  .description {
+    font-size: 25px;
+  }
 
-h2{
-  font-size: 40px;
-} 
-.resulta{
-  background-color: rgb(224, 222, 222);
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  text-align: center;
-  padding-bottom: 3px;
-  padding-top: 3px;
-  margin: 35px;
-  font-size: 30px;
-}
+  .categorie {
+    font-size: 30px;
+  }
 
-.validate{
-  background-color: rgb(72, 179, 86); 
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-content: space-around;
-  align-items: flex-start;
-  height: 50px;
-  border-radius: 8px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  color: rgb(49, 49, 49);
-}
+  h2 {
+    font-size: 40px;
+  }
 
-input{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+  .resulta {
+    background-color: rgb(224, 222, 222);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin: 35px;
+    font-size: 30px;
+    width: 80%;
+  }
 
-label:hover,
-label:focus {
-  color: grey;
-}
+  .validate {
+    background-color: rgb(72, 179, 86);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+  }
 
-label:active {
-  background-color: white;
-  color: black;
-  outline: 1px solid black;
+  label:hover,
+  label:focus {
+    color: grey;
+  }
+
+  label:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+  }
 }
 </style>

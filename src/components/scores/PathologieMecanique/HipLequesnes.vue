@@ -1,5 +1,5 @@
 <template>
-  <div class="score">
+  <div class="HipLequesnes">
     <h2 class="title">Indice de Lequesne</h2>
     <p class="details">(Hanche)</p>
     <span class="line"></span>
@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<script lang="ts">  
+<script lang="ts">
 import Vue from "vue";
 import HipLequesnesQuestion from "./HipLequesnesQuestion.vue";
 export default Vue.extend({
@@ -55,7 +55,7 @@ export default Vue.extend({
     },
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
-      this.calcResult();      
+      this.calcResult();
     },
   },
   mounted() {},

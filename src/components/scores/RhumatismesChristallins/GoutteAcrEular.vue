@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="GoutteAcrEular">
     <h2 class="title">Score diagnostique pour la goutte ACR et EULAR</h2>
 
     <span class="line">------</span>
@@ -161,11 +161,11 @@
       <p :v-model="this.score">TOTAL : {{ this.score }}</p>
     </div>
     <div>
-      diagnostic de goutte ?
+      <h3>Diagnostic de goutte ?</h3>
       <h4 v-if="this.score > 7">OUI</h4>
       <h4 v-else>NON</h4>
     </div>
-    <span class="line">------</span>
+    <span class="line"></span>
     <span>
       Score mis au point par des experts, selon la méthode Dephi, Dans un
       collectif de 330 sujets, SE et SP = 92 et 89% respectivement.
@@ -285,4 +285,8 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style scoped lang="scss">
+@import "src/sass/global";
+
+.GoutteAcrEular {}
+</style>

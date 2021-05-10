@@ -1,27 +1,8 @@
 <template>
-  <div>
+  <div class="Das28">
     <h2 class="title">Score DAS 28</h2>
     <p class="description"></p>
-    <span class="line">------</span>
-    <card class="introduction">
-      <h5>Interprétation:</h5>
-      <p>
-        Le nombre d'articulations douloureuses (de 0 à 28) est indiqué par le
-        patient lors de la consultation. Le nombre d'articulations gonflées est
-        constaté par le médecin lors de la consultation. Attention, les
-        articulations des pieds et des chevilles ne sont pas prises en compte.
-      </p>
-      <p>
-        L'évaluation globale par le patient de l’activité de la PR est une
-        échelle visuelle analogique de 0 à 100 mm. Le principe est le même que
-        pour l'évaluation de la douleur : 0 = aucune manifestation de la PR, 100
-        = gravité maximale que peut imaginer le patient.
-      </p>
-      <p>
-        Lors de l'utilisation de la VS, le nombre à indiquer est le nombre de mm
-        à la première heure.
-      </p>
-    </card>
+    <span class="line"></span>
     <form class="form" style="display: flex; flex-direction: column">
       <section>
         <label class="categorie">Articulations Douloureuses</label>
@@ -32,7 +13,6 @@
           class="inputNumber"
         />
       </section>
-
       <section>
         <label class="categorie">Articulations Gonflées</label>
         <input
@@ -64,21 +44,24 @@
       </section>
 
       <section>
-        <input type="radio" class="btn" value="Vs" v-model="picked" /><label
-          for="one"
-          >Utiliser V.S.</label
-        >
+        <div>
+          <label for="Vs">Utiliser V.S.</label>
+          <input type="radio" class="btn" value="Vs" v-model="picked" id="Vs"/>
+        </div>
 
-        <input
-          type="radio"
-          class="btn validate"
-          value="Crp"
-          v-model="picked"
-        /><label for="one">Utiliser C.R.P.</label>
+        <div>
+          <label for="Crp">Utiliser C.R.P.</label>
+          <input
+            type="radio"
+            class="btn validate"
+            value="Crp"
+            v-model="picked"
+            id="Crp"/>
+        </div>
       </section>
 
       <button type="button" class="btn validate" v-on:click="calcScore">
-        Voir résultat
+        Calculer résultat
       </button>
     </form>
 
@@ -86,7 +69,32 @@
       <p>Score :{{ score }}</p>
       <p>Activité P.R :{{ prActivity }}</p>
     </card>
+
     <span class="line"></span>
+    <div class="info">
+      <span>
+        Interprétation:<br>
+        Le nombre d'articulations douloureuses (de 0 à 28) est indiqué par le
+        patient lors de la consultation. Le nombre d'articulations gonflées est
+        constaté par le médecin lors de la consultation. Attention, les
+        articulations des pieds et des chevilles ne sont pas prises en compte.<br>
+        L'évaluation globale par le patient de l’activité de la PR est une
+        échelle visuelle analogique de 0 à 100 mm. Le principe est le même que
+        pour l'évaluation de la douleur : 0 = aucune manifestation de la PR, 100
+        = gravité maximale que peut imaginer le patient.<br>
+        Lors de l'utilisation de la VS, le nombre à indiquer est le nombre de mm
+        à la première heure.
+      </span>
+      <br><br>
+      <span>
+        Réference:<br>
+        Formules:
+        DAS (VS) = 0,56 x √ad + 0,28 x √ag + 0,7 x ln(VS) + 0,014 x em
+        DAS (CRP) = 0,56 x √ad + 0,28 x √ag + 0,36 x ln(CRP + 1) + 0,014 x em + 0,96
+     Van der Heijde DMFM van't Hof MA van Riel PLCM et al. Judging disease activity in clinical practice in rheumatoid arthritis: first step in the development of a disease activity score. Ann Rheum Dis1990;49:916–20.
+     Site DAS 28 : http://www.das-score.nl
+      </span>
+    </div>
   </div>
 </template>
 
@@ -103,7 +111,7 @@ export default Vue.extend({
       valueDiseaseAssesment: 0,
       valueVsCrp: 0,
       score: 0,
-      picked: "",
+      picked: "Vs",
       prActivity: "",
     };
   },
@@ -150,13 +158,29 @@ export default Vue.extend({
 
 
 
-<style>
-.inputNumber {
-  width: 60px;
-}
+<style scoped lang="scss">
+@import "src/sass/global";
 
-button {
-  width: 150px;
+.Das28 {
+  .inputNumber {
+    width: 60px;
+  }
+
+  .info {
+    font-style: italic;
+    font-size: x-small;
+  }
+
+  section {
+    padding: 5px 10px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      line-height: 20px;
+    }
+  }
 }
 </style>
 

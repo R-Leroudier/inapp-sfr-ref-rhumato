@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Asdas">
     <h3 class="title">Score ASDAS</h3>
     <span class="line"></span>
     <p class="introduction">
@@ -237,7 +237,6 @@ export default Vue.extend({
     },
 
     getScoreInterpretation(score) {
-      console.log("Hello");
       if (score < 1.3) {
         this.interpretation = "Inactif";
       }
@@ -255,39 +254,42 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+<style scoped lang="scss">
+@import "src/sass/global";
 
-label:hover,
-label:focus {
-  color: grey;
-}
+.Asdas {
+  [type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 
-label:active {
-  background-color: white;
-  color: black;
-  outline: 1px solid black;
-}
+  label:hover,
+  label:focus {
+    color: grey;
+  }
 
-[type="radio"]:checked + label {
-  background-color: violet;
-}
+  label:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+  }
 
-.input-cpr-vs{
-  margin-bottom: 5%;
-}
+  [type="radio"]:checked + label {
+    background-color: violet;
+  }
 
-.btn{
-  width:40%
-}
+  .input-cpr-vs {
+    margin-bottom: 5%;
+  }
 
-.score{
-  font-size: 30px;
-  font-weight: 900;
-}
+  .btn {
+    width: 40%
+  }
 
+  .score {
+    font-size: 30px;
+    font-weight: 900;
+  }
+}
 </style>

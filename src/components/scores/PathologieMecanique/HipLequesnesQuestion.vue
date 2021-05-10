@@ -1,19 +1,19 @@
 <template>
-  <div>
+  <div class="HipLequesnesQuestion">
     <div v-if="title">
       <h3 class="title">{{ title }}</h3>
     </div>
     <section>
-        <p class="details">
+        <h4 class="details">
         {{ question }}
-        </p>
+        </h4>
           <div v-for="(item, i) in response" :key="item.value">
-            <label class="btn" :for="`radio` + index + `x`[i] "> {{ item }}</label>
-            <input 
+            <label class="btn" :for="`radio` + index + i "> {{ item }}</label>
+            <input
               type="radio"
               :value="malusScore[i]"
               :name="`radio` + index"
-              :id="`radio` + index + `x`[i]"
+              :id="`radio` + index + i"
               @click="radioChange($event)"
             />
           </div>
@@ -33,7 +33,7 @@ export default Vue.extend({
     radioChange(e: any) {
         this.$emit("upwardChange", {
             index: this.index,
-            userScore: e.target.value,        
+            userScore: e.target.value,
         });
         console.log(e.target.value)
     },
@@ -42,6 +42,6 @@ export default Vue.extend({
 });
 </script>
 
-<style>
-
+<style scoped lang="scss">
+.HipLequesnesQuestion {}
 </style>

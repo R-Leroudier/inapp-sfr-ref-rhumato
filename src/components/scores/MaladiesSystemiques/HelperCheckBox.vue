@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div class="HelperCheckBox">
     <section>
       <div class="question">
         <h2>{{ index+1 }}</h2>
+        <div style="display: flex; justify-content: space-between; width: 80%">
         <label class="text" :for="`checkbox`+index">{{ question }}</label>
         <label class="switch">
           <input
@@ -12,6 +13,7 @@
           />
           <span class="slider round"></span>
         </label>
+        </div>
       </div>
     </section>
   </div>
@@ -34,91 +36,95 @@ export default Vue.extend({
 });
 </script>
 <style scoped lang="scss">
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 25px;
+@import "src/sass/global";
 
-  input:checked + .slider {
-    background-color: #f37221;
+.HelperCheckBox {
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+
+    input:checked + .slider {
+      background-color: #f37221;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #f37221;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(23px);
+      -ms-transform: translateX(23px);
+      transform: translateX(23px);
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 19px;
+      width: 19px;
+      left: 4px;
+      bottom: 3px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    .slider.round {
+      border-radius: 25px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
   }
 
-  input:focus + .slider {
-    box-shadow: 0 0 1px #f37221;
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
 
-  input:checked + .slider:before {
-    -webkit-transform: translateX(23px);
-    -ms-transform: translateX(23px);
-    transform: translateX(23px);
-  }
-
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 19px;
-    width: 19px;
-    left: 4px;
-    bottom: 3px;
-    background-color: white;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-
-  .slider.round {
-    border-radius: 25px;
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
-  }
-}
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.question {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: stretch;
-	align-content: center;
-  text-align: left;
-
-  h2 {
-    display: contents;
+  .question {
     display: flex;
-    margin: auto;
-    padding-left: 10px;
-  }
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: center;
+    text-align: left;
 
-  label {
-    display: flex;
-    margin: auto;
-  }
+    h2 {
+      display: flex;
+      margin: 0;
+      width: calc(15% - 15px);
+      text-align: right;
+    }
 
-  .text {
-    padding-left: 10px;
-    padding-right: 15px;
-    display: flex;
-    align-items: center;
-    width: 66%;
-    cursor: pointer;
+    label {
+      display: flex;
+      margin: auto 0;
+    }
+
+    .text {
+      padding-left: 10px;
+      padding-right: 15px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
   }
 }
 </style>

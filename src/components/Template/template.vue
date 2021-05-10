@@ -84,4 +84,4 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style scoped lang="scss"></style>
