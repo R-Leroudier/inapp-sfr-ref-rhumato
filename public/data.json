@@ -764,7 +764,7 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "html",
+          "type": "link",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18303932?via%3Dihub",
           "slug": "polyarthrite-rhumatoide",
           "submenu": false
@@ -775,7 +775,7 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "html",
+          "type": "link",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18300083?via%3Dihub",
           "slug": "spondyloarthrite",
           "submenu": false
@@ -786,7 +786,7 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "html",
+          "type": "link",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X18300629?via%3Dihub",
           "slug": "osteoporose",
           "submenu": false
@@ -797,7 +797,7 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "html",
+          "type": "link",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20300853?via%3Dihub",
           "slug": "goutte",
           "submenu": false
@@ -808,7 +808,7 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "html",
+          "type": "link",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20301573?via%3Dihub",
           "slug": "gonarthrose",
           "submenu": false
@@ -819,7 +819,7 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "html",
+          "type": "link",
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20301482?via%3Dihub",
           "slug": "arthrite septique",
           "submenu": false
@@ -843,7 +843,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "list",
           "content": "",
           "slug": "bilan-diagnostic",
           "submenu": true,
@@ -857,7 +857,8 @@
               "type": "html",
               "content": "",
               "slug": "bilan-diagnostic-polyarthrite",
-              "submenu": false
+              "submenu": false,
+              "component": "Polyarthrite"
             },
             {
               "id": "",
@@ -868,7 +869,8 @@
               "type": "html",
               "content": "",
               "slug": "bilan-diagnostic-mono-arthrite",
-              "submenu": false
+              "submenu": false,
+              "component": "MonoArthrite"
             },
             {
               "id": "",
@@ -879,7 +881,8 @@
               "type": "html",
               "content": "",
               "slug": "bilan-diagnostic-lession-osseuse",
-              "submenu": false
+              "submenu": false,
+              "component": "LesionOsseuse"
             },
             {
               "id": "",
@@ -890,7 +893,8 @@
               "type": "html",
               "content": "",
               "slug": "bilan-diagnostic-iombalgie",
-              "submenu": false
+              "submenu": false,
+              "component": "Iombalgie"
             },
             {
               "id": "",
@@ -901,7 +905,8 @@
               "type": "html",
               "content": "",
               "slug": "bilan-etiologie-osteoporose",
-              "submenu": false
+              "submenu": false,
+              "component": "Osteoporose"
             }
           ]
         }
@@ -935,10 +940,11 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
-              "slug": "generalites",
-              "submenu": false
+              "slug": "generalites_grossesse",
+              "submenu": false,
+              "component": "GeneraliteGrossesse"
             },
             {
               "id": "",
@@ -959,8 +965,9 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "methotrexate",
-                  "submenu": false
+                  "slug": "methotrexate_grossesse",
+                  "submenu": false,
+                  "component": "MethotrexateGrossesse"
                 },
                 {
                   "id": "",
@@ -970,8 +977,9 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "leflunomide",
-                  "submenu": false
+                  "slug": "leflunomide_grossesse",
+                  "submenu": false,
+                  "component": "LeflunomideGrossesse"
                 },
                 {
                   "id": "",
@@ -982,7 +990,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "mycophenolate-mofetil",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "MycophénolateMofetil"
                 },
                 {
                   "id": "",
@@ -993,7 +1002,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "cyclophosphamide",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "Cyclophosphamide"
                 },
                 {
                   "id": "",
@@ -1004,7 +1014,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "tofacitinib-baricitinib",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "TofacitinibBaricitinib"
                 }
               ]
             },
@@ -1027,8 +1038,9 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "abatacept",
-                  "submenu": false
+                  "slug": "abatacept_condition",
+                  "submenu": false,
+                  "component": "AbataceptCondition"
                 },
                 {
                   "id": "",
@@ -1039,7 +1051,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "tocilizumab",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "Tocilizumab"
                 },
                 {
                   "id": "",
@@ -1050,7 +1063,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "belimumab",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "Belimumab"
                 },
                 {
                   "id": "",
@@ -1061,7 +1075,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "anakinra",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "Anakinra"
                 },
                 {
                   "id": "",
@@ -1072,7 +1087,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "ustekinumab",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "Ustekinumab"
                 },
                 {
                   "id": "",
@@ -1083,7 +1099,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "uituximab",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "Rituximab"
                 },
                 {
                   "id": "",
@@ -1093,8 +1110,9 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "anti-tnf",
-                  "submenu": false
+                  "slug": "anti-tnf-condition",
+                  "submenu": false,
+                  "component": "AntiTNFCondition"
                 }
               ]
             },
@@ -1117,8 +1135,9 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "hydroxychloroquine",
-                  "submenu": false
+                  "slug": "hydroxychloroquine-autorise",
+                  "submenu": false,
+                  "component": "HydroxychloroquineAutorise"
                 },
                 {
                   "id": "",
@@ -1128,8 +1147,9 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "sulfasalazine",
-                  "submenu": false
+                  "slug": "sulfasalazine-autorise",
+                  "submenu": false,
+                  "component": "SulfasalazineAutorise"
                 },
                 {
                   "id": "",
@@ -1139,8 +1159,9 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "azathioprine",
-                  "submenu": false
+                  "slug": "azathioprine-autorise",
+                  "submenu": false,
+                  "component": "AzathioprineAutorise"
                 },
                 {
                   "id": "",
@@ -1151,7 +1172,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "ciclosporine",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "Ciclosporine"
                 },
                 {
                   "id": "",
@@ -1162,7 +1184,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "tacrolimus",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "Tacrolimus"
                 },
                 {
                   "id": "",
@@ -1172,8 +1195,9 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "colchicine",
-                  "submenu": false
+                  "slug": "colchicine-autorise",
+                  "submenu": false,
+                  "component": "ColchicineAutorise"
                 },
                 {
                   "id": "",
@@ -1183,8 +1207,9 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "corticoides",
-                  "submenu": false
+                  "slug": "corticoides-autorise",
+                  "submenu": false,
+                  "component": "CorticoidesAutorise"
                 },
                 {
                   "id": "",
@@ -1195,7 +1220,8 @@
                   "type": "html",
                   "content": "",
                   "slug": "anti-inflammatoires-non-steroidiens",
-                  "submenu": false
+                  "submenu": false,
+                  "component": "AntiInflammatoires"
                 }
               ]
             },
@@ -1208,7 +1234,8 @@
               "type": "html",
               "content": "",
               "slug": "traitement-d-une-poussee-au-cours-de-la-grossesse",
-              "submenu": false
+              "submenu": false,
+              "component": "tttPousseeGrossesse"
             },
             {
               "id": "",
@@ -1216,10 +1243,11 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "recapitulatif",
-              "submenu": false
+              "submenu": false,
+              "component": "recapGrossesse"
             }
           ]
         },

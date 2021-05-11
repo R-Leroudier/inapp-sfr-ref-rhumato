@@ -9,6 +9,7 @@
           :slug="subChildren.slug"
           :children="subChildren.children"
           :depth="0"
+          :content="subChildren.content"
         ></tree-menu>
       </div>
     </div>

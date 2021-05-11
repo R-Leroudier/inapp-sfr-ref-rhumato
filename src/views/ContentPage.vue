@@ -45,10 +45,55 @@ import Essdai from "@/components/scores/MaladiesSystemiques/Essdai.vue";
 import FRAX from "@/components/scores/PathologieOsseuse/FRAX.vue";
 import CalculCalcemie from "@/components/scores/PathologieOsseuse/CalculCalcemie.vue";
 import Ldl from "@/components/scores/Ldl.vue";
+import Polyarthrite from "@/components/bilans/Polyarthrite.vue";
+import MonoArthrite from "@/components/bilans/Mono-arthrite.vue";
+import LesionOsseuse from "@/components/bilans/LesionOsseuse.vue";
+import Iombalgie from "@/components/bilans/Iombalgie.vue";
+import Osteoporose from "@/components/bilans/Osteoporose.vue";
+import GeneraliteGrossesse from "@/components/conception/GeneraliteGrossesse.vue";
+import MethotrexateGrossesse from "@/components/conception/tttIndique/Methotrexate.vue";
+import LeflunomideGrossesse from "@/components/conception/tttIndique/Leflunomide.vue";
+import MycophénolateMofetil from "@/components/conception/tttIndique/MycophénolateMofetil.vue";
+import Cyclophosphamide from "@/components/conception/tttIndique/Cyclophosphamide.vue";
+import TofacitinibBaricitinib from "@/components/conception/tttIndique/TofacitinibBaricitinib.vue";
+import AbataceptCondition from "@/components/conception/tttAutoriseSousCondition/AbataceptCondition.vue";
+import Tocilizumab from "@/components/conception/tttAutoriseSousCondition/Tocilizumab.vue";
+import Belimumab from "@/components/conception/tttAutoriseSousCondition/Belimumab.vue";
+import Anakinra from "@/components/conception/tttAutoriseSousCondition/Anakinra.vue";
+import Ustekinumab from "@/components/conception/tttAutoriseSousCondition/Ustekinumab.vue";
+import Rituximab from "@/components/conception/tttAutoriseSousCondition/Rituximab.vue";
+import AntiTNFCondition from "@/components/conception/tttAutoriseSousCondition/AntiTNFCondition.vue";
+import HydroxychloroquineAutorise from "@/components/conception/tttAutorise/HydroxychloroquineAutorise.vue";
+import SulfasalazineAutorise from "@/components/conception/tttAutorise/SulfasalazineAutorise.vue";
+import AzathioprineAutorise from "@/components/conception/tttAutorise/AzathioprineAutorise.vue";
+import Ciclosporine from "@/components/conception/tttAutorise/Ciclosporine.vue";
+import Tacrolimus from "@/components/conception/tttAutorise/Tacrolimus.vue";
+import ColchicineAutorise from "@/components/conception/tttAutorise/ColchicineAutorise.vue";
+import CorticoidesAutorise from "@/components/conception/tttAutorise/CorticoidesAutorise.vue";
+import AntiInflammatoires from "@/components/conception/tttAutorise/AntiInflammatoires.vue";
+import tttPousseeGrossesse from "@/components/conception/tttPousseeGrossesse.vue";
+import recapGrossesse from "@/components/conception/recapGrossesse.vue";
 
 export default Vue.extend({
   name: "ContentPage",
   components: {
+    AntiInflammatoires,
+    recapGrossesse,
+    tttPousseeGrossesse,
+    CorticoidesAutorise,
+    HydroxychloroquineAutorise,
+    SulfasalazineAutorise,
+    ColchicineAutorise,
+    Tacrolimus,
+    AzathioprineAutorise,
+    Ciclosporine,
+    AbataceptCondition,
+    Tocilizumab,
+    Belimumab,
+    Anakinra,
+    Ustekinumab,
+    Rituximab,
+    AntiTNFCondition,
     Haq,
     Basdai,
     Basfi,
@@ -84,7 +129,18 @@ export default Vue.extend({
     Essdai,
     FRAX,
     CalculCalcemie,
-    Ldl
+    Ldl,
+    Polyarthrite,
+    Osteoporose,
+    Iombalgie,
+    LesionOsseuse,
+    MonoArthrite,
+    GeneraliteGrossesse,
+    MethotrexateGrossesse,
+    LeflunomideGrossesse,
+    MycophénolateMofetil,
+    Cyclophosphamide,
+    TofacitinibBaricitinib
   },
   methods: {
     searchComponentName(nodes, slug) {

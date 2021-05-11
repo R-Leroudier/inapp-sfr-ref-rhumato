@@ -15,9 +15,17 @@
         :children="subChildren.children"
         :depth="depth + 1"
         :key="subChildren.name"
+        :content="subChildren.content"
       >
       </tree-menu>
     </div>
+
+    <a :href="this.content" target="_blank" v-else-if="this.type === 'link'">
+      <div class="label-wrapper">
+        {{ name }}
+      </div>
+    </a>
+
     <router-link :to="'/score/' + this.slug" v-else>
       <div class="label-wrapper">
         {{ name }}
@@ -27,7 +35,7 @@
 </template>
 <script>
 export default {
-  props: ["name", "type", "slug", "children", "depth"],
+  props: ["name", "type", "slug", "children", "depth", "content"],
   data() {
     return { showChildren: false };
   },
