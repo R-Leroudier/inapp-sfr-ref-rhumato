@@ -50,34 +50,48 @@ import MonoArthrite from "@/components/bilans/Mono-arthrite.vue";
 import LesionOsseuse from "@/components/bilans/LesionOsseuse.vue";
 import Iombalgie from "@/components/bilans/Iombalgie.vue";
 import Osteoporose from "@/components/bilans/Osteoporose.vue";
-import GeneraliteGrossesse from "@/components/conception/GeneraliteGrossesse.vue";
-import MethotrexateGrossesse from "@/components/conception/tttIndique/Methotrexate.vue";
-import LeflunomideGrossesse from "@/components/conception/tttIndique/Leflunomide.vue";
-import MycophénolateMofetil from "@/components/conception/tttIndique/MycophénolateMofetil.vue";
-import Cyclophosphamide from "@/components/conception/tttIndique/Cyclophosphamide.vue";
-import TofacitinibBaricitinib from "@/components/conception/tttIndique/TofacitinibBaricitinib.vue";
-import AbataceptCondition from "@/components/conception/tttAutoriseSousCondition/AbataceptCondition.vue";
-import Tocilizumab from "@/components/conception/tttAutoriseSousCondition/Tocilizumab.vue";
-import Belimumab from "@/components/conception/tttAutoriseSousCondition/Belimumab.vue";
-import Anakinra from "@/components/conception/tttAutoriseSousCondition/Anakinra.vue";
-import Ustekinumab from "@/components/conception/tttAutoriseSousCondition/Ustekinumab.vue";
-import Rituximab from "@/components/conception/tttAutoriseSousCondition/Rituximab.vue";
-import AntiTNFCondition from "@/components/conception/tttAutoriseSousCondition/AntiTNFCondition.vue";
-import HydroxychloroquineAutorise from "@/components/conception/tttAutorise/HydroxychloroquineAutorise.vue";
-import SulfasalazineAutorise from "@/components/conception/tttAutorise/SulfasalazineAutorise.vue";
-import AzathioprineAutorise from "@/components/conception/tttAutorise/AzathioprineAutorise.vue";
-import Ciclosporine from "@/components/conception/tttAutorise/Ciclosporine.vue";
-import Tacrolimus from "@/components/conception/tttAutorise/Tacrolimus.vue";
-import ColchicineAutorise from "@/components/conception/tttAutorise/ColchicineAutorise.vue";
-import CorticoidesAutorise from "@/components/conception/tttAutorise/CorticoidesAutorise.vue";
-import AntiInflammatoires from "@/components/conception/tttAutorise/AntiInflammatoires.vue";
-import tttPousseeGrossesse from "@/components/conception/tttPousseeGrossesse.vue";
-import recapGrossesse from "@/components/conception/recapGrossesse.vue";
+import GeneraliteGrossesse from "@/components/conception/desir_grossesse/GeneraliteGrossesse.vue";
+import MethotrexateGrossesse from "@/components/conception/desir_grossesse/tttIndique/Methotrexate.vue";
+import LeflunomideGrossesse from "@/components/conception/desir_grossesse/tttIndique/Leflunomide.vue";
+import MycophénolateMofetil from "@/components/conception/desir_grossesse/tttIndique/MycophénolateMofetil.vue";
+import Cyclophosphamide from "@/components/conception/desir_grossesse/tttIndique/Cyclophosphamide.vue";
+import TofacitinibBaricitinib from "@/components/conception/desir_grossesse/tttIndique/TofacitinibBaricitinib.vue";
+import AbataceptCondition from "@/components/conception/desir_grossesse/tttAutoriseSousCondition/AbataceptCondition.vue";
+import Tocilizumab from "@/components/conception/desir_grossesse/tttAutoriseSousCondition/Tocilizumab.vue";
+import Belimumab from "@/components/conception/desir_grossesse/tttAutoriseSousCondition/Belimumab.vue";
+import Anakinra from "@/components/conception/desir_grossesse/tttAutoriseSousCondition/Anakinra.vue";
+import Ustekinumab from "@/components/conception/desir_grossesse/tttAutoriseSousCondition/Ustekinumab.vue";
+import Rituximab from "@/components/conception/desir_grossesse/tttAutoriseSousCondition/Rituximab.vue";
+import AntiTNFCondition from "@/components/conception/desir_grossesse/tttAutoriseSousCondition/AntiTNFCondition.vue";
+import HydroxychloroquineAutorise from "@/components/conception/desir_grossesse/tttAutorise/HydroxychloroquineAutorise.vue";
+import SulfasalazineAutorise from "@/components/conception/desir_grossesse/tttAutorise/SulfasalazineAutorise.vue";
+import AzathioprineAutorise from "@/components/conception/desir_grossesse/tttAutorise/AzathioprineAutorise.vue";
+import Ciclosporine from "@/components/conception/desir_grossesse/tttAutorise/Ciclosporine.vue";
+import Tacrolimus from "@/components/conception/desir_grossesse/tttAutorise/Tacrolimus.vue";
+import ColchicineAutorise from "@/components/conception/desir_grossesse/tttAutorise/ColchicineAutorise.vue";
+import CorticoidesAutorise from "@/components/conception/desir_grossesse/tttAutorise/CorticoidesAutorise.vue";
+import AntiInflammatoires from "@/components/conception/desir_grossesse/tttAutorise/AntiInflammatoires.vue";
+import tttPousseeGrossesse from "@/components/conception/desir_grossesse/tttPousseeGrossesse.vue";
+import recapGrossesse from "@/components/conception/desir_grossesse/recapGrossesse.vue";
+import AJI from "@/components/conception/rhumato/AJI.vue";
+import CalendrierVaccinal from "@/components/conception/rhumato/CalendrierVaccinal.vue";
+import GeneraliteRhumato from "@/components/conception/rhumato/GeneraliteRhumato.vue";
+import tttRhumato from "@/components/conception/rhumato/tttRhumato.vue";
+import AINS from "@/components/tttMedicamenteux/AINS.vue";
+import Glucocorticoides from "@/components/tttMedicamenteux/Glucocorticoides.vue";
+import Corticoides from "@/components/tttMedicamenteux/Corticoides.vue";
 
 export default Vue.extend({
   name: "ContentPage",
   components: {
     AntiInflammatoires,
+    AINS,
+    Glucocorticoides,
+    Corticoides,
+    CalendrierVaccinal,
+    GeneraliteRhumato,
+    AJI,
+    tttRhumato,
     recapGrossesse,
     tttPousseeGrossesse,
     CorticoidesAutorise,

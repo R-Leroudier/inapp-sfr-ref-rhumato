@@ -1264,14 +1264,15 @@
           "children": [
             {
               "id": "",
-              "name": "Généralités ",
+              "name": "Généralités",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
               "type": "html",
               "content": "",
-              "slug": "Generalites ",
-              "submenu": false
+              "slug": "GeneraliteRhumato",
+              "submenu": false,
+              "component": "GeneraliteRhumato"
             },
             {
               "id": "",
@@ -1282,7 +1283,8 @@
               "type": "html",
               "content": "",
               "slug": "forme-d-aji",
-              "submenu": false
+              "submenu": false,
+              "component": "AJI"
             },
             {
               "id": "",
@@ -1292,8 +1294,9 @@
               "parentId": null,
               "type": "html",
               "content": "",
-              "slug": "traitement",
-              "submenu": false
+              "slug": "tttRhumato",
+              "submenu": false,
+              "component": "tttRhumato"
             },
             {
               "id": "",
@@ -1303,8 +1306,9 @@
               "parentId": null,
               "type": "html",
               "content": "",
-              "slug": "calendrier-vaccinal ",
-              "submenu": false
+              "slug": "calendrier-vaccinal",
+              "submenu": false,
+              "component": "CalendrierVaccinal"
             }
           ]
         }
@@ -1330,7 +1334,8 @@
           "type": "html",
           "content": "",
           "slug": "ains",
-          "submenu": false
+          "submenu": false,
+          "component": "AINS"
         },
         {
           "id": "",
@@ -1340,8 +1345,9 @@
           "parentId": null,
           "type": "html",
           "content": "",
-          "slug": "glucocorticoides ",
-          "submenu": false
+          "slug": "glucocorticoides",
+          "submenu": false,
+          "component": "Glucocorticoides"
         },
         {
           "id": "",
@@ -1352,7 +1358,8 @@
           "type": "html",
           "content": "",
           "slug": "corticoides",
-          "submenu": false
+          "submenu": false,
+          "component": "Corticoides"
         },
         {
           "id": "",
