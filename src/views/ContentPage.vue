@@ -80,12 +80,54 @@ import tttRhumato from "@/components/conception/rhumato/tttRhumato.vue";
 import AINS from "@/components/tttMedicamenteux/AINS.vue";
 import Glucocorticoides from "@/components/tttMedicamenteux/Glucocorticoides.vue";
 import Corticoides from "@/components/tttMedicamenteux/Corticoides.vue";
+import Apremilast from "@/components/tttMedicamenteux/sDMARD/Apremilast.vue";
+import Hydroxychloroquine from "@/components/tttMedicamenteux/sDMARD/Hydroxychloroquine.vue";
+import Leflunomide from "@/components/tttMedicamenteux/sDMARD/Leflunomide.vue";
+import Methotrexate from "@/components/tttMedicamenteux/sDMARD/Methotrexate.vue";
+import Sulfasalazine from "@/components/tttMedicamenteux/sDMARD/Sulfasalazine.vue";
+import Baricitinib from "@/components/tttMedicamenteux/sDMARD/inhibiteurs/Baricitinib.vue";
+import Tofacitinib from "@/components/tttMedicamenteux/sDMARD/inhibiteurs/Tofacitinib.vue";
+import Upadacitinib from "@/components/tttMedicamenteux/sDMARD/inhibiteurs/Upadacitinib.vue";
+import Filgotinib from "@/components/tttMedicamenteux/sDMARD/inhibiteurs/Filgotinib.vue";
+import AntiBaff from "@/components/tttMedicamenteux/bDMARD/AntiBaff.vue";
+import AntiCD20 from "@/components/tttMedicamenteux/bDMARD/AntiCD20.vue";
+import AntiIL1 from "@/components/tttMedicamenteux/bDMARD/AntiIL1.vue";
+import AntiIL6R from "@/components/tttMedicamenteux/bDMARD/AntiIL6R.vue";
+import AntiIL12_13 from "@/components/tttMedicamenteux/bDMARD/AntiIL12_23.vue";
+import AntiIL17 from "@/components/tttMedicamenteux/bDMARD/AntiIL17.vue";
+import AntiIL23 from "@/components/tttMedicamenteux/bDMARD/AntiIL23.vue";
+import AntiTNF from "@/components/tttMedicamenteux/bDMARD/AntiTNF.vue";
+import BilanPreBiotherapie from "@/components/tttMedicamenteux/bDMARD/BilanPreBiotherapie.vue";
+import Abatacept from "@/components/tttMedicamenteux/bDMARD/Abatacept.vue";
+import SPONDYLOARTHRITE from "@/components/tttMedicamenteux/bDMARD/choix/SPONDYLOARTHRITE.vue";
+import POLYARTHRITE_RHUMATOIDE from "@/components/tttMedicamenteux/bDMARD/choix/POLYARTHRITE_RHUMATOIDE.vue";
 
 export default Vue.extend({
   name: "ContentPage",
   components: {
     AntiInflammatoires,
+    POLYARTHRITE_RHUMATOIDE,
+    SPONDYLOARTHRITE,
+    Abatacept,
+    AntiTNF,
+    AntiIL23,
+    AntiIL17,
+    AntiIL12_13,
+    AntiIL6R,
+    AntiCD20,
+    AntiIL1,
+    AntiBaff,
+    BilanPreBiotherapie,
+    Baricitinib,
+    Apremilast,
+    Filgotinib,
+    Upadacitinib,
+    Tofacitinib,
+    Sulfasalazine,
     AINS,
+    Hydroxychloroquine,
+    Leflunomide,
+    Methotrexate,
     Glucocorticoides,
     Corticoides,
     CalendrierVaccinal,
