@@ -110,11 +110,45 @@ import Raloxifene from "@/components/tttMedicamenteux/AntiOsteoporotiques/Raloxi
 import Alendronate from "@/components/tttMedicamenteux/AntiOsteoporotiques/Biphosphonates/Alendronate.vue";
 import Risedronate from "@/components/tttMedicamenteux/AntiOsteoporotiques/Biphosphonates/Risedronate.vue";
 import AcideZoledronique from "@/components/tttMedicamenteux/AntiOsteoporotiques/Biphosphonates/AcideZoledronique.vue";
+import AMOXICILLINE from "@/components/tttMedicamenteux/Antibiotiques/AMOXICILLINE.vue";
+import OXACILLINE_CLOXACILLINE from "@/components/tttMedicamenteux/Antibiotiques/OXACILLINE_CLOXACILLINE.vue";
+import CEFAZOLINE from "@/components/tttMedicamenteux/Antibiotiques/CEFAZOLINE.vue";
+import CEFTRIAXONE from "@/components/tttMedicamenteux/Antibiotiques/CEFTRIAXONE.vue";
+import CEFOTAXIME from "@/components/tttMedicamenteux/Antibiotiques/CEFOTAXIME.vue";
+import CEFTAZIDIME from "@/components/tttMedicamenteux/Antibiotiques/CEFTAZIDIME.vue";
+import CEFEPIME from "@/components/tttMedicamenteux/Antibiotiques/CEFEPIME.vue";
+import VANCOMYCINE from "@/components/tttMedicamenteux/Antibiotiques/VANCOMYCINE.vue";
+import TEICOPLANINE from "@/components/tttMedicamenteux/Antibiotiques/TEICOPLANINE.vue";
+import RIFAMPICINE from "@/components/tttMedicamenteux/Antibiotiques/RIFAMPICINE.vue";
+import OFLOXACINE from "@/components/tttMedicamenteux/Antibiotiques/OFLOXACINE.vue";
+import CIPROFLOXACINE from "@/components/tttMedicamenteux/Antibiotiques/CIPROFLOXACINE.vue";
+import LEVOFLOXACINE from "@/components/tttMedicamenteux/Antibiotiques/LEVOFLOXACINE.vue";
+import MOXIFLOXACINE from "@/components/tttMedicamenteux/Antibiotiques/MOXIFLOXACINE.vue";
+import CLINDAMYCINE from "@/components/tttMedicamenteux/Antibiotiques/CLINDAMYCINE.vue";
+import GENTAMICINE from "@/components/tttMedicamenteux/Antibiotiques/GENTAMICINE.vue";
+import AMIKACINE from "@/components/tttMedicamenteux/Antibiotiques/AMIKACINE.vue";
 
 export default Vue.extend({
   name: "ContentPage",
   components: {
     AntiInflammatoires,
+    AMIKACINE,
+    CLINDAMYCINE,
+    GENTAMICINE,
+    MOXIFLOXACINE,
+    LEVOFLOXACINE,
+    CIPROFLOXACINE,
+    OFLOXACINE,
+    RIFAMPICINE,
+    TEICOPLANINE,
+    VANCOMYCINE,
+    CEFEPIME,
+    CEFTAZIDIME,
+    CEFOTAXIME,
+    CEFTRIAXONE,
+    CEFAZOLINE,
+    OXACILLINE_CLOXACILLINE,
+    AMOXICILLINE,
     Alendronate,
     Risedronate,
     AcideZoledronique,

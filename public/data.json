@@ -1832,7 +1832,8 @@
               "type": "html",
               "content": "",
               "slug": "amoxicilline",
-              "submenu": false
+              "submenu": false,
+              "component": "AMOXICILLINE"
             },
             {
               "id": "",
@@ -1843,7 +1844,8 @@
               "type": "html",
               "content": "",
               "slug": "oxacilline-cloxacilline",
-              "submenu": false
+              "submenu": false,
+              "component": "OXACILLINE_CLOXACILLINE"
             },
             {
               "id": "",
@@ -1854,7 +1856,8 @@
               "type": "html",
               "content": "",
               "slug": "cefazoline",
-              "submenu": false
+              "submenu": false,
+              "component": "CEFAZOLINE"
             },
             {
               "id": "",
@@ -1865,7 +1868,8 @@
               "type": "html",
               "content": "",
               "slug": "ceftriaxone",
-              "submenu": false
+              "submenu": false,
+              "component": "CEFTRIAXONE"
             },
             {
               "id": "",
@@ -1876,7 +1880,8 @@
               "type": "html",
               "content": "",
               "slug": "cefotaxime",
-              "submenu": false
+              "submenu": false,
+              "component": "CEFOTAXIME"
             },
             {
               "id": "",
@@ -1887,7 +1892,8 @@
               "type": "html",
               "content": "",
               "slug": "ceftazidime",
-              "submenu": false
+              "submenu": false,
+              "component": "CEFTAZIDIME"
             },
             {
               "id": "",
@@ -1898,7 +1904,8 @@
               "type": "html",
               "content": "",
               "slug": "cefepime",
-              "submenu": false
+              "submenu": false,
+              "component": "CEFEPIME"
             },
             {
               "id": "",
@@ -1909,7 +1916,8 @@
               "type": "html",
               "content": "",
               "slug": "vancomycine",
-              "submenu": false
+              "submenu": false,
+              "component": "VANCOMYCINE"
             },
             {
               "id": "",
@@ -1920,7 +1928,8 @@
               "type": "html",
               "content": "",
               "slug": "teicoplanine",
-              "submenu": false
+              "submenu": false,
+              "component": "TEICOPLANINE"
             },
             {
               "id": "",
@@ -1931,7 +1940,8 @@
               "type": "html",
               "content": "",
               "slug": "rifampicine",
-              "submenu": false
+              "submenu": false,
+              "component": "RIFAMPICINE"
             },
             {
               "id": "",
@@ -1942,7 +1952,8 @@
               "type": "html",
               "content": "",
               "slug": "ofloxacine",
-              "submenu": false
+              "submenu": false,
+              "component": "OFLOXACINE"
             },
             {
               "id": "",
@@ -1953,7 +1964,8 @@
               "type": "html",
               "content": "",
               "slug": "ciprofloxacine",
-              "submenu": false
+              "submenu": false,
+              "component": "CIPROFLOXACINE"
             },
             {
               "id": "",
@@ -1964,7 +1976,8 @@
               "type": "html",
               "content": "",
               "slug": "levofloxacine",
-              "submenu": false
+              "submenu": false,
+              "component": "LEVOFLOXACINE"
             },
             {
               "id": "",
@@ -1975,7 +1988,8 @@
               "type": "html",
               "content": "",
               "slug": "moxifloxacine",
-              "submenu": false
+              "submenu": false,
+              "component": "MOXIFLOXACINE"
             },
             {
               "id": "",
@@ -1986,7 +2000,8 @@
               "type": "html",
               "content": "",
               "slug": "clindamycine",
-              "submenu": false
+              "submenu": false,
+              "component": "CLINDAMYCINE"
             },
             {
               "id": "",
@@ -1997,7 +2012,8 @@
               "type": "html",
               "content": "",
               "slug": "gentamicine",
-              "submenu": false
+              "submenu": false,
+              "component": "GENTAMICINE"
             },
             {
               "id": "",
@@ -2008,7 +2024,8 @@
               "type": "html",
               "content": "",
               "slug": "amikacine",
-              "submenu": false
+              "submenu": false,
+              "component": "AMIKACINE"
             }
           ]
         }

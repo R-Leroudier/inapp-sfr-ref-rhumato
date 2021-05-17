@@ -1,6 +1,6 @@
 <template lang="html">
   <section class="Raloxifene">
-    <h2></h2>
+    <h2>RALOXIFENE</h2>
 
     <p>- DCI : RALOXIFENE</p>
     <p><span class="bold">- Nom commercial</span> Evista® Optruma®</p>

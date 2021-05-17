@@ -1,6 +1,6 @@
 <template lang="html">
   <section class="Teriparatide">
-    <h2></h2>
+    <h2>TERIPARATIDE</h2>
 
     <p>- DCI : TERIPARATIDE</p>
     <p><span class="bold">- Nom commercial</span> FORSTEO® MOVIMYA® TERROSA®</p>

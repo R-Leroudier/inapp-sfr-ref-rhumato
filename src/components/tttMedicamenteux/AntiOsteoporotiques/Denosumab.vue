@@ -1,6 +1,6 @@
 <template lang="html">
   <section class="Denosumab">
-    <h2></h2>
+    <h2>DENOSUMAB</h2>
 
     <p>- DCI : DENOSUMAB</p>
     <p><span class="bold">- Nom commercial</span> Prolia®</p>
