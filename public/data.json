@@ -1671,10 +1671,11 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "list",
+          "type": "html",
           "content": "",
           "slug": "colchicine",
-          "submenu": false
+          "submenu": false,
+          "component": "Colchicine"
         },
         {
           "id": "",
@@ -1689,25 +1690,27 @@
           "children": [
             {
               "id": "",
-              "name": "Azathioprine",
+              "name": "Azathioprine (IMUREL)",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "azathioprine",
-              "submenu": false
+              "submenu": false,
+              "component": "IMUREL"
             },
             {
               "id": "",
-              "name": "MMF",
+              "name": "MMF (CELLCEPT)",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "list",
+              "type": "html",
               "content": "",
               "slug": "mmf",
-              "submenu": false
+              "submenu": false,
+              "component": "CELLCEPT"
             }
           ]
         },
@@ -1728,10 +1731,48 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "html",
+              "type": "list",
               "content": "",
               "slug": "biphosphonates",
-              "submenu": false
+              "submenu": false,
+              "children": [
+                {
+                  "id": "",
+                  "name": "Alendronate",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "alendronate",
+                  "submenu": false,
+                  "component": "Alendronate"
+                },
+                {
+                  "id": "",
+                  "name": "Risedronate",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "risedronate",
+                  "submenu": false,
+                  "component": "Risedronate"
+                },
+                {
+                  "id": "",
+                  "name": "Acide Zoledronique",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "acide-zoledronique",
+                  "submenu": false,
+                  "component": "AcideZoledronique"
+                }
+              ]
             },
             {
               "id": "",
@@ -1742,7 +1783,8 @@
               "type": "html",
               "content": "",
               "slug": "denosumab",
-              "submenu": false
+              "submenu": false,
+              "component": "Denosumab"
             },
             {
               "id": "",
@@ -1753,7 +1795,8 @@
               "type": "html",
               "content": "",
               "slug": "teriparatide",
-              "submenu": false
+              "submenu": false,
+              "component": "Teriparatide"
             },
             {
               "id": "",
@@ -1764,7 +1807,8 @@
               "type": "html",
               "content": "",
               "slug": "raloxifene",
-              "submenu": false
+              "submenu": false,
+              "component": "Raloxifene"
             }
           ]
         },

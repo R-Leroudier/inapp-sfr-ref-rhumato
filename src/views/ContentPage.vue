@@ -101,11 +101,29 @@ import BilanPreBiotherapie from "@/components/tttMedicamenteux/bDMARD/BilanPreBi
 import Abatacept from "@/components/tttMedicamenteux/bDMARD/Abatacept.vue";
 import SPONDYLOARTHRITE from "@/components/tttMedicamenteux/bDMARD/choix/SPONDYLOARTHRITE.vue";
 import POLYARTHRITE_RHUMATOIDE from "@/components/tttMedicamenteux/bDMARD/choix/POLYARTHRITE_RHUMATOIDE.vue";
+import Colchicine from "@/components/tttMedicamenteux/Colchicine.vue";
+import IMUREL from "@/components/tttMedicamenteux/autres/IMUREL.vue";
+import CELLCEPT from "@/components/tttMedicamenteux/autres/CELLCEPT.vue";
+import Denosumab from "@/components/tttMedicamenteux/AntiOsteoporotiques/Denosumab.vue";
+import Teriparatide from "@/components/tttMedicamenteux/AntiOsteoporotiques/Teriparatide.vue";
+import Raloxifene from "@/components/tttMedicamenteux/AntiOsteoporotiques/Raloxifene.vue";
+import Alendronate from "@/components/tttMedicamenteux/AntiOsteoporotiques/Biphosphonates/Alendronate.vue";
+import Risedronate from "@/components/tttMedicamenteux/AntiOsteoporotiques/Biphosphonates/Risedronate.vue";
+import AcideZoledronique from "@/components/tttMedicamenteux/AntiOsteoporotiques/Biphosphonates/AcideZoledronique.vue";
 
 export default Vue.extend({
   name: "ContentPage",
   components: {
     AntiInflammatoires,
+    Alendronate,
+    Risedronate,
+    AcideZoledronique,
+    Denosumab,
+    Raloxifene,
+    Colchicine,
+    Teriparatide,
+    IMUREL,
+    CELLCEPT,
     POLYARTHRITE_RHUMATOIDE,
     SPONDYLOARTHRITE,
     Abatacept,
