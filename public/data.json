@@ -2062,7 +2062,8 @@
               "type": "html",
               "content": "",
               "slug": "generalites",
-              "submenu": false
+              "submenu": false,
+              "component": "GeneralitesTacTag"
             },
             {
               "id": "",
@@ -2073,7 +2074,8 @@
               "type": "html",
               "content": "",
               "slug": "tableau-recapitulatifs",
-              "submenu": false
+              "submenu": false,
+              "component": "TableauRecap"
             }
           ]
         },
@@ -2085,9 +2087,21 @@
           "parentId": null,
           "type": "list",
           "content": "",
-          "slug": "realisation-pratique",
+          "slug": "realisations-pratiques",
           "submenu": true,
           "children": [
+            {
+              "id": "",
+              "name": "Réalisation pratique",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "realisation-pratique",
+              "submenu": false,
+              "component": "RealisationPratique"
+            },
             {
               "id": "",
               "name": "Membre supérieur",
@@ -2097,7 +2111,8 @@
               "type": "html",
               "content": "",
               "slug": "membre-superieur",
-              "submenu": false
+              "submenu": false,
+              "component": "MembreSuperieur"
             },
             {
               "id": "",
@@ -2108,7 +2123,8 @@
               "type": "html",
               "content": "",
               "slug": "membre-inferieur",
-              "submenu": false
+              "submenu": false,
+              "component": "MembreInferieur"
             }
           ]
         },
@@ -2121,7 +2137,8 @@
           "type": "html",
           "content": "",
           "slug": "contre-indications",
-          "submenu": false
+          "submenu": false,
+          "component": "ContreIndications"
         },
         {
           "id": "",
@@ -2132,7 +2149,8 @@
           "type": "html",
           "content": "",
           "slug": "complications",
-          "submenu": false
+          "submenu": false,
+          "component": "Complications"
         }
       ]
     },

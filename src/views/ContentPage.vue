@@ -127,12 +127,26 @@ import MOXIFLOXACINE from "@/components/tttMedicamenteux/Antibiotiques/MOXIFLOXA
 import CLINDAMYCINE from "@/components/tttMedicamenteux/Antibiotiques/CLINDAMYCINE.vue";
 import GENTAMICINE from "@/components/tttMedicamenteux/Antibiotiques/GENTAMICINE.vue";
 import AMIKACINE from "@/components/tttMedicamenteux/Antibiotiques/AMIKACINE.vue";
+import GeneralitesTacTag from "@/components/ponctions_infiltrations/TAC_TAG/GeneralitesTacTag.vue";
+import TableauRecap from "@/components/ponctions_infiltrations/TAC_TAG/TableauRecap.vue";
+import MembreInferieur from "@/components/ponctions_infiltrations/realisationPratique/MembreInferieur.vue";
+import MembreSuperieur from "@/components/ponctions_infiltrations/realisationPratique/MembreSuperieur.vue";
+import RealisationPratique from "@/components/ponctions_infiltrations/realisationPratique/RealisationPratique.vue";
+import Complications from "@/components/ponctions_infiltrations/Complications.vue";
+import ContreIndications from "@/components/ponctions_infiltrations/ContreIndications.vue";
 
 export default Vue.extend({
   name: "ContentPage",
   components: {
     AntiInflammatoires,
+    ContreIndications,
+    Complications,
+    MembreInferieur,
+    MembreSuperieur,
+    RealisationPratique,
     AMIKACINE,
+    GeneralitesTacTag,
+    TableauRecap,
     CLINDAMYCINE,
     GENTAMICINE,
     MOXIFLOXACINE,
