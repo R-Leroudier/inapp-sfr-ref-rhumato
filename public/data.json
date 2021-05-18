@@ -2174,7 +2174,8 @@
           "type": "html",
           "content": "",
           "slug": "arthrite-septique",
-          "submenu": false
+          "submenu": false,
+          "component": "Arthrite"
         },
         {
           "id": "",
@@ -2185,7 +2186,8 @@
           "type": "html",
           "content": "",
           "slug": "troubles-phospho-calciques",
-          "submenu": false
+          "submenu": false,
+          "component": "Troubles"
         },
         {
           "id": "",
@@ -2196,7 +2198,8 @@
           "type": "html",
           "content": "",
           "slug": "hypercalcemie",
-          "submenu": false
+          "submenu": false,
+          "component": "Hypercalcemie"
         },
         {
           "id": "",
@@ -2207,7 +2210,8 @@
           "type": "html",
           "content": "",
           "slug": "radiculalgie-compliquee",
-          "submenu": false
+          "submenu": false,
+          "component": "Radiculalgie"
         },
         {
           "id": "",
@@ -2218,7 +2222,8 @@
           "type": "html",
           "content": "",
           "slug": "reaction-allergique-lors-de-l-administration-d-un-biomedicament",
-          "submenu": false
+          "submenu": false,
+          "component": "ReactionAllergique"
         }
       ]
     },
