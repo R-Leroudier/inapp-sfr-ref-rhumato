@@ -2260,7 +2260,21 @@
       "type": "list",
       "content": "",
       "slug": "aide-au-codage",
-      "submenu": false
+      "submenu": false,
+      "children": [
+        {
+          "id": "",
+          "name": "Aide au codage",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "aide-codage",
+          "submenu": false,
+          "component": "AideCodage"
+        }
+      ]
     },
     {
       "id": "",
@@ -2279,7 +2293,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "https://mediatheque.larhumatologie.fr/",
           "slug": "mediatheque-de-la-sfr",
           "submenu": false
@@ -2290,7 +2304,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "http://www.lecofer.org/",
           "slug": "cofer",
           "submenu": false
@@ -2301,7 +2315,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "https://www.youtube.com/channel/UC8WqhM9HWQ5QzUzmveH8wiQ",
           "slug": "les-mercredis-du-cofer",
           "submenu": false
@@ -2312,7 +2326,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "https://www.uness.fr/plateformes-sides/sides-ng",
           "slug": "sides-ng",
           "submenu": false
@@ -2323,7 +2337,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "http://www.grio.org/",
           "slug": "grio",
           "submenu": false
@@ -2334,7 +2348,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "https://www.has-sante.fr/jcms/c_1340879/fr/protocoles-nationaux-de-diagnostic-et-de-soins-pnds",
           "slug": "pnds",
           "submenu": false
@@ -2345,7 +2359,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "http://www.cri-net.com/recherche/fiches-pratiques-et-recommandations/dernieres-mises-a-jour",
           "slug": "fiches-du-cri",
           "submenu": false
@@ -2356,7 +2370,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "https://www.fai2r.org/",
           "slug": "fai2r",
           "submenu": false
@@ -2367,7 +2381,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "http://www.lecofer.org/semiologie.php",
           "slug": "Examen clinique en video",
           "submenu": false
@@ -2391,7 +2405,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "https://sfr.larhumatologie.fr/agenda",
           "slug": "agenda",
           "submenu": false
@@ -2402,7 +2416,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "https://congres.la-rhumatologie.com/",
           "slug": "congres",
           "submenu": false
@@ -2413,7 +2427,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "",
           "slug": "evenement-ref",
           "submenu": false
@@ -2424,7 +2438,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "",
           "slug": "veille-bibliographique-de-la-ref",
           "submenu": false
@@ -2435,7 +2449,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "https://sfr.larhumatologie.fr/presentation/recherche-innovation",
           "slug": "appel-a-observations",
           "submenu": false
@@ -2446,7 +2460,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
+          "type": "link",
           "content": "https://sfr.larhumatologie.fr/annonces",
           "slug": "annonces",
           "submenu": false
@@ -2457,8 +2471,8 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "html",
-          "content": "sectionref@gmail.com",
+          "type": "link",
+          "content": "mailto:sectionref@gmail.com",
           "slug": "contacts",
           "submenu": false
         }

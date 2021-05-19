@@ -134,17 +134,18 @@ import MembreSuperieur from "@/components/ponctions_infiltrations/realisationPra
 import RealisationPratique from "@/components/ponctions_infiltrations/realisationPratique/RealisationPratique.vue";
 import Complications from "@/components/ponctions_infiltrations/Complications.vue";
 import ContreIndications from "@/components/ponctions_infiltrations/ContreIndications.vue";
-
 import Arthrite from "@/components/urgences/Arthrite.vue";
 import Hypercalcemie from "@/components/urgences/Hypercalcemie.vue";
 import Radiculalgie from "@/components/urgences/Radiculalgie.vue";
 import ReactionAllergique from "@/components/urgences/ReactionAllergique.vue";
 import Troubles from "@/components/urgences/Troubles.vue";
+import AideCodage from "@/components/AideCodage.vue";
 
 export default Vue.extend({
   name: "ContentPage",
   components: {
     AntiInflammatoires,
+    AideCodage,
     Radiculalgie,
     ReactionAllergique,
     Troubles,
