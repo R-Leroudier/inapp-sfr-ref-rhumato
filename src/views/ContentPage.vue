@@ -140,12 +140,52 @@ import Radiculalgie from "@/components/urgences/Radiculalgie.vue";
 import ReactionAllergique from "@/components/urgences/ReactionAllergique.vue";
 import Troubles from "@/components/urgences/Troubles.vue";
 import AideCodage from "@/components/AideCodage.vue";
+import ApremilastOrdonnance from "@/components/ordonnances/csDMARDS/Apremilast.vue";
+import MethotrexateOrdonnance from "@/components/ordonnances/csDMARDS/Methotrexate.vue";
+import Salazopyrine from "@/components/ordonnances/csDMARDS/Salazopyrine.vue";
+import bDMARDS from "@/components/ordonnances/bDMARDS.vue";
+import preAntiTNF from "@/components/ordonnances/biologie/preAntiTNF.vue";
+import preJAKi from "@/components/ordonnances/biologie/preJAKi.vue";
+import preMethotrexate from "@/components/ordonnances/biologie/preMethotrexate.vue";
+import CanalLombaire from "@/components/ordonnances/kinesitherapie/CanalLombaire.vue";
+import Cervicalgie from "@/components/ordonnances/kinesitherapie/Cervicalgie.vue";
+import GonarthroseFTI from "@/components/ordonnances/kinesitherapie/GonarthroseFTI.vue";
+import Lombalgie from "@/components/ordonnances/kinesitherapie/Lombalgie.vue";
+import SDRC from "@/components/ordonnances/kinesitherapie/SDRC.vue";
+import SyndromeFP from "@/components/ordonnances/kinesitherapie/SyndromeFP.vue";
+import TendinopathieAchille from "@/components/ordonnances/kinesitherapie/TendinopathieAchille.vue";
+import TendinopathieCoiffe from "@/components/ordonnances/kinesitherapie/TendinopathieCoiffe.vue";
+import TendinopathieMG from "@/components/ordonnances/kinesitherapie/TendinopathieMG.vue";
+import Perfusion from "@/components/ordonnances/acteInfirmier/Perfusion.vue";
+import Injection from "@/components/ordonnances/acteInfirmier/Injection.vue";
+import Vaccinations from "@/components/ordonnances/Vaccinations.vue";
+import Echographie from "@/components/compteRendu/Echographie.vue";
 
 export default Vue.extend({
   name: "ContentPage",
   components: {
+    Lombalgie,
+    Echographie,
+    Vaccinations,
+    Perfusion,
+    Injection,
+    SDRC,
+    GonarthroseFTI,
+    SyndromeFP,
     AntiInflammatoires,
+    TendinopathieCoiffe,
+    TendinopathieMG,
+    TendinopathieAchille,
+    CanalLombaire,
+    preMethotrexate,
+    preJAKi,
+    Cervicalgie,
+    preAntiTNF,
+    bDMARDS,
+    ApremilastOrdonnance,
+    Salazopyrine,
     AideCodage,
+    MethotrexateOrdonnance,
     Radiculalgie,
     ReactionAllergique,
     Troubles,

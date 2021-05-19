@@ -1,0 +1,68 @@
+<template lang="html">
+  <section class="bDMARS">
+    <h2>bDMARDS/ JAK inhibiteur/Tériparatide</h2>
+
+    <p>Sur ordonnance d’exception</p>
+
+    <img src="@/assets/bDMARDS.png">
+
+    <p>
+      <span class="bold">1 : Patient</span><br>
+      Nom, Prénom
+      <br>
+      DDN
+    </p>
+
+    <p>
+      <span class="bold">2 : Prescripteur</span><br>
+      Nom prénom<br>
+      Titre<br>
+      N°ADELI/RPPS<br>
+      Adresse<br>
+    </p>
+
+    <p>
+      <span class="bold">3 : Prescription</span><br>
+      Produit (DCI)<br>
+      Stylo / seringue<br>
+      Posologie<br>
+      Voie admini.<br>
+      Durée prescr.<br>
+    </p>
+  </section>
+</template>
+
+<script lang="js">
+    export default {
+        name: 'bDMARS',
+        props: [],
+        mounted() {},
+        data() {
+            return {};
+        },
+        methods: {},
+        computed: {}
+    }
+</script>
+
+<style scoped lang="scss">
+    .bDMARS {
+      padding: 0 15px;
+
+      p {
+        text-align: left;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      img {
+        max-width: 100%;
+        border: 1px solid black;
+      }
+    }
+</style>
