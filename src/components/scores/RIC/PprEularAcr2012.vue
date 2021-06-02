@@ -77,14 +77,13 @@
       </p>
     </div>
 
-    <div>
+    <div class="result">
       <h3>{{ result }} Points</h3>
       <h3> 0 Critère d'exclusion </h3>
       <h3>{{ result >= 4 ? "Positif" : "Negatif" }}</h3>
     </div>
 
-    <span class="line"></span>
-    <div class="info">
+         <div class="info">
       <span>Si le patient a plus de 50 ans, des douleurs scapulaires bilatérales, une CRP et/ou une VS augmentées ET un score ≥ 4 sans les critères échographiques ou un score ≥ 5 avec les critères échographiques ⇒ la sensibilité est de 68 % et la spécificité est de 78 % sans l’échographie et 66 % et 81 % avec l’échographie. </span>
     </div>
   </div>
@@ -140,6 +139,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .PprEularAcr2012 {
   ul {
     list-style: none;
@@ -175,10 +175,7 @@ export default Vue.extend({
     color: rgb(49, 49, 49);
   }
 
-  .info {
-    font-style: italic;
-    font-size: x-small;
-  }
+
 
   .btn.selected {
     background-color: #3abaea;

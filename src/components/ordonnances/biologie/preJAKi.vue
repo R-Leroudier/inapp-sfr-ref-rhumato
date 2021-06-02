@@ -20,6 +20,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .preJAKi {
       padding: 0 15px;
 

@@ -6,6 +6,12 @@
   </div>
 </template>
 
+<style>
+.content-page {
+  padding: 0 .75em;
+}
+</style>
+
 <script lang="ts">
 import Vue from "vue";
 import DataService from "@/service/DataService";

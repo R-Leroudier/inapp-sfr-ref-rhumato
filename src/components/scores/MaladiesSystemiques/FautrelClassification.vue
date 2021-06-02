@@ -74,7 +74,7 @@
             <input type="radio" name="btnradio9" id="btnradio16"  @click="choice8(1)">
             <label class="btn" for="btnradio16">OUI</label>
       <br>
-      <card class="result">
+      <div class="result">
 
         <span v-if="majorCriterias() <= 1">{{ majorCriterias() }} critère majeur</span>
         <span v-else>{{ majorCriterias() }} critères majeurs</span> <br>
@@ -84,7 +84,7 @@
 
         <p class="description">Nombre de critères nécessaires: 4 critères majeurs ou 3 critères majeurs + 2 critères mineurs</p>
 
-      </card>
+      </div>
 
   </div>
 </template>
@@ -152,6 +152,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .FautrelClassification {
   .description {
     font-size: 25px;

@@ -1,6 +1,7 @@
 <template>
   <div class="NewYorkClassification">
-    <h3>Classification de New York</h3><br />
+    <h3 class="title">Classification de New York</h3>
+    <span class="line"></span>
     <table>
       <tr>
         <td>Stade 0</td>
@@ -42,5 +43,6 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .NewYorkClassification {}
 </style>

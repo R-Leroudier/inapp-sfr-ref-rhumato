@@ -20,6 +20,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .Salazopyrine {
       padding: 0 15px;
 

@@ -76,6 +76,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .GENTAMICINE {padding: 0 15px;
       text-align: left;
 

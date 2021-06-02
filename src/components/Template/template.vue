@@ -6,7 +6,7 @@ critères ACR/EULAR</h2>
 <p class="description">Critères diagnostics devant une polyarthrite débutante avec des radiographies normales et en l'absence d'un diagnostic d'une autre maladie.</p>
 <span class="line">------</span>
 <br>
-<card class="introduction">test</card>
+<div class="introduction">test</div>
 <form class="form">
 <h4 class="categorie">Atteintes articulaires</h4>
 <p class="details">On différencie les grosses et petites articulations :- Grosses articulations : épaule, coude, hanche, genou, cheville. - Petites articulations : toutes autres articulations des membres</p>
@@ -38,8 +38,8 @@ critères ACR/EULAR</h2>
 <button type="button" class="btn validate"> calcul</button>
 <button type="button" class="btn validate"> annule</button>
 </form>
-<card class="result">score
-</card>
+<div class="result">score
+</div>
 <span class="line"></span>
 
 </div>
@@ -70,7 +70,7 @@ critères ACR/EULAR</h2>
       <br />
       <button type="button" class="btn validate">calcul</button>
       <button type="button" class="btn validate">annule</button>
-      <br /><card class="result">score </card>
+      <br /><div class="result">score </div>
     </form>
     <span class="line"></span>
   </div>

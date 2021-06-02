@@ -46,6 +46,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .bDMARS {
       padding: 0 15px;
 

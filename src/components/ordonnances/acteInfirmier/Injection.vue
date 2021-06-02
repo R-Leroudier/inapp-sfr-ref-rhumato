@@ -20,6 +20,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .Injection {
       padding: 0 15px;
 

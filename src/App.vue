@@ -30,17 +30,15 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped lang="scss">
-html, body {
+@import "src/sass/global.scss";;html, body {
   padding: 0;
   margin: 0;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   /* position: fixed; */
   width: 100%;

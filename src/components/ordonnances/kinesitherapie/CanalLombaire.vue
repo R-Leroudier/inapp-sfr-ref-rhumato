@@ -26,6 +26,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .CanalLombaire {
       padding: 0 15px;
 

@@ -5,6 +5,7 @@
       >Pour chaque item, indiquez une valeur de 0 (absent) à 10 (extrême)
       concernant votre ressenti.</span
     >
+    <span class="line"></span>
     <form name="Form" id="Form">
           <p> 1. Où situez-vous votre degré global de fatigue&nbsp;?</p>
             <input
@@ -79,7 +80,7 @@
               value="0"
               v-model="picked"
               checked="checked"
-            /><label class="btn" for="vDuree1">Aucune</label><br />
+            /><label class="btn" for="vDuree1" :class="{selected: picked === '0' || picked === 0}">Aucune</label><br />
           </div>
             <div class="radio">
             <input
@@ -88,7 +89,7 @@
               type="radio"
               v-model="picked"
               value="1.25"
-            /><label class="btn" for="vDuree2">15 minutes</label><br />
+            /><label class="btn" for="vDuree2" :class="{selected: picked === '1.25' }">15 minutes</label><br />
             </div>
             <div class="radio">
             <input
@@ -97,7 +98,7 @@
               type="radio"
               v-model="picked"
               value="2.5"
-            /><label class="btn" for="vDuree3">30 minutes</label><br />
+            /><label class="btn" for="vDuree3" :class="{selected: picked === '2.5' }">30 minutes</label><br />
             </div>
             <div class="radio">
             <input
@@ -106,7 +107,7 @@
               type="radio"
               v-model="picked"
               value="3.75"
-            /><label class="btn" for="vDuree4">45 minutes</label><br />
+            /><label class="btn" for="vDuree4" :class="{selected: picked === '3.75' }">45 minutes</label><br />
             </div>
             <div class="radio">
             <input
@@ -115,7 +116,7 @@
               type="radio"
               v-model="picked"
               value="5"
-            /><label class="btn" for="vDuree5">1 heure</label><br />
+            /><label class="btn" for="vDuree5"  :class="{selected: picked === '5' }">1 heure</label><br />
             </div>
             <div class="radio">
             <input
@@ -124,7 +125,7 @@
               type="radio"
               value="6.25"
               v-model="picked"
-            /><label class="btn" for="vDuree6">1 h 15</label><br />
+            /><label class="btn" for="vDuree6" :class="{selected: picked === '6.25' }">1 h 15</label><br />
             </div>
             <div class="radio">
             <input
@@ -133,7 +134,7 @@
               type="radio"
               value="7.5"
               v-model="picked"
-            /><label class="btn" for="vDuree7">1 h 30</label><br />
+            /><label class="btn" for="vDuree7" :class="{selected: picked === '7.5' }">1 h 30</label><br />
             </div>
             <div class="radio">
             <input
@@ -142,7 +143,7 @@
               type="radio"
               value="8.75"
               v-model="picked"
-            /><label class="btn" for="vDuree8">1 h 45</label><br />
+            /><label class="btn" for="vDuree8" :class="{selected: picked === '8.75' }">1 h 45</label><br />
             </div>
             <div class="radio">
             <input
@@ -151,7 +152,7 @@
               type="radio"
               value="10"
               v-model="picked"
-            /><label class="btn" for="vDuree9">2 h ou plus</label><br/>
+            /><label class="btn" for="vDuree9" :class="{selected: picked === '10' }">2 h ou plus</label><br/>
             </div>
       <br />
       <div>
@@ -168,14 +169,7 @@
         <hr width="80%" class="line" />
         <p class="result">
           Score :
-          <input
-            name="Resultat"
-            type="text"
-            id="Resultat"
-            style="width: 3em"
-            readonly="readonly"
-            v-model="result"
-          />
+          {{ result}}
         </p>
       </div>
     </form>
@@ -220,6 +214,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 @import "src/sass/global";
 
 .Basdai {

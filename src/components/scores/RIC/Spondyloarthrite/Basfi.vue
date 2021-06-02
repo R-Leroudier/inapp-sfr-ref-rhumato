@@ -2,6 +2,7 @@
   <div class="Basfi">
     <h3 class="title">Score Basfi</h3>
     <span align="center" class="score_note">Pour chaque item, indiquez une valeur de 0 (absent) à 10 (extrême) concernant votre ressenti.</span>
+    <span class="line"></span>
 
     <form name="Form" id="Form">
       <p>1. Pouvez-vous mettre vos chaussettes ou vos collants sans aide extérieure et sans moyen extérieur (ex. tire-bas) ?</p>
@@ -128,14 +129,7 @@
         <hr width="80%" class="line" />
         <p class="result">
           Score :
-          <input
-            name="Resultat"
-            type="text"
-            id="Resultat"
-            style="width: 3em"
-            readonly="readonly"
-            v-model="result"
-          />
+          {{ result}}
         </p>
       </div>
     </form>
@@ -186,6 +180,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 @import "src/sass/global";
 
 .Basfi {

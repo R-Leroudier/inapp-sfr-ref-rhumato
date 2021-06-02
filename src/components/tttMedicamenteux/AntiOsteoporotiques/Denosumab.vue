@@ -125,6 +125,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .Denosumab {
       padding: 0 15px;
       text-align: left;

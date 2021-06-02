@@ -45,14 +45,13 @@
             </div>
         </form>
 
-        <card class="result" v-if="calcTotal() <= 3.3">Rémission : {{ calcTotal() }} </card>
-        <card class="result" v-if="3.3 < calcTotal() && calcTotal() <= 11">Activité faible : {{ calcTotal() }} </card>
-        <card class="result" v-if="11 < calcTotal() && calcTotal() <= 26">Activité modérée : {{ calcTotal() }} </card>
-        <card class="result" v-if="26 < calcTotal()">Activité forte : {{ calcTotal() }} </card>
+        <div class="result" v-if="calcTotal() <= 3.3">Rémission : {{ calcTotal() }} </div>
+        <div class="result" v-if="3.3 < calcTotal() && calcTotal() <= 11">Activité faible : {{ calcTotal() }} </div>
+        <div class="result" v-if="11 < calcTotal() && calcTotal() <= 26">Activité modérée : {{ calcTotal() }} </div>
+        <div class="result" v-if="26 < calcTotal()">Activité forte : {{ calcTotal() }} </div>
 
-      <span class="line"></span>
-      <div class="info">
-        <span>L'interprétation de ce score compris entre 0 et 76 ne dépend pas de son évolution au cours du temps. Généralement, on considère qu'il y a rémission si le score est compris entre 0 et 3,3 inclus. Une activité faible est indiquée par un score > 3,3 jusqu'à 11 inclus. Une activité modérée est indiquée par un score compris entre > 11 et 26 inclus, tandis qu'une activité élevée est indiquée par un score strictement supérieur à 26.</span>
+       <div class="info">
+        <em>L'interprétation de ce score compris entre 0 et 76 ne dépend pas de son évolution au cours du temps. Généralement, on considère qu'il y a rémission si le score est compris entre 0 et 3,3 inclus. Une activité faible est indiquée par un score > 3,3 jusqu'à 11 inclus. Une activité modérée est indiquée par un score compris entre > 11 et 26 inclus, tandis qu'une activité élevée est indiquée par un score strictement supérieur à 26.</em>
       </div>
     </div>
 
@@ -88,13 +87,11 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 @import "src/sass/global";
 
 .Sdai{
-  .info {
-    font-style: italic;
-    font-size: x-small;
-  }
+
 
   input {
     width: 60px;

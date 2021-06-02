@@ -14,11 +14,10 @@
       <br/>
     </div>
 
-    <span class="line"></span>
-    <h3 class="title">
+    <div class="result">
       Score final <em>{{ finalScore }}</em
       >.
-    </h3>
+    </div>
   </div>
 </template>
 
@@ -71,6 +70,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 @import "src/sass/global";
 
 .Haq {

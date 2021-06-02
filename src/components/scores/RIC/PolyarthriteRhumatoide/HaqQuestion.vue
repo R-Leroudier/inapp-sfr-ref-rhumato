@@ -3,59 +3,21 @@
     <div v-if="title">
       <h3 class="title">{{ title }}</h3>
     </div>
-    <h4 class="title">Êtes-vous capable de :</h4>
     <section>
       <p class="details">
-        {{ question }}
+        Êtes-vous capable de : {{ question }}
       </p>
-      <div class="radio-choise">
-        <label :for="`radio` + index + `x0`">
-          <input
-            type="radio"
-            :value="malusScore[0]"
-            :name="`radio` + index"
-            :id="`radio` + index + `x0`"
-            @click="radioChange($event)"
-            checked
-          />
+      <div class="btn" :class="{ selected: score === 0 }" @click="choice(0)">
           Sans aucune difficulté
-        </label>
       </div>
-      <div class="radio-choise">
-        <label :for="`radio` + index + `x1`">
-          <input
-            type="radio"
-            :value="malusScore[1]"
-            :name="`radio` + index"
-            :id="`radio` + index + `x1`"
-            @click="radioChange($event)"
-          />
+      <div class="btn"  :class="{ selected: score === 1 }" @click="choice(1)">
           Avec quelques difficultés
-        </label>
       </div>
-      <div class="radio-choise">
-        <label :for="`radio` + index + `x2`">
-          <input
-            type="radio"
-            :value="malusScore[2]"
-            :name="`radio` + index"
-            :id="`radio` + index + `x2`"
-            @click="radioChange($event)"
-          />
+      <div class="btn"  :class="{ selected: score === 2 }" @click="choice(2)">
           Avec beaucoup de difficultés
-        </label>
       </div>
-      <div class="radio-choise">
-        <label :for="`radio` + index + `x3`">
-          <input
-            type="radio"
-            :value="malusScore[3]"
-            :name="`radio` + index"
-            :id="`radio` + index + `x3`"
-            @click="radioChange($event)"
-          />
+      <div class="btn" :class="{ selected: score === 3 }" @click="choice(3)">
           Incapable de le faire
-        </label>
       </div>
     </section>
   </div>
@@ -68,13 +30,16 @@ export default Vue.extend({
   name: "HaqQuestion",
   props: ["index", "title", "question", "malusScore"],
   data() {
-    return {};
+    return {
+      score: 0
+    };
   },
   methods: {
-    radioChange(e: any) {
+    choice(number) {
+      this.score = number;
       this.$emit("upwardChange", {
         index: this.index,
-        userScore: e.target.value,
+        userScore: this.malusScore[number],
       });
     },
   },
@@ -82,8 +47,9 @@ export default Vue.extend({
 });
 </script>
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .HaqQuestion {
-  .radio-choise {
+  .btn {
     border-color: #8f3ab138;
     border-width: 3px;
     border-style: solid;

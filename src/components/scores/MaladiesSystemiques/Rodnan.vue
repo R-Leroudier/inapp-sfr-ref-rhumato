@@ -331,6 +331,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .Rodnan {
   .description {
     font-size: 25px;

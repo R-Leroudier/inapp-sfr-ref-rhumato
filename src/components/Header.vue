@@ -30,28 +30,47 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
+@import "src/sass/global.scss";;
 .header {
-  height: 40px;
-  top: -20px;
-  padding: 30px 30px 10px 30px;
-  position: relative;
-  background-color: #f2f1f6;
-  box-shadow: 1px 1px 1px 1px lightgray;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: row;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 6px rgba(196,154,108,.2980392156862745);
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding: 1rem .75rem;
   justify-content: space-between;
-  line-height: 40px;
+  display: flex;
+  align-items: center;
 
   img {
     height: 40px;
   }
 
 
-  .quit a {
-    font-size: 24px;
-    color: #cb2080;
+  .quit {
+    height: 3em;
+
+    a {
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      border-radius: .5rem;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      color: #cb2080;
+      align-items: center !important;
+    }
   }
 
   .back {

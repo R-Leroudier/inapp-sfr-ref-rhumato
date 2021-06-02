@@ -30,6 +30,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .AntiInflammatoires {
       padding: 0 15px;
       text-align: left;

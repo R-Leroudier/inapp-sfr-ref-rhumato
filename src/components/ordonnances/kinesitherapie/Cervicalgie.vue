@@ -25,6 +25,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .Cervicalgie {
       padding: 0 15px;
 

@@ -366,8 +366,7 @@
     <p class="result">Total {{ total }} </p>
 
 
-    <span class="line"></span>
-    <div class="info">
+         <div class="info">
       <span>Interprétation: The Birmingham Vasculitis Activity Score (BVAS) is a method for assessing the activity of vasculitis. Note that scoring ranges are higher when any of the features are new or worse. Creatinine levels can be scored at patient’s first assessment only.</span>
     </div>
   </div>
@@ -538,12 +537,10 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 @import "src/sass/global";
 
 .Bvas {
-  .info {
-    font-style: italic;
-    font-size: x-small;
-  }
+
 }
 </style>

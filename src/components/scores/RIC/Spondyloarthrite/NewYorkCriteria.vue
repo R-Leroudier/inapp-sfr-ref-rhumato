@@ -6,5 +6,6 @@
 <script lang="ts"></script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .NewYorkCriteria {}
 </style>

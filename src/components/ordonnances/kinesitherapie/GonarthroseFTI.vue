@@ -25,6 +25,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .GonarthroseFTI {
       padding: 0 15px;
 

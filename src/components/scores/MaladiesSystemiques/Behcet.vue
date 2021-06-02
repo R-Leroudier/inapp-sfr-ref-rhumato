@@ -60,11 +60,11 @@
 
     <br>
     <div class="result">
-    <card >
+    <div >
       <span>{{ total() }} Points</span> <br>
       <span>{{ 0 }} Critère d'exclusion</span> <br>
       <span v-if="total() >= 3"> POSITIF</span> <span v-else>NEGATIF</span>
-  </card>
+  </div>
   </div>
   </div>
 </template>
@@ -114,6 +114,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .Behcet {
   .btn {
     background-color: rgb(199, 197, 197);

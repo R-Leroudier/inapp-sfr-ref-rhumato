@@ -32,7 +32,7 @@
             v-model="durationMorningStiffness"
             id="btnradio1"
           />
-          <label class="btn" for="btnradio1">Aucune</label>
+          <label class="btn" for="btnradio1"  :class="{selected: durationMorningStiffness === 'none' }">Aucune</label>
         </div>
         <div>
           <input
@@ -41,7 +41,7 @@
             v-model="durationMorningStiffness"
             id="btnradio2"
           />
-          <label class="btn" for="btnradio2">15 min</label>
+          <label class="btn" for="btnradio2" :class="{selected: durationMorningStiffness === '15min' }">15 min</label>
         </div>
         <div>
           <input
@@ -50,7 +50,7 @@
             v-model="durationMorningStiffness"
             id="btnradio3"
           />
-          <label class="btn" for="btnradio3">30 min</label>
+          <label class="btn" for="btnradio3" :class="{selected: durationMorningStiffness === '30min' }">30 min</label>
         </div>
         <div>
           <input
@@ -59,7 +59,7 @@
             v-model="durationMorningStiffness"
             id="btnradio4"
           />
-          <label class="btn" for="btnradio4">45 min</label>
+          <label class="btn" for="btnradio4" :class="{selected: durationMorningStiffness === '45min' }">45 min</label>
         </div>
         <div>
           <input
@@ -68,7 +68,7 @@
             v-model="durationMorningStiffness"
             id="btnradio5"
           />
-          <label class="btn" for="btnradio5">1 heure</label>
+          <label class="btn" for="btnradio5" :class="{selected: durationMorningStiffness === '1h' }">1 heure</label>
         </div>
         <div>
           <input
@@ -77,16 +77,16 @@
             v-model="durationMorningStiffness"
             id="btnradio6"
           />
-          <label class="btn" for="btnradio6">1h15</label>
+          <label class="btn" for="btnradio6" :class="{selected: durationMorningStiffness === '1h15' }">1h15</label>
         </div>
         <div>
           <input
             type="radio"
-            alue="1h30"
+            value="1h30"
             v-model="durationMorningStiffness"
             id="btnradio7"
           />
-          <label class="btn" for="btnradio7">1h30</label>
+          <label class="btn" for="btnradio7" :class="{selected: durationMorningStiffness === '1h30' }">1h30</label>
         </div>
         <div>
           <input
@@ -95,7 +95,7 @@
             v-model="durationMorningStiffness"
             id="btnradio8"
           />
-          <label class="btn" for="btnradio8">1h45</label>
+          <label class="btn" for="btnradio8" :class="{selected: durationMorningStiffness === '1h45' }">1h45</label>
         </div>
         <div>
           <input
@@ -104,7 +104,7 @@
             v-model="durationMorningStiffness"
             id="btnradio9"
           />
-          <label class="btn" for="btnradio9">2h ou plus</label>
+          <label class="btn" for="btnradio9" :class="{selected: durationMorningStiffness === '2hOrMore' }">2h ou plus</label>
         </div>
       </section>
       <section>
@@ -255,6 +255,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 @import "src/sass/global";
 
 .Asdas {

@@ -78,6 +78,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .CEFAZOLINE {
       padding: 0 15px;
       text-align: left;

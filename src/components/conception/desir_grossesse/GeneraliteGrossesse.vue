@@ -24,6 +24,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .generalite {
       h2 {
         text-align: center;

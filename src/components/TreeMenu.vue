@@ -50,24 +50,36 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style scoped lang="scss">
+@import "src/sass/global.scss";;
 .tree-menu {
   all: unset;
+  color: #472e5a;
+  font-weight: bold;
   background: #ecf1f5;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px lightgray;
+  margin-top: .5rem;
   display: block;
-  margin-bottom: 8px;
   padding: 16px;
-  cursor: pointer;
-  text-align: left;
-  font-weight: bold;
-  color: #472e5a;
+
+  transition: all .5s linear;
+
+
+  i {
+    background: #472e5a;
+    color: #ecf1f6;
+    padding: .5em .75em;
+    border-radius: .5rem;
+    font-weight: lighter;
+    display: flex;
+  }
 
   .label-wrapper {
     display: flex;
-    flex-direction: row;
+    cursor: pointer;
+    text-align: left;
     justify-content: space-between;
+    align-items: center;
   }
 
   a {

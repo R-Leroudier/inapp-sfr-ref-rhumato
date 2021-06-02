@@ -432,6 +432,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .Essdai {
   ul {
     list-style: none;
@@ -467,10 +468,7 @@ export default Vue.extend({
     color: rgb(49, 49, 49);
   }
 
-  .info {
-    font-style: italic;
-    font-size: x-small;
-  }
+
 
   .btn.selected {
     background-color: #3abaea;

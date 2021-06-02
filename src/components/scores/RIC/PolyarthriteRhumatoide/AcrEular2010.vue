@@ -2,11 +2,11 @@
   <div class="AcrEular2010">
     <div>
       <h2 class="title">Polyarthrite rhumatoïde, critères ACR/EULAR</h2>
-      <span class="description">
+      <p class="description">
         Critères diagnostics devant une polyarthrite débutante avec des
         radiographies normales et en l'absence d'un diagnostic d'une autre
         maladie.
-      </span>
+      </p>
       <span class="line"></span>
     </div>
 
@@ -15,16 +15,12 @@
         <h4 class="categorie">Atteintes articulaires</h4>
         <div>
           <ul class="details">
-            <span> On différencie les grosses et petites articulations: </span>
+            <li> On différencie les grosses et petites articulations: </li>
             <li>
-              <span>
                 Grosses articulations : épaule, coude, hanche, genou, cheville.
-              </span>
             </li>
             <li>
-              <span>
                 Petites articulations : toutes autres articulations des membres
-              </span>
             </li>
           </ul>
         </div>
@@ -108,8 +104,7 @@
       </form>
     </div>
 
-    <span class="line"></span>
-    <div class="info">
+         <div class="info">
       <span>
         Interprétation : Les critères ACR/EULAR donnent la possibilité de
         diagnostiquer précocement une polyarthrite rhumatoïde. Un score à 6 ou
@@ -160,6 +155,8 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
+
 .AcrEular2010 {
   ul {
     list-style: none;
@@ -195,37 +192,10 @@ export default Vue.extend({
     color: rgb(49, 49, 49);
   }
 
-  .info {
-    font-style: italic;
-    font-size: x-small;
-  }
+
 
   .btn.selected {
     background-color: #3abaea;
-    color: white;
-  }
-
-  .title {
-    color: rgb(143, 58, 177);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-
-  .result {
-    width: 80%;
-    margin: auto;
-    border-radius: 10px;
-    background-color: #4c2b62;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    justify-content: center;
-    display: block !important;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-
-    /* align-content: space-around; */
-    /* align-items: flex-start; */
-    text-align: center;
     color: white;
   }
 

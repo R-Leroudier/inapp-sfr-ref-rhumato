@@ -106,5 +106,6 @@ name:"Gsla",
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .Gsla {}
 </style>

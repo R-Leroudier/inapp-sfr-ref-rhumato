@@ -53,7 +53,7 @@
           <label for="Crp">Utiliser C.R.P.</label>
           <input
             type="radio"
-            class="btn validate"
+            class="btn"
             value="Crp"
             v-model="picked"
             id="Crp"/>
@@ -65,14 +65,13 @@
       </button>
     </form>
 
-    <card class="result">
+    <div class="result">
       <p>Score :{{ score }}</p>
       <p>Activité P.R :{{ prActivity }}</p>
-    </card>
+    </div>
 
-    <span class="line"></span>
     <div class="info">
-      <span>
+      <em>
         Interprétation:<br>
         Le nombre d'articulations douloureuses (de 0 à 28) est indiqué par le
         patient lors de la consultation. Le nombre d'articulations gonflées est
@@ -84,16 +83,16 @@
         = gravité maximale que peut imaginer le patient.<br>
         Lors de l'utilisation de la VS, le nombre à indiquer est le nombre de mm
         à la première heure.
-      </span>
+      </em>
       <br><br>
-      <span>
+      <em>
         Réference:<br>
         Formules:
         DAS (VS) = 0,56 x √ad + 0,28 x √ag + 0,7 x ln(VS) + 0,014 x em
         DAS (CRP) = 0,56 x √ad + 0,28 x √ag + 0,36 x ln(CRP + 1) + 0,014 x em + 0,96
      Van der Heijde DMFM van't Hof MA van Riel PLCM et al. Judging disease activity in clinical practice in rheumatoid arthritis: first step in the development of a disease activity score. Ann Rheum Dis1990;49:916–20.
      Site DAS 28 : http://www.das-score.nl
-      </span>
+      </em>
     </div>
   </div>
 </template>
@@ -159,6 +158,7 @@ export default Vue.extend({
 
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 @import "src/sass/global";
 
 .Das28 {
@@ -166,10 +166,7 @@ export default Vue.extend({
     width: 60px;
   }
 
-  .info {
-    font-style: italic;
-    font-size: x-small;
-  }
+
 
   section {
     padding: 5px 10px;

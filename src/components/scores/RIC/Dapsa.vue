@@ -35,11 +35,11 @@
       </div>
     </div>
 
-    <h3>
+    <div class="result">
       Score: {{ result }}
       <br>
       Disease Activity: {{ activity }}
-    </h3>
+    </div>
   </div>
 </template>
 
@@ -82,6 +82,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 @import "src/sass/global";
 
 .Dapsa {

@@ -26,6 +26,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .SDRC {
       padding: 0 15px;
 

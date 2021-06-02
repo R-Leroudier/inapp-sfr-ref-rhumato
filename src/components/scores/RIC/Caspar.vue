@@ -9,12 +9,7 @@
           1. Atteinte rhumatologique inflammatoire (périphérique, axiale ou
           enthésitique)
         </p>
-        <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(0)" v-model="isFirstCriteriaChecked"/>
-            Oui
-          </label>
-        </div>
+        <div class="btn" :class="{selected: isFirstCriteriaChecked === true}" @click="isFirstCriteriaChecked = !isFirstCriteriaChecked">Oui</div>
       </section>
 
       <section>
@@ -23,71 +18,54 @@
           :
         </p>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(1)" />
-            lésion psoriasique cutanée ou du scalp diagnostiquée par un médecin
-            à l’examen physique
-          </label>
+          <div class="btn" :class="{selected: check[1]}" @click="update(1)">lésion psoriasique cutanée ou du scalp diagnostiquée par un médecin
+            à l’examen physique</div>
+
         </div>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(2)" />
-            Notion de psoriasis selon le patient ou un médecin
-          </label>
+          <div class="btn" :class="{selected: check[2]}" @click="update(2)">            Notion de psoriasis selon le patient ou un médecin
+          </div>
         </div>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(3)" />
-            Antécédent familial de psoriasis au 1er ou 2nd degré
-          </label>
+          <div class="btn" :class="{selected: check[3]}" @click="update(3)">            Antécédent familial de psoriasis au 1er ou 2nd degré
+          </div>
         </div>
       </section>
 
       <section>
         <p>3. Atteinte unguéale</p>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(4)" />
-            Dystrophie unguéale psoriasique à l’examen clinique : onycholyse,
-            ongles ponctués ou hyperkératose
-          </label>
+          <div class="btn" :class="{selected: check[4]}" @click="update(4)">Dystrophie unguéale psoriasique à l’examen clinique : onycholyse,
+            ongles ponctués ou hyperkératose</div>
+
         </div>
       </section>
 
       <section>
         <p>4. Négativité du facteur rhumatoïde</p>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(5)" />
-            Absence de FR sérique (ELISA ou néphélométrie)
-          </label>
+          <div class="btn" :class="{selected: check[5]}" @click="update(5)">            Absence de FR sérique (ELISA ou néphélométrie)
+          </div>
         </div>
       </section>
 
       <section>
         <p>5. Présence ou antécédent de dactylite</p>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(6)" /> Dactylite
-            actuelle diagnostiquée par un médecin
-          </label>
+          <div class="btn" :class="{selected: check[6]}" @click="update(6)">Dactylite
+            actuelle diagnostiquée par un médecin</div>
         </div>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(7)" />
-            Antécédent de dactylite constatée par un médecin
-          </label>
+          <div class="btn" :class="{selected: check[7]}" @click="update(7)"> Antécédent de dactylite constatée par un médecin</div>
+
         </div>
       </section>
 
       <section>
         <p>6.Aspect radiologique de construction osseuse</p>
         <div>
-          <label class="btn">
-            <input type="checkbox" v-on:change="update(8)" />
-            Présence de signes radiographiques de construction osseuse
-            juxta-articulaire (radiographies des mains et des pieds)
-          </label>
+          <div class="btn" :class="{selected: check[8]}" @click="update(8)">Présence de signes radiographiques de construction osseuse
+            juxta-articulaire (radiographies des mains et des pieds)</div>
         </div>
       </section>
       <button type="button" class="btn validate" v-on:click="calcScore">
@@ -114,7 +92,7 @@ export default Vue.extend({
   data() {
     return {
       isFirstCriteriaChecked: false,
-      check: [false, false, false, false, false, false, false, false, false],
+      check: {0: false, 1: false, 2: false, 3: false, 4: false, 5: false, 6: false, 7: false, 8: false},
       values: [0, 2, 1, 1, 1, 1, 1, 1, 1],
       interpretation: "",
       score: 0,
@@ -126,7 +104,7 @@ export default Vue.extend({
     },
     calcScore() {
       let count = 0;
-      for (let index = 0; index < this.check.length; index++) {
+      for (let index = 0; index < this.values.length; index++) {
         if (this.check[index]) {
           count += this.values[index];
         }
@@ -147,6 +125,7 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 @import "src/sass/global";
 
 .Caspar {

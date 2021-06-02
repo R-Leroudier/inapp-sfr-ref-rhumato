@@ -20,6 +20,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .preAntiTNF {
       padding: 0 15px;
 

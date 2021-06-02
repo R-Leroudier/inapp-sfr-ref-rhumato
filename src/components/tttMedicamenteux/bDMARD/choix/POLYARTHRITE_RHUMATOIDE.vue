@@ -257,6 +257,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .POLYARTHRITE_RHUMATOIDE {
       padding: 0 15px;
       text-align: left;

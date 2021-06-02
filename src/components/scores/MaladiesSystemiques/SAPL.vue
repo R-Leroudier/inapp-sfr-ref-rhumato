@@ -118,8 +118,7 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped lang="scss">
-
+@import "src/sass/global.scss";;
 .SAPL {
   div {
     margin: 16px 0;

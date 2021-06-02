@@ -51,14 +51,18 @@ export default Vue.extend({
   },
 });
 </script>
-<style lang="scss">
+<style scoped lang="scss">
+@import "src/sass/global.scss";;
 .SubListPage {
-  padding: 24px;
+  padding: 0 .75rem;
 
   h1 {
-    margin: 0 0 10px;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
     text-align: left;
-    font-size: 24px;
+    font-size: calc(1.375rem + 1.5vw);
     color: #4c2b62;
   }
 }

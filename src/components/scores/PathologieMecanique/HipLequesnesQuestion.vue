@@ -43,5 +43,6 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .HipLequesnesQuestion {}
 </style>

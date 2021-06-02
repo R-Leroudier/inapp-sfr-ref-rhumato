@@ -3,11 +3,11 @@
     <h2 class="title">Calcul de l'IMC femme et homme</h2>
     <p class="description"></p>
     <span class="line"></span>
-    <card class="information">
+    <div class="information">
       Chez un patient présentant une rachialgie ≥ 3 mois dont l'âge du
       diagnostic est &lsaquo; 45 ans alors on peut classer sa maladie dans la
       forme spondylarthrite axiale
-    </card>
+    </div>
 
     <form class="form">
       <div>
@@ -21,9 +21,9 @@
       </div>
       <input type="submit" @click="getResult()" class="btn" value="Valider" />
     </form>
-    <card class="result">
+    <div class="result">
       <h4>{{ this.result }}</h4>
-    </card>
+    </div>
     <span class="line"></span>
     <span>
       Bon a savoir L'IMC permet de determiner la corpulence d'une personne. La
@@ -94,6 +94,7 @@ export default Vue.extend({
 
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
 .Imc {
   div {
     display: flex;

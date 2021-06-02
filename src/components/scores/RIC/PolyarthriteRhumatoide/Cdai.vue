@@ -67,22 +67,21 @@
       </div>
     </form>
 
-    <card class="result" v-if="calcTotal() <= 2.8"
+    <div class="result" v-if="calcTotal() <= 2.8"
       >Rémission : {{ calcTotal() }}
-    </card>
-    <card class="result" v-if="2.8 < calcTotal() && calcTotal() <= 10"
+    </div>
+    <div class="result" v-if="2.8 < calcTotal() && calcTotal() <= 10"
       >Activité faible : {{ calcTotal() }}
-    </card>
-    <card class="result" v-if="10 < calcTotal() && calcTotal() <= 22"
+    </div>
+    <div class="result" v-if="10 < calcTotal() && calcTotal() <= 22"
       >Activité modérée : {{ calcTotal() }}
-    </card>
-    <card class="result" v-if="22 < calcTotal()"
+    </div>
+    <div class="result" v-if="22 < calcTotal()"
       >Activité forte : {{ calcTotal() }}
-    </card>
+    </div>
 
-    <span class="line"></span>
     <div class="info">
-      <span>
+      <em>
         L'interprétation de ce score compris entre 0 et 76 ne dépend pas de son
         évolution au cours du temps. Généralement, on considère qu'il y a
         rémission si le score est compris entre 0 et 2,8 inclus. Une activité
@@ -90,7 +89,7 @@
         modérée est indiquée par un score compris entre > 10 et 22 inclus, tandis
         qu'une activité élevée est indiquée par un score strictement supérieur à
         22.
-      </span>
+      </em>
     </div>
   </div>
 </template>
@@ -124,11 +123,6 @@ export default Vue.extend({
 @import "src/sass/global.scss";
 
 .Cdai {
-  .info {
-    font-style: italic;
-    font-size: x-small;
-  }
-
   input {
     width: 60px;
   }

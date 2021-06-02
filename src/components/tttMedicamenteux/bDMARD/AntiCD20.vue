@@ -57,6 +57,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "src/sass/global.scss";
     .AntiCD20 {
       padding: 0 15px;
       text-align: left;
