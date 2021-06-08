@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Apremilast">
-    <h2>METHOTREXATE</h2>
+    <h2 class="title">METHOTREXATE</h2>
+<span class="line"></span>
 
     <p><span class="bold">DCI :</span> APREMILAST</p>
     <p><span class="bold">Nom commercial :</span> OTELZA</p>
@@ -81,9 +82,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

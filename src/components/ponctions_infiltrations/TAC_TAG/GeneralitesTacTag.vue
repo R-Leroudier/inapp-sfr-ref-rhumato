@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="GeneralitesTacTag">
-    <h2>GENERALITES</h2>
+    <h2 class="title">GENERALITES</h2>
+<span class="line"></span>
 
     <p>
       Gestion des anticoagulants- antiagrégants plaquettaires avant infiltrations
@@ -69,9 +70,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Iombalgie">
-    <h2>Fiche REF Bilan diagnostique lombalgies > 3 mois</h2>
+    <h2 class="title">Fiche REF Bilan diagnostique lombalgies > 3 mois</h2>
+    <span class="line"></span>
 
     <h4>Sources :</h4>
     <p class="bold">
@@ -137,10 +138,6 @@
     .Iombalgie {
       padding: 0 15px;
       text-align: left;
-
-      h2 {
-        text-align: center;
-      }
 
       .bold {
         font-weight: bold;

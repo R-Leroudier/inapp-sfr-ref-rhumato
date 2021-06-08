@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="generalite">
-      <h2>Généralités</h2>
+      <h2 class="title">Généralités</h2>
+<span class="line"></span>
 
         <ul>
           <li>Evaluation de l’activité de la maladie devant tout désir de grossesse</li>
@@ -26,9 +27,7 @@
 <style scoped lang="scss">
 @import "src/sass/global.scss";
     .generalite {
-      h2 {
-        text-align: center;
-      }
+
 
       text-align: left;
     }

@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Glucocorticoides">
-    <h2>Glucocorticoides ou AIS</h2>
+    <h2 class="title">Glucocorticoides ou AIS</h2>
+<span class="line"></span>
 
     <p class="bold">DCI et nom commercial</p>
 
@@ -207,9 +208,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

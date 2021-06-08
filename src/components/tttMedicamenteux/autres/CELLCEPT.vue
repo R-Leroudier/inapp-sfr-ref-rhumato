@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="CELLCEPT">
-    <h2>CELLCEPT®</h2>
+    <h2 class="title">CELLCEPT®</h2>
+<span class="line"></span>
 
     <p><span class="bold">Nom commercial</span> : CELLCEPT®</p>
     <p><span class="bold">DCI</span> : Mycophénolate mofetil</p>
@@ -104,9 +105,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

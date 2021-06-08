@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Mono-arthrite">
-    <h2>Fiche REF Bilan diagnostique monoarthrite</h2>
+    <h2 class="title">Fiche REF Bilan diagnostique monoarthrite</h2>
+    <span class="line"></span>
 
     <h4>Sources :</h4>
     <p>
@@ -113,9 +114,6 @@
   padding: 0 15px;
   text-align: left;
 
-  h2 {
-    text-align: center;
-  }
 
   .bold {
     font-weight: bold;

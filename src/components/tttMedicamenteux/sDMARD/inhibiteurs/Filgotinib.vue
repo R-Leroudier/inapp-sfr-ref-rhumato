@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Filgotinib">
-    <h2>FILGOTINIB</h2>
+    <h2 class="title">FILGOTINIB</h2>
+<span class="line"></span>
 
     <p><span class="bold">DCI :</span> FILGOTINIB</p>
     <p><span class="bold">Nom commercial :</span> JYSELECA</p>
@@ -78,9 +79,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

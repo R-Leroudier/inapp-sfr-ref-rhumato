@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Vaccinations">
-    <h2>MAJ Vaccination pré-biothérapie</h2>
+    <h2 class="title">MAJ Vaccination pré-biothérapie</h2>
+<span class="line"></span>
 
     <img src="@/assets/Vaccinations.png">
   </section>
@@ -27,9 +28,7 @@
       p {
         text-align: left;
       }
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

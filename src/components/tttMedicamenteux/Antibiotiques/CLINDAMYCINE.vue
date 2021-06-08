@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="CLINDAMYCINE">
-      <h2>CLINDAMYCINE</h2>
+      <h2 class="title">CLINDAMYCINE</h2>
+<span class="line"></span>
 
       <p>- DCI : CLINDAMYCINE</p>
       <p><span class="bold">- Nom commercial</span> DALACINE®</p>
@@ -89,9 +90,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="CEFTRIAXONE">
-      <h2>CEFTRIAXONE</h2>
+      <h2 class="title">CEFTRIAXONE</h2>
+<span class="line"></span>
 
       <p>- DCI : CEFTRIAXONE</p>
       <p><span class="bold">- Nom commercial</span> Rocéphine®</p>
@@ -79,9 +80,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

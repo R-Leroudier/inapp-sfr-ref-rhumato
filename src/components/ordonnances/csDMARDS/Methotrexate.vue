@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Methotrexate">
-    <h2>Methotrexate</h2>
+    <h2 class="title">Methotrexate</h2>
+<span class="line"></span>
 
     <img src="@/assets/MethotrexateCSDMARDS.png">
   </section>
@@ -24,9 +25,7 @@
     .Methotrexate {
       padding: 0 15px;
 
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Denosumab">
-    <h2>DENOSUMAB</h2>
+    <h2 class="title">DENOSUMAB</h2>
+<span class="line"></span>
 
     <p>- DCI : DENOSUMAB</p>
     <p><span class="bold">- Nom commercial</span> Prolia®</p>
@@ -130,9 +131,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

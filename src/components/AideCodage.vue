@@ -222,7 +222,7 @@
         padding-top: 12px;
         padding-bottom: 12px;
         text-align: left;
-        background-color: #4472c4;
+        background-color: #472e5a;
         color: white;
       }
     }

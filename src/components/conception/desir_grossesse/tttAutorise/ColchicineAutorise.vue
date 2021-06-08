@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Colchicine">
-    <h2>Colchicine</h2>
+    <h2 class="title">Colchicine</h2>
+<span class="line"></span>
 
     <p>Grossesse : </p>
     <ul>
@@ -39,9 +40,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

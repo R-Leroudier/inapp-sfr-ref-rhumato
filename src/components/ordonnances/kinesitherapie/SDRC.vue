@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="SDRC">
-      <h2>SDRC</h2>
+      <h2 class="title">SDRC</h2>
+<span class="line"></span>
 
       <p>
         Ces modèles d’ordonnances sont proposés à titre indicatif, beaucoup de kinésithérapeutes proposent une prise en charge personnalisée à la suite d’un bilan diagnostique, ainsi, il est possible de noter sur votre ordonnance de kinésithérapie :
@@ -33,9 +34,7 @@
       p {
         text-align: left;
       }
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

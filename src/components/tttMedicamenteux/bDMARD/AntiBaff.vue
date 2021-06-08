@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="AntiBaff">
-    <h2>ANTI BAFF</h2>
+    <h2 class="title">ANTI BAFF</h2>
+<span class="line"></span>
 
     <p class="bold">BELIMUMAB</p>
     <div>
@@ -56,9 +57,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

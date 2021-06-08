@@ -739,7 +739,7 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "html",
+          "type": "link",
           "component": "Ldl",
           "content": "https://www.ldlcible.com/",
           "slug": "ldl-cible",

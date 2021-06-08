@@ -3,16 +3,6 @@
     <h2 class="title">SCORE FFS</h2>
     <span class="line"></span>
 
-    <section class="result" :class="{'medium-risk' : finalScore === 1, 'hight-risk' : finalScore >= 2  }">
-      <div>
-        <h3>SURVIE À 5 ANS (%):  {{percentageSurvivalAtFiveYears}}</h3>
-        <h3>RISQUE DE DÉCÈS :  {{riskOfDeath}}</h3>
-      </div>
-      <div>
-        <h2>{{ finalScore }}</h2>
-      </div>
-    </section>
-
     <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
       <SelenaSledaiCheckBox
         :index="i"
@@ -21,6 +11,11 @@
         @upwardChange="upwardChange"
       ></SelenaSledaiCheckBox>
       <br/>
+    </div>
+    <div class="result">
+        <h3>SURVIE À 5 ANS (%):  {{percentageSurvivalAtFiveYears}}</h3>
+        <h3>RISQUE DE DÉCÈS :  {{riskOfDeath}}</h3>
+        <h2>{{ finalScore }}</h2>
     </div>
   </div>
 </template>
@@ -85,49 +80,5 @@ export default Vue.extend({
 <style scoped lang="scss">
 @import "src/sass/global.scss";
 .Ffs {
-  .result {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    align-content: center;
-    text-align: left;
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 17px;
-    background-color: #87c343;
-    width: 100%;
-    display: flex !important;
-
-    div:nth-child(1) {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: stretch;
-      align-content: initial;
-      width: 80%;
-
-      h3 {
-        padding-left: 15px;
-      }
-    }
-
-    div:nth-child(2) {
-      display: flex;
-      width: 20%;
-
-      h2 {
-        margin: auto;
-      }
-    }
-  }
-
-  .medium-risk {
-    background-color: #ff6600;
-  }
-
-  .hight-risk {
-    background-color: #d22207;
-  }
 }
 </style>

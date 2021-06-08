@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="OXACILLINE_CLOXACILLINE">
-      <h2>OXACILLINE - CLOXACILLINE</h2>
+      <h2 class="title">OXACILLINE - CLOXACILLINE</h2>
+<span class="line"></span>
 
       <p>- DCI : OXACILLINE - CLOXACILLINE</p>
       <p><span class="bold">- Nom commercial</span> Bristopen® -Orbénine®</p>
@@ -79,9 +80,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

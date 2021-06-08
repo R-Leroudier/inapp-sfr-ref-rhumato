@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Salazopyrine">
-    <h2>Salazopyrine</h2>
+    <h2 class="title">Salazopyrine</h2>
+<span class="line"></span>
 
     <img src="@/assets/SalazopyrineCSDMARDS.png">
   </section>
@@ -24,9 +25,7 @@
     .Salazopyrine {
       padding: 0 15px;
 
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

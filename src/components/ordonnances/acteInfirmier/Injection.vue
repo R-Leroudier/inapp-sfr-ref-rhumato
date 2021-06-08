@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Injection">
-    <h2>Injection Teriparatide</h2>
+    <h2 class="title">Injection Teriparatide</h2>
+<span class="line"></span>
 
     <img src="@/assets/InjectionActe.png">
   </section>
@@ -27,9 +28,7 @@
       p {
         text-align: left;
       }
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

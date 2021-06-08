@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Upadacitinib">
-    <h2>UPADACITINIB</h2>
+    <h2 class="title">UPADACITINIB</h2>
+<span class="line"></span>
 
     <p><span class="bold">DCI :</span> UPADACITINIB</p>
     <p><span class="bold">Nom commercial :</span> RINVOQ</p>
@@ -78,9 +79,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

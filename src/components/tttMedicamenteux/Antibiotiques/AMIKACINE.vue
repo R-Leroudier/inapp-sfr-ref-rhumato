@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="AMIKACINE">
-      <h2>AMIKACINE</h2>
+      <h2 class="title">AMIKACINE</h2>
+<span class="line"></span>
 
       <p>- DCI : AMIKACINE</p>
       <p><span class="bold">- Nom commercial</span> AMIKLIN® </p>
@@ -81,9 +82,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

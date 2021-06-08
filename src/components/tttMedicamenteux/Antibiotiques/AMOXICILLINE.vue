@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="AMOXICILLINE">
-    <h2>AMOXICILLINE</h2>
+    <h2 class="title">AMOXICILLINE</h2>
+<span class="line"></span>
 
     <p>- DCI : AMOXICILLINE</p>
     <p><span class="bold">- Nom commercial</span> Clamoxyl®</p>
@@ -80,9 +81,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

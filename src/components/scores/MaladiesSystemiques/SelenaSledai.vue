@@ -14,10 +14,10 @@
     </div>
 
     <span class="line"></span>
-    <h3 class="title">
+    <div class="result">
       Score final <em>{{ finalScore }}</em
       >.
-    </h3>
+    </div>
   </div>
 </template>
 

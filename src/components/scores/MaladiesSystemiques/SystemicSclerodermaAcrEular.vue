@@ -21,7 +21,7 @@
       v-model="questions.q1"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio1">NON</label>
+    <label class="btn" :class="{selected: questions.q1 === '0'}" for="btnradio1">NON</label>
 
     <input
       type="radio"
@@ -32,7 +32,7 @@
       v-model="questions.q1"
       value=9
     />
-    <label class="btn btn-outline-primary" for="btnradio2">OUI</label>
+    <label class="btn" :class="{selected: questions.q1 === '9'}" for="btnradio2">OUI</label>
 
     <p class="description">Doigts boudinés</p>
     <p class="description">2 points</p>
@@ -45,7 +45,7 @@
       v-model="questions.q2"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio3">NON</label>
+    <label class="btn" :class="{selected: questions.q2 === '0'}" for="btnradio3">NON</label>
 
     <input
       type="radio"
@@ -56,7 +56,7 @@
       v-model="questions.q2"
       value=2
     />
-    <label class="btn btn-outline-primary" for="btnradio4">OUI</label>
+    <label class="btn" :class="{selected: questions.q2 === '2'}" for="btnradio4">OUI</label>
 
     <p class="description">
       Atteinte des doigts ne dépassant pas les articulations MCP
@@ -71,7 +71,7 @@
       v-model="questions.q3"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio5">NON</label>
+    <label class="btn" :class="{selected: questions.q3 === '0'}" for="btnradio5">NON</label>
 
     <input
       type="radio"
@@ -82,7 +82,7 @@
       v-model="questions.q3"
       value=4
     />
-    <label class="btn btn-outline-primary" for="btnradio6">OUI</label>
+    <label class="btn" :class="{selected: questions.q3 === '4'}" for="btnradio6">OUI</label>
 
     <h4 class="categorie">
       Lésions pulpaires (ne tenir compte que du score le plus élevé) :
@@ -99,7 +99,7 @@
       v-model="questions.q4"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio7">NON</label>
+    <label class="btn" :class="{selected: questions.q4 === '0'}" for="btnradio7">NON</label>
 
     <input
       type="radio"
@@ -110,7 +110,7 @@
       v-model="questions.q4"
       value=2
     />
-    <label class="btn btn-outline-primary" for="btnradio8">OUI</label>
+    <label class="btn" :class="{selected: questions.q4 === '2'}" for="btnradio8">OUI</label>
 
     <p class="description">Cicatrices déprimées</p>
     <p class="description">3 points</p>
@@ -123,7 +123,7 @@
       v-model="questions.q5"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio9">NON</label>
+    <label class="btn" :class="{selected: questions.q5 === '0'}" for="btnradio9">NON</label>
 
     <input
       type="radio"
@@ -134,7 +134,7 @@
       v-model="questions.q5"
       value=3
     />
-    <label class="btn btn-outline-primary" for="btnradio10">OUI</label>
+    <label class="btn" :class="{selected: questions.q5 === '3'}" for="btnradio10">OUI</label>
 
     <p class="description">Télangiectasies</p>
     <p class="description">2 points</p>
@@ -148,7 +148,7 @@
       v-model="questions.q6"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio11">NON</label>
+    <label class="btn" :class="{selected: questions.q6 === '0'}" for="btnradio11">NON</label>
 
     <input
       type="radio"
@@ -159,7 +159,7 @@
       v-model="questions.q6"
       value=2
     />
-    <label class="btn btn-outline-primary" for="btnradio12">OUI</label>
+    <label class="btn" :class="{selected: questions.q6 === '2'}" for="btnradio12">OUI</label>
 
     <p class="description">Anomalies capillaroscopiques</p>
     <p class="description">2 points</p>
@@ -173,7 +173,7 @@
       v-model="questions.q7"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio13">NON</label>
+    <label class="btn" :class="{selected: questions.q7 === '0'}" for="btnradio13">NON</label>
 
     <input
       type="radio"
@@ -184,7 +184,7 @@
       v-model="questions.q7"
       value=2
     />
-    <label class="btn btn-outline-primary" for="btnradio14">OUI</label>
+    <label class="btn" :class="{selected: questions.q7 === '2'}" for="btnradio14">OUI</label>
 
     <p class="description">HTAP et/ou fibrose pulmonaire</p>
     <p class="description">2 points</p>
@@ -198,7 +198,7 @@
       v-model="questions.q8"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio15">NON</label>
+    <label class="btn" :class="{selected: questions.q8 === '0'}" for="btnradio15">NON</label>
 
     <input
       type="radio"
@@ -209,7 +209,7 @@
       v-model="questions.q8"
       value=2
     />
-    <label class="btn btn-outline-primary" for="btnradio16">OUI</label>
+    <label class="btn" :class="{selected: questions.q8 === '2'}" for="btnradio16">OUI</label>
 
     <p class="description">Phénomène de Raynaud</p>
     <p class="description">3 points</p>
@@ -223,7 +223,7 @@
       v-model="questions.q9"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio17">NON</label>
+    <label class="btn" :class="{selected: questions.q9 === '0'}" for="btnradio17">NON</label>
 
     <input
       type="radio"
@@ -234,7 +234,7 @@
       v-model="questions.q9"
       value=3
     />
-    <label class="btn btn-outline-primary" for="btnradio18">OUI</label>
+    <label class="btn" :class="{selected: questions.q9 === '3'}" for="btnradio18">OUI</label>
 
     <p class="description">
       Anticorps spécifiques: anti-topoisomérase I ou anti-centromères ou
@@ -251,7 +251,7 @@
       v-model="questions.q10"
       value=0
     />
-    <label class="btn btn-outline-primary" for="btnradio19">NON</label>
+    <label class="btn" :class="{selected: questions.q10 === '0'}" for="btnradio19">NON</label>
 
     <input
       type="radio"
@@ -262,7 +262,7 @@
       v-model="questions.q10"
       value=3
     />
-    <label class="btn btn-outline-primary" for="btnradio19">OUI</label>
+    <label class="btn" :class="{selected: questions.q10 === '3'}" for="btnradio20">OUI</label>
 
     <div class="result">
       <p class="description">{{ total }} Points</p>
@@ -290,16 +290,16 @@ export default Vue.extend({
   data(){
     return{
       questions:{
-        q1:0,
-        q2:0,
-        q3:0,
-        q4:0,
-        q5:0,
-        q6:0,
-        q7:0,
-        q8:0,
-        q9:0,
-        q10:0,
+        q1:'0',
+        q2:'0',
+        q3:'0',
+        q4:'0',
+        q5:'0',
+        q6:'0',
+        q7:'0',
+        q8:'0',
+        q9:'0',
+        q10:'0',
       },
       total:0,
     }
@@ -324,11 +324,12 @@ export default Vue.extend({
 <style scoped lang="scss">
 @import "src/sass/global.scss";
 .SystemicSclerodermaAcrEular {
-  .result {
-    background: lightgray;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
+  div {
+    margin: 16px 0;
+  }
+
+  [type="radio"] {
+    display: none;
   }
 }
 </style>

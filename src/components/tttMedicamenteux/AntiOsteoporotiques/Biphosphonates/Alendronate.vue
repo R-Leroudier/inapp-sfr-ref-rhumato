@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Alendronate">
-    <h2>ALENDRONATE</h2>
+    <h2 class="title">ALENDRONATE</h2>
+<span class="line"></span>
 
     <p>- DCI : ALENDRONATE /ACIDE ALENDRONIQUE</p>
     <p><span class="bold">- Nom commercial</span> Fosamax®</p>
@@ -137,9 +138,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

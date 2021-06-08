@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Belimumab">
-    <h2>Belimumab</h2>
+    <h2 class="title">Belimumab</h2>
+<span class="line"></span>
 
     <p>Grossesse :</p>
     <ul>
@@ -34,9 +35,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="CIPROFLOXACINE">
-      <h2>CIPROFLOXACINE</h2>
+      <h2 class="title">CIPROFLOXACINE</h2>
+<span class="line"></span>
 
       <p>- DCI : CIPROFLOXACINE</p>
       <p><span class="bold">- Nom commercial</span> Ciflox®</p>
@@ -84,9 +85,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

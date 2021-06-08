@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="TofacitinibBaricitinib">
-    <h2>Tofacitinib, Baricitinib</h2>
+    <h2 class="title">Tofacitinib, Baricitinib</h2>
+<span class="line"></span>
 
     <p><span class="bold">Pas de données</span> chez les femmes enceintes et allaitantes donc contre-indication</p>
 
@@ -42,9 +43,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

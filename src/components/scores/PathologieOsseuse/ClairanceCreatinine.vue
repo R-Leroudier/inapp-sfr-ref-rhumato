@@ -1,6 +1,7 @@
 <template>
   <div class="PathologieOsseuse">
     <h2 class="title">Calcul de la clairance de la créatinine selon Cockroft & Gault et MDRD</h2>
+    <span class="line"></span>
 
     <div>
       <span class="input-group-text">Année de naissance: </span>
@@ -29,23 +30,23 @@
     <p class="description">Sexe</p>
 
     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked value="f" v-model="sexe">
-    <label class="btn btn-outline-primary" for="btnradio1">Femme</label>
+    <label class="btn" :class="{selected: sexe === 'f'}" for="btnradio1">Femme</label>
 
     <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="h" v-model="sexe">
-    <label class="btn btn-outline-primary" for="btnradio2">Homme</label>
+    <label class="btn" :class="{selected: sexe === 'h'}" for="btnradio2">Homme</label>
 
     <p class="description">Origine afro-américaine</p>
 
     <input type="radio" class="btn-check" name="btnradio1" id="btnradio3" autocomplete="off" checked value="0" v-model="origine">
-    <label class="btn btn-outline-primary" for="btnradio3">Non</label>
+    <label class="btn" :class="{selected: origine === '0'}" for="btnradio3">Non</label>
 
     <input type="radio" class="btn-check" name="btnradio1" id="btnradio4" autocomplete="off" value="1" v-model="origine">
-    <label class="btn btn-outline-primary" for="btnradio4">Oui</label>
+    <label class="btn" :class="{selected: origine === '1'}" for="btnradio4">Oui</label>
 
     <br>
-    <input class="btn btn-primary" type="button" value="Calculer" @click="calcul">
+    <input class="btn" style="width: 100%!important; margin-top: 15px; border: 1px solid black!important;" type="button" value="Calculer" @click="calcul">
 
-    <div>
+    <div class="result">
       <h4>Formule de Cockroft & Gault: {{ resultCG }} ml/min/1.72m2</h4>
       <h4>Formule MDRD: {{ resultMDRD }} ml/min/1.72m2</h4>
     </div>
@@ -91,7 +92,6 @@ export default Vue.extend({
         this.resultMDRD *= 0.742;
       }
 
-      console.log(this.origine)
     }
   }
 })
@@ -103,6 +103,10 @@ export default Vue.extend({
 .PathologieOsseuse {
   [type="number"] {
     width: 60px;
+  }
+
+  [type="radio"] {
+    display: none;
   }
 
   div {

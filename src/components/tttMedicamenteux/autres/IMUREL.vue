@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="IMUREL">
-    <h2>IMUREL®</h2>
+    <h2 class="title">IMUREL®</h2>
+<span class="line"></span>
 
     <p><span class="bold">Nom commercial</span> : IMUREL®</p>
     <p><span class="bold">DCI</span> : Azathioprine</p>
@@ -99,9 +100,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

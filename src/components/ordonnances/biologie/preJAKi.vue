@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="preJAKi">
-    <h2>Biologie pré-JAKi</h2>
+    <h2 class="title">Biologie pré-JAKi</h2>
+<span class="line"></span>
 
     <img src="@/assets/pré-JAKiBiologie.png">
   </section>
@@ -24,9 +25,7 @@
     .preJAKi {
       padding: 0 15px;
 
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

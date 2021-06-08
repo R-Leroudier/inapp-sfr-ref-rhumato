@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="MOXIFLOXACINE">
-      <h2>MOXIFLOXACINE</h2>
+      <h2 class="title">MOXIFLOXACINE</h2>
+<span class="line"></span>
 
       <p>- DCI : MOXIFLOXACINE</p>
       <p><span class="bold">- Nom commercial</span> Tavanic®</p>
@@ -85,9 +86,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="CEFEPIME">
-      <h2>CEFEPIME</h2>
+      <h2 class="title">CEFEPIME</h2>
+<span class="line"></span>
 
       <p>- DCI : CEFEPIME</p>
       <p><span class="bold">- Nom commercial</span> Axepim®</p>
@@ -77,9 +78,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="AntiTNF">
-    <h2>ANTI TNF-α</h2>
+    <h2 class="title">ANTI TNF-α</h2>
+<span class="line"></span>
 
     <p class="bold">INFLIXIMAB</p>
     <div>
@@ -171,9 +172,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

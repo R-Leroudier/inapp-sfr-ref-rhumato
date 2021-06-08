@@ -1,8 +1,10 @@
 <template>
   <!-- http://medicalcul.free.fr/firstquest.html -->
   <div class="First">
-    <h3>Questionnaire FiRST</h3>
-    <h5>Cocher les items présents</h5>
+    <h3 class="title">Questionnaire FiRST</h3>
+    <span class="line"></span>
+
+    <h3>Cocher les items présents</h3>
     <div>
       <input
         type="checkbox"
@@ -11,7 +13,7 @@
         v-model="quest"
         value="1"
       />
-      <label for="toggle1"
+      <label class="btn" :class="{selected: quest.includes('1')}" for="toggle1"
         >Mes douleurs sont localisées partout dans tout mon corps.</label
       >
       <div class="control-me"></div>
@@ -24,7 +26,7 @@
         v-model="quest"
         value="2"
       />
-      <label for="toggle2"
+      <label class="btn" :class="{selected: quest.includes('2')}" for="toggle2"
         >Mes douleurs s'accompagnent d'une fatigue générale permanente.</label
       >
       <div class="control-me"></div>
@@ -37,7 +39,7 @@
         v-model="quest"
         value="3"
       />
-      <label for="toggle3"
+      <label class="btn" :class="{selected: quest.includes('3')}" for="toggle3"
         >Mes douleurs sont comme des brûlures, des décharges électriques ou des
         crampes.</label
       >
@@ -51,7 +53,7 @@
         v-model="quest"
         value="4"
       />
-      <label for="toggle4"
+      <label class="btn" :class="{selected: quest.includes('4')}" for="toggle4"
         >Mes douleurs s'accompagnent d'autres sensations anormales comme des
         fourmillements, des picotements ou des sensations d'engourdissement,
         dans tout mon corps</label
@@ -66,7 +68,7 @@
         v-model="quest"
         value="5"
       />
-      <label for="toggle5"
+      <label class="btn" :class="{selected: quest.includes('5')}" for="toggle5"
         >Mes douleurs s'accompagnent d'autres problèmes de santé comme des
         problèmes digestifs, des problèmes urinaires, des maux de tête, ou des
         impatiences dans les jambes.</label
@@ -81,18 +83,15 @@
         v-model="quest"
         value="6"
       />
-      <label for="toggle6"
+      <label class="btn" :class="{selected: quest.includes('6')}" for="toggle6"
         >Mes douleurs ont un retentissement important dans ma vie : en
         particulier, sur mon sommeil, ma capacité à me concentrer avec une
         impression de fonctionner au ralenti.</label
       >
       <div class="control-me"></div>
     </div>
-    <div>
-      <hr />
-      <label for="Items">Items présents :</label>
-      <input type="text" v-model="quest.length" />
-      <hr />
+    <div class="result">
+      Items présents : {{ quest.length }}
     </div>
   </div>
 </template>
@@ -113,5 +112,13 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-.First {}
+.First {
+  div {
+    margin-top: 12px;
+  }
+
+  [type="checkbox"] {
+    display: none;
+  }
+}
 </style>

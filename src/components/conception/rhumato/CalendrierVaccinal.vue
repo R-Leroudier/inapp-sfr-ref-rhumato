@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="CalendrierVaccinal">
-    <h2>Calendrier Vaccinal</h2>
+    <h2 class="title">Calendrier Vaccinal</h2>
+<span class="line"></span>
 
     <img src="@/assets/calendrier_vaccinal.png">
 
@@ -31,9 +32,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

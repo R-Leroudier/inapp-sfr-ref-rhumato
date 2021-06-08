@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Hypercalcemie">
-    <h2>HYPERCALCEMIE</h2>
+    <h2 class="title">HYPERCALCEMIE</h2>
+<span class="line"></span>
 
     <ul>
       <li>EST-ELLE SYMPTOMATIQUE ?
@@ -118,9 +119,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="RIFAMPICINE">
-      <h2>RIFAMPICINE</h2>
+      <h2 class="title">RIFAMPICINE</h2>
+<span class="line"></span>
 
       <p>- DCI : RIFAMPICINE</p>
       <p><span class="bold">- Nom commercial</span> Rifadine®</p>
@@ -93,9 +94,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

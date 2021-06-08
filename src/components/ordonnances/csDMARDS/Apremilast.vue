@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Apremilast">
-    <h2>Apremilast</h2>
+    <h2 class="title">Apremilast</h2>
+<span class="line"></span>
 
     <img src="@/assets/ApremilastCSDMARDS.png">
   </section>
@@ -24,9 +25,7 @@
     .Apremilast {
       padding: 0 15px;
 
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

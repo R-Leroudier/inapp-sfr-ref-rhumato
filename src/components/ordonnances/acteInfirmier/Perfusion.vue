@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Perfusion">
-    <h2>Perfusion acide zolédronique</h2>
+    <h2 class="title">Perfusion acide zolédronique</h2>
+<span class="line"></span>
 
     <img src="@/assets/PerfusionActe.png">
   </section>
@@ -27,9 +28,7 @@
       p {
         text-align: left;
       }
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

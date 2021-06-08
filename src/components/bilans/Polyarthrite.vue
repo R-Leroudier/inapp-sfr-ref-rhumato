@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Polyarthrite">
-    <h2>Fiche REF Bilan diagnostique polyarthrite</h2>
+    <h2 class="title">Fiche REF Bilan diagnostique polyarthrite</h2>
+    <span class="line"></span>
 
     <h4>Sources: </h4>
     <p>Recommandations 2014 de la Société française de rhumatologie pour la prise en charge de la polyarthrite rhumatoïde</p>
@@ -124,8 +125,5 @@
   padding: 0 15px;
   text-align: left;
 
-  h2 {
-    text-align: center;
-  }
 }
 </style>

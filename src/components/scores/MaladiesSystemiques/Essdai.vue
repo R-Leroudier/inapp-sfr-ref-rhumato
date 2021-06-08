@@ -331,7 +331,7 @@
     </p>
 
 
-    <div>
+    <div class="result">
       <h4>Résultat: {{ result }}</h4>
       <h4>{{ activity }}</h4>
     </div>

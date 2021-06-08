@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="POLYARTHRITE_RHUMATOIDE">
-    <h2>POLYARTHRITE RHUMATOÏDE</h2>
+    <h2 class="title">POLYARTHRITE RHUMATOÏDE</h2>
+<span class="line"></span>
 
     <p>
       - PR auto-immune : Rituximab, Abatacept
@@ -262,9 +263,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

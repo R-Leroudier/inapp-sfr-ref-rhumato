@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="GeneraliteRhumato">
-    <h2>Généralités</h2>
+    <h2 class="title">Généralités</h2>
+<span class="line"></span>
 
     <p>
       L’AJI désigne l’ensemble des atteintes inflammatoires articulaires sans cause reconnue, débutant avant l'âge de 16 ans évoluant depuis plus de 6 semaines.
@@ -36,9 +37,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

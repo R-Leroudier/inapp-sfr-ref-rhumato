@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Abatacept">
-    <h2>ABATACEPT</h2>
+    <h2 class="title">ABATACEPT</h2>
+<span class="line"></span>
 
     <p class="bold">ABATACEPT</p>
     <div>
@@ -61,9 +62,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

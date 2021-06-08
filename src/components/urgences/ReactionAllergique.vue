@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="ReactionAllergique">
-    <h2>REACTION LORS DE L’ADMINISTRATION D’UN BIIOMEDICAMENT IV</h2>
+    <h2 class="title">REACTION LORS DE L’ADMINISTRATION D’UN BIIOMEDICAMENT IV</h2>
+<span class="line"></span>
 
     <p>Réaction d’hypersensibilité médicamenteuse (RHM) à différencier d’une allergie médicamenteuse qui dépend d’un mécanisme immunologique</p>
 
@@ -78,9 +79,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

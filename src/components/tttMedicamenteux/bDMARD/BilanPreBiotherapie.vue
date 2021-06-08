@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="BilanPreBiotherapie">
-    <h2>Bilan Pré-biothérapie</h2>
+    <h2 class="title">Bilan Pré-biothérapie</h2>
+<span class="line"></span>
 
     <table>
       <tr>
@@ -399,9 +400,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

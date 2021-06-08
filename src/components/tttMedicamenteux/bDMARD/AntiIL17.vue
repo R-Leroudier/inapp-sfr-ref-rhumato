@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="AntiIL17">
-    <h2>ANTI IL-17A</h2>
+    <h2 class="title">ANTI IL-17A</h2>
+<span class="line"></span>
 
     <p class="bold">IXEKIZUMAB</p>
     <div>
@@ -92,9 +93,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="ContreIndications">
-    <h2>Complications des infiltrations</h2>
+    <h2 class="title">Complications des infiltrations</h2>
+<span class="line"></span>
 
     <ul>
       <li>Infections (arthrites septiques iatrogènes)</li>
@@ -33,9 +34,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

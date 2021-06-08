@@ -11,6 +11,7 @@
         :question="dataQuestion.question"
         :response="dataQuestion.response"
         :malusScore="dataQuestion.malusScore"
+        :scores="scores"
         @upwardChange="upwardChange"
       ></HipLequesnesQuestion>
       <br/>
@@ -61,3 +62,7 @@ export default Vue.extend({
   mounted() {},
 });
 </script>
+
+<style lang="sass">
+@import "src/sass/global";
+</style>

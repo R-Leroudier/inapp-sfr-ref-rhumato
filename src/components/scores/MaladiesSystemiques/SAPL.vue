@@ -1,12 +1,14 @@
 <template>
   <!-- https://www.fai2r.org/les-pathologies-rares/syndrome-des-antiphospholipides/criteres/criteres-de-classification-sapl -->
   <div class="SAPL">
-    <h3>
+    <h3 class="title">
       Critères de classification du SAPL, dits “critères de Sydney” (2006)
     </h3>
-    <h5>Critères cliniques :</h5>
+    <span class="line"></span>
+
+    <h3>Critères cliniques :</h3>
     <div>
-      <label for="toggle1"
+      <label class="btn" :class="{selected: questions1.includes('1')}" for="toggle1"
         >Thrombose vasculaire: au moins un épisode thrombotique artériel,
         veineux ou des petits vaisseaux, touchant tout tissu ou organe. La
         thrombose doit être confirmée par un critère objectif et validé (aspect
@@ -24,7 +26,7 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle2"
+      <label class="btn" :class="{selected: questions1.includes('2')}" for="toggle2"
         >Morbidité obstétricale: Survenue d’au moins une mort fœtale
         inexpliquée, après la 10e semaine d'aménorrhée, avec morphologie foetale
         normale documentée par une échographie ou par examen macroscopique OU
@@ -46,9 +48,10 @@
       />
       <div class="control-me"></div>
     </div>
-    <h5>Critères biologiques :</h5>
+
+    <h3>Critères biologiques :</h3>
     <div>
-      <label for="toggle3"
+      <label class="btn" :class="{selected: questions2.includes('3')}" for="toggle3"
         >Anticorps anticardiolipines (IgG et/ou IgM) présents à au moins 2
         reprises, à au moins 12 semaines d'intervalle, à un titre intermédiaire
         ou élevé (> 40 UGPL ou MPL ou > 99e percentile) mesuré par une technique
@@ -64,7 +67,7 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle4"
+      <label class="btn" :class="{selected: questions2.includes('4')}" for="toggle4"
         >Lupus anticoagulant présent à au moins 2 reprises, à 12 semaines
         d’intervalle, détection selon les recommandations de l’International
         Society of Thrombosis and Hemostasis</label
@@ -79,7 +82,7 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle5"
+      <label class="btn" :class="{selected: questions2.includes('5')}" for="toggle5"
         >Anticorps anti-beta2GPI (IgG ou IgM) présents à un titre > au 99e
         percentile, à au moins 2 reprises, à 12 semaines d’intervalle selon une
         technique ELISA standardisée</label
@@ -118,17 +121,15 @@ export default Vue.extend({
 });
 </script>
 
-@import "src/sass/global.scss";;
+<style scoped lang="scss">
+@import "src/sass/global.scss";
 .SAPL {
   div {
     margin: 16px 0;
   }
 
-  .result {
-    background: lightgray;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
+  [type="checkbox"] {
+    display: none;
   }
 }
 </style>

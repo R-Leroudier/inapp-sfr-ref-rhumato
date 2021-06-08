@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Baricitinib">
-    <h2>BARICITINIB</h2>
+    <h2 class="title">BARICITINIB</h2>
+<span class="line"></span>
 
     <p><span class="bold">DCI :</span> BARICITINB</p>
     <p><span class="bold">Nom commercial :</span> OLUMIANT</p>
@@ -83,9 +84,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

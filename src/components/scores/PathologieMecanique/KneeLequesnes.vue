@@ -2,6 +2,7 @@
   <div class="KneeLequesnes">
     <h2 class="title">Indice de Lequesne</h2>
       <p class="details">(Genou)</p>
+    <span class="line"></span>
 
     <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
       <HipLequesnesQuestion
@@ -10,6 +11,7 @@
         :question="dataQuestion.question"
         :response="dataQuestion.response"
         :malusScore="dataQuestion.malusScore"
+        :scores="scores"
         @upwardChange="upwardChange"
       ></HipLequesnesQuestion>
       <br/>
@@ -66,7 +68,6 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped lang="scss">
-@import "src/sass/global.scss";
-.KneeLequesnes {}
+<style lang="sass">
+@import "src/sass/global";
 </style>

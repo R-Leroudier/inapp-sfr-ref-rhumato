@@ -1,11 +1,13 @@
 <template>
   <!-- fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990 -->
   <div class="ArthritisAcr1990">
-    <h3>
+    <h3 class="title">
       Critères de classification de l’Artérite à Cellules Géantes de l’ACR 1990
     </h3>
+    <span class="line"></span>
+
     <div>
-      <label for="toggle1">Age au diagnostic ≥ 50 ans</label>
+      <label class="btn" :class="{selected: questions.includes('1')}" for="toggle1">Age au diagnostic ≥ 50 ans</label>
       <input
         type="checkbox"
         id="toggle1"
@@ -16,7 +18,7 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle2">Céphalées inhabituelles</label>
+      <label class="btn" :class="{selected: questions.includes('2')}" for="toggle2">Céphalées inhabituelles</label>
       <input
         type="checkbox"
         id="toggle2"
@@ -27,7 +29,7 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle3"
+      <label class="btn" :class="{selected: questions.includes('3')}" for="toggle3"
         >Artère temporale anormale: douleur à la palpation ou diminution de la
         pulsatilité, non due à de l'athérosclérose</label
       >
@@ -41,7 +43,7 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle4">VS ≥ 50 mm / 1ere heure</label>
+      <label class="btn" :class="{selected: questions.includes('4')}" for="toggle4">VS ≥ 50 mm / 1ere heure</label>
       <input
         type="checkbox"
         id="toggle4"
@@ -52,7 +54,7 @@
       <div class="control-me"></div>
     </div>
     <div>
-      <label for="toggle5"
+      <label class="btn" :class="{selected: questions.includes('5')}" for="toggle5"
         >Anomalies de la biopsie d'artère temporale: vascularite; infiltration à
         prédominance de cellules mononucléées ou granulomateuse, habituellement
         avec des cellules géantes multinuclées</label
@@ -97,11 +99,8 @@ export default Vue.extend({
     margin: 10px 0;
   }
 
-  .result {
-    background: lightgray;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
+  [type="checkbox"] {
+    display: none;
   }
 }
 </style>

@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="AINS">
-    <h2>AINS</h2>
+    <h2 class="title">AINS</h2>
+<span class="line"></span>
 
     <table>
       <tr>
@@ -300,9 +301,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;
@@ -335,7 +334,7 @@
         padding-top: 12px;
         padding-bottom: 12px;
         text-align: left;
-        background-color: #4472c4;
+        background-color: #472e5a;
         color: white;
       }
 

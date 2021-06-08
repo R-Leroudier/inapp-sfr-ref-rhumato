@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="preMethotrexate">
-    <h2>Biologie pré-Methotrexate</h2>
+    <h2 class="title">Biologie pré-Methotrexate</h2>
+<span class="line"></span>
 
     <img src="@/assets/pré-MethotrexateBiologie.png">
   </section>
@@ -24,9 +25,7 @@
     .preMethotrexate {
       padding: 0 15px;
 
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

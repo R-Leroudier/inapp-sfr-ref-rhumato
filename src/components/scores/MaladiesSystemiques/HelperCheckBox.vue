@@ -47,7 +47,7 @@ export default Vue.extend({
     height: 25px;
 
     input:checked + .slider {
-      background-color: #f37221;
+      background-color: #472e5a;
     }
 
     input:focus + .slider {

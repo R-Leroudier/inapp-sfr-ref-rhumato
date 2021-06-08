@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="Arthrite">
-    <h2>ARTHRITE SEPTIQUE</h2>
+    <h2 class="title">ARTHRITE SEPTIQUE</h2>
+<span class="line"></span>
 
     <img src="@/assets/urgence1.png">
     <p>Recommandations françaises 2020 sur la prise en charge des arthrites septiques sur articulation native de l’adulte, JBS</p>
@@ -45,9 +46,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

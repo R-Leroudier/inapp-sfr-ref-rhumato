@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="LesionOsseuse">
-    <h2>Fiche REF Bilan diagnostique lésion osseuse</h2>
+    <h2 class="title">Fiche REF Bilan diagnostique lésion osseuse</h2>
+    <span class="line"></span>
 
     <h4>Imagerie :</h4>
     <ul>
@@ -70,10 +71,6 @@
     .LesionOsseuse {
       padding: 0 15px;
       text-align: left;
-
-      h2 {
-        text-align: center;
-      }
 
       .bold {
         font-weight: bold;

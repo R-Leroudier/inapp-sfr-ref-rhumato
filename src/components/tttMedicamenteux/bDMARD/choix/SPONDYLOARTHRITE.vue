@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="SPONDYLOARTHRITE">
-    <h2>SPONDYLOARTHRITE</h2>
+    <h2 class="title">SPONDYLOARTHRITE</h2>
+<span class="line"></span>
 
     <img src="@/assets/SPONDYLOARTHRITE.png">
   </section>
@@ -25,9 +26,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;

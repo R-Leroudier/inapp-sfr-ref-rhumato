@@ -19,7 +19,7 @@
         <label for="size">Taille (cm) : </label>
         <input v-model="size" id="size" type="number" />
       </div>
-      <input type="submit" @click="getResult()" class="btn" value="Valider" />
+      <div @click="getResult()" class="btn">Calculer</div>
     </form>
     <div class="result">
       <h4>{{ this.result }}</h4>
@@ -101,6 +101,7 @@ export default Vue.extend({
     justify-content: space-between;
     padding: 15px;
     line-height: 40px;
+    margin-top: 12px;
   }
 }
 </style>

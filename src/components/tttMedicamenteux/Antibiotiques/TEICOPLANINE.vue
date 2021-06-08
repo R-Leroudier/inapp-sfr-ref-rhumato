@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="TEICOPLANINE">
-      <h2>TEICOPLANINE</h2>
+      <h2 class="title">TEICOPLANINE</h2>
+<span class="line"></span>
 
       <p>- DCI : TEICOPLANINE</p>
       <p><span class="bold">- Nom commercial</span> Targocid®</p>
@@ -81,9 +82,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="AJI">
-    <h2>Forme d’AJI</h2>
+    <h2 class="title">Forme d’AJI</h2>
+<span class="line"></span>
 
     <!-- <table>
       <tr>
@@ -43,9 +44,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

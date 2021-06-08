@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="bDMARS">
-    <h2>bDMARDS/ JAK inhibiteur/Tériparatide</h2>
+    <h2 class="title">bDMARDS/ JAK inhibiteur/Tériparatide</h2>
+<span class="line"></span>
 
     <p>Sur ordonnance d’exception</p>
 
@@ -53,9 +54,7 @@
       p {
         text-align: left;
       }
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

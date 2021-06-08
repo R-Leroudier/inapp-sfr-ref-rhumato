@@ -1,6 +1,7 @@
 <template lang="html">
     <section class="CEFOTAXIME">
-      <h2>CEFOTAXIME</h2>
+      <h2 class="title">CEFOTAXIME</h2>
+<span class="line"></span>
 
       <p>- DCI : CEFOTAXIME</p>
       <p><span class="bold">- Nom commercial</span> Claforan®</p>
@@ -79,9 +80,7 @@
       padding: 0 15px;
       text-align: left;
 
-      h2 {
-        text-align: center;
-      }
+
 
       .bold {
         font-weight: bold;

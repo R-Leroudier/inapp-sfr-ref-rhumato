@@ -1,6 +1,7 @@
 <template lang="html">
   <section class="preAntiTNF">
-    <h2>Biologie pré-antiTNF</h2>
+    <h2 class="title">Biologie pré-antiTNF</h2>
+<span class="line"></span>
 
     <img src="@/assets/pré-antiTNFBiologie.png">
   </section>
@@ -24,9 +25,7 @@
     .preAntiTNF {
       padding: 0 15px;
 
-      h2 {
-        text-align: center;
-      }
+
 
       img {
         max-width: 100%;
