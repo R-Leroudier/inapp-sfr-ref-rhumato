@@ -20,11 +20,11 @@
       </tree-menu>
     </div>
 
-    <a :href="this.content" target="_blank" v-else-if="this.type === 'link'">
+    <div v-on:click="externLink(content)" v-else-if="this.type === 'link'">
       <div class="label-wrapper">
         {{ name }}
       </div>
-    </a>
+    </div>
 
     <router-link :to="'/score/' + this.slug" v-else>
       <div class="label-wrapper">
@@ -45,6 +45,22 @@ export default {
     toggleChildren() {
       this.showChildren = !this.showChildren;
     },
+
+    isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    },
+
+    externLink(link) {
+      let finalLink = "";
+      let target = "_blank"
+
+      if (this.isMobile()) {
+        finalLink = 'medics://viewer?m_source=';
+        target = "_self"
+      }
+      finalLink += link;
+      window.open(finalLink, target);
+    }
   },
   mounted() {
   },

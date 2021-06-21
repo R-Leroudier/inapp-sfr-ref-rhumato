@@ -3,6 +3,7 @@
     <keep-alive>
       <component v-bind:is="componentName"></component>
     </keep-alive>
+    <p v-if="isScore">L’évaluation d’un patient est avant tout clinique et/ou biologique. Le traitement d’un patient ne peut reposer sur le seul résultat de cette application.</p>
   </div>
 </template>
 
@@ -338,6 +339,7 @@ export default Vue.extend({
   data() {
     return {
       componentName: null,
+      isScore: false
     };
   },
   mounted() {
@@ -345,6 +347,8 @@ export default Vue.extend({
       .then(() => {
         const slug = this.$route.params.slug;
         const dataTree = DataService.$data.tree;
+
+        this.isScore = this.$route.fullPath.includes('score');
         this.searchComponentName(dataTree, slug);
       })
       .catch((e) => {
