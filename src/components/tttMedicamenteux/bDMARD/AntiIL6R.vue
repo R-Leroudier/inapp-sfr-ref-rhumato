@@ -42,7 +42,7 @@
         <li>AJIp : 8 mg/kg/4s si > 30 kg, 10 mg/kg/4s si < 30 kg</li>
       </ul>
     </div>
-
+<div class="line"></div>
     <p class="bold">SARILUMAB</p>
     <div>
       DCI : SARILUMAB<br>

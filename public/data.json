@@ -407,7 +407,7 @@
               "type": "html",
               "content": "",
               "slug": "lupus-erythemateux-systemique",
-              "component":"SelenaSledai",
+              "component": "SelenaSledai",
               "submenu": false
             },
             {
@@ -431,7 +431,7 @@
                   "content": "",
                   "slug": "essdai",
                   "submenu": false,
-                  "component":"Essdai"
+                  "component": "Essdai"
                 }
               ]
             },
@@ -480,7 +480,7 @@
                   "content": "",
                   "slug": "ffs",
                   "submenu": false,
-                  "component":"Ffs"
+                  "component": "Ffs"
                 },
                 {
                   "id": "",
@@ -518,7 +518,7 @@
               "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990",
               "slug": "maladie-de-horton",
               "submenu": false,
-              "component":"ArthritisAcr1990"
+              "component": "ArthritisAcr1990"
             },
             {
               "id": "",
@@ -649,7 +649,7 @@
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
-                  "component" : "HipLequesnes",
+                  "component": "HipLequesnes",
                   "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf",
                   "slug": "indice-fonctionnel-de-lequesnes-hanche",
                   "submenu": false
@@ -1348,18 +1348,6 @@
           "slug": "glucocorticoides",
           "submenu": false,
           "component": "Glucocorticoides"
-        },
-        {
-          "id": "",
-          "name": "Corticoïdes",
-          "subtitle": "Sous-titre facultatif",
-          "appId": 1,
-          "parentId": null,
-          "type": "html",
-          "content": "",
-          "slug": "corticoides",
-          "submenu": false,
-          "component": "Corticoides"
         },
         {
           "id": "",
@@ -2796,12 +2784,12 @@
         },
         {
           "id": "",
-          "name": "conctacts",
+          "name": "Contacts",
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
           "type": "link",
-          "content": "mailto:sectionref@gmail.com",
+          "content": "mailto:sectionref@gmail.com?subject=Calendrier%20Vaccinal%20-%20Tools",
           "slug": "contacts",
           "submenu": false
         }

@@ -3,9 +3,8 @@
     <h1>Menu principal</h1>
     <div class="main-categories">
       <div class="list" v-for="node0 in nodes0" :key="node0.name">
-        <router-link :to="'/sublist/' + node0.slug">{{
-          node0.name
-        }}
+        <router-link :to="'/sublist/' + node0.slug"
+          >{{ node0.name }}
           <i class="fas fa-chevron-right"></i>
         </router-link>
       </div>
@@ -14,11 +13,11 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import DataService from "@/service/DataService";
+import Vue from 'vue';
+import DataService from '@/service/DataService';
 
 export default Vue.extend({
-  name: "ListPage",
+  name: 'ListPage',
   data() {
     return {
       nodes0: [],
@@ -36,9 +35,9 @@ export default Vue.extend({
 });
 </script>
 <style scoped lang="scss">
-@import "src/sass/global.scss";;
+@import 'src/sass/global.scss';
 .ListPage {
-    padding: 0 .75rem;
+  padding: 0 0.75rem;
 
   h1 {
     padding: 0;
@@ -62,7 +61,7 @@ export default Vue.extend({
     background: #ecf1f5;
     border-radius: 5px;
     display: flex;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     padding: 16px;
     cursor: pointer;
     text-align: left;
@@ -70,10 +69,10 @@ export default Vue.extend({
     align-items: center;
 
     i {
-      background: #472e5a;
+      background: #80cc28;
       color: #ecf1f6;
-      padding: .5em .75em;
-      border-radius: .5rem;
+      padding: 0.5em 0.75em;
+      border-radius: 0.5rem;
       font-weight: lighter;
       display: flex;
     }

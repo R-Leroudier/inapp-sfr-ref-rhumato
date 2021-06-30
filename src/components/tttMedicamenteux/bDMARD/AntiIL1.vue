@@ -24,7 +24,7 @@
         <li>< 50 kg : 1 à 2 mg/kg/j SC</li>
       </ul>
     </div>
-
+<div class="line"></div>
     <p class="bold">CANAKINUMAB</p>
     <div>
       DCI : CANAKINUMAB<br>

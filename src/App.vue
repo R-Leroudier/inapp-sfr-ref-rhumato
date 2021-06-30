@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <Header :headerQuitApp="this.$router.currentRoute.fullPath === '/'"></Header>
+    <Header></Header>
     <router-view></router-view>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import DataService from "@/service/DataService";
+import Vue from 'vue';
+import DataService from '@/service/DataService';
 
-import Header from "@/components/Header.vue";
+import Header from '@/components/Header.vue';
 
 export default Vue.extend({
   components: { Header },
@@ -29,14 +29,40 @@ export default Vue.extend({
   },
 });
 </script>
+<style lang="scss">
+@import 'src/sass/global.scss';
 
-@import "src/sass/global.scss";;html, body {
+html,
+body {
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('~@/assets/fonts/HelveticaNeue-Bold.otf') format('otf'),
+    url('~@/assets/fonts/HelveticaNeue-Bold_1.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('~@/assets/fonts/HelveticaNeue-Medium.otf') format('otf'),
+    url('~@/assets/fonts/HelveticaNeue-Medium_1.woff') format('woff');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('~@/assets/fonts/HelveticaNeue-Regular.otf') format('otf'),
+    url('~@/assets/fonts/HelveticaNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 #app {
-  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -58,4 +84,3 @@ export default Vue.extend({
   color: #42b983;
 }
 </style>
-
