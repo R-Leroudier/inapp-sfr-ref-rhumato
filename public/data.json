@@ -2256,7 +2256,7 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "methotrexate",
+                  "slug": "methotrexateordonnance",
                   "submenu": false,
                   "component": "MethotrexateOrdonnance"
                 },
@@ -2280,7 +2280,7 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "apremilast",
+                  "slug": "apremilastordonnance",
                   "submenu": false,
                   "component": "ApremilastOrdonnance"
                 }

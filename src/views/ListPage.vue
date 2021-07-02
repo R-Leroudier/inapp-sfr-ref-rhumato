@@ -1,6 +1,6 @@
 <template>
   <div class="ListPage">
-    <h1>Menu principal</h1>
+    <search-bar />
     <div class="main-categories">
       <div class="list" v-for="node0 in nodes0" :key="node0.name">
         <router-link :to="'/sublist/' + node0.slug"
@@ -15,8 +15,10 @@
 <script lang="ts">
 import Vue from 'vue';
 import DataService from '@/service/DataService';
+import SearchBar from '@/components/search/SearchBar.vue';
 
 export default Vue.extend({
+  components: { SearchBar },
   name: 'ListPage',
   data() {
     return {
@@ -37,6 +39,8 @@ export default Vue.extend({
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
 .ListPage {
+  display: flex;
+  flex-flow: column nowrap;
   padding: 0 0.75rem;
 
   h1 {
