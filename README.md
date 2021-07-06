@@ -1,23 +1,28 @@
-# medics-tool-template
+# inapp REF x SFR
+
+J'ai laissé la liste des liens et l'arborescence dans public/fichesCRI.json . J'arrive pas à trier tout ca pour y integrer dans l'app alors demerdez-vous ! <3
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve or npm start
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Documentation
 

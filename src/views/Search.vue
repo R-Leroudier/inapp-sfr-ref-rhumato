@@ -1,18 +1,28 @@
 <template>
   <div class="list">
-    <list-fiche :key="mySearch" :submenu="MyResult" />
+    <span>Recherche: {{ mySearch }}</span>
+    <div v-for="(elem, i) in MyResult" :key="i">
+      <tree-menu
+        :name="elem.name"
+        :type="elem.type"
+        :slug="elem.slug"
+        :children="elem.children"
+        :depth="0"
+        :content="elem.content"
+      ></tree-menu>
+    </div>
   </div>
 </template>
 
 <script>
-import ListFiche from '@/components/search/ListFiche.vue';
 import searching from '@/utils/Searching';
 import DataService from '@/service/DataService';
+import TreeMenu from '@/components/TreeMenu.vue';
 
 export default {
   name: 'Search',
   props: {},
-  components: { ListFiche },
+  components: { TreeMenu },
   data() {
     return {
       mySearch: this.$route.params.search,
@@ -46,9 +56,14 @@ export default {
 };
 </script>
 
-<style scoped>
-.source {
-  font-size: 10px;
-  margin: 3px;
+<style scoped lang="scss">
+.list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  div {
+    width: 85%;
+  }
 }
 </style>
