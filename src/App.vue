@@ -83,4 +83,8 @@ body {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+.score_ref {
+  font-style: italic;
+  font-size: smaller;
+}
 </style>

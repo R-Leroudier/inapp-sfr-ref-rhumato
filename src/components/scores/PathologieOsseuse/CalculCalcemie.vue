@@ -1,51 +1,62 @@
 <template lang="html">
-    <section class="CalculCalcemie">
-      <h2>CALCUL DE LA CALCEMIE CORRIGEE</h2>
-      <span class="line"></span>
+  <section class="CalculCalcemie">
+    <h2>CALCUL DE LA CALCEMIE CORRIGEE</h2>
+    <span class="line"></span>
 
-      <div>
-        <label for="calcemie">Calcémie (mmol/L):</label>
-        <input type="number" id="calcemie" v-model="calcemie" @change="calcul">
-      </div>
+    <div>
+      <label for="calcemie">Calcémie (mmol/L):</label>
+      <input type="number" id="calcemie" v-model="calcemie" @change="calcul" />
+    </div>
 
-      <div>
-        <label for="albuminemie">Albuminémie (g/L):</label>
-        <input type="number" id="albuminemie" v-model="albuminemie" @change="calcul">
-      </div>
+    <div>
+      <label for="albuminemie">Albuminémie (g/L):</label>
+      <input
+        type="number"
+        id="albuminemie"
+        v-model="albuminemie"
+        @change="calcul"
+      />
+    </div>
 
-      <div class="result">
-        <h4>Résultat: {{ result }}</h4>
-      </div>
-    </section>
+    <div class="result">
+      <h4>Résultat: {{ result }}</h4>
+    </div>
+    <p class="score_ref">
+      Références:<br />
+      Messaï E. "Guide des chiffres et formules utiles en pratique médicale" Ed.
+      Arnette Blackwell (Paris) 1995. ISBN : 2-7184-0770-0 Manuel Merck
+      troisième édition. Ed. d'Après (Paris) 1999. ISBN : 2-914313-00-4
+    </p>
+  </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'CalculCalcemie',
-        props: [],
-        mounted() {},
-        data() {
-            return {
-              calcemie: 0,
-              albuminemie: 0,
-              result: 0,
-            };
-        },
-        methods: {
-          calcul() {
-            this.result = parseInt(this.calcemie) - 0.025 * (parseInt(this.albuminemie) - 40)
-          }
-        },
-        computed: {}
-    }
+export default {
+    name: 'CalculCalcemie',
+    props: [],
+    mounted() {},
+    data() {
+        return {
+          calcemie: 0,
+          albuminemie: 0,
+          result: 0,
+        };
+    },
+    methods: {
+      calcul() {
+        this.result = parseInt(this.calcemie) - 0.025 * (parseInt(this.albuminemie) - 40)
+      }
+    },
+    computed: {}
+}
 </script>
 
 <style scoped lang="scss">
-@import "src/sass/global.scss";
-@import "src/sass/global";
+@import 'src/sass/global.scss';
+@import 'src/sass/global';
 
 .CalculCalcemie {
-  [type="number"] {
+  [type='number'] {
     width: 60px;
   }
 

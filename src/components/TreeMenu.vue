@@ -26,6 +26,29 @@
       </tree-menu>
     </div>
 
+    <div v-else-if="this.type === 'pdflist'">
+      <div class="label-wrapper" @click="toggleChildren">
+        {{ name }}
+        <i v-if="!this.showChildren" class="fas fa-chevron-right"></i>
+        <i v-else class="fas fa-chevron-down"></i>
+      </div>
+      <div
+        v-for="(pdf, i) in children"
+        :key="i"
+        :class="showChildren ? 'pdf-viewer' : ''"
+      >
+        <iframe
+          v-if="showChildren"
+          :src="pdf.content"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+    </div>
+
     <div v-else-if="this.type === 'link'">
       <a
         :href="externLink(content)"
@@ -47,7 +70,10 @@
 export default {
   props: ['name', 'type', 'slug', 'children', 'depth', 'content'],
   data() {
-    return { showChildren: false };
+    return {
+      showChildren: false,
+      childrenIsArray: Array.isArray(this.children),
+    };
   },
   name: 'tree-menu',
   computed: {},
@@ -126,5 +152,9 @@ export default {
     background-color: #fff;
     color: #4c2b62;
   }
+}
+.pdf-viewer {
+  margin: 10px;
+  height: 40vh;
 }
 </style>

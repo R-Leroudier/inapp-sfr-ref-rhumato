@@ -2,31 +2,31 @@
   <div class="HelperCheckBox">
     <section>
       <div class="question">
-        <h2>{{ index+1 }}</h2>
+        <h2>{{ index + 1 }}</h2>
         <div style="display: flex; justify-content: space-between; width: 80%">
-        <label class="text" :for="`checkbox`+index">{{ question }}</label>
-        <label class="switch">
-          <input
-            :id="`checkbox`+index"
-            type="checkbox"
-            @click="checkboxChange($event)"
-          />
-          <span class="slider round"></span>
-        </label>
+          <label class="text" :for="`checkbox` + index">{{ question }}</label>
+          <label class="switch">
+            <input
+              :id="`checkbox` + index"
+              type="checkbox"
+              @click="checkboxChange($event)"
+            />
+            <span class="slider round"></span>
+          </label>
         </div>
       </div>
     </section>
   </div>
 </template>
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 
 export default Vue.extend({
-  name: "SelenaSledaiCheckBox",
-  props: ["index", "question", "malusScore"],
+  name: 'SelenaSledaiCheckBox',
+  props: ['index', 'question', 'malusScore'],
   methods: {
     checkboxChange(e: any) {
-      this.$emit("upwardChange", {
+      this.$emit('upwardChange', {
         index: this.index,
         userScore: e.target.checked ? this.malusScore : 0,
       });
@@ -36,8 +36,8 @@ export default Vue.extend({
 });
 </script>
 <style scoped lang="scss">
-@import "src/sass/global.scss";
-@import "src/sass/global";
+@import 'src/sass/global.scss';
+@import 'src/sass/global';
 
 .HelperCheckBox {
   .switch {
@@ -70,11 +70,12 @@ export default Vue.extend({
       background-color: #ccc;
       -webkit-transition: 0.4s;
       transition: 0.4s;
+      min-width: 50px;
     }
 
     .slider:before {
       position: absolute;
-      content: "";
+      content: '';
       height: 19px;
       width: 19px;
       left: 4px;

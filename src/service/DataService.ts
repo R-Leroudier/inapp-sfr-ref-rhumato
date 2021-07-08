@@ -18,6 +18,20 @@ class DataServiceClass {
     });
   }
 
+  loadCRI(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      axios
+        .get('./fichesCRI.json')
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((e) => {
+          console.log(e);
+          reject(e);
+        });
+    });
+  }
+
   getList(slug: string) {
     // boucle
   }

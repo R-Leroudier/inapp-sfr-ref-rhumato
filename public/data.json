@@ -707,7 +707,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "Fist",
+                  "name": "First",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -2676,9 +2676,9 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "link",
+          "type": "html",
           "content": "http://www.cri-net.com/recherche/fiches-pratiques-et-recommandations/dernieres-mises-a-jour",
-          "slug": "fiches-du-cri",
+          "slug": "cri",
           "submenu": false
         },
         {
