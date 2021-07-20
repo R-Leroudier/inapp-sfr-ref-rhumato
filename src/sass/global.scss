@@ -3,21 +3,21 @@
 }
 
 .btn {
-    color: #707070;
-    background-color: #F1F1F6;
-    font-weight: 400;
-    text-align: center;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 8px;
-    cursor: pointer;
-    user-select: none;
-    transition: all .15s ease-in-out;
-    width: calc(100% - .75em - .75em);
-    padding: .75em 0;
-    margin: .75em 0;
+    color: #707070 !important;
+    background-color: #F1F1F6 !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    box-shadow: 0px 3px 6px #00000029 !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    transition: all .15s ease-in-out !important;
+    width: calc(100% - .75em - .75em) !important;
+    padding: .75em 0 !important;
+    margin: .5em 0 !important;
     &.selected {
-        color: #fff;
-        background-color: #38bbec;
+        color: #fff !important;
+        background-color: #38bbec !important;
     }
 
     &input {
@@ -26,12 +26,15 @@
 }
 
 .title {
-    font-size: calc(1.375rem + 1.5vw);
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    text-align: left;
+    color: #4c2b63;
+    font-weight: 700 !important;
+    font-size: calc(1.375rem + 1.5vw) !important;
+    margin-top: 0 !important;
+    margin-bottom: .5rem !important;
+
+    line-height: 1.2 !important;
+    text-align: left !important;
+    font-family: Helvetica Neue;
 }
 
 .description {
