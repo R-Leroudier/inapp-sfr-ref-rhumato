@@ -126,7 +126,7 @@
   color: rgb(49, 49, 49);
 }
 .cancel:focus{
- background-color: rgb(179, 72, 72);
+  background-color: rgb(179, 72, 72);
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -146,6 +146,6 @@
 .line{
    display:block;
    width:100% /*or whatever width you want the effect of <hr>*/;
-   border-top: 2px solid #ccc;
+   border-top: 1px solid #D0D0E8 !important;
 }
 
