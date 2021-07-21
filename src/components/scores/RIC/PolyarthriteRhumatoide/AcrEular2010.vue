@@ -169,40 +169,5 @@ export default Vue.extend({
     justify-content: center;
   }
 
-  .btn {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    background-color: #eceaf0;
-    cursor: pointer;
-
-    border: none;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 0 1em;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
-    height: 100%;
-    width: 80%;
-    border-radius: 8px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1rem;
-    color: rgb(49, 49, 49);
-  }
-
-
-
-  .btn.selected {
-    background-color: #3abaea;
-    color: white;
-  }
-
-  .line {
-    display: block;
-    width: 100%;
-    border-top: 2px solid #ccc;
-  }
 }
 </style>
