@@ -14,7 +14,7 @@
       <form class="form">
         <h4 class="subtitle">Atteintes articulaires</h4>
         <div>
-          <ul class="details">
+          <ul class="indication">
             <li> On différencie les grosses et petites articulations: </li>
             <li>
                 Grosses articulations : épaule, coude, hanche, genou, cheville.
@@ -52,7 +52,7 @@
 
         <h4 class="subtitle">Sérologie</h4>
         <div>
-          <ul class="details">
+          <ul class="indication">
             Notes :
             <li>FR = Facteur rhumatoïde.</li>
             <li>ACPA = Anticorps anti-peptides/protéines citrulliné(e)s.</li>

@@ -29,7 +29,6 @@
         text-align: left;
       }
 
-
       img {
         max-width: 100%;
         border: 1px solid black;
