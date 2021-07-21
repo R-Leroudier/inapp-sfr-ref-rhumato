@@ -10,7 +10,7 @@
     </div>
 
     <form class="form">
-      <h4 class="categorie">Sacro-iliite à l'imagerie:</h4>
+      <h4 class="subtitle">Sacro-iliite à l'imagerie:</h4>
       <div class="btn" :class="{ selected: toggle1[1] === true }" @click="calcChecked(1, 0)">
         Inflammation fortement évocatrice de sacro-iliite à l'IRM.
       </div>
@@ -18,7 +18,7 @@
         Sacro-iliite radiologique stade ≥ 2 si bilatéral OU ≥ 3 si unilatéral.
       </div>
 
-      <h4 class="categorie">Signes de spondylarthrite:</h4>
+      <h4 class="subtitle">Signes de spondylarthrite:</h4>
                   <div @click="calcChecked(0, 1)" class="btn" :class="{ selected: toggle2[1] === true }">          Rachialgie inflammatoire.
           </div>
                           <div @click="calcChecked(0, 2)" class="btn" :class="{ selected: toggle2[2] === true }">Arthrite.</div>

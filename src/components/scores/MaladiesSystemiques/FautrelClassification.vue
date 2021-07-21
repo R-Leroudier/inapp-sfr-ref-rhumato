@@ -4,7 +4,7 @@
       <p class="description">Calcul des critères de classification ou de diagnostic</p>
       <span class="line"></span>
 
-      <h4 class="categorie">Critères majeurs :</h4>
+      <h4 class="subtitle">Critères majeurs :</h4>
 
           <p class="description">Fièvre hectique ≥ 39°C</p>
           <!-- first choice -->
@@ -54,7 +54,7 @@
             <input type="radio"  name="btnradio7" id="btnradio12" @click="choice6(1)">
             <label class="btn" :class="{selected: number6 === 1}" for="btnradio12">OUI</label>
 
-        <h4 class="categorie">Critères mineurs :</h4>
+        <h4 class="subtitle">Critères mineurs :</h4>
 
           <!-- seventh choice -->
           <p class="description">Rash maculo-papuleux</p>

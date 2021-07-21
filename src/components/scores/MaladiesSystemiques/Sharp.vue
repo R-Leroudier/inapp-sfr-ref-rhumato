@@ -1,7 +1,7 @@
 <template>
   <div class="Sharp">
     <h2 class="title">Critères de sharp</h2>
-    <h4 class="categorie">Critère majeurs</h4>
+    <h4 class="subtitle">Critère majeurs</h4>
 
     <input
       type="checkbox"
@@ -74,7 +74,7 @@
       négativité des anti-Sm</label
     >
 
-    <h4 class="categorie">Critère mineurs</h4>
+    <h4 class="subtitle">Critère mineurs</h4>
 
     <input
       type="checkbox"

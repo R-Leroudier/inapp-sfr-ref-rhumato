@@ -12,9 +12,9 @@
 
     <div class="container">
       <form class="form">
-        <h4 class="categorie">Atteintes articulaires</h4>
+        <h4 class="subtitle">Atteintes articulaires</h4>
         <div>
-          <ul class="details">
+          <ul class="indication">
             <li> On différencie les grosses et petites articulations: </li>
             <li>
                 Grosses articulations : épaule, coude, hanche, genou, cheville.
@@ -50,9 +50,9 @@
           </p>
         </div>
 
-        <h4 class="categorie">Sérologie</h4>
+        <h4 class="subtitle">Sérologie</h4>
         <div>
-          <ul class="details">
+          <ul class="indication">
             Notes :
             <li>FR = Facteur rhumatoïde.</li>
             <li>ACPA = Anticorps anti-peptides/protéines citrulliné(e)s.</li>
@@ -74,7 +74,7 @@
             FR ou ACPA fortement positif <span>(> 3 x normale).</span>
           </p>
         </div>
-        <h4 class="categorie">Durée de la synovite</h4>
+        <h4 class="subtitle">Durée de la synovite</h4>
         <div>
           <p @click="choice3(0)" class="btn" :class="{ selected: score3 === 0 }">
             Durée &#8249; 6 semaines.
@@ -86,7 +86,7 @@
           </p>
         </div>
 
-        <h4 class="categorie">Marqueurs de l'inflammation</h4>
+        <h4 class="subtitle">Marqueurs de l'inflammation</h4>
         <div>
           <p @click="choice4(0)" class="btn" :class="{ selected: score4 === 0 }">
             VS et CRP normales.
@@ -169,40 +169,5 @@ export default Vue.extend({
     justify-content: center;
   }
 
-  .btn {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    background-color: #eceaf0;
-    cursor: pointer;
-
-    border: none;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 0 1em;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
-    height: 100%;
-    width: 80%;
-    border-radius: 8px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1rem;
-    color: rgb(49, 49, 49);
-  }
-
-
-
-  .btn.selected {
-    background-color: #3abaea;
-    color: white;
-  }
-
-  .line {
-    display: block;
-    width: 100%;
-    border-top: 2px solid #ccc;
-  }
 }
 </style>

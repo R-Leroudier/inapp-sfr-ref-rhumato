@@ -3,7 +3,7 @@
     <keep-alive>
       <component v-bind:is="componentName"></component>
     </keep-alive>
-    <p v-if="isScore">
+    <p class="regulatory" v-if="isScore">
       L’évaluation d’un patient est avant tout clinique et/ou biologique. Le
       traitement d’un patient ne peut reposer sur le seul résultat de cette
       application.
@@ -13,8 +13,16 @@
 
 <style>
 .content-page {
-  padding: 0 0.75em;
+   padding: 0 0.75em;
 }
+
+.regulatory {
+    font-style: italic;
+    font-weight: 200;
+    font-size: .75rem;
+    color: #707070;
+}
+
 </style>
 
 <script lang="ts">
@@ -351,8 +359,7 @@ export default Vue.extend({
       .then(() => {
         const slug = this.$route.params.slug;
         const dataTree = DataService.$data.tree;
-
-        this.isScore = this.$route.fullPath.includes('score');
+        this.isScore = !this.$route.fullPath.includes('new-york') && this.$route.fullPath.includes('score') ;
         this.searchComponentName(dataTree, slug);
       })
       .catch((e) => {
