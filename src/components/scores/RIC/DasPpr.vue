@@ -7,7 +7,7 @@
     <form class="form">
       <div>
         <label for="crp_id"> CRP : </label>
-        <input v-model="crp" id="crp_id" type="number" /> ml/l
+        <input v-model="crp" id="crp_id" type="number" required /> ml/l
       </div>
       <div>
         <label for="duration_stiffness_id"
@@ -17,6 +17,7 @@
           v-model="duration_stiffness"
           id="duration_stiffness_id"
           type="number"
+          required
         />
         minutes
       </div>
@@ -24,7 +25,7 @@
         <label for="patient_judgment_id"
           >Jugement du patient sur l’activité de sa PPR :
         </label>
-        <select v-model="patient_judgment" id="patient_judgment_id" type="text">
+        <select v-model="patient_judgment" id="patient_judgment_id" type="text" required>
           <option value="0" :key="0">{{ 0 }}</option>
           <option v-for="n in 10" :value="n" :key="n">{{ n }}</option>
         </select>
@@ -33,7 +34,7 @@
         <label for="doctor_judgment_id"
           >Jugement du médecin sur l’activité de la PPR :
         </label>
-        <select v-model="doctor_judgment" id="doctor_judgment_id" type="text">
+        <select v-model="doctor_judgment" id="doctor_judgment_id" type="text" required>
           <option value="0" :key="0">{{ 0 }}</option>
           <option v-for="t in 10" :value="t" :key="t">{{ t }}</option>
         </select>
@@ -91,8 +92,11 @@
 
       <div class="btn" @click="getResult()">Valider</div>
     </form>
-    <div class="result">
-      <p>{{ this.result }}</p>
+    <div v-if="score" class="result">
+      <p>SCORE: {{this.score}}.<br>INTERPRETATION : {{ this.result }}</p>
+    </div>
+    <div v-if="error" class="result">
+      <p>{{ this.error }}</p>
     </div>
   </div>
 </template>
@@ -104,32 +108,33 @@ export default Vue.extend({
   mounted() {},
   data() {
     return {
-      crp: 0,
-      duration_stiffness: 0,
-      patient_judgment: 0,
-      doctor_judgment: 0,
-      arms_up: 0,
-      score: 0,
-      result: "",
+      crp: null,
+      duration_stiffness: null,
+      patient_judgment: null,
+      doctor_judgment: null,
+      arms_up: null,
+      score: null,
+      result: null,
+      error: null
     };
   },
   methods: {
     getResult() {
-      // a revoir la condtion
-
-      if (this.patient_judgment)
-        this.score = this.score + this.patient_judgment;
-      if (this.doctor_judgment)
+      if (this.crp && this.duration_stiffness && this.doctor_judgment && this.patient_judgment && this.arms_up) {
+        this.error = null
         this.score =
-          this.crp / 10 +
-          this.duration_stiffness / 10 +
+          parseInt(this.crp) / 10 +
+          parseInt(this.duration_stiffness) / 10 +
           this.patient_judgment +
           this.doctor_judgment +
-          this.arms_up;
-      if (this.score >= 7 && this.scrore <= 17) this.result = "Activité modéré";
-      else if (this.score > 17) this.result = "Activité forte";
-      else this.result = "Activité faible";
-      return this.result;
+          parseInt(this.arms_up);
+        if (this.score >= 7 && this.scrore <= 17) this.result = "Activité modéré";
+        else if (this.score > 17) this.result = "Activité forte";
+        else this.result = "Activité faible";
+        return this.result;
+      } else {
+        this.error = "Remplissez tous les champs pour valider le calcul"
+      }
     },
   },
 });
