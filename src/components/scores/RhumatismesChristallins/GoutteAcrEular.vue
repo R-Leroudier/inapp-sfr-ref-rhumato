@@ -5,7 +5,7 @@
     <span class="line"></span>
     <form class="form">
       <div>
-        <h4 class="categorie">CONDITION NECESSAIRE</h4>
+        <h4 class="subtitle">CONDITION NECESSAIRE</h4>
         <label for="necessary_condition_id" class="btn" :class="{selected: necessary_condition}"
           >Au moins 1 épisode de douleur articulaire périphérique</label
         >
@@ -20,7 +20,7 @@
 
       <div v-if="necessary_condition">
         <div>
-          <h4 class="categorie">
+          <h4 class="subtitle">
             CONDITION SUFFISANTE POUR LE DIAGNOSTIC DE GOUTTE
           </h4>
           <label for="necessary_condition2_id" class="btn" :class="{selected: necessary_condition2}"
@@ -38,7 +38,7 @@
 
         <div v-if="!necessary_condition2">
           <div>
-            <h4 class="categorie">SCORE</h4>
+            <h4 class="subtitle">SCORE</h4>
             <div>
               <h5 class="categorie">expression clinique</h5>
               <label for="clinical_expression_id"  class="btn" :class="{selected: clinical_expression === '0'}"

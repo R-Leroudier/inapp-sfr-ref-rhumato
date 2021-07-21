@@ -12,7 +12,7 @@
 
     <div class="container">
       <form class="form">
-        <h4 class="categorie">Atteintes articulaires</h4>
+        <h4 class="subtitle">Atteintes articulaires</h4>
         <div>
           <ul class="details">
             <li> On différencie les grosses et petites articulations: </li>
@@ -50,7 +50,7 @@
           </p>
         </div>
 
-        <h4 class="categorie">Sérologie</h4>
+        <h4 class="subtitle">Sérologie</h4>
         <div>
           <ul class="details">
             Notes :
@@ -74,7 +74,7 @@
             FR ou ACPA fortement positif <span>(> 3 x normale).</span>
           </p>
         </div>
-        <h4 class="categorie">Durée de la synovite</h4>
+        <h4 class="subtitle">Durée de la synovite</h4>
         <div>
           <p @click="choice3(0)" class="btn" :class="{ selected: score3 === 0 }">
             Durée &#8249; 6 semaines.
@@ -86,7 +86,7 @@
           </p>
         </div>
 
-        <h4 class="categorie">Marqueurs de l'inflammation</h4>
+        <h4 class="subtitle">Marqueurs de l'inflammation</h4>
         <div>
           <p @click="choice4(0)" class="btn" :class="{ selected: score4 === 0 }">
             VS et CRP normales.

@@ -4,7 +4,7 @@
     <span class="line"></span>
 
     <form>
-      <h4 class="categorie">Corps</h4>
+      <h4 class="subtitle">Corps</h4>
 
       <section>
         <p class="description">Visage</p>
@@ -54,7 +54,7 @@
         <label class="btn" :class="{selected: abdomen.includes('3')}" for="input12"> Sclérose adhérente au plan profond</label>
       </section>
 
-      <h4 class="categorie">Haut gauche</h4>
+      <h4 class="subtitle">Haut gauche</h4>
 
       <section>
         <p class="description">Bras gauche</p>
@@ -120,7 +120,7 @@
         <label class="btn" :class="{selected: fingerLeft.includes('3')}" for="input28"> Sclérose adhérente au plan profond</label>
       </section>
 
-      <h4 class="categorie">Haut droit</h4>
+      <h4 class="subtitle">Haut droit</h4>
 
       <section>
         <p class="description">Bras droit</p>
@@ -187,7 +187,7 @@
         <label class="btn" :class="{selected: fingerRight.includes('3')}" for="input44"> Sclérose adhérente au plan profond</label>
       </section>
 
-      <h4 class="categorie">Bas gauche</h4>
+      <h4 class="subtitle">Bas gauche</h4>
       <section>
         <p class="description">Cuisse gauche</p>
 
@@ -236,7 +236,7 @@
         <label class="btn" :class="{selected: feetLeft.includes('3')}" for="input55">Sclérose adhérente au plan profond</label>
       </section>
 
-      <h4 class="categorie">Bas droit</h4>
+      <h4 class="subtitle">Bas droit</h4>
       <section>
         <p class="description">Cuisse droite</p>
 
