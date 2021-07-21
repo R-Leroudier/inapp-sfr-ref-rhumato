@@ -5,34 +5,34 @@
     <span class="line"></span>
 
     <form class="form">
-      <div>
-        <label for="crp_id"> CRP : </label>
-        <input v-model="crp" id="crp_id" type="number" required /> ml/l
+      <div class="flex-row">
+        <label for="crp_id"> CRP (m/L): </label>
+        <input v-model="crp" id="crp_id" type="number" placeholder="ml / L" required />
       </div>
-      <div>
+      <div class="flex-row">
         <label for="duration_stiffness_id"
-          >Durée de la raideur matinale :
+          >Durée de la raideur matinale (minutes):
         </label>
         <input
           v-model="duration_stiffness"
           id="duration_stiffness_id"
           type="number"
+          placeholder="min"
           required
         />
-        minutes
       </div>
-      <div>
-        <label for="patient_judgment_id"
-          >Jugement du patient sur l’activité de sa PPR :
+      <div class="flex-row">
+        <label for="patient_judgment_id">
+          Jugement du patient sur l’activité de sa PPR :
         </label>
         <select v-model="patient_judgment" id="patient_judgment_id" type="text" required>
           <option value="0" :key="0">{{ 0 }}</option>
           <option v-for="n in 10" :value="n" :key="n">{{ n }}</option>
         </select>
       </div>
-      <div>
-        <label for="doctor_judgment_id"
-          >Jugement du médecin sur l’activité de la PPR :
+      <div class="flex-row">
+        <label for="doctor_judgment_id">
+          Jugement du médecin sur l’activité de la PPR :
         </label>
         <select v-model="doctor_judgment" id="doctor_judgment_id" type="text" required>
           <option value="0" :key="0">{{ 0 }}</option>
@@ -40,7 +40,7 @@
         </select>
       </div>
 
-        Capacité à lever les bras:
+      <p>Capacité à lever les bras:</p>
           <input
             v-model="arms_up"
             type="radio"
@@ -49,8 +49,7 @@
             value="3"
             style="display: none"
           />
-          <label for="radio1" class="btn" :class="{selected: arms_up === '3'}">impossible</label>
-
+          <label for="radio1" class="btn" :class="{selected: arms_up === '3'}">Impossible</label>
 
           <input
             v-model="arms_up"
@@ -61,7 +60,7 @@
             style="display: none"
 
           />
-      <label for="radio2" class="btn" :class="{selected: arms_up === '2'}">en dessous ceinture scapulaire (&lsaquo; 90°)</label>
+      <label for="radio2" class="btn" :class="{selected: arms_up === '2'}">En dessous ceinture scapulaire ( &#x3C; 90° )</label>
 
 
 
@@ -74,7 +73,7 @@
             style="display: none"
 
       />
-      <label for="radio3" class="btn" :class="{selected: arms_up === '1'}">au niveau de la ceinture scapulaire (90°)</label>
+      <label for="radio3" class="btn" :class="{selected: arms_up === '1'}">Au niveau de la ceinture scapulaire ( 90° )</label>
 
 
 
@@ -87,10 +86,10 @@
             style="display: none"
 
       />
-      <label for="radio4" class="btn" :class="{selected: arms_up === '0'}">bien au dessus des épaules (&rsaquo; 90°) </label>
+      <label for="radio4" class="btn" :class="{selected: arms_up === '0'}">Bien au dessus des épaules ( &#62; 90° ) </label>
 
 
-      <div class="btn" @click="getResult()">Valider</div>
+      <div class="btn validate" @click="getResult()">Valider</div>
     </form>
     <div v-if="score" class="result">
       <p>SCORE: {{this.score}}.<br>INTERPRETATION : {{ this.result }}</p>
@@ -156,5 +155,38 @@ export default Vue.extend({
       margin: 10px 0;
     }
   }
+}
+
+input, select {
+  height: 30px;
+  padding: 0 3px;
+  background: #EDECF4 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+  margin: 0 10px;
+  border: none;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-row label {
+  width: 60%;
+}
+
+label, p {
+  font-size: 14px;
 }
 </style>
