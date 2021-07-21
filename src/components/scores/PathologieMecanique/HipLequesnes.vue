@@ -64,5 +64,5 @@ export default Vue.extend({
 </script>
 
 <style lang="sass">
-@import "src/sass/global";
+@import "src/sass/global"
 </style>

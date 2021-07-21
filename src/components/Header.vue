@@ -38,13 +38,13 @@ export default Vue.extend({
 @import 'src/sass/global.scss';
 .header {
   margin-bottom: 1em;
-  box-shadow: 0 3px 6px rgba(196, 154, 108, 0.2980392156862745);
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 0 0 1.06em 1.06em;
   padding: 1rem 0.75rem;
   justify-content: space-between;
   display: flex;
   align-items: center;
+  background-color: #F1F1F6;
 
   img {
     height: 40px;

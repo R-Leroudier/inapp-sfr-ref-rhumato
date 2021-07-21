@@ -4,7 +4,7 @@
       Critères de classification ACR-EULAR de la sclérodermie systémique
     </h2>
 
-    <h4 class="categorie">
+    <h4 class="subtitle">
       Epaississement cutané (ne tenir compte que du score le plus élevé) :
     </h4>
     <p class="description">
@@ -84,7 +84,7 @@
     />
     <label class="btn" :class="{selected: questions.q3 === '4'}" for="btnradio6">OUI</label>
 
-    <h4 class="categorie">
+    <h4 class="subtitle">
       Lésions pulpaires (ne tenir compte que du score le plus élevé) :
     </h4>
     <p class="description">Ulcères pulpaires digitaux</p>

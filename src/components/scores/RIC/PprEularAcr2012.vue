@@ -4,7 +4,7 @@
     <span class="line"></span>
 
 
-    <h4 class="categorie"> Dérouillage matinal > 45 minutes </h4>
+    <h4 class="subtitle"> Dérouillage matinal > 45 minutes </h4>
     <div>
       <p @click="choice1(0)" class="btn" :class="{ selected: score1 === 0 }">
         Non
@@ -16,7 +16,7 @@
       </p>
     </div>
 
-    <h4 class="categorie"> Douleur de hanche ou limitation articulaire </h4>
+    <h4 class="subtitle"> Douleur de hanche ou limitation articulaire </h4>
     <div>
       <p @click="choice2(0)" class="btn" :class="{ selected: score2 === 0 }">
         Non
@@ -28,7 +28,7 @@
       </p>
     </div>
 
-    <h4 class="categorie"> Absence de facteurs rhumatoïdes et d'anticorps anti-CCP </h4>
+    <h4 class="subtitle"> Absence de facteurs rhumatoïdes et d'anticorps anti-CCP </h4>
     <div>
       <p @click="choice3(0)" class="btn" :class="{ selected: score3 === 0 }">
         Non
@@ -40,7 +40,7 @@
       </p>
     </div>
 
-    <h4 class="categorie"> Absence d'autres articulations atteintes </h4>
+    <h4 class="subtitle"> Absence d'autres articulations atteintes </h4>
     <div>
       <p @click="choice4(0)" class="btn" :class="{ selected: score4 === 0 }">
         Non
@@ -52,7 +52,7 @@
       </p>
     </div>
 
-    <h4 class="categorie">Critères relatifs à l'échographie :</h4>
+    <h4 class="subtitle">Critères relatifs à l'échographie :</h4>
     <p>Au moins 1 épaule avec une bursite sous-deltoïdienne et/ou une ténosynovite bicipitale et/ou une synovite glénohumérale (postérieure ou axillaire) et au moins une hanche avec une synovite et/ou une bursite trochantérienne </p>
     <div>
       <p @click="choice5(0)" class="btn" :class="{ selected: score5 === 0 }">
