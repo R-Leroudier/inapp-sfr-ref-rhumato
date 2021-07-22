@@ -180,7 +180,8 @@
                       "type": "",
                       "content": "",
                       "slug": "criteres-de-new-york-modifies",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "NewYorkCriteria"
                     },
                     {
                       "id": "",
