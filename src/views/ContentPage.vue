@@ -17,10 +17,11 @@
 }
 
 .regulatory {
-    font-style: italic;
-    font-weight: 200;
-    font-size: .75rem;
-    color: #707070;
+  font-style: italic;
+  font-weight: 200;
+  font-size: .75rem;
+  color: #707070;
+  margin: 70px 0;
 }
 
 </style>

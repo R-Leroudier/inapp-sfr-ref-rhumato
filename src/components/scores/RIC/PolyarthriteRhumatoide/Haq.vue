@@ -14,9 +14,8 @@
       <br />
     </div>
 
-    <div class="result">
-      Score final <em>{{ finalScore }}</em
-      >.
+    <div class="haq-result" :class="{green : finalScore < 2, orange : (finalScore >= 2 && finalScore < 3), red: finalScore == 3}">
+      Résultat: {{ finalScore }}
     </div>
   </div>
 </template>
@@ -144,14 +143,19 @@ export default Vue.extend({
           malusScore: [0, 1, 2, 3],
           userScore: 0,
         },
-      ],
+      ]
     };
   },
   methods: {
     calcResult() {
-      this.finalScore = this.scores.reduce((x1, x2) =>
+      let totalAnswer = 0
+      this.scores.map(_score => {
+        totalAnswer++
+      })
+
+      this.finalScore = Math.round((this.scores.reduce((x1, x2) =>
         (parseFloat(x1) + parseFloat(x2)).toFixed(1)
-      );
+      ) / totalAnswer)*10)/10
     },
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
@@ -167,6 +171,25 @@ export default Vue.extend({
 @import 'src/sass/global.scss';
 @import 'src/sass/global';
 
-.Haq {
+.Haq .haq-result {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  border-radius: .5em;
+  padding: 1rem !important;
+  margin-bottom: .5rem !important;
+  font-weight: bold;
+}
+
+.haq-result.green {
+  background-color: green;
+}
+
+.haq-result.orange {
+  background-color: orange;
+}
+
+.haq-result.red {
+  background-color: red;
 }
 </style>
