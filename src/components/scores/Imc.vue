@@ -1,37 +1,40 @@
 <template>
   <div class="Imc">
     <h2 class="title">Calcul de l'IMC femme et homme</h2>
-    <p class="description"></p>
+
     <span class="line"></span>
-    <div class="information">
+    <div class="info">
       Chez un patient présentant une rachialgie ≥ 3 mois dont l'âge du
       diagnostic est &lsaquo; 45 ans alors on peut classer sa maladie dans la
       forme spondylarthrite axiale
     </div>
 
-    <form class="form">
-      <div>
-        <label for="weight"> Poids (kg) : </label>
-        <input v-model="weight" id="weight" type="number" />
-      </div>
+    <div class="container">
+      <form class="form">
+        <div>
+          <label for="weight"> Poids (kg) : </label>
+          <input v-model="weight" id="weight" type="number"/>
+        </div>
+        <div>
+          <label for="size">Taille (cm) : </label>
+          <input v-model="size" id="size" type="number" />
+        </div>
+        <div @click="getResult()" class="btn">Calculer</div>
+      </form>
 
-      <div>
-        <label for="size">Taille (cm) : </label>
-        <input v-model="size" id="size" type="number" />
+      <div class="result" v-if="this.calculate">
+        <h4 >{{ this.result }}</h4>
       </div>
-      <div @click="getResult()" class="btn">Calculer</div>
-    </form>
-    <div class="result">
-      <h4>{{ this.result }}</h4>
+      <h4 v-if="result === '' ">saisir le poids et la taille</h4>
+      <span class="line"></span>
+      <span>
+        Bon a savoir L'IMC permet de determiner la corpulence d'une personne. La
+        même formule est utilisée pour le calcul de l'IMC de la femme et de
+        l'homme. L'Organisation Mondiale de la Santé (OMS) a défini cet Indice de
+        Masse Corporelle comme le standard pour évaluer les risques liés au
+        surpoids.
+      </span>
     </div>
-    <span class="line"></span>
-    <span>
-      Bon a savoir L'IMC permet de determiner la corpulence d'une personne. La
-      même formule est utilisée pour le calcul de l'IMC de la femme et de
-      l'homme. L'Organisation Mondiale de la Santé (OMS) a défini cet Indice de
-      Masse Corporelle comme le standard pour évaluer les risques liés au
-      surpoids.
-    </span>
   </div>
 </template>
 
@@ -39,14 +42,16 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  mounted() {},
+  mounted() {
+  },
   data() {
     return {
-      weight: 0,
-      size: 0,
+      weight: null,
+      size: null,
       imc: 0,
       detail: "",
       result: "",
+      calculate: false,
     };
   },
   methods: {
@@ -81,6 +86,14 @@ export default Vue.extend({
       return Math.round(100 * nombre) / 100;
     },
     getResult() {
+      let checkSize = this.size === 0 || this.size === null  || typeof this.size === "string"
+      let checkWeight = this.weight === 0 || this.weight === null || typeof this.weight === "string"
+      if (checkSize || checkWeight) {
+        return
+      } else {
+        this.calculate = true
+      }
+
       this.result =
         "IMC : " +
         this.getImc(this.weight, this.size) +
@@ -95,13 +108,5 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-.Imc {
-  div {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    line-height: 40px;
-    margin-top: 12px;
-  }
-}
+.Imc {}
 </style>
