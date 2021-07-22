@@ -40,7 +40,7 @@
           <div>
             <h4 class="subtitle">SCORE</h4>
             <div>
-              <h5 class="categorie">expression clinique</h5>
+              <h5 class="categorie">Expression clinique</h5>
               <label for="clinical_expression_id"  class="btn" :class="{selected: clinical_expression === '0'}"
                 >Articulation ou bursite autre que cheville, pied ou 1er MTP
               </label>
@@ -85,7 +85,7 @@
           <div>
             <ul class="categorie">
               <div style="display: flex">
-                <h5 class="categorie" style="margin-right: 15px">Symptômes</h5>
+                <h5>Nombres de symptômes parmis les suivants: </h5>
                 <select v-model="result_select_symptom" id="result_select_id" style="height: 36px; align-self: center">
                   <option value="0">Zéro</option>
                   <option value="1">Un</option>
@@ -111,7 +111,7 @@
               <li>Résolution complète des symptômes entre les épisode</li>
             </ul>
             <div style="display: flex; justify-content: space-between">
-              <label for="temporal_characteristic_id">Uricémie mmol/l</label>
+              <label for="temporal_characteristic_id">Nombre d'épisodes</label>
               <select
                 v-model="temporal_characteristic"
                 name="temporal_characteristic"
@@ -169,11 +169,20 @@
         </div>
       </div>
     </form>
-      <div class="result" style="margin-top: 15px">
-        <p :v-model="this.score">TOTAL : {{ this.score }}</p>
-        <h3>Diagnostic de goutte ?</h3>
-        <h4 v-if="this.score > 7">OUI</h4>
-        <h4 v-else>NON</h4>
+      <div v-if="finished" class="result" style="margin-top: 15px">
+        <div v-if="!necessary_condition2">
+          <p :v-model="this.score">TOTAL : {{ this.score }}</p>
+          <div class="flex">
+            <p v-if="this.score > 7">Diagnostic de goutte : Positif</p>
+            <p v-else>Diagnostic de goutte : Négatif</p>
+          </div>
+        </div>
+        <div v-else>
+          <p>Diagnostic de goutte : positif</p>
+        </div>
+        <div>
+
+        </div>
       </div>
     <span class="line"></span>
     <span>
@@ -197,39 +206,44 @@ export default Vue.extend({
     return {
       necessary_condition: false,
       necessary_condition2: false,
-      result_select_symptom: 0,
-      temporal_characteristic: 0,
-      clinical_expression: 0,
+      result_select_symptom: null,
+      temporal_characteristic: null,
+      clinical_expression: null,
       presence_tophi: 0,
       score: 0,
       synovial: 0,
       urate: 0,
-      uricemia: 0,
+      uricemia: null,
       result: false,
       necessary_condition2_result: "exécuter le score",
       lesion_radiologique: 0,
+      finished: false
     };
   },
   methods: {
     getScore() {
       this.score =
-        parseInt(this.clinical_expression) +
-        parseInt(this.result_select_symptom) +
-        parseInt(this.temporal_characteristic) +
-        parseInt(this.presence_tophi) +
-        parseInt(this.uricemia) +
+        (this.clinical_expression ? parseInt(this.clinical_expression) : 0) +
+        (this.result_select_symptom ? parseInt(this.result_select_symptom) : 0) +
+        (this.temporal_characteristic ? parseInt(this.temporal_characteristic) : 0) +
+        (parseInt(this.presence_tophi)) +
+        (this.uricemia ? parseInt(this.uricemia) : 0) +
         this.synovial +
         this.urate +
         this.lesion_radiologique;
+      this.finished = true
     },
   },
   watch: {
     necessary_condition2: function () {
       let checkbox2 = document.querySelector("#necessary_condition2_id");
-      if (checkbox2["checked"] == true)
+      if (checkbox2["checked"] == true) {
         this.necessary_condition2_result = "GOUTTE STOP";
-      else if (checkbox2["checked"] == false)
+        this.finished = true
+      } else if (checkbox2["checked"] == false) {
         this.necessary_condition2_result = "exécuter le score";
+        this.finished = false
+      }
     },
     clinical_expression: {
       handler: function () {
@@ -292,4 +306,23 @@ export default Vue.extend({
 @import "src/sass/global";
 
 .GoutteAcrEular {}
+
+.flex {
+  display: flex;
+}
+
+
+input, select {
+  height: 30px;
+  padding: 0 3px;
+  background: #EDECF4 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+  margin: 0 10px;
+  border: none;
+}
+
+ul {
+  padding: 0;
+}
 </style>

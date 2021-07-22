@@ -1,5 +1,5 @@
 <template>
-  <div class=""HaqQuestion>
+  <div class="">
     <div v-if="title">
       <h3 class="title">{{ title }}</h3>
     </div>
@@ -31,7 +31,7 @@ export default Vue.extend({
   props: ["index", "title", "question", "malusScore"],
   data() {
     return {
-      score: 0
+      score: null
     };
   },
   methods: {
