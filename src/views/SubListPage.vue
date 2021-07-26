@@ -1,5 +1,6 @@
 <template>
   <div class="SubListPage">
+    <search-bar />
     <h1>{{ list.name }}</h1>
     <div class="sub-categories">
       <div v-for="(subChildren, index) in list.children" :key="list.name + index">
@@ -20,6 +21,7 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import TreeMenu from "@/components/TreeMenu.vue";
+import SearchBar from '@/components/search/SearchBar.vue';
 
 export default Vue.extend({
   name: "SubListPage",
@@ -30,6 +32,7 @@ export default Vue.extend({
   },
   components: {
     TreeMenu,
+    SearchBar
   },
   mounted() {
     DataService.load()

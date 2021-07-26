@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-    <search-bar />
+   <search-bar />
   </div>
 </template>
 

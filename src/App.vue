@@ -24,7 +24,7 @@ export default Vue.extend({
         this.categories = DataService.$data.tree;
       })
       .catch((e) => {
-        console.log(e);
+       // console.log(e);
       });
   },
 });
@@ -36,6 +36,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #fff;
 }
 
 #app {

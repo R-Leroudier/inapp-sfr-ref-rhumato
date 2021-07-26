@@ -1,5 +1,6 @@
 <template>
   <div class="content-page">
+    <search-bar />
     <keep-alive>
       <component v-bind:is="componentName"></component>
     </keep-alive>
@@ -181,6 +182,7 @@ import Perfusion from '@/components/ordonnances/acteInfirmier/Perfusion.vue';
 import Injection from '@/components/ordonnances/acteInfirmier/Injection.vue';
 import Vaccinations from '@/components/ordonnances/Vaccinations.vue';
 import Echographie from '@/components/compteRendu/Echographie.vue';
+import SearchBar from '@/components/search/SearchBar.vue';
 
 export default Vue.extend({
   name: 'ContentPage',
@@ -337,6 +339,8 @@ export default Vue.extend({
     MycophénolateMofetil,
     Cyclophosphamide,
     TofacitinibBaricitinib,
+    SearchBar,
+
   },
   methods: {
     searchComponentName(nodes, slug) {

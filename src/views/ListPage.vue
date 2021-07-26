@@ -28,6 +28,7 @@ export default Vue.extend({
   mounted() {
     DataService.load()
       .then(() => {
+
         this.nodes0 = DataService.$data.tree;
       })
       .catch((e) => {
