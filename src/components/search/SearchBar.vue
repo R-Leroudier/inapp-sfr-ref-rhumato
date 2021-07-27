@@ -35,8 +35,6 @@ export default {
     handleClear() {
       if (this.searchText.length > 0) {
         this.searchText = "";
-        console.log("input cleared")
-        // ici je vais envoyer une props isSearching a false
         this.isSearching = false
         this.$emit('onClear', this.isSearching )
       }
@@ -48,8 +46,6 @@ export default {
         return
       }
       this.searchText = inputValue
-      console.log("input value :",this.searchText)
-      // ici je vais envoyer une props isSearching a true
       this.isSearching = true
       this.$emit('onSearch', fuse.search(this.searchText), this.isSearching )
     },

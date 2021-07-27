@@ -1,9 +1,8 @@
 <template>
   <div class="ListPage">
     <search-bar @onSearch="handleFindResult" @onClear="handleRemoveSearch"/>
-    <ListSearchResult v-if="displayResultSearch"/>
-<!--   <ListPage v-else="isSearching"/>-->
-
+    <ListSearchResult resultItems :notFound="resultNotFound" v-if="displayResultSearch"/>
+    <ListPage v-else="displayResultSearch"/>
   </div>
 </template>
 
@@ -14,10 +13,11 @@ import ListSearchResult from '@/components/ListSearchResult.vue';
 import ListPage from '@/components/ListPage.vue';
 
 export default Vue.extend({
-  name: 'ListPage',
+  name: 'List',
   data: () => ({
     displayResultSearch: false,
     listResult: [],
+    resultNotFound: false,
     nodes0: []
   }),
   components: {
@@ -34,14 +34,17 @@ export default Vue.extend({
       if (this.listResult.length > 0 && searching) {
         console.log("can display result")
         // ici je vais envoyer le "result" à mon composant listSearchResult
+
       }
       if (this.listResult.length === 0 && searching) {
         console.log("result not found")
         // ici je vais envoyer une props notFound pour afficher un message aucun résultat
+        this.resultNotFound = true
       }
     },
     handleRemoveSearch(remove){
       this.displayResultSearch = remove
+      console.log("searching", this.displayResultSearch)
     }
   }
 });

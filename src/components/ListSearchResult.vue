@@ -1,9 +1,11 @@
 <template>
   <div class="list">
-    <p>Test display listSearchResult Component</p>
-<!--<div v-for="(elem, i) in MyResult" :key="i">
-
-    </div>-->
+    <p v-if="notFound">Aucun résultat</p>
+    <ul>
+      <li v-for="(item, i) in resultItems" :key="i">
+        {{ item }}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -14,6 +16,10 @@ export default {
   name: 'ListSearchResult',
   components: {
     TreeMenu
+  },
+  props: {
+    resultItems: Array,
+    notFound: Boolean
   },
   data: () => ({
   }),
