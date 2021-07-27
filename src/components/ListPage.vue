@@ -1,14 +1,12 @@
 <template>
-  <div class="ListPage">
-    <main class="main-categories">
+  <main class="ListPage">
       <div class="list" v-for="node0 in nodes0" :key="node0.name">
         <router-link :to="'/sublist/' + node0.slug"
           >{{ node0.name }}
           <i class="fas fa-chevron-right"></i>
         </router-link>
       </div>
-    </main>
-  </div>
+  </main>
 </template>
 
 <script lang="ts">
