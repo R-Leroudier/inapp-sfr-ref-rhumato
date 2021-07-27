@@ -48,6 +48,7 @@ export default {
       this.searchText = inputValue
       this.isSearching = true
       this.$emit('onSearch', fuse.search(this.searchText), this.isSearching )
+
     },
   },
 };

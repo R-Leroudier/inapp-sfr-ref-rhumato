@@ -1,7 +1,8 @@
 <template>
-  <div class="SubListPage">
-    <search-bar />
-    <h1>{{ list.name }}</h1>
+  <div class="subMenu">
+    <h1 class="subMenu__title">
+      {{ list.name }}
+    </h1>
     <div class="sub-categories">
       <div v-for="(subChildren, index) in list.children" :key="list.name + index">
         <tree-menu
@@ -21,7 +22,6 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import TreeMenu from "@/components/TreeMenu.vue";
-import SearchBar from '@/components/search/SearchBar.vue';
 
 export default Vue.extend({
   name: "SubListPage",
@@ -32,7 +32,6 @@ export default Vue.extend({
   },
   components: {
     TreeMenu,
-    SearchBar
   },
   mounted() {
     DataService.load()
@@ -48,18 +47,13 @@ export default Vue.extend({
           }
         }
       })
-      .catch((e) => {
-        console.log(e);
-      });
   },
 });
 </script>
 <style scoped lang="scss">
-@import "src/sass/global.scss";;
-.SubListPage {
+.subMenu {
   padding: 0 .75rem;
-
-  h1 {
+  &__title {
     margin-top: 0;
     margin-bottom: .5rem;
     font-weight: 500;
@@ -70,6 +64,4 @@ export default Vue.extend({
   }
 }
 
-.sub-categories {
-}
 </style>

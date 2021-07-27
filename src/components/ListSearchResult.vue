@@ -2,8 +2,10 @@
   <div class="list">
     <p v-if="notFound">Aucun résultat</p>
     <ul>
-      <li v-for="(item, i) in resultItems" :key="i">
-        {{ item }}
+      <li v-for="(result, i) in resultItems" :key="i">
+        <router-link :to="'/score/' + result.item.slug">
+          {{ result.item.name }}
+        </router-link>
       </li>
     </ul>
   </div>
@@ -21,22 +23,7 @@ export default {
     resultItems: Array,
     notFound: Boolean
   },
-  data: () => ({
-  }),
 };
 </script>
 
 <style scoped lang="scss"></style>
-
-
-
-
-<!--
-<tree-menu
-    :name="elem.name"
-    :type="elem.type"
-    :slug="elem.slug"
-    :children="elem.children"
-    :depth="0"
-    :content="elem.content"
-></tree-menu>-->
