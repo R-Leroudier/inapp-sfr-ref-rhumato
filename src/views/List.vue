@@ -1,40 +1,40 @@
 <template>
   <div class="ListPage">
-    <search-bar />
-    <div class="main-categories">
-      <div class="list" v-for="node0 in nodes0" :key="node0.name">
-        <router-link :to="'/sublist/' + node0.slug"
-          >{{ node0.name }}
-          <i class="fas fa-chevron-right"></i>
-        </router-link>
-      </div>
-    </div>
+    <search-bar @onSearch="toggleSearching" />
+    <ListSearchResult v-if="isSearching"/>
+<!--    <ListPage v-else="isSearching"/>-->
+
+<!--    <ListPage />-->
+
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import DataService from '@/service/DataService';
 import SearchBar from '@/components/search/SearchBar.vue';
+import ListSearchResult from '@/components/ListSearchResult.vue';
+import ListPage from '@/components/ListPage.vue';
 
 export default Vue.extend({
-  components: { SearchBar },
   name: 'ListPage',
-  data() {
-    return {
-      nodes0: [],
-    };
+  data: () => ({
+    isSearching: false,
+    nodes0: []
+  }),
+  components: {
+    SearchBar,
+    ListSearchResult,
+    ListPage
   },
-  mounted() {
-    DataService.load()
-      .then(() => {
+  methods: {
+    toggleSearching() {
+      if (inputValue > 0 ) {
+        this.isSearching = !this.isSearching
+      }
 
-        this.nodes0 = DataService.$data.tree;
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  },
+      console.log(this.isSearching)
+    }
+  }
 });
 </script>
 <style scoped lang="scss">

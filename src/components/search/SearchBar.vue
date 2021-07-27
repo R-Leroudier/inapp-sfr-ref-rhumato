@@ -1,31 +1,29 @@
 <template>
-  <form class="search" @input="handleChange" >
-    <input class="search__input" cl v-model="searchText"  :placeholder="searchText" />
-    <button class="search__button search__button__find" >
-      <i class="fas fa-search" />
+  <form class="search" @input="handleSearch" >
+    <input class="search__input" v-model="searchText"  :placeholder="searchText" />
+    <button class="search__button search__button__find">
+      <i class="fas fa-search"  />
     </button>
-    <button class="search__button search__button__reset">
+    <button class="search__button search__button__reset" @click="onReset">
       <i class="fas fa-times" />
     </button>
   </form>
 </template>
 
 <script lang="ts">
-import Fuse from 'fuse.js'
-import DataService from '@/service/DataService';
+import DataService from "@/service/DataService";
+import Fuse from "fuse.js";
 
 export default {
   name: 'SearchBar',
-
   data: () => ({
     searchText: "",
     list: [],
     options: {
       keys: [
-          "name"
+        "name"
       ]
     },
-
   }),
   async mounted() {
     await DataService.loadSearch().then((data: any) => {
@@ -33,18 +31,24 @@ export default {
     })
   },
   methods: {
-    handleChange(event) {
-      const fuse = new Fuse(this.list, this.options);
+    onReset() {
+      if (this.searchText.length > 0) {
+        this.searchText = "";
+        console.log("input cleared")
+      }
+
+
+    },
+    handleSearch (event) {
+      const fuse = new Fuse(this.list, this.options)
       const inputValue = event.target.value
-      console.log(inputValue)
       if (inputValue === '') {
         return
       }
       this.searchText = inputValue
-      console.log(fuse.search(inputValue))
-      //return this.fuse.search(inputValue)
+      console.log("input value :",this.searchText)
+      //this.$emit('onSearch', $event, fuse.search(this.searchText))
     },
-
   },
 };
 </script>
@@ -57,7 +61,7 @@ export default {
     position: relative;
     &__input {
       width: 100%;
-      border: 1px solid #707070;
+      border: 1px solid #F1F1F6;
       border-radius: 5px;
       outline: none;
       cursor: pointer;
