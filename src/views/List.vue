@@ -1,10 +1,8 @@
 <template>
   <div class="ListPage">
-    <search-bar @onSearch="toggleSearching" />
-    <ListSearchResult v-if="isSearching"/>
-<!--    <ListPage v-else="isSearching"/>-->
-
-<!--    <ListPage />-->
+    <search-bar @onSearch="handleFindResult" @onClear="handleRemoveSearch"/>
+    <ListSearchResult v-if="displayResultSearch"/>
+<!--   <ListPage v-else="isSearching"/>-->
 
   </div>
 </template>
@@ -18,7 +16,8 @@ import ListPage from '@/components/ListPage.vue';
 export default Vue.extend({
   name: 'ListPage',
   data: () => ({
-    isSearching: false,
+    displayResultSearch: false,
+    listResult: [],
     nodes0: []
   }),
   components: {
@@ -27,12 +26,22 @@ export default Vue.extend({
     ListPage
   },
   methods: {
-    toggleSearching() {
-      if (inputValue > 0 ) {
-        this.isSearching = !this.isSearching
-      }
+    handleFindResult(result, searching) {
+      this.displayResultSearch = searching
+      this.listResult = result
+      console.log("searching",this.displayResultSearch)
 
-      console.log(this.isSearching)
+      if (this.listResult.length > 0 && searching) {
+        console.log("can display result")
+        // ici je vais envoyer le "result" à mon composant listSearchResult
+      }
+      if (this.listResult.length === 0 && searching) {
+        console.log("result not found")
+        // ici je vais envoyer une props notFound pour afficher un message aucun résultat
+      }
+    },
+    handleRemoveSearch(remove){
+      this.displayResultSearch = remove
     }
   }
 });

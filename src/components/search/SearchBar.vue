@@ -4,7 +4,7 @@
     <button class="search__button search__button__find">
       <i class="fas fa-search"  />
     </button>
-    <button class="search__button search__button__reset" @click="onReset">
+    <button class="search__button search__button__clear" @click="handleClear">
       <i class="fas fa-times" />
     </button>
   </form>
@@ -18,6 +18,7 @@ export default {
   name: 'SearchBar',
   data: () => ({
     searchText: "",
+    isSearching: false,
     list: [],
     options: {
       keys: [
@@ -31,13 +32,14 @@ export default {
     })
   },
   methods: {
-    onReset() {
+    handleClear() {
       if (this.searchText.length > 0) {
         this.searchText = "";
         console.log("input cleared")
+        // ici je vais envoyer une props isSearching a false
+        this.isSearching = false
+        this.$emit('onClear', this.isSearching )
       }
-
-
     },
     handleSearch (event) {
       const fuse = new Fuse(this.list, this.options)
@@ -47,7 +49,9 @@ export default {
       }
       this.searchText = inputValue
       console.log("input value :",this.searchText)
-      //this.$emit('onSearch', $event, fuse.search(this.searchText))
+      // ici je vais envoyer une props isSearching a true
+      this.isSearching = true
+      this.$emit('onSearch', fuse.search(this.searchText), this.isSearching )
     },
   },
 };
@@ -73,7 +77,7 @@ export default {
       border: none;
       border-radius: 50px;
       background-color: #fff;
-      &__reset {
+      &__clear {
         right: 5px;
       }
       &__find {
