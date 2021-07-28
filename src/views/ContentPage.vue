@@ -14,6 +14,7 @@
 <style>
 .content-page {
    padding: 0 0.75em;
+   margin-top: 1em;
 }
 
 .regulatory {

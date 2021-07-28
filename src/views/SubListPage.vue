@@ -59,10 +59,8 @@ export default Vue.extend({
   },
   methods: {
     handleFindResult(result, searching) {
-      console.log(result)
       this.displayResultSearch = searching
       this.listResult = result
-      console.log("searching",this.displayResultSearch)
 
       if (this.listResult.length > 0 && searching) {
         this.resultNotFound = false
@@ -73,7 +71,6 @@ export default Vue.extend({
     },
     handleRemoveSearch(remove){
       this.displayResultSearch = remove
-      console.log("searching", this.displayResultSearch)
     }
   }
 });

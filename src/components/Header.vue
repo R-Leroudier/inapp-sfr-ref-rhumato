@@ -48,7 +48,6 @@ export default Vue.extend({
       justify-content: center;
       align-items: center;
       position: relative;
-      margin-bottom: 1em;
       padding: 1rem 0.75rem;
       background-color: #F1F1F6;
       box-shadow: 0px 3px 6px #00000029;

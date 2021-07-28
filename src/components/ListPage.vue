@@ -3,7 +3,7 @@
       <div class="list" v-for="node0 in nodes0" :key="node0.name">
         <router-link :to="'/sublist/' + node0.slug"
           >{{ node0.name }}
-          <i class="fas fa-chevron-right"></i>
+          <i class="fas fa-chevron-down" />
         </router-link>
       </div>
   </main>
@@ -69,10 +69,8 @@ export default Vue.extend({
     i {
       background: #80cc28;
       color: #ecf1f6;
-      padding: 0.5em 0.75em;
       border-radius: 0.5rem;
-      font-weight: lighter;
-      display: flex;
+      padding: 0.5em;
     }
   }
 }

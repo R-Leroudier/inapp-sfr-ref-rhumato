@@ -60,25 +60,26 @@ export default {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 0 0.75rem;
+    margin: 1em 0;
     &__input {
       width: 100%;
       border: 1px solid #F1F1F6;
-      border-radius: 5px;
+      border-radius: 1em;
       outline: none;
       cursor: pointer;
       padding: .4em 2em;
     }
-
     &__button {
       position: absolute;
       border: none;
       border-radius: 50px;
       background-color: #fff;
       &__clear {
-        right: 5px;
+        right: 15px;
       }
       &__find {
-        left: 5px;
+        left: 15px;
       }
     }
   }
