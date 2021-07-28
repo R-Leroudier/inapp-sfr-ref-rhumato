@@ -1,16 +1,18 @@
 <template>
   <header class="header">
-    <div @click="goBack" class="header__return">
-      <i class="far fa-chevron-circle-left"></i>
+    <div @click="goBack" class="header__icon header__icon--left" v-if="displayChevronCircle">
+      <i class="far fa-chevron-circle-left" />
     </div>
+
     <router-link  to="/">
       <img class="header__logo" :src="require('@/assets/logo-sfr.png')" alt="Logo sfr" />
       <img class="header__logo" :src="require('@/assets/logo-ref.png')" alt="Logo ref" />
     </router-link>
-    <div>
-      <a href="cmd://webview-close" class="header__exit">
-        <i class="far fa-times-circle"></i>
-      </a>
+
+    <div v-if="isMobile()" class="header__icon header__icon--right">
+        <a href="cmd://webview-close" >
+          <i class="far fa-times-circle" />
+        </a>
     </div>
   </header>
 </template>
@@ -20,35 +22,52 @@ import Vue from 'vue';
 import { goBack, isMobile } from '@/global';
 
 export default Vue.extend({
-  props: [],
-  mounted() {},
+  name: "Header",
+  data: () => ({
+    displayChevronCircle: false,
+  }),
   methods: {
     goBack,
     isMobile,
+  },
+  watch: {
+    $route: function() {
+      if (this.$route.path === "/") {
+        this.displayChevronCircle = false
+      } else  {
+        this.displayChevronCircle = true
+      }
+    }
   },
 });
 </script>
 
 <style scoped lang="scss">
   .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
       margin-bottom: 1em;
+      padding: 1rem 0.75rem;
+      background-color: #F1F1F6;
       box-shadow: 0px 3px 6px #00000029;
       border-radius: 0 0 1.06em 1.06em;
-      padding: 1rem 0.75rem;
-      justify-content: space-between;
-      display: flex;
-      align-items: center;
-      background-color: #F1F1F6;
       &__logo {
           height: 40px;
       }
-      &__return {
+      &__icon {
         font-size: 24px;
-        color: #38bbec;
+        position: absolute;
+        &--left {
+          left: 15px;
+        }
+        &--right {
+          right: 15px;
+        }
       }
-      &__exit {
-        font-size: 24px;
-        color: #38bbec;
-      }
+  }
+  .far {
+    color: #38bbec;
   }
 </style>

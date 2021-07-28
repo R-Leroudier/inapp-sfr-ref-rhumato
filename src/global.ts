@@ -1,5 +1,5 @@
 function goBack() {
-    window.history.length > 2 ? this.$router.go(-1) : this.$router.push('/')
+  window.history.length > 2 ? this.$router.go(-1) : this.$router.push("/");
 }
 
 function goUrl(url) {
@@ -7,9 +7,11 @@ function goUrl(url) {
 }
 
 function isMobile() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  );
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    return true
+  } else {
+    return false
+  }
 }
 
 function externLink(link) {
