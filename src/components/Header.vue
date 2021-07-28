@@ -1,12 +1,12 @@
 <template>
   <header class="header">
-    <div @click="$router.go(-1)" class="header__return">
+    <div @click="goBack" class="header__return">
       <i class="far fa-chevron-circle-left"></i>
     </div>
-    <div>
+    <router-link  to="/">
       <img class="header__logo" :src="require('@/assets/logo-sfr.png')" alt="Logo sfr" />
       <img class="header__logo" :src="require('@/assets/logo-ref.png')" alt="Logo ref" />
-    </div>
+    </router-link>
     <div>
       <a href="cmd://webview-close" class="header__exit">
         <i class="far fa-times-circle"></i>
