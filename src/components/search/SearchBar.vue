@@ -5,7 +5,7 @@
       <i class="fas fa-search"  />
     </button>
     <button class="search__button search__button__clear" @click="handleClear">
-      <i class="fas fa-times" />
+      <i class="fas fa-times" v-if="isSearching"/>
     </button>
   </form>
 </template>
