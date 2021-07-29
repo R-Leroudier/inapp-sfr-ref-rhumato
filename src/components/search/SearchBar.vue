@@ -21,6 +21,8 @@ export default {
     isSearching: false,
     list: [],
     options: {
+      distance: 10,
+      threshold: 0.3,
       keys: [
         "name"
       ]
