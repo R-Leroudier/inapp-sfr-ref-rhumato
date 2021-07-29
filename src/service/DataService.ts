@@ -38,7 +38,7 @@ class DataServiceClass {
         .get("./dataFlat.json")
         .then(response => {
           this.$data = response.data;
-          resolve(JSON.parse(this.$data));
+          resolve(this.$data);
         })
         .catch(e => {
           console.log(e);
