@@ -1,6 +1,6 @@
 <template>
   <div class="ListPage">
-<!--    <h1 class="ListPage__title">Accueil</h1>-->
+    <h1 class="ListPage__title">Accueil</h1>
     <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch"/>
     <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
     <ListPage v-else="displayResultSearch"/>
