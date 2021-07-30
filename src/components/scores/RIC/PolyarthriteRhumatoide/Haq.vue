@@ -163,7 +163,7 @@ export default Vue.extend({
       this.calcResult();
     },
   },
-  mounted() {},
+
 });
 </script>
 

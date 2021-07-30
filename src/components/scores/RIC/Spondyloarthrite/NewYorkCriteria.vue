@@ -48,7 +48,7 @@ export default Vue.extend({
       result: null,
     };
   },
-  mounted() {},
+
 });
 </script>
 

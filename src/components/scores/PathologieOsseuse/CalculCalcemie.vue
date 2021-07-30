@@ -33,8 +33,8 @@
 <script lang="js">
 export default {
     name: 'CalculCalcemie',
-    props: [],
-    mounted() {},
+
+
     data() {
         return {
           calcemie: 0,
@@ -47,7 +47,7 @@ export default {
         this.result = parseInt(this.calcemie) - 0.025 * (parseInt(this.albuminemie) - 40)
       }
     },
-    computed: {}
+
 }
 </script>
 

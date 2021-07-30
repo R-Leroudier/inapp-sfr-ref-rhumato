@@ -213,7 +213,7 @@ export default Vue.extend({
       return (this.result = Res);
     },
   },
-  mounted() {},
+
 });
 </script>
 

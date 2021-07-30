@@ -97,7 +97,7 @@
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  mounted() {},
+
   data() {
     return {
       tenderJoins: 0,

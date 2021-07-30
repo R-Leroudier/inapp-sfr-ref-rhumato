@@ -490,7 +490,7 @@ export default Vue.extend({
       this.calcul();
     },
   },
-  mounted() {},
+
 });
 </script>
 

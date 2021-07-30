@@ -48,7 +48,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Dapsa",
-  mounted() {},
+
   data() {
     return {
       value1: 0,

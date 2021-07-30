@@ -218,7 +218,7 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'Asdas',
-  mounted() {},
+
   data() {
     return {
       painScale: 0,

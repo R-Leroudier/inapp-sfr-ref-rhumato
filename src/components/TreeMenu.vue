@@ -76,7 +76,7 @@ export default {
     };
   },
   name: 'tree-menu',
-  computed: {},
+  ,
   methods: {
     toggleChildren() {
       this.showChildren = !this.showChildren;
@@ -100,7 +100,7 @@ export default {
       return finalLink;
     },
   },
-  mounted() {},
+
 };
 </script>
 <style scoped lang="scss">
