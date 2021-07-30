@@ -124,7 +124,7 @@
       </div>
 
       <div>
-        <h3 class="title">Singes ORL</h3>
+        <h3 class="title">Signes ORL</h3>
         <!-- 5 -->
 
         <div>
@@ -152,8 +152,8 @@
           <label class="btn" :class="{selected: orl.checked[4] === true}" for="orl5">Baisse d'audition de perception (sensorielle)</label>
         </div>
 
-        <p v-if="stable">Sous total {{ orl.subTotal }} (max : {{ orl.stableMax }}</p>
-        <p v-if="!stable">Sous total {{ orl.subTotal }} (max : {{ orl.unstableMax }}</p>
+        <p v-if="stable">Sous total {{ orl.subTotal }} (max : {{ orl.stableMax }})</p>
+        <p v-if="!stable">Sous total {{ orl.subTotal }} (max : {{ orl.unstableMax }})</p>
       </div>
 
       <div>
