@@ -199,9 +199,6 @@ export default Vue.extend({
     display: block !important;
     margin-top: 2rem;
     margin-bottom: 1rem;
-
-    /* align-content: space-around; */
-    /* align-items: flex-start; */
     text-align: center;
     color: white;
   }

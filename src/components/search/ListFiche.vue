@@ -38,10 +38,6 @@ export default {
       return false;
     },
   },
-  /* mounted() {
-    console.log(this.submenu[0]); //=> objet
-    console.log(this.list[0]);  // => Proxy
-  }, */
 };
 </script>
 
