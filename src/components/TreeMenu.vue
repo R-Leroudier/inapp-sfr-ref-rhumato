@@ -76,7 +76,6 @@ export default {
     };
   },
   name: 'tree-menu',
-  ,
   methods: {
     toggleChildren() {
       this.showChildren = !this.showChildren;
