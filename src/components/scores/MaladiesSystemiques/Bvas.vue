@@ -545,11 +545,11 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-@import "src/sass/global";
 
 .Bvas {
   [type="checkbox"] {
    display: none;
   }
 }
+
 </style>
