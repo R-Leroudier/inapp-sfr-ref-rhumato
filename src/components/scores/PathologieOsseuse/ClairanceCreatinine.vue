@@ -143,10 +143,11 @@ export default Vue.extend({
   text-align: center;
 }
 .btn__submit {
-  background-color: #4c2b62 !important;
+  background-color: #80cd29 !important;
   color: #fff !important;
+  border: solid 2px #74bd21 !important;
   font-size: 1em;
-  text-transform: uppercase;
+  font-weight: 700;
   border: none;
 }
 </style>
