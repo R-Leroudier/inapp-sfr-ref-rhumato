@@ -106,5 +106,16 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-.Imc {}
+.Imc {
+  input {
+    height: 30px;
+    padding: 0 3px;
+    background: #EDECF4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: .75em;
+    border: none;
+    width: 60px;
+  }
+}
 </style>
