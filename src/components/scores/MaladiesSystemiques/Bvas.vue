@@ -365,19 +365,26 @@
 
     <p class="result">Total {{ total }} </p>
 
-
-         <div class="info">
+    <div class="info">
       <span>Interprétation: The Birmingham Vasculitis Activity Score (BVAS) is a method for assessing the activity of vasculitis. Note that scoring ranges are higher when any of the features are new or worse. Creatinine levels can be scored at patient’s first assessment only.</span>
     </div>
-  </div>
 
+    <ReferenceScore  :scoreResult="total"/>
+
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import SubListPage from "@/views/SubListPage.vue";
+import ReferenceScore from "@/components/ReferenceScore.vue";
+
 export default Vue.extend({
-  components: {SubListPage},
+  name: "Bvas",
+  components: {
+    SubListPage,
+    ReferenceScore
+  },
   mounted() {
     this.calcTotal();
   },
