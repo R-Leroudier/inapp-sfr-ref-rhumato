@@ -21,6 +21,7 @@ export default {
     isSearching: false,
     list: [],
     options: {
+      ignoreLocation : true,
       distance: 10,
       threshold: 0.3,
       keys: [
