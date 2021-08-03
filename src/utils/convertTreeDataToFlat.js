@@ -9,7 +9,7 @@ const flattenData = (nestedObject, fullObject) => {
 };
 
 const fillFlatData = flatEntries => {
-  flatEntries.children = [];
+  //flatEntries.children = [];
   if (flatData.includes(flatEntries)) {
     return;
   }
@@ -24,6 +24,6 @@ const ConvertToFlat = treeItems => {
 };
 
 const dataConverted = ConvertToFlat(data.tree);
-console.log(dataConverted)
+console.log(dataConverted);
 fs.writeJsonSync(PATHOFJSONWRITE, dataConverted);
 console.info(`json generate in ${PATHOFJSONWRITE}`);
