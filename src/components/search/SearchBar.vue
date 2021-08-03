@@ -1,12 +1,16 @@
 <template>
   <form class="search" @input="handleSearch" >
-    <input class="search__input" v-model="searchText"  :placeholder="searchText" />
-    <button class="search__button search__button__find">
-      <i class="fas fa-search"  />
-    </button>
-    <button class="search__button search__button__clear" @click="handleClear">
-      <i class="fas fa-times" v-if="isSearching"/>
-    </button>
+    <div class="search__wrapper">
+        <input class="search__input" v-model="searchText"  :placeholder="searchText" @input="handleClear" />
+
+        <button class="search__button search__button__find">
+          <i class="fas fa-search"  />
+        </button>
+
+        <button class="search__button search__button__clear" @click="handleClear">
+          <i class="fas fa-times" v-if="isSearching"/>
+        </button>
+    </div>
   </form>
 </template>
 
@@ -51,7 +55,6 @@ export default {
       this.searchText = inputValue
       this.isSearching = true
       this.$emit('onSearch', fuse.search(this.searchText), this.isSearching )
-
     },
   },
 };
@@ -59,12 +62,13 @@ export default {
 
 <style scoped lang="scss">
   .search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     padding: 0 0.75rem;
     margin: 1em 0;
+    &__wrapper{
+      display: flex;
+      align-items: center;
+    }
     &__input {
       width: 100%;
       border: 1px solid #F1F1F6;

@@ -12,13 +12,10 @@
 </template>
 
 <script lang="ts">
-import TreeMenu from '@/components/TreeMenu.vue';
 
 export default {
   name: 'ListSearchResult',
-  components: {
-    TreeMenu
-  },
+
   props: {
     resultItems: Array,
     notFound: Boolean
