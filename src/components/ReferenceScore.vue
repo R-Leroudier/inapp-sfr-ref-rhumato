@@ -7,7 +7,12 @@
 <script lang="ts">
 export default {
   name: "ReferenceScore",
-  props: ["scoreResult"]
+  props: {
+    scoreResult: Number,
+    lowValue: Number,
+    midlValue: Number,
+    highValue: Number,
+  }
 }
 </script>
 

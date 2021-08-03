@@ -79,7 +79,7 @@
 
     <div class="result" v-if="showResult">
       <h3>{{ result }} Points</h3>
-<!--      <h3> 0 Critère d'exclusion </h3>-->
+      <h3> 0 Critère d'exclusion </h3>
       <h3>{{ result >= 4 ? "Positif" : "Negatif" }}</h3>
     </div>
 
