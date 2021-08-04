@@ -1,7 +1,7 @@
 <template>
   <form class="search" @input="handleSearch" >
     <div class="search__wrapper">
-        <input class="search__input" v-model="searchText"  :placeholder="searchText" @input="handleClear" />
+        <input class="search__input" v-model="searchText"  :placeholder="searchText" />
 
         <button class="search__button search__button__find">
           <i class="fas fa-search"  />
@@ -17,6 +17,7 @@
 <script lang="ts">
 import DataService from "@/service/DataService";
 import Fuse from "fuse.js";
+
 
 export default {
   name: 'SearchBar',
@@ -40,21 +41,26 @@ export default {
   },
   methods: {
     handleClear() {
-      if (this.searchText.length > 0) {
         this.searchText = "";
         this.isSearching = false
         this.$emit('onClear', this.isSearching )
-      }
     },
     handleSearch (event) {
       const fuse = new Fuse(this.list, this.options)
       const inputValue = event.target.value
-      if (inputValue === '') {
-        return
+      if (inputValue === "") {
+        this.handleClear()
+      }else{
+        let fuseSearch = fuse.search(this.searchText)
+        this.searchText = inputValue
+        this.isSearching = true
+
+        const mySearch = fuseSearch.filter((resultFuse: any) => {
+          return !resultFuse.item.children
+        })
+
+        this.$emit('onSearch', mySearch, this.isSearching )
       }
-      this.searchText = inputValue
-      this.isSearching = true
-      this.$emit('onSearch', fuse.search(this.searchText), this.isSearching )
     },
   },
 };
@@ -65,6 +71,7 @@ export default {
     position: relative;
     padding: 0 0.75rem;
     margin: 1em 0;
+
     &__wrapper{
       display: flex;
       align-items: center;
@@ -75,7 +82,7 @@ export default {
       border-radius: 1em;
       outline: none;
       cursor: pointer;
-      padding: .4em 2em;
+      padding: .4em 2.5em;
     }
     &__button {
       position: absolute;
@@ -89,5 +96,14 @@ export default {
         left: 15px;
       }
     }
+  }
+
+  input,
+  input:active,
+  input:focus,
+  input:focus-within,
+  input:hover,
+  input:visited {
+    font-size: 16px !important;
   }
 </style>

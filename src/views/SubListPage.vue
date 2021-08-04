@@ -59,6 +59,7 @@ export default Vue.extend({
   },
   methods: {
     handleFindResult(result, searching) {
+      console.log(result)
       this.displayResultSearch = searching
       this.listResult = result
 

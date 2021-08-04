@@ -3,9 +3,16 @@
     <p v-if="notFound">Aucun résultat</p>
     <ul class="list">
       <li v-for="(result, i) in resultItems" :key="i"  class="list__item">
-        <router-link :to="'/score/' + result.item.slug">
-          {{ result.item.name }}
+        <div v-if="result.item.type === 'html'">
+          <router-link :to="'/score/' + result.item.slug" >
+            {{ result.item.name }}
         </router-link>
+        </div>
+
+        <div v-if="result.item.type === 'link'">
+          <a v-if="!isMobile()" :href="result.item.content" target="blank">{{ result.item.name }}</a>
+          <a v-else :href="'medics://viewer?m_source=' + result.item.content">{{ result.item.name }}</a>
+        </div>
       </li>
     </ul>
   </main>
@@ -20,6 +27,13 @@ export default {
     resultItems: Array,
     notFound: Boolean
   },
+  methods: {
+    isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+      );
+    },
+  }
 };
 </script>
 

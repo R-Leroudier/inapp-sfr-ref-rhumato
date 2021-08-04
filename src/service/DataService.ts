@@ -11,10 +11,6 @@ class DataServiceClass {
             this.$data = response.data;
             resolve(this.$data);
           })
-          .catch((e) => {
-            console.log(e);
-            reject(e);
-          });
     });
   }
 
@@ -25,10 +21,6 @@ class DataServiceClass {
         .then(response => {
           resolve(response.data);
         })
-        .catch(e => {
-          console.log(e);
-          reject(e);
-        });
     });
   }
 
@@ -40,10 +32,6 @@ class DataServiceClass {
           this.$data = response.data;
           resolve(this.$data);
         })
-        .catch(e => {
-          console.log(e);
-          reject(e);
-        });
     });
   }
 }

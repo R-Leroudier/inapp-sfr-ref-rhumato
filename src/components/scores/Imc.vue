@@ -17,15 +17,16 @@
         </div>
         <div>
           <label for="size">Taille (cm) : </label>
-          <input v-model="size" id="size" type="number" />
+          <input v-model="size" id="size" type="number"/>
         </div>
         <div @click="getResult()" class="btn">Calculer</div>
       </form>
 
-      <div class="result" v-if="this.calculate">
+      <div class="result" v-if="result">
         <h4 >{{ this.result }}</h4>
       </div>
-      <h4 v-if="result === '' ">saisir le poids et la taille</h4>
+
+
       <span class="line"></span>
       <span>
         Bon a savoir L'IMC permet de determiner la corpulence d'une personne. La
@@ -48,8 +49,7 @@ export default Vue.extend({
       size: null,
       imc: 0,
       detail: "",
-      result: "",
-      calculate: false,
+      result: null,
     };
   },
   methods: {
@@ -84,19 +84,10 @@ export default Vue.extend({
       return Math.round(100 * nombre) / 100;
     },
     getResult() {
-      let checkSize = this.size === 0 || this.size === null  || typeof this.size === "string"
-      let checkWeight = this.weight === 0 || this.weight === null || typeof this.weight === "string"
-      if (checkSize || checkWeight) {
-        return
-      } else {
-        this.calculate = true
+      if(this.weight && this.size && this.size > 0){
+        let getIMC = this.getImc(this.weight, this.size)
+        this.result = `IMC : ${getIMC} Détails : ${this.getDetail(getIMC)}`;
       }
-
-      this.result =
-        "IMC : " +
-        this.getImc(this.weight, this.size) +
-        " Détails : " +
-        this.getDetail(this.getImc(this.weight, this.size));
     },
   },
 });
